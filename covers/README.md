@@ -10,3 +10,16 @@ Cinzel small-caps title, script author name and a volume box.
 - `preview-1.png`, `preview-2.png` are sample renders.
 
 Fonts (SIL Open Font License) are bundled in `fonts/`: Cinzel, Pinyon Script.
+
+## Original-art covers (`original/`)
+
+`original/make_volumes.py` builds volume covers straight from the original cover image, so the
+artwork, title and author name are identical to the source. Only the number box is repainted
+(the old digit is erased by interpolating the box background) and the new number is drawn in
+Cormorant Garamond with lining figures, sized to match the original "1".
+
+    cd covers/original && python3 make_volumes.py 1 2 3 4    # needs Pillow
+
+Volume 1 output is the untouched original (just cropped out of the app frame).
+For higher quality, replace `asrin-getirdigi-tereddutler-1-source.webp` with a larger scan and
+update the measured coordinates at the top of the script.
