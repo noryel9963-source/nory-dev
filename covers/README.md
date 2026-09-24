@@ -36,3 +36,16 @@ lettering a lot; painted areas (lava, clouds) get a slightly smoother, painterly
 Volume 1 output is the untouched original (just cropped out of the app frame).
 For higher quality, replace `asrin-getirdigi-tereddutler-1-source.webp` with a larger scan and
 update the measured coordinates at the top of the script.
+
+## Khmer edition (`original/make_khmer.py`)
+
+Title: **ការងឿងឆ្ងល់នៃយុគសម័យ**, set in two lines (ការងឿងឆ្ងល់ / នៃយុគសម័យ) on the original artwork.
+
+1. `erase_title.py big-lama.pt` removes the Turkish title with LaMa AI inpainting
+   (weights: https://github.com/enesmsahin/simple-lama-inpainting/releases/download/v0.1.0/big-lama.pt).
+2. `upscale.py RealESRGAN_x4plus.pth asrin-getirdigi-tereddutler-notitle-source.png asrin-getirdigi-tereddutler-notitle-source-4x.png` for HD.
+3. `python3 make_khmer.py [--hd] [--font Moul] 1 2 3 4` writes `khmer-N.png` / `khmer-N-hd.png`.
+
+The title uses the same cream-to-gold fill, dark outline and drop shadow as the original. Default
+font is **Moul** (the traditional Khmer title face); other bundled options: Angkor, Koulen, Bokor,
+Hanuman, Battambang, Siemreap, Dangrek, Freehand. Text shaping uses Pillow with libraqm.

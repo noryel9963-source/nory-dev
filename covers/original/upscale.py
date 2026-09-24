@@ -1,6 +1,6 @@
 """4x AI upscale of the source cover with Real-ESRGAN (x4plus), CPU-friendly tiling.
 
-    python3 upscale.py path/to/RealESRGAN_x4plus.pth
+    python3 upscale.py path/to/RealESRGAN_x4plus.pth [source] [output]
 Needs: torch, torchvision, spandrel, numpy, Pillow.
 Weights: https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth
 """
@@ -37,5 +37,7 @@ def upscale(model, img):
 if __name__ == "__main__":
     torch.set_num_threads(torch.get_num_threads())
     model = ModelLoader().load_from_file(sys.argv[1]).model.eval()
-    upscale(model, Image.open(SRC).convert("RGB")).save(DST)
-    print("wrote", DST.name)
+    src = Path(sys.argv[2]) if len(sys.argv) > 2 else SRC
+    dst = Path(sys.argv[3]) if len(sys.argv) > 3 else DST
+    upscale(model, Image.open(src).convert("RGB")).save(dst)
+    print("wrote", dst.name)
