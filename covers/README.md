@@ -163,3 +163,11 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   first page; Siemreap, white with a soft shadow. Also removes the faint "Copyrighted material" watermark
   under the number (`WATERMARK` strip). Cover crop sits inside the screenshot's thin light border.
 - KDP: B5, 236 pages, `--theme prizma`. `kdp_cover.fix_frame_corners` now also repairs a thin light rim.
+
+## Fasıldan Fasıla 1 (`fasil/`)
+
+- `erase_title.py`: ornate title, volume number, author signature and the "7. BASKI" corner ribbon removed
+  with LaMa (solid box/polygon masks; plain yellow background).
+- `make_khmer.py [--hd] [--font Moul] 1 2 ...`: proposed **ពីជំពូកមួយ ទៅជំពូកមួយ** ("From Chapter to Chapter"),
+  Moul, red-brown gradient with a dark outline like the original; number drawn under the title. No author.
+- No interior yet, so no KDP cover. When it comes: this cover has no band — add a theme with `band_y: None`.
