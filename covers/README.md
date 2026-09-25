@@ -103,11 +103,12 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 
 ## Üstad'la Hasbihal (`ustadla/`)
 
-- Source is a small, heavily JPEG-compressed image (558×822). `erase_title.py` removes the title,
-  the author name (Mahmut Açıl) and the publisher logo with LaMa (solid block masks give the most even fill).
-- `upscale_soft.py`: Lanczos 4x + light blur + fine grain; Real-ESRGAN (and denoise+ESRGAN) turned the
-  JPEG blocks into squares/blobs on this image.
+- Source: `ustadla-source-hq.webp` (1176×1810; replaced an earlier tiny JPEG). `erase_title.py` removes the
+  title (letter mask), the author name (Mahmut Açıl) and the publisher logo (box masks) with LaMa, then shifts
+  the fill to the local colour of the surrounding texture (two-scale normalised Gaussian means) so no ghost remains.
+- HD: `../original/upscale.py RealESRGAN_x2plus.pth ustadla-notitle-source.png ustadla-notitle-source-2x.png`
+  (upscale.py now reads the model's scale, so x2 and x4 models both work).
 - `make_khmer.py [--hd]`: **ការសន្ទនា / ជាមួយឧស្ដាស** ("Conversation with the Üstad"; ការសន្ទនា as in the
-  translation, ឧស្ដាស as in the user's other Khmer texts), Battambang, reddish brown like the original.
+  translation, ឧស្ដាស as in the user's other Khmer texts), Battambang, dark red-brown like the original.
 - KDP: A5, 283 pages, `--theme ustadla` (no band, brown spine). Interior: parts 1–5 merged,
   cream page fill removed with `kdp/fix_gutter.py` (gutter 0.59 in already meets 0.5 in).

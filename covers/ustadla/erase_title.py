@@ -11,13 +11,12 @@ import torch
 from PIL import Image
 
 HERE = Path(__file__).parent
-SRC = HERE / "ustadla-source.webp"
+SRC = HERE / "ustadla-source-hq.webp"         # 1176x1810 clean source (the first one was a tiny JPEG)
 DST = HERE / "ustadla-notitle-source.png"
-TITLE = (85, 470, 480, 615)         # brown serif capitals (masked by ink detection)
-BOXES = [(88, 468, 480, 622),      # title block (solid mask fills the texture more evenly)
-         (175, 666, 465, 716),      # author name (small caps) - whole box
-         (240, 730, 318, 800)]      # publisher logo - whole box
-CONTEXT = (400, 808)                # rows handed to LaMa (multiple of 8 tall)
+TITLE = (225, 1030, 955, 1330)      # brown serif capitals (masked by ink detection)
+BOXES = [(390, 1490, 790, 1552),    # author name
+         (510, 1575, 662, 1742)]    # publisher logo
+CONTEXT = (896, 1792)               # rows handed to LaMa (multiple of 8 tall)
 
 
 def mask_for(im):
@@ -26,9 +25,9 @@ def mask_for(im):
     x0, y0, x1, y1 = TITLE
     reg = gray[y0:y1, x0:x1]
     bg = cv2.dilate(reg, np.ones((31, 31), np.uint8)).astype(int)
-    ink = ((bg - reg.astype(int)) > 35).astype(np.uint8) * 255
+    ink = ((bg - reg.astype(int)) > 30).astype(np.uint8) * 255
     ink = cv2.morphologyEx(ink, cv2.MORPH_OPEN, np.ones((2, 2), np.uint8))
-    mask[y0:y1, x0:x1] = cv2.dilate(ink, np.ones((9, 9), np.uint8))
+    mask[y0:y1, x0:x1] = cv2.dilate(ink, np.ones((11, 11), np.uint8))
     for x0, y0, x1, y1 in BOXES:
         mask[y0:y1, x0:x1] = 255
     return mask
@@ -53,7 +52,24 @@ if __name__ == "__main__":
     c0, c1 = CONTEXT
     filled = lama(model, im[c0:c1], mask[c0:c1])
     sel = mask[c0:c1] > 127
-    im[c0:c1][sel] = filled[sel]
+    # LaMa's fill comes out a little lighter than this fine orange texture: shift it to the local
+    # colour of the surrounding (unmasked) pixels, measured with normalised Gaussian averages.
+    m = sel.astype(np.float32)
+    orig = im[c0:c1].astype(np.float32)
+    f = filled.astype(np.float32)
+
+    def correction(sigma):
+        blur = lambda a: cv2.GaussianBlur(a, (0, 0), sigma)
+        w_bg = blur(1 - m)[..., None]
+        bg_mean = blur(orig * (1 - m)[..., None]) / np.maximum(w_bg, 1e-3)
+        fill_mean = blur(f * m[..., None]) / np.maximum(blur(m)[..., None], 1e-3)
+        trust = np.clip((w_bg - 0.02) / 0.1, 0, 1)    # no correction where no surrounding pixels reach
+        return (bg_mean - fill_mean) * trust, trust
+
+    fine, t_fine = correction(14)                      # thin letters: very local colour
+    wide, _ = correction(40)                           # big boxes (logo): fallback
+    f = np.clip(f + fine + wide * (1 - t_fine), 0, 255).astype(np.uint8)
+    im[c0:c1][sel] = f[sel]
     Image.fromarray(im).save(DST)
     Image.fromarray(mask).save(HERE / "_mask.png")
     print("wrote", DST.name)

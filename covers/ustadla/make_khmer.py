@@ -1,7 +1,7 @@
 """Khmer edition of the "Üstad'la Hasbihal" cover (title, author and publisher logo removed).
 
     python3 make_khmer.py [--hd] [--font Battambang]
-Writes khmer.png (526x792) or khmer-hd.png (2104x3168).
+Writes khmer.png (1148x1782) or khmer-hd.png (2296x3564, from the 2x Real-ESRGAN upscale).
 """
 import sys
 from pathlib import Path
@@ -11,18 +11,19 @@ from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont
 HERE = Path(__file__).parent
 FONTS = HERE.parent / "fonts"
 SOURCE = HERE / "ustadla-notitle-source.png"
-SOURCE_HD = HERE / "ustadla-notitle-source-4x.png"
+SOURCE_HD = HERE / "ustadla-notitle-source-2x.png"
+HD_SCALE = 2
 
-COVER = (18, 16, 544, 808)            # cover inside the screenshot frame (source px)
+COVER = (12, 12, 1160, 1794)          # cover inside the white margin (source px)
 
 # ការសន្ទនាជាមួយឧស្ដាស — "Conversation with the Üstad" (Üstad'la Hasbihal); ការសន្ទនា as in the
 # translation, ឧស្ដាស as the user's other Khmer texts spell Üstad. Brown, two centred lines like the original.
 TITLE = [
     # text, max width, ink height, center x, center y
-    ("ការសន្ទនា", 340, 70, 281, 512),
-    ("ជាមួយឧស្ដាស", 360, 70, 281, 590),
+    ("ការសន្ទនា", 700, 135, 588, 1100),
+    ("ជាមួយឧស្ដាស", 720, 135, 588, 1268),
 ]
-INK = (118, 36, 10)
+INK = (108, 18, 6)
 SHADOW = (60, 20, 5)
 
 
@@ -37,7 +38,7 @@ def fit(font_path, text, max_w, ink_h):
 
 
 def build(hd=False, font="Battambang", round_corners=False):
-    k = 4 if hd else 1
+    k = HD_SCALE if hd else 1
     im = Image.open(SOURCE_HD if hd else SOURCE).convert("RGB")
     for text, max_w, ink_h, cx, cy in TITLE:
         f = fit(FONTS / f"{font}.ttf", text, max_w * k, ink_h * k)
