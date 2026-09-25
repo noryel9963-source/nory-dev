@@ -222,3 +222,8 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 
 - Same pipeline as `kirik/`. Proposed title **ការអំពាវនាវ / នៃការរស់ឡើងវិញ** ("Call to Revival"; ការអំពាវនាវ and
   ការរស់ឡើងវិញ are the translators' words). No interior in Drive yet, so no KDP cover.
+
+## Ölümsüzlük İksiri — Kırık Testi 7 (`kirik7/`)
+
+- Same pipeline as `kirik/`. Proposed title **ទឹកអម្រឹត / នៃភាពអមតៈ** ("Elixir of Immortality"; ទឹកអម្រឹត and ភាពអមតៈ are
+  the translators' words). No interior in Drive yet, so no KDP cover.
