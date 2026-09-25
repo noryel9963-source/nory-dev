@@ -139,3 +139,11 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - `make_khmer.py [--hd] 6`: **ការត្រិះរិះ / លើផ្លូវ** — the Khmer title on the translation's own first page;
   Siemreap, dark navy with a white glow. KDP: B5, 190 pages, `--theme prizma6` (cyan band, navy spine).
 - Interior page 1 is a full-page cover image (reaches the page edge; shows the author name).
+
+## Zihin Harmanı — Prizma 7 (`zihin/`)
+
+- `erase_title.py`: light title (with the İ dots) + series logo removed with LaMa; `COLOR_MATCH = 1` here
+  because the fill came out slightly darker than the page-text background.
+- `make_khmer.py [--hd] 7`: **ការប្រមូលផល / នៃគំនិត** — the Khmer title on the translation's own first page;
+  Siemreap, light blue-white with a soft shadow. KDP: B5, 188 pages, `--theme prizma`.
+- Interior page 1 is a full-page picture cover (reaches the page edge; shows the author name).
