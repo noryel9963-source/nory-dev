@@ -193,3 +193,9 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - `make_khmer.py [--hd] 1 2 ...`: **ក្អម / បែក** — the title the Khmer translation uses; Siemreap, dark red over
   dark brown like the original; number box redrawn with the digit and small ក្អម / បែក labels.
 - KDP: B5, 286 pages (4 weekly parts merged), `--theme kirik`. Interior page 1 is a dark title page.
+
+## Sohbet-i Cânan — Kırık Testi 2 (`kirik2/`)
+
+- Same pipeline as `kirik/`. Title **ការសន្ទនា / ជាមួយដួងព្រលឹង / ជាទីស្រឡាញ់** — the heading the Khmer translation
+  itself uses for Sohbet-i Cânan. KDP: A5, 253 pages (3 parts merged), `--theme kirik`; print interior
+  `kirik-2-interior-kdp.pdf` (cream page fill removed; gutter 0.554 in already meets 0.5 in).
