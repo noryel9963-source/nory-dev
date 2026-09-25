@@ -112,3 +112,15 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   translation, ឧស្ដាស as in the user's other Khmer texts), Battambang, dark red-brown like the original.
 - KDP: A5, 283 pages, `--theme ustadla` (no band, brown spine). Interior: parts 1–5 merged,
   cream page fill removed with `kdp/fix_gutter.py` (gutter 0.59 in already meets 0.5 in).
+
+## Prizma 1–4 (`prizma/`)
+
+- `erase_title.py`: light "PRİZMA" title (+ its dark drop shadow, + the İ dot) and the prism series logo removed
+  with LaMa; LaMa's context is limited to the cover (frame/band excluded) and colour matching is off
+  (`COLOR_MATCH = 0`) because on these soft light streaks it made the fill darker.
+- `make_khmer.py [--hd] 1 2 3 4`: **ព្រិស្មា** (the user's spelling; the translation's title page has ព្រិស្ម)
+  in **Siemreap** (Khmer OS Siemreap design), light blue-white with a soft shadow, sized like the original.
+  Author removed by `../erase_author.py`; the number is redrawn in each teal box.
+- KDP (B5 6.929×9.842 in, `--theme prizma`: purple band, teal spine): vol 2 = 222 p, vol 3 = 244 p,
+  vol 4 = 284 p. Vol 1: cover only (no interior yet). Interiors: margins fine (1.18 in inside), no page fill;
+  page 1 is a dark TikZ title page that reaches the page edge.

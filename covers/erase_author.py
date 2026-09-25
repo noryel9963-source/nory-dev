@@ -20,6 +20,7 @@ CAG = (205, 1402, 748, 1552)
 BUH = (92, 934, 492, 1040)
 YIT = (100, 938, 512, 1044)
 KAL = (95, 838, 482, 940)
+PRI = (140, 1316, 712, 1474)
 JOBS = [
     ("original/asrin-getirdigi-tereddutler-notitle-source.png", 1, ASRIN),
     ("original/asrin-getirdigi-tereddutler-notitle-source-4x.png", 4, ASRIN),
@@ -31,6 +32,8 @@ JOBS = [
     ("yitirilmis/yitirilmis-notitle-source-4x.png", 4, YIT),
     ("kalbin/kalbin-notitle-source.png", 1, KAL),
     ("kalbin/kalbin-notitle-source-4x.png", 4, KAL),
+    ("prizma/prizma-notitle-source.png", 1, PRI),
+    ("prizma/prizma-notitle-source-4x.png", 4, PRI),
 ]
 
 
@@ -76,6 +79,8 @@ if __name__ == "__main__":
         arr = coons_fill(np.asarray(Image.open(src).convert("RGB")), box, k)
         if box is CAG and k == 4:
             arr = destreak(arr, k, rows=(1384, 1428), cols=(30, 1079), skip_cols=(0, 0))
+        if box is PRI and k == 4:
+            arr = destreak(arr, k, rows=(1282, 1310), cols=(19, 1009), skip_cols=(0, 0))
         if box is KAL and k == 4:
             arr = destreak(arr, k, rows=(826, 852), cols=(21, 643), skip_cols=(0, 0))
         if box is YIT and k == 4:

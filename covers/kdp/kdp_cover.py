@@ -72,6 +72,13 @@ THEMES = {
         "spine": [(0, (52, 92, 54)), (0.5, (78, 128, 78)), (1, (52, 92, 54))],
         "spine_text": (244, 228, 179),
     },
+    "prizma": {  # Prizma: purple band, teal spine (like the number box), light cyan text
+        "band_y": (1290 - 9) / (1494 - 9),
+        "band": [(0, (40, 50, 130)), (0.5, (52, 62, 154)), (1, (34, 42, 112))],
+        "band_line": (19, 30, 74),
+        "spine": [(0, (2, 84, 96)), (0.5, (3, 118, 132)), (1, (2, 84, 96))],
+        "spine_text": (190, 240, 250),
+    },
     "ustadla": {  # Üstad'la Hasbihal: no band, orange textured art all over, brown spine
         "band_y": None,
         "spine": [(0, (150, 70, 30)), (0.5, (196, 104, 52)), (1, (150, 70, 30))],
