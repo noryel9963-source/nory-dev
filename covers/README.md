@@ -253,3 +253,8 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 
 - Same pipeline as `kirik10/`. Proposed title **ការខិតខំ / ដើម្បីការធ្វើឱ្យថ្មី** ("The Effort for Renewal"; the translators'
   words ការខិតខំ, ការធ្វើឱ្យថ្មី). No interior in Drive yet.
+
+## Mefkûre Yolculuğu — Kırık Testi 13 (`kirik13/`)
+
+- Same pipeline as `kirik10/`; title sits over the crowd, the Arabic calligraphy (Muhammad) is kept. Proposed title
+  **ដំណើរ / នៃឧត្តមគតិ** ("Journey of the Ideal"). Number box is dark brown on this volume. No interior in Drive yet.
