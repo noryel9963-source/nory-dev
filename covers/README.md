@@ -211,3 +211,9 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - Same pipeline as `kirik/`. Title **ប៉មនៃ / ក្ដីសង្ឃឹម** — «ប៉មនៃក្ដីសង្ឃឹម», the name the translation's foreword
   gives. KDP: A5, 560 pages (6 weekly parts merged), `--theme kirik`; print interior `kirik-4-interior-kdp.pdf`
   (0.2 in gutter shift for the 0.75 in rule at 501–700 pages, cream page fill removed).
+
+## İkindi Yağmurları — Kırık Testi 5 (`kirik5/`)
+
+- Same pipeline as `kirik/`. Proposed title **ភ្លៀង / ពេលអាសើរ** ("Afternoon Rains"; ពេលអាសើរ is how the foreword writes
+  "ikindi"). KDP: A5, 682 pages (7 weekly parts merged), `--theme kirik`; print interior `kirik-5-interior-kdp.pdf`
+  (0.2 in gutter shift for the 0.75 in rule, cream page fill removed).
