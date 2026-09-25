@@ -132,3 +132,10 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - `make_khmer.py [--hd] 5`: proposed **បរិយាកាស / ផ្ទាល់ខ្លួនរបស់យើង** ("Our Own Atmosphere"; បរិយាកាស is the
   translation's word), Siemreap like the other Prizma volumes, dark navy with a white glow (`GLOW = True`).
 - KDP: B5, 219 pages, `--theme prizma`. Interior has no title page (starts with the contents); margins fine.
+
+## Yol Mülâhazaları — Prizma 6 (`yol/`)
+
+- `erase_title.py`: dark title over the sun + series logo removed with LaMa (it rebuilds the sunburst).
+- `make_khmer.py [--hd] 6`: **ការត្រិះរិះ / លើផ្លូវ** — the Khmer title on the translation's own first page;
+  Siemreap, dark navy with a white glow. KDP: B5, 190 pages, `--theme prizma6` (cyan band, navy spine).
+- Interior page 1 is a full-page cover image (reaches the page edge; shows the author name).

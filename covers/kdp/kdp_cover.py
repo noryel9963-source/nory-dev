@@ -79,6 +79,13 @@ THEMES = {
         "spine": [(0, (2, 84, 96)), (0.5, (3, 118, 132)), (1, (2, 84, 96))],
         "spine_text": (190, 240, 250),
     },
+    "prizma6": {  # Prizma 6 (Yol Mülâhazaları): cyan band, navy spine (like the number box)
+        "band_y": (1090 - 20) / (1255 - 20),
+        "band": [(0, (4, 170, 225)), (0.5, (4, 184, 239)), (1, (2, 140, 190))],
+        "band_line": (16, 37, 73),
+        "spine": [(0, (12, 40, 92)), (0.5, (20, 62, 128)), (1, (12, 40, 92))],
+        "spine_text": (190, 235, 250),
+    },
     "ustadla": {  # Üstad'la Hasbihal: no band, orange textured art all over, brown spine
         "band_y": None,
         "spine": [(0, (150, 70, 30)), (0.5, (196, 104, 52)), (1, (150, 70, 30))],
