@@ -227,3 +227,8 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 
 - Same pipeline as `kirik/`. Proposed title **ទឹកអម្រឹត / នៃភាពអមតៈ** ("Elixir of Immortality"; ទឹកអម្រឹត and ភាពអមតៈ are
   the translators' words). No interior in Drive yet, so no KDP cover.
+
+## Vuslat Muştusu — Kırık Testi 8 (`kirik8/`)
+
+- Same pipeline as `kirik/`. Proposed title **ដំណឹងរីករាយ / នៃការជួបជុំ** ("Good News of Reunion"; the translators' words).
+  No interior in Drive yet, so no KDP cover.
