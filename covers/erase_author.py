@@ -17,11 +17,14 @@ HERE = Path(__file__).parent
 # (image, scale k, rectangle to rebuild in 1x source coords)
 ASRIN = (115, 1088, 565, 1205)
 CAG = (205, 1402, 748, 1552)
+BUH = (92, 934, 492, 1040)
 JOBS = [
     ("original/asrin-getirdigi-tereddutler-notitle-source.png", 1, ASRIN),
     ("original/asrin-getirdigi-tereddutler-notitle-source-4x.png", 4, ASRIN),
     ("cag-ve-nesil/cag-ve-nesil-notitle-source.png", 1, CAG),
     ("cag-ve-nesil/cag-ve-nesil-notitle-source-4x.png", 4, CAG),
+    ("buhranlar/buhranlar-notitle-source.png", 1, BUH),
+    ("buhranlar/buhranlar-notitle-source-4x.png", 4, BUH),
 ]
 
 
@@ -61,9 +64,14 @@ def destreak(arr, k, rows, cols, skip_cols):
 if __name__ == "__main__":
     for path, k, box in JOBS:
         src = HERE / path
+        if not src.exists():
+            print("skip (missing)", path)
+            continue
         arr = coons_fill(np.asarray(Image.open(src).convert("RGB")), box, k)
         if box is CAG and k == 4:
             arr = destreak(arr, k, rows=(1384, 1428), cols=(30, 1079), skip_cols=(0, 0))
+        if box is BUH and k == 4:
+            arr = destreak(arr, k, rows=(920, 950), cols=(3, 707), skip_cols=(0, 0))
         out = src.with_name(src.stem + "-noauthor.png")
         Image.fromarray(arr).save(out)
         print("wrote", out.relative_to(HERE))

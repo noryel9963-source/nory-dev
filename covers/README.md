@@ -75,3 +75,11 @@ Hanuman, Battambang, Siemreap, Dangrek, Freehand. Text shaping uses Pillow with 
 gradient (plus a vertical de-streak of the Çağ ve Nesil HD band), writing `*-noauthor.png`
 artwork. Both `make_khmer.py` builders and `kdp/kdp_cover.py` use that artwork, so the Khmer
 covers, KDP covers and `kdp/combine.py` reading PDFs carry no author name (PDF author field is empty).
+
+## Buhranlar anaforunda İnsan — Çağ ve Nesil 2 (`buhranlar/`)
+
+- `erase_title.py` removes the light script title (with its shadow) and the series logo (LaMa);
+  `../original/upscale.py` makes the 4x art; `../erase_author.py` removes the signature.
+- `make_khmer.py [--hd] 2` sets the proposed title **មនុស្ស / ក្នុងទឹកគួច / នៃវិបត្តិ**
+  ("Man in the whirlpool of crises"; វិបត្តិ = crisis as used in the series' Khmer translation) in Freehand,
+  cream with a soft shadow, three lines like the original. No author name.
