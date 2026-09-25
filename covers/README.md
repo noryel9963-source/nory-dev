@@ -232,3 +232,8 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 
 - Same pipeline as `kirik/`. Proposed title **ដំណឹងរីករាយ / នៃការជួបជុំ** ("Good News of Reunion"; the translators' words).
   No interior in Drive yet, so no KDP cover.
+
+## Kalb İbresi — Kırık Testi 9 (`kirik9/`)
+
+- Same pipeline as `kirik/`, but the title sits in the sky at the top. Proposed title **ម្ជុល / នៃដួងចិត្ត**
+  ("The Heart's Needle"; ម្ជុល and ដួងចិត្ត are the translators' words). No interior in Drive yet.
