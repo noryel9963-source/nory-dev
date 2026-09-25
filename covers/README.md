@@ -124,3 +124,11 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - KDP (B5 6.929×9.842 in, `--theme prizma`: purple band, teal spine): vol 2 = 222 p, vol 3 = 244 p,
   vol 4 = 284 p. Vol 1: cover only (no interior yet). Interiors: margins fine (1.18 in inside), no page fill;
   page 1 is a dark TikZ title page that reaches the page edge.
+
+## Kendi İklimimiz — Prizma 5 (`kendi/`)
+
+- `erase_title.py`: dark navy title over the bright world map + series logo removed with LaMa (mask =
+  pixels much darker than the local maximum); LaMa rebuilds the map and light squares.
+- `make_khmer.py [--hd] 5`: proposed **បរិយាកាស / ផ្ទាល់ខ្លួនរបស់យើង** ("Our Own Atmosphere"; បរិយាកាស is the
+  translation's word), Siemreap like the other Prizma volumes, dark navy with a white glow (`GLOW = True`).
+- KDP: B5, 219 pages, `--theme prizma`. Interior has no title page (starts with the contents); margins fine.
