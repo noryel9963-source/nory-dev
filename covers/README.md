@@ -248,3 +248,8 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - New parchment design (no band/box): title, ribbon text, number and author removed with LaMa (ribbon kept).
   Proposed title **ឧត្តមគតិ / នៃការធ្វើឱ្យរស់** ("The Ideal of Making Others Live"), Battambang, dark brown;
   ក្អមបែក on the ribbon, 11 below. No interior in Drive yet (a KDP theme without band will be needed).
+
+## Yenilenme Cehdi — Kırık Testi 12 (`kirik12/`)
+
+- Same pipeline as `kirik10/`. Proposed title **ការខិតខំ / ដើម្បីការធ្វើឱ្យថ្មី** ("The Effort for Renewal"; the translators'
+  words ការខិតខំ, ការធ្វើឱ្យថ្មី). No interior in Drive yet.
