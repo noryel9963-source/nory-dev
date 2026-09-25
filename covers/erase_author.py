@@ -18,6 +18,7 @@ HERE = Path(__file__).parent
 ASRIN = (115, 1088, 565, 1205)
 CAG = (205, 1402, 748, 1552)
 BUH = (92, 934, 492, 1040)
+YIT = (100, 938, 512, 1044)
 JOBS = [
     ("original/asrin-getirdigi-tereddutler-notitle-source.png", 1, ASRIN),
     ("original/asrin-getirdigi-tereddutler-notitle-source-4x.png", 4, ASRIN),
@@ -25,6 +26,8 @@ JOBS = [
     ("cag-ve-nesil/cag-ve-nesil-notitle-source-4x.png", 4, CAG),
     ("buhranlar/buhranlar-notitle-source.png", 1, BUH),
     ("buhranlar/buhranlar-notitle-source-4x.png", 4, BUH),
+    ("yitirilmis/yitirilmis-notitle-source.png", 1, YIT),
+    ("yitirilmis/yitirilmis-notitle-source-4x.png", 4, YIT),
 ]
 
 
@@ -70,6 +73,8 @@ if __name__ == "__main__":
         arr = coons_fill(np.asarray(Image.open(src).convert("RGB")), box, k)
         if box is CAG and k == 4:
             arr = destreak(arr, k, rows=(1384, 1428), cols=(30, 1079), skip_cols=(0, 0))
+        if box is YIT and k == 4:
+            arr = destreak(arr, k, rows=(918, 952), cols=(14, 715), skip_cols=(0, 0))
         if box is BUH and k == 4:
             arr = destreak(arr, k, rows=(920, 950), cols=(3, 707), skip_cols=(0, 0))
         out = src.with_name(src.stem + "-noauthor.png")

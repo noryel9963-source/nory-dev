@@ -83,3 +83,9 @@ covers, KDP covers and `kdp/combine.py` reading PDFs carry no author name (PDF a
 - `make_khmer.py [--hd] 2` sets the proposed title **មនុស្ស / ក្នុងទឹកគួច / នៃវិបត្តិ**
   ("Man in the whirlpool of crises"; វិបត្តិ = crisis as used in the series' Khmer translation) in Freehand,
   cream with a soft shadow, three lines like the original. No author name.
+
+## Yitirilmiş cennete doğru — Çağ ve Nesil 3 (`yitirilmis/`)
+
+Same pipeline (erase_title.py → upscale → ../erase_author.py → make_khmer.py [--hd] 3). Proposed title
+**ឆ្ពោះទៅកាន់ / ឋានសួគ៌ / ដែលបាត់បង់** ("Toward the Lost Paradise"; ឋានសួគ៌ and បាត់បង់ are the words the
+series' Khmer translation uses), dark teal Freehand script with a soft shadow like the original. No author name.
