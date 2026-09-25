@@ -117,12 +117,12 @@ def report(spec):
 
 # ---------------------------------------------------------------- drawing helpers
 
-def cover_fit(img, w, h, anchor_x=0.5):
-    """Scale img to fill w x h, cropping the overflow (anchor_x 0=keep left, 1=keep right)."""
+def cover_fit(img, w, h, anchor_x=0.5, anchor_y=0.5):
+    """Scale img to fill w x h, cropping the overflow (anchor 0 = keep left/top, 1 = keep right/bottom)."""
     s = max(w / img.width, h / img.height)
     img = img.resize((max(w, round(img.width * s)), max(h, round(img.height * s))), Image.LANCZOS)
     x = int((img.width - w) * anchor_x)
-    y = (img.height - h) // 2
+    y = int((img.height - h) * anchor_y)
     return img.crop((x, y, x + w, y + h))
 
 
@@ -255,11 +255,11 @@ def build(spec, front, back, spine_title, spine_author, volume, blurb, lang, tit
     # front: trim + right bleed, full height incl. top/bottom bleed
     fx0 = p(spec.spine_x1)
     front = fix_frame_corners(front)
-    canvas.paste(cover_fit(front, W - fx0, H, anchor_x=1.0), (fx0, 0))
+    canvas.paste(cover_fit(front, W - fx0, H, anchor_x=1.0, anchor_y=0.8), (fx0, 0))
 
     # back: mirrored artwork, darkened for readable text, plus the same orange band as the front
     bw = p(spec.spine_x0)
-    back_img = cover_fit(fix_frame_corners(back), bw, H, anchor_x=0.0)
+    back_img = cover_fit(fix_frame_corners(back), bw, H, anchor_x=0.0, anchor_y=0.8)
     shade = gradient(bw, H, [(0, (0, 0, 0)), (1, (0, 0, 0))])
     mask = gradient(bw, H, [(0, (150,) * 3), (0.55, (120,) * 3), (1, (60,) * 3)], horizontal=False).convert("L")
     back_img.paste(shade, (0, 0), mask)
