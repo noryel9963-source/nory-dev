@@ -49,6 +49,24 @@ BARCODE_W, BARCODE_H, BARCODE_INSET = 2.0, 1.2, 0.25
 MIN_PAGES = 24
 DPI = 300
 
+# Per-series colours for the back-cover band and the spine (sampled from the original covers).
+THEMES = {
+    "asrin": {  # Asrın Getirdiği Tereddütler: orange band, dark-red spine / number box
+        "band_y": (1060 - 11) / (1232 - 11),
+        "band": [(0, (131, 54, 15)), (0.3, (187, 101, 38)), (0.7, (207, 122, 53)), (1, (142, 59, 18))],
+        "band_line": (42, 14, 5),
+        "spine": [(0, (74, 13, 8)), (0.5, (125, 29, 18)), (1, (74, 13, 8))],
+        "spine_text": (247, 232, 204),
+    },
+    "cag": {  # Çağ ve Nesil: teal band, navy spine / number box
+        "band_y": (1360 - 18) / (1588 - 18),
+        "band": [(0, (0, 150, 130)), (0.5, (3, 180, 159)), (1, (0, 120, 105))],
+        "band_line": (0, 95, 88),
+        "spine": [(0, (14, 40, 66)), (0.5, (30, 68, 105)), (1, (14, 40, 66))],
+        "spine_text": (233, 245, 250),
+    },
+}
+
 
 @dataclass
 class Spec:
@@ -247,7 +265,8 @@ def default_back():
 
 
 def build(spec, front, back, spine_title, spine_author, volume, blurb, lang, title_font, body_font,
-          barcode_box=True):
+          barcode_box=True, theme="asrin"):
+    th = THEMES[theme]
     W, H = spec.size_px
     p = spec.px
     canvas = Image.new("RGB", (W, H), (20, 8, 4))
@@ -263,10 +282,9 @@ def build(spec, front, back, spine_title, spine_author, volume, blurb, lang, tit
     shade = gradient(bw, H, [(0, (0, 0, 0)), (1, (0, 0, 0))])
     mask = gradient(bw, H, [(0, (150,) * 3), (0.55, (120,) * 3), (1, (60,) * 3)], horizontal=False).convert("L")
     back_img.paste(shade, (0, 0), mask)
-    band_y = int(H * (1060 - 11) / (1232 - 11))          # same relative height as the front band
-    back_img.paste(gradient(bw, H - band_y, [(0, (131, 54, 15)), (0.3, (187, 101, 38)), (0.7, (207, 122, 53)),
-                                             (1, (142, 59, 18))]), (0, band_y))
-    ImageDraw.Draw(back_img).rectangle((0, band_y, bw, band_y + p(0.03)), fill=(42, 14, 5))
+    band_y = int(H * th["band_y"])                      # same relative height as the front band
+    back_img.paste(gradient(bw, H - band_y, th["band"]), (0, band_y))
+    ImageDraw.Draw(back_img).rectangle((0, band_y, bw, band_y + p(0.03)), fill=th["band_line"])
     canvas.paste(back_img, (0, 0))
 
     # blurb inside the back safe zone
@@ -284,7 +302,7 @@ def build(spec, front, back, spine_title, spine_author, volume, blurb, lang, tit
     # spine
     sx0, sx1 = p(spec.spine_x0), p(spec.spine_x1)
     if sx1 > sx0:
-        canvas.paste(gradient(sx1 - sx0, H, [(0, (74, 13, 8)), (0.5, (125, 29, 18)), (1, (74, 13, 8))]), (sx0, 0))
+        canvas.paste(gradient(sx1 - sx0, H, th["spine"]), (sx0, 0))
         if spec.spine_text_allowed and spine_title:
             avail = spec.spine - 2 * SPINE_TEXT_MARGIN
             top, bottom = p(BLEED + SAFE_RECOMMENDED), p(BLEED + spec.trim_h - SAFE_RECOMMENDED)
@@ -292,13 +310,13 @@ def build(spec, front, back, spine_title, spine_author, volume, blurb, lang, tit
             if volume:
                 nf = fit_text("CormorantGaramond-Medium.ttf", volume, p(avail * 0.9), p(avail * 1.3),
                               features=["lnum"])
-                num = text_image(volume, nf, (247, 232, 204), features=["lnum"])
+                num = text_image(volume, nf, th["spine_text"], features=["lnum"])
                 num_h = num.height
                 canvas.paste(num, ((sx0 + sx1 - num.width) // 2, bottom - num.height), num)
             text = spine_title + (f"   {spine_author}" if spine_author else "")
             length = bottom - top - num_h - p(0.2)
             tf = fit_text(title_font, text, length, p(avail * 0.8), lang)
-            ti = text_image(text, tf, (247, 232, 204), lang).rotate(-90, expand=True)   # reads top to bottom
+            ti = text_image(text, tf, th["spine_text"], lang).rotate(-90, expand=True)   # reads top to bottom
             canvas.paste(ti, ((sx0 + sx1 - ti.width) // 2, top + max(0, (length - ti.height) // 2)), ti)
 
     if barcode_box:
@@ -329,6 +347,8 @@ def main():
     ap.add_argument("--spine-author", default="")
     ap.add_argument("--blurb", help="text file with back-cover text")
     ap.add_argument("--no-barcode-box", action="store_true", help="you print your own barcode")
+    ap.add_argument("--theme", choices=list(THEMES), default="asrin", help="band/spine colours")
+    ap.add_argument("--spine-font", help="font file in covers/fonts for the spine title")
     a = ap.parse_args()
 
     spec = calc(*parse_trim(a.trim), a.pages, a.paper)
@@ -348,8 +368,9 @@ def main():
     blurb = Path(a.blurb).read_text(encoding="utf-8").strip() if a.blurb else ""
     lang = "km" if khmer else None
     im = build(spec, front, back, title, a.spine_author, a.volume, blurb, lang,
-               "Moul.ttf" if khmer else "Cinzel-Medium.ttf", "Battambang.ttf" if khmer else "Cinzel-Medium.ttf",
-               barcode_box=not a.no_barcode_box)
+               a.spine_font or ("Moul.ttf" if khmer else "Cinzel-Medium.ttf"),
+               "Battambang.ttf" if khmer else "Cinzel-Medium.ttf",
+               barcode_box=not a.no_barcode_box, theme=a.theme)
     im.save(a.out + ".png", dpi=(spec.dpi, spec.dpi))
     save_pdf(a.out + ".png", a.out + ".pdf", spec)
     print("wrote", a.out + ".png", a.out + ".pdf")

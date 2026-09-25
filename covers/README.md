@@ -59,3 +59,12 @@ Hanuman, Battambang, Siemreap, Dangrek, Freehand. Text shaping uses Pillow with 
 
     cd covers/kdp
     python3 kdp_cover.py build --trim 6x9 --pages 320 --paper cream --edition khmer --volume 1 -o khmer-1-kdp
+
+## Çağ ve Nesil (`cag-ve-nesil/`)
+
+- `erase_title.py` removes the calligraphy title and the small series logo (LaMa).
+- `make_khmer.py [--hd] [--font Freehand] 1 2 ...` sets **សម័យកាល និងជំនាន់** (proposed title: the translation
+  uses សម័យកាល for "Çağ" and ជំនាន់ for "Nesil") in the original's diagonal calligraphic layout, in Freehand.
+- KDP (A5, 168 pages): `python3 kdp_cover.py build --trim 5.833x8.263 --pages 168 --paper cream --theme cag
+  --front <square-corner HD front> --back <mirrored no-title art> --spine-title "សម័យកាល និងជំនាន់"
+  --spine-font Freehand.ttf --volume 1 -o cag-khmer-1-kdp-a5-168p-cream`

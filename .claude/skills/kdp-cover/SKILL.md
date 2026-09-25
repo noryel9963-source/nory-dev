@@ -35,7 +35,7 @@ python3 kdp_cover.py build    --trim 6x9 --pages 320 --paper cream \
 
 `build` options: `--front img` / `--back img` to use any artwork, `--spine-title`, `--spine-author`,
 `--blurb file.txt` (back-cover text; for Khmer insert U+200B zero-width spaces where lines may break),
-`--no-barcode-box` if the user supplies their own barcode.
+`--no-barcode-box` if the user supplies their own barcode, `--theme asrin|cag` for the series band/spine colours, `--spine-font Freehand.ttf` for the spine title font.
 
 ## Always
 
