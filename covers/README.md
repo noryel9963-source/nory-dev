@@ -97,3 +97,6 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - `make_khmer.py [--hd] 1`: **ភ្នំមរកត / នៃដួងចិត្ត** — the title the Khmer translation itself uses
   («ភ្នំមរកតនៃដួងចិត្ត»), black Freehand script, stepped two lines like the original.
 - KDP: A5, 368 pages → spine 0.92 in (cream) / 0.8287 in (white), `--theme kalbin` (green band/spine).
+- Volumes 2 (443 pages) and 3 (387 pages): same cover, number 2/3 (`make_khmer.py [--hd] 2 3`); KDP covers
+  `kalbin-khmer-{2,3}-kdp-a5-*`. The Kalbin 1–3 and Çağ ve Nesil interiors were fixed for print with
+  `kdp/fix_gutter.py` (0.1 in outward shift for the 0.625 in gutter rule; full-page cream fill removed).

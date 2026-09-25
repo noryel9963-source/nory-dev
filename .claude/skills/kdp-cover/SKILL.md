@@ -19,6 +19,7 @@ Tool: `covers/kdp/kdp_cover.py` (needs Pillow, numpy, opencv-python-headless, im
 | Safe zone | text/important art **≥ 0.125 in** inside the trim (0.25 in recommended) |
 | Barcode | Amazon prints it in a **2 × 1.2 in** box, lower right of the back cover, 0.25 in from the trim and spine; keep that box a solid light color |
 | Minimum pages | 24 |
+| Interior inside (gutter) margin | 24–150 p: **0.375 in**, 151–300: **0.5**, 301–500: **0.625**, 501–700: **0.75**, 701–828: **0.875**; outside/top/bottom ≥ 0.25 in (no bleed) |
 | File | one flattened PDF, page size = full cover size, **300 DPI** images, fonts rasterized/embedded |
 
 Worked example: 6 × 9 in, 320 pages, cream → spine 0.8000 in, full cover 13.050 × 9.250 in (3915 × 2775 px at 300 DPI).
@@ -37,9 +38,17 @@ python3 kdp_cover.py build    --trim 6x9 --pages 320 --paper cream \
 `--blurb file.txt` (back-cover text; for Khmer insert U+200B zero-width spaces where lines may break),
 `--no-barcode-box` if the user supplies their own barcode, `--theme asrin|cag` for the series band/spine colours, `--spine-font Freehand.ttf` for the spine title font.
 
+## Interior check / fix
+
+`python3 fix_gutter.py IN.pdf OUT.pdf [--shift 0.1]` measures inside/outside margins (odd pages = right-hand),
+shifts page content outward to meet the gutter rule (vector, same page count), and removes a full-page
+"paper colour" fill if the PDF has one (it would print as a grey tint and run to the edge without bleed).
+`python3 combine.py INTERIOR.pdf OUT.pdf --title ...` makes a front+interior+back reading PDF.
+
 ## Always
 
 - Ask for the **real page count** (from the final interior PDF) and paper type before building; spine width depends on it. Rebuild the cover whenever the page count changes.
+- Check the interior: gutter vs page count, text ≥ 0.25 in from edges, no full-page background colour.
 - Check the front artwork covers the trim **plus bleed** (the tool scale-crops it; keep text ≥ 0.25 in from edges).
 - Verify: PDF MediaBox (pt) = full size × 72; spine text only if pages > 79; nothing but light fill in the barcode box.
 - Hardcover (case laminate) uses different wrap/hinge rules — this tool is paperback-only; do not reuse its numbers for hardcover without checking KDP's hardcover calculator.
