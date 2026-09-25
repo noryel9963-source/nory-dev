@@ -170,7 +170,7 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   with LaMa (solid box/polygon masks; plain yellow background).
 - `make_khmer.py [--hd] [--font Moul] 1 2 ...`: proposed **ពីជំពូកមួយ ទៅជំពូកមួយ** ("From Chapter to Chapter"),
   Moul, red-brown gradient with a dark outline like the original; number drawn under the title. No author.
-- No interior yet, so no KDP cover. When it comes: this cover has no band — add a theme with `band_y: None`.
+- KDP: A5, 234 pages, `--theme fasil` (no band, red-brown spine); print interior `fasil-1-interior-kdp.pdf` (cream fill removed).
 
 ## Ölçü veya Yoldaki Işıklar (`olcu/`)
 

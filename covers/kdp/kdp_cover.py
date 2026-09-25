@@ -93,6 +93,11 @@ THEMES = {
         "spine": [(0, (90, 18, 30)), (0.5, (125, 40, 52)), (1, (90, 18, 30))],
         "spine_text": (223, 144, 49),
     },
+    "fasil": {  # Fasıldan Fasıla: plain yellow art all over, red-brown spine
+        "band_y": None,
+        "spine": [(0, (95, 30, 5)), (0.5, (150, 58, 15)), (1, (95, 30, 5))],
+        "spine_text": (240, 222, 150),
+    },
     "ustadla": {  # Üstad'la Hasbihal: no band, orange textured art all over, brown spine
         "band_y": None,
         "spine": [(0, (150, 70, 30)), (0.5, (196, 104, 52)), (1, (150, 70, 30))],
