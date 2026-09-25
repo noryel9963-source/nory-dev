@@ -64,14 +64,15 @@ def draw_title(im, k, font_path):
         im.paste(fill, (x, y), glyphs)
 
 
-def build(volume, hd=False, font="Moul"):
+def build(volume, hd=False, font="Moul", round_corners=True):
     k = 4 if hd else 1
     im = Image.open(SOURCE_HD if hd else SOURCE).convert("RGB")
     draw_title(im, k, FONTS / f"{font}.ttf")
     if volume != "1":
         im = mv.clean_box(im, k)
         mv.draw_number(im, volume, k)
-    return mv.rounded(im.crop(mv.scaled(mv.COVER, k)), k)
+    im = im.crop(mv.scaled(mv.COVER, k))
+    return mv.rounded(im, k) if round_corners else im
 
 
 if __name__ == "__main__":

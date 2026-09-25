@@ -49,3 +49,13 @@ Title: **ការងឿងឆ្ងល់នៃយុគសម័យ**, set in 
 The title uses the same cream-to-gold fill, dark outline and drop shadow as the original. Default
 font is **Moul** (the traditional Khmer title face); other bundled options: Angkor, Koulen, Bokor,
 Hanuman, Battambang, Siemreap, Dangrek, Freehand. Text shaping uses Pillow with libraqm.
+
+## Amazon KDP print covers (`kdp/`)
+
+`kdp/kdp_cover.py` implements the KDP paperback cover calculator (spine width per paper type,
+0.125 in bleed, spine-text rule, safe zone, barcode box) and builds a full-wrap, upload-ready PDF
+(back + spine + front, 300 DPI, lossless, page size = full cover size). See
+`.claude/skills/kdp-cover/SKILL.md` for the rules and commands.
+
+    cd covers/kdp
+    python3 kdp_cover.py build --trim 6x9 --pages 320 --paper cream --edition khmer --volume 1 -o khmer-1-kdp

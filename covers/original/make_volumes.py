@@ -73,13 +73,14 @@ def rounded(im, k):
     return out
 
 
-def build(volume, hd=False):
+def build(volume, hd=False, round_corners=True):
     k = 4 if hd else 1
     im = Image.open(SOURCE_HD if hd else SOURCE).convert("RGB")
     if volume != "1":
         im = clean_box(im, k)
         draw_number(im, volume, k)
-    return rounded(im.crop(scaled(COVER, k)), k)
+    im = im.crop(scaled(COVER, k))
+    return rounded(im, k) if round_corners else im
 
 
 if __name__ == "__main__":
