@@ -25,6 +25,7 @@ KEN = (120, 1062, 560, 1170)
 YOL = (128, 1112, 572, 1216)
 ZIH = (162, 1328, 692, 1440)
 CIZ = (160, 1345, 692, 1460)
+RUH = (150, 1338, 680, 1452)
 JOBS = [
     ("original/asrin-getirdigi-tereddutler-notitle-source.png", 1, ASRIN),
     ("original/asrin-getirdigi-tereddutler-notitle-source-4x.png", 4, ASRIN),
@@ -46,6 +47,8 @@ JOBS = [
     ("zihin/zihin-notitle-source-4x.png", 4, ZIH),
     ("cizgimizi/cizgimizi-notitle-source.png", 1, CIZ),
     ("cizgimizi/cizgimizi-notitle-source-4x.png", 4, CIZ),
+    ("ruhumuzu/ruhumuzu-notitle-source.png", 1, RUH),
+    ("ruhumuzu/ruhumuzu-notitle-source-4x.png", 4, RUH),
 ]
 
 
@@ -91,6 +94,8 @@ if __name__ == "__main__":
         arr = coons_fill(np.asarray(Image.open(src).convert("RGB")), box, k)
         if box is CAG and k == 4:
             arr = destreak(arr, k, rows=(1384, 1428), cols=(30, 1079), skip_cols=(0, 0))
+        if box is RUH and k == 4:
+            arr = destreak(arr, k, rows=(1282, 1310), cols=(14, 1009), skip_cols=(0, 0))
         if box is CIZ and k == 4:
             arr = destreak(arr, k, rows=(1288, 1318), cols=(25, 1020), skip_cols=(0, 0))
         if box is ZIH and k == 4:

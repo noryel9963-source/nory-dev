@@ -183,7 +183,7 @@ def fix_frame_corners(img):
             corner[ys, xs] = True
     mask = ((navy & corner) * 255).astype(np.uint8)
     if mask.any():
-        mask = cv2.dilate(mask, np.ones((5, 5), np.uint8))
+        mask = cv2.dilate(mask, np.ones((9, 9), np.uint8))       # also covers a thin light rim next to the frame
         arr = cv2.inpaint(arr, mask, 5, cv2.INPAINT_TELEA)
     return Image.fromarray(arr)
 

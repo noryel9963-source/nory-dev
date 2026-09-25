@@ -155,3 +155,11 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - `make_khmer.py [--hd] 8`: **ខណៈប្រកប / ផ្លូវរបស់យើង** — the Khmer title on the translation's own first page;
   Siemreap, dark navy with a white glow. KDP: B5, 256 pages, `--theme prizma`.
 - Interior page 1 is a full-page picture cover (reaches the page edge; shows the author name in Khmer).
+
+## Kendi Ruhumuzu Ararken — Prizma 9 (`ruhumuzu/`)
+
+- `erase_title.py`: white title + series logo removed with LaMa (wider mask + colour match against dark specks).
+- `make_khmer.py [--hd] 9`: **ស្វែងរក / ព្រលឹងរបស់ / ខ្លួនយើង** — the Khmer title on the translation's own
+  first page; Siemreap, white with a soft shadow. Also removes the faint "Copyrighted material" watermark
+  under the number (`WATERMARK` strip). Cover crop sits inside the screenshot's thin light border.
+- KDP: B5, 236 pages, `--theme prizma`. `kdp_cover.fix_frame_corners` now also repairs a thin light rim.
