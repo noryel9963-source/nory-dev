@@ -171,3 +171,10 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - `make_khmer.py [--hd] [--font Moul] 1 2 ...`: proposed **ពីជំពូកមួយ ទៅជំពូកមួយ** ("From Chapter to Chapter"),
   Moul, red-brown gradient with a dark outline like the original; number drawn under the title. No author.
 - No interior yet, so no KDP cover. When it comes: this cover has no band — add a theme with `band_y: None`.
+
+## Ölçü veya Yoldaki Işıklar (`olcu/`)
+
+- `erase_title.py`: red title (solid per-line blocks over the smooth gradient) + author signature removed (LaMa).
+- `make_khmer.py [--hd]`: proposed **រង្វាស់ / ឬ / ពន្លឺ / លើផ្លូវ** ("The Measure, or Lights on the Way"),
+  Battambang, orange-red with a soft shadow, same layout as the original. The right box stays empty (no number).
+- No interior yet, so no KDP cover.
