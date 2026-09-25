@@ -1,7 +1,7 @@
 """Khmer edition of the "Çağ ve Nesil" cover on the original artwork (title removed by erase_title.py).
 
     python3 make_khmer.py [--hd] [--font Freehand] 1 2 ...
-Writes khmer-N.png (1049x1570) or khmer-N-hd.png (4196x6280).
+Uses the no-author artwork (../erase_author.py). Writes khmer-N.png (1049x1570) or khmer-N-hd.png (4196x6280).
 """
 import sys
 from pathlib import Path
@@ -12,8 +12,8 @@ from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont
 
 HERE = Path(__file__).parent
 FONTS = HERE.parent / "fonts"
-SOURCE = HERE / "cag-ve-nesil-notitle-source.png"
-SOURCE_HD = HERE / "cag-ve-nesil-notitle-source-4x.png"
+SOURCE = HERE / "cag-ve-nesil-notitle-source-noauthor.png"
+SOURCE_HD = HERE / "cag-ve-nesil-notitle-source-4x-noauthor.png"
 
 COVER = (30, 18, 1079, 1588)          # cover inside the app frame (source px)
 CORNER = 18
@@ -94,9 +94,9 @@ def build(volume, hd=False, font="Freehand", round_corners=True):
     k = 4 if hd else 1
     im = Image.open(SOURCE_HD if hd else SOURCE).convert("RGB")
     draw_title(im, k, FONTS / f"{font}.ttf")
-    if volume != "1":
-        im = clean_box(im, k)
-        draw_number(im, volume, k)
+    # always redraw the number: the HD upscale left streaks around the original "1"
+    im = clean_box(im, k)
+    draw_number(im, volume, k)
     im = im.crop(scaled(COVER, k))
     return rounded(im, k) if round_corners else im
 

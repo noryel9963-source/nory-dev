@@ -260,7 +260,7 @@ def default_front(edition, volume):
 def default_back():
     sys.path.insert(0, str(ORIGINAL))
     import make_volumes as mv
-    art = Image.open(ORIGINAL / "asrin-getirdigi-tereddutler-notitle-source-4x.png").convert("RGB")
+    art = Image.open(ORIGINAL / "asrin-getirdigi-tereddutler-notitle-source-4x-noauthor.png").convert("RGB")
     return art.crop(mv.scaled(mv.COVER, 4)).transpose(Image.FLIP_LEFT_RIGHT)
 
 

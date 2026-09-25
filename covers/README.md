@@ -68,3 +68,10 @@ Hanuman, Battambang, Siemreap, Dangrek, Freehand. Text shaping uses Pillow with 
 - KDP (A5, 168 pages): `python3 kdp_cover.py build --trim 5.833x8.263 --pages 168 --paper cream --theme cag
   --front <square-corner HD front> --back <mirrored no-title art> --spine-title "សម័យកាល និងជំនាន់"
   --spine-font Freehand.ttf --volume 1 -o cag-khmer-1-kdp-a5-168p-cream`
+
+## Author name removed (Khmer editions)
+
+`erase_author.py` rebuilds the signature area of both bottom bands as a smooth Coons-patch
+gradient (plus a vertical de-streak of the Çağ ve Nesil HD band), writing `*-noauthor.png`
+artwork. Both `make_khmer.py` builders and `kdp/kdp_cover.py` use that artwork, so the Khmer
+covers, KDP covers and `kdp/combine.py` reading PDFs carry no author name (PDF author field is empty).

@@ -4,7 +4,8 @@
     python3 make_khmer.py --hd 1 2        # HD 3260x4884 (needs the -notitle-source-4x.png upscale)
     python3 make_khmer.py --font Koulen 1
 
-Pipeline: erase_title.py (LaMa) -> upscale.py (Real-ESRGAN, for --hd) -> this script.
+Pipeline: erase_title.py (LaMa) -> upscale.py (Real-ESRGAN, for --hd) -> ../erase_author.py -> this script.
+The author name is removed from the band (no-author artwork).
 """
 import sys
 from pathlib import Path
@@ -16,8 +17,8 @@ import make_volumes as mv
 
 HERE = Path(__file__).parent
 FONTS = HERE.parent / "fonts"
-SOURCE = HERE / "asrin-getirdigi-tereddutler-notitle-source.png"
-SOURCE_HD = HERE / "asrin-getirdigi-tereddutler-notitle-source-4x.png"
+SOURCE = HERE / "asrin-getirdigi-tereddutler-notitle-source-noauthor.png"
+SOURCE_HD = HERE / "asrin-getirdigi-tereddutler-notitle-source-4x-noauthor.png"
 
 # ការងឿងឆ្ងល់នៃយុគសម័យ — "The Doubts/Perplexities of the Era"
 TITLE = ["ការងឿងឆ្ងល់", "នៃយុគសម័យ"]
