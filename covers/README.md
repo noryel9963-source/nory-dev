@@ -178,3 +178,11 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - `make_khmer.py [--hd]`: proposed **រង្វាស់ / ឬ / ពន្លឺ / លើផ្លូវ** ("The Measure, or Lights on the Way"),
   Battambang, orange-red with a soft shadow, same layout as the original. The right box stays empty (no number).
 - No interior yet, so no KDP cover.
+
+## Namaz — İbadet Hayatımız (`namaz/`)
+
+- `erase_title.py`: series label, subtitle, "NAMAZ", author name and Süreyya logo removed (LaMa, solid boxes);
+  the thin gold lines and the dot separator are kept.
+- `make_khmer.py [--hd]`: series **ជីវិតនៃការគោរពប្រណិប័តន៍របស់យើង** (Hanuman, gold), subtitle
+  **ការគោរពប្រណិប័តន៍ដ៏ជ្រាលជ្រៅដូចមៀរ៉ាជ** (Freehand, dark brown), title **សឡាត** (Battambang, white + shadow).
+  Terms as the user's translations write them (សឡាត, មៀរ៉ាជ, ការគោរពប្រណិប័តន៍). No interior yet.
