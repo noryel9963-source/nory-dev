@@ -217,3 +217,8 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - Same pipeline as `kirik/`. Proposed title **ភ្លៀង / ពេលអាសើរ** ("Afternoon Rains"; ពេលអាសើរ is how the foreword writes
   "ikindi"). KDP: A5, 682 pages (7 weekly parts merged), `--theme kirik`; print interior `kirik-5-interior-kdp.pdf`
   (0.2 in gutter shift for the 0.75 in rule, cream page fill removed).
+
+## Diriliş Çağrısı — Kırık Testi 6 (`kirik6/`)
+
+- Same pipeline as `kirik/`. Proposed title **ការអំពាវនាវ / នៃការរស់ឡើងវិញ** ("Call to Revival"; ការអំពាវនាវ and
+  ការរស់ឡើងវិញ are the translators' words). No interior in Drive yet, so no KDP cover.
