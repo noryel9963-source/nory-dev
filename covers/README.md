@@ -199,3 +199,9 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - Same pipeline as `kirik/`. Title **ការសន្ទនា / ជាមួយដួងព្រលឹង / ជាទីស្រឡាញ់** — the heading the Khmer translation
   itself uses for Sohbet-i Cânan. KDP: A5, 253 pages (3 parts merged), `--theme kirik`; print interior
   `kirik-2-interior-kdp.pdf` (cream page fill removed; gutter 0.554 in already meets 0.5 in).
+
+## Gurbet Ufukları — Kırık Testi 3 (`kirik3/`)
+
+- Same pipeline as `kirik/`. Proposed title **ជើងមេឃ / នៃការនិរទេស** ("Horizons of Exile"; ជើងមេឃ and ការនិរទេស are
+  the translation's words). KDP: A5, 337 pages (5 weekly parts merged), `--theme kirik`; print interior
+  `kirik-3-interior-kdp.pdf` (0.1 in gutter shift for the 0.625 in rule, cream page fill removed).
