@@ -72,6 +72,11 @@ THEMES = {
         "spine": [(0, (52, 92, 54)), (0.5, (78, 128, 78)), (1, (52, 92, 54))],
         "spine_text": (244, 228, 179),
     },
+    "ustadla": {  # Üstad'la Hasbihal: no band, orange textured art all over, brown spine
+        "band_y": None,
+        "spine": [(0, (150, 70, 30)), (0.5, (196, 104, 52)), (1, (150, 70, 30))],
+        "spine_text": (255, 238, 214),
+    },
 }
 
 
@@ -289,9 +294,10 @@ def build(spec, front, back, spine_title, spine_author, volume, blurb, lang, tit
     shade = gradient(bw, H, [(0, (0, 0, 0)), (1, (0, 0, 0))])
     mask = gradient(bw, H, [(0, (150,) * 3), (0.55, (120,) * 3), (1, (60,) * 3)], horizontal=False).convert("L")
     back_img.paste(shade, (0, 0), mask)
-    band_y = int(H * th["band_y"])                      # same relative height as the front band
-    back_img.paste(gradient(bw, H - band_y, th["band"]), (0, band_y))
-    ImageDraw.Draw(back_img).rectangle((0, band_y, bw, band_y + p(0.03)), fill=th["band_line"])
+    if th.get("band_y"):                                # same relative height as the front band
+        band_y = int(H * th["band_y"])
+        back_img.paste(gradient(bw, H - band_y, th["band"]), (0, band_y))
+        ImageDraw.Draw(back_img).rectangle((0, band_y, bw, band_y + p(0.03)), fill=th["band_line"])
     canvas.paste(back_img, (0, 0))
 
     # blurb inside the back safe zone

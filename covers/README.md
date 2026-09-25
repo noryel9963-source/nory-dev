@@ -100,3 +100,14 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - Volumes 2 (443 pages) and 3 (387 pages): same cover, number 2/3 (`make_khmer.py [--hd] 2 3`); KDP covers
   `kalbin-khmer-{2,3}-kdp-a5-*`. The Kalbin 1–3 and Çağ ve Nesil interiors were fixed for print with
   `kdp/fix_gutter.py` (0.1 in outward shift for the 0.625 in gutter rule; full-page cream fill removed).
+
+## Üstad'la Hasbihal (`ustadla/`)
+
+- Source is a small, heavily JPEG-compressed image (558×822). `erase_title.py` removes the title,
+  the author name (Mahmut Açıl) and the publisher logo with LaMa (solid block masks give the most even fill).
+- `upscale_soft.py`: Lanczos 4x + light blur + fine grain; Real-ESRGAN (and denoise+ESRGAN) turned the
+  JPEG blocks into squares/blobs on this image.
+- `make_khmer.py [--hd]`: **ការសន្ទនា / ជាមួយឧស្ដាស** ("Conversation with the Üstad"; ការសន្ទនា as in the
+  translation, ឧស្ដាស as in the user's other Khmer texts), Battambang, reddish brown like the original.
+- KDP: A5, 283 pages, `--theme ustadla` (no band, brown spine). Interior: parts 1–5 merged,
+  cream page fill removed with `kdp/fix_gutter.py` (gutter 0.59 in already meets 0.5 in).
