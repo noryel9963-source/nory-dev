@@ -186,3 +186,10 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - `make_khmer.py [--hd]`: series **ជីវិតនៃការគោរពប្រណិប័តន៍របស់យើង** (Hanuman, gold), subtitle
   **ការគោរពប្រណិប័តន៍ដ៏ជ្រាលជ្រៅដូចមៀរ៉ាជ** (Freehand, dark brown), title **សឡាត** (Battambang, white + shadow).
   Terms as the user's translations write them (សឡាត, មៀរ៉ាជ, ការគោរពប្រណិប័តន៍). No interior yet.
+
+## Kırık Testi 1 (`kirik/`)
+
+- `erase_title.py`: title, author and number-box contents removed with LaMa.
+- `make_khmer.py [--hd] 1 2 ...`: **ក្អម / បែក** — the title the Khmer translation uses; Siemreap, dark red over
+  dark brown like the original; number box redrawn with the digit and small ក្អម / បែក labels.
+- KDP: B5, 286 pages (4 weekly parts merged), `--theme kirik`. Interior page 1 is a dark title page.

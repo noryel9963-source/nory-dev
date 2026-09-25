@@ -86,6 +86,13 @@ THEMES = {
         "spine": [(0, (12, 40, 92)), (0.5, (20, 62, 128)), (1, (12, 40, 92))],
         "spine_text": (190, 235, 250),
     },
+    "kirik": {  # Kırık Testi: yellow band, burgundy spine (like the number box), orange text
+        "band_y": (1010 - 7) / (1203 - 7),
+        "band": [(0, (235, 170, 70)), (0.5, (245, 190, 90)), (1, (225, 160, 60))],
+        "band_line": (215, 90, 38),
+        "spine": [(0, (90, 18, 30)), (0.5, (125, 40, 52)), (1, (90, 18, 30))],
+        "spine_text": (223, 144, 49),
+    },
     "ustadla": {  # Üstad'la Hasbihal: no band, orange textured art all over, brown spine
         "band_y": None,
         "spine": [(0, (150, 70, 30)), (0.5, (196, 104, 52)), (1, (150, 70, 30))],
