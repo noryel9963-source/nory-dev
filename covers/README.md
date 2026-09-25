@@ -147,3 +147,11 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - `make_khmer.py [--hd] 7`: **ការប្រមូលផល / នៃគំនិត** — the Khmer title on the translation's own first page;
   Siemreap, light blue-white with a soft shadow. KDP: B5, 188 pages, `--theme prizma`.
 - Interior page 1 is a full-page picture cover (reaches the page edge; shows the author name).
+
+## Çizgimizi Hecelerken — Prizma 8 (`cizgimizi/`)
+
+- `erase_title.py`: dark title (incl. the swash Ç) + series logo removed with LaMa; the lower half of the
+  crystal prism behind the letters is rebuilt as light (it fades into the burst).
+- `make_khmer.py [--hd] 8`: **ខណៈប្រកប / ផ្លូវរបស់យើង** — the Khmer title on the translation's own first page;
+  Siemreap, dark navy with a white glow. KDP: B5, 256 pages, `--theme prizma`.
+- Interior page 1 is a full-page picture cover (reaches the page edge; shows the author name in Khmer).
