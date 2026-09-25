@@ -33,7 +33,7 @@ Interiors are NOT in git (`covers/interior/` is ignored): re-download them from 
 ## Status
 Done (cover + KDP covers + reading PDF): Asrın Getirdiği Tereddütler 1; Çağ ve Nesil 1; Kalbin Zümrüt Tepeleri 1–3;
 Üstad'la Hasbihal; Prizma 2–9; Kırık Testi 1–5; Fasıldan Fasıla 1.
-Cover only (waiting for interior PDF): Çağ ve Nesil 2 (Buhranlar) and 3 (Yitirilmiş); Prizma 1; Ölçü; Namaz; Kırık Testi 6–10.
+Cover only (waiting for interior PDF): Çağ ve Nesil 2 (Buhranlar) and 3 (Yitirilmiş); Prizma 1; Ölçü; Namaz; Kırık Testi 6–11.
 
 ## Open questions for the user
 - Confirm proposed titles: Çağ ve Nesil 1–3, Kendi İklimimiz (Prizma 5), Fasıldan Fasıla, Ölçü, Namaz, Kırık Testi 3, 5, 6.

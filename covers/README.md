@@ -242,3 +242,9 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 
 - Same pipeline as `kirik/`. Proposed title **ការរង់ចាំ / កម្ដៅនិទាឃរដូវ** ("Waiting for the Warmth of Spring"; cemre is
   the warmth that heralds spring). Two-digit number with side labels moved outward. No interior in Drive yet.
+
+## Yaşatma İdeali — Kırık Testi 11 (`kirik11/`)
+
+- New parchment design (no band/box): title, ribbon text, number and author removed with LaMa (ribbon kept).
+  Proposed title **ឧត្តមគតិ / នៃការធ្វើឱ្យរស់** ("The Ideal of Making Others Live"), Battambang, dark brown;
+  ក្អមបែក on the ribbon, 11 below. No interior in Drive yet (a KDP theme without band will be needed).
