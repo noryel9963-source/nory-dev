@@ -89,3 +89,11 @@ covers, KDP covers and `kdp/combine.py` reading PDFs carry no author name (PDF a
 Same pipeline (erase_title.py → upscale → ../erase_author.py → make_khmer.py [--hd] 3). Proposed title
 **ឆ្ពោះទៅកាន់ / ឋានសួគ៌ / ដែលបាត់បង់** ("Toward the Lost Paradise"; ឋានសួគ៌ and បាត់បង់ are the words the
 series' Khmer translation uses), dark teal Freehand script with a soft shadow like the original. No author name.
+
+## Kalbin Zümrüt Tepeleri 1 (`kalbin/`)
+
+- `erase_title.py`: black script title removed with LaMa (mask = near-black letters + hairlines darker
+  than the soft-blur background). Author removed by `../erase_author.py`.
+- `make_khmer.py [--hd] 1`: **ភ្នំមរកត / នៃដួងចិត្ត** — the title the Khmer translation itself uses
+  («ភ្នំមរកតនៃដួងចិត្ត»), black Freehand script, stepped two lines like the original.
+- KDP: A5, 368 pages → spine 0.92 in (cream) / 0.8287 in (white), `--theme kalbin` (green band/spine).
