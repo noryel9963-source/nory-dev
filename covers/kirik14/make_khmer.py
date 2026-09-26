@@ -20,11 +20,11 @@ CX = 588
 
 # text, font, max width, ink height, centre y, colour, shadow colour (None = no shadow)
 LINES = [
-    ("ថ្ងៃនៃ", "Suwannaphum-Regular.ttf", 240, 80, 300, (238, 133, 54), None),           # buhranlı
-    ("វិបត្តិ", "Suwannaphum-Regular.ttf", 260, 100, 395, (238, 133, 54), None),         # günler
-    ("និង", "Suwannaphum-Regular.ttf", 110, 45, 478, (238, 133, 54), None),             # ve
-    ("ផែនទីក្ដីសង្ឃឹម", "Suwannaphum-Regular.ttf", 330, 110, 570, (244, 204, 109), None),  # ümit
-    ("របស់យើង", "Suwannaphum-Regular.ttf", 300, 95, 685, (244, 204, 109), None),        # atlasımız
+    ("ថ្ងៃនៃ", "Battambang.ttf", 240, 80, 300, (238, 133, 54), None),           # buhranlı
+    ("វិបត្តិ", "Battambang.ttf", 260, 100, 395, (238, 133, 54), None),         # günler
+    ("និង", "Battambang.ttf", 110, 45, 478, (238, 133, 54), None),             # ve
+    ("ផែនទីក្ដីសង្ឃឹម", "Battambang.ttf", 330, 110, 570, (244, 204, 109), None),  # ümit
+    ("របស់យើង", "Battambang.ttf", 300, 95, 685, (244, 204, 109), None),        # atlasımız
 ]
 
 # number box: big orange digit with the series name in small letters on both sides (like "KIRIK 1 TESTİ")

@@ -29,7 +29,7 @@ Interiors are NOT in git (`covers/interior/` is ignored): re-download them from 
 - Use the Khmer title printed in the translation (title page, foreword) when one exists; otherwise build it
   from the translators' own vocabulary and ask the user to confirm.
 - Prizma series: title ព្រិស្មា, font Siemreap. Kırık Testi series: ក្អមបែក, Siemreap, dark red + dark brown lines.
-- Font Suwannaphum (covers/fonts/Suwannaphum-*.ttf) is also available; the user chose Suwannaphum Regular for Kırık Testi 14.
+- Font Suwannaphum (covers/fonts/Suwannaphum-*.ttf) is also available; Kırık Testi 14 is now in Battambang (user tried Suwannaphum Regular first).
 
 ## Status
 Done (cover + KDP covers + reading PDF): Asrın Getirdiği Tereddütler 1; Çağ ve Nesil 1; Kalbin Zümrüt Tepeleri 1–3;
