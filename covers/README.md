@@ -258,3 +258,9 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 
 - Same pipeline as `kirik10/`; title sits over the crowd, the Arabic calligraphy (Muhammad) is kept. Proposed title
   **ដំណើរ / នៃឧត្តមគតិ** ("Journey of the Ideal"). Number box is dark brown on this volume. No interior in Drive yet.
+
+## Buhranlı Günler ve Ümit Atlasımız — Kırık Testi 14 (`kirik14/`)
+
+- Title letters, author name and number-box digits removed with LaMa, then the plain red wall and the brown number box
+  are refilled with their own smooth colour plus matching grain, so no blotches are left. Proposed title
+  **ថ្ងៃនៃ / វិបត្តិ / និង / ផែនទីក្ដីសង្ឃឹម / របស់យើង** ("Days of Crisis and Our Map of Hope"). No interior in Drive yet.
