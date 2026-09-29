@@ -265,10 +265,15 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   are refilled with their own smooth colour plus matching grain, so no blotches are left. Proposed title
   **ថ្ងៃនៃ / វិបត្តិ / និង / ផែនទីក្ដីសង្ឃឹម / របស់យើង** ("Days of Crisis and Our Map of Hope"). No interior in Drive yet.
 
-## Ruhumuzun Heykelini Dikerken 1 (interior only so far)
+## Ruhumuzun Heykelini Dikerken 1 (`heykel/`)
 
-- Interior from Drive ("Ruhumuzun Heykelini Dikerken 1.pdf"): A5, 177 pages, page 2 blank. `fix_gutter.py` removed the
-  cream page fill; margins already meet the rule (inside 0.576 in ≥ 0.5 in, no shift) →
-  `interior/ruhumuzun-heykeli-1-interior-kdp.pdf`. Spine 0.4425 in (cream) / 0.3986 in (white), spine text allowed.
-- Khmer title from the translation's own chapter heading: **នៅពេលតាំងរូបសំណាកនៃព្រលឹងរបស់យើង** (confirmed by the user).
-- Waiting for the cover screenshot to build the Khmer cover, KDP covers and reading PDF.
+- `erase_title.py`: white script title, small corner title, author signature and number removed with LaMa
+  (light-letter masks, no boxes).
+- `make_khmer.py [--hd] [--font Freehand] 1`: **នៅពេលតាំង / រូបសំណាកនៃ / ព្រលឹងរបស់យើង** — the translation's own
+  heading, confirmed by the user; Freehand (closest to the original script), white with a soft dark-blue halo,
+  stepped right like the original. Number in Cormorant Garamond, orange like the original. No author.
+- Interior from Drive: A5, 177 pages, page 2 blank; `fix_gutter.py` removed the cream fill, margins already OK
+  (inside 0.576 in) → `interior/ruhumuzun-heykeli-1-interior-kdp.pdf`.
+- KDP: A5, 177 pages → spine 0.4425 in (cream) / 0.3986 in (white), `--theme heykel` (red band, deep blue spine,
+  white text): `kdp/heykel-khmer-1-kdp-a5-177p-{cream,white}`. Front = square-corner HD build, back = mirrored
+  no-title art. Reading PDF `interior/ruhumuzun-heykeli-1-with-cover.pdf` (179 pages).

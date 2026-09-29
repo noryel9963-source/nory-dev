@@ -93,6 +93,13 @@ THEMES = {
         "spine": [(0, (90, 18, 30)), (0.5, (125, 40, 52)), (1, (90, 18, 30))],
         "spine_text": (223, 144, 49),
     },
+    "heykel": {  # Ruhumuzun Heykelini Dikerken: red band under the blue sky, deep blue spine, white text
+        "band_y": (1201 - 22) / (1400 - 22),
+        "band": [(0, (160, 14, 19)), (0.55, (150, 22, 18)), (1, (191, 58, 37))],
+        "band_line": (123, 21, 8),
+        "spine": [(0, (10, 45, 80)), (0.5, (16, 75, 112)), (1, (10, 45, 80))],
+        "spine_text": (255, 255, 255),
+    },
     "fasil": {  # Fasıldan Fasıla: plain yellow art all over, red-brown spine
         "band_y": None,
         "spine": [(0, (95, 30, 5)), (0.5, (150, 58, 15)), (1, (95, 30, 5))],
