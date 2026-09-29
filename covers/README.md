@@ -264,3 +264,11 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - Title letters, author name and number-box digits removed with LaMa, then the plain red wall and the brown number box
   are refilled with their own smooth colour plus matching grain, so no blotches are left. Proposed title
   **ថ្ងៃនៃ / វិបត្តិ / និង / ផែនទីក្ដីសង្ឃឹម / របស់យើង** ("Days of Crisis and Our Map of Hope"). No interior in Drive yet.
+
+## Ruhumuzun Heykelini Dikerken 1 (interior only so far)
+
+- Interior from Drive ("Ruhumuzun Heykelini Dikerken 1.pdf"): A5, 177 pages, page 2 blank. `fix_gutter.py` removed the
+  cream page fill; margins already meet the rule (inside 0.576 in ≥ 0.5 in, no shift) →
+  `interior/ruhumuzun-heykeli-1-interior-kdp.pdf`. Spine 0.4425 in (cream) / 0.3986 in (white), spine text allowed.
+- Khmer title from the translation's own chapter heading: **នៅពេលតាំងរូបសំណាកនៃព្រលឹងរបស់យើង** (to confirm).
+- Waiting for the cover screenshot to build the Khmer cover, KDP covers and reading PDF.
