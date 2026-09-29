@@ -270,5 +270,5 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - Interior from Drive ("Ruhumuzun Heykelini Dikerken 1.pdf"): A5, 177 pages, page 2 blank. `fix_gutter.py` removed the
   cream page fill; margins already meet the rule (inside 0.576 in ≥ 0.5 in, no shift) →
   `interior/ruhumuzun-heykeli-1-interior-kdp.pdf`. Spine 0.4425 in (cream) / 0.3986 in (white), spine text allowed.
-- Khmer title from the translation's own chapter heading: **នៅពេលតាំងរូបសំណាកនៃព្រលឹងរបស់យើង** (to confirm).
+- Khmer title from the translation's own chapter heading: **នៅពេលតាំងរូបសំណាកនៃព្រលឹងរបស់យើង** (confirmed by the user).
 - Waiting for the cover screenshot to build the Khmer cover, KDP covers and reading PDF.
