@@ -12,15 +12,15 @@ import torch
 from PIL import Image
 
 HERE = Path(__file__).parent
-SRC = HERE / "asa-source.webp"
+SRC = HERE / "asa-source-hq.webp"     # clearer screenshot of the same series design (the Sözler cover)
 DST = HERE / "asa-notitle-source.png"
 # gold letters on the red velvet: (box, green-channel lift above the local background, dilation)
-REGIONS = [((178, 262, 592, 304), 28, 7),      # "Risale-i Nur Külliyatı'ndan"
-           ((212, 340, 562, 702), 28, 9),      # title
-           ((245, 845, 515, 968), 28, 7)]      # author
-BOXES = [(338, 993, 414, 1093)]                # publisher logo on the ornate border
-CONTEXT = (0, 1176)                            # rows handed to LaMa (multiple of 8)
-COLS = (0, 768)
+REGIONS = [((230, 316, 726, 374), 28, 7),      # "Risale-i Nur Külliyatı'ndan"
+           ((238, 495, 714, 750), 28, 9),      # title (Sözler on this screenshot)
+           ((318, 1070, 642, 1202), 28, 7)]    # author
+BOXES = [(429, 1243, 525, 1358)]               # publisher logo on the ornate border
+CONTEXT = (0, 1472)                            # rows handed to LaMa (multiple of 8)
+COLS = (0, 960)
 
 
 def mask_for(im):

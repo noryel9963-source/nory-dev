@@ -3,7 +3,7 @@
 original; no author, no publisher logo, no "Risale-i Nur Külliyatı'ndan" line.
 
     python3 make_khmer.py [--hd] [--font Battambang]
-Writes khmer.png (736x1142) or khmer-hd.png (2944x4568).
+Writes khmer.png (925x1437) or khmer-hd.png (3700x5748).
 """
 import sys
 from pathlib import Path
@@ -15,13 +15,13 @@ FONTS = HERE.parent / "fonts"
 SOURCE = HERE / "asa-notitle-source.png"
 SOURCE_HD = HERE / "asa-notitle-source-4x.png"
 
-COVER = (11, 16, 747, 1158)          # cover inside the screenshot's dark frame (source px)
-CORNER = 10
+COVER = (16, 11, 941, 1448)          # cover inside the screenshot's dark frame (source px)
+CORNER = 12
 
 # text, max width, ink height, centre x, centre y
 LINES = [
-    ("ដំបងរបស់", 330, 110, 385, 445),
-    ("ព្យាការីមូសា", 340, 110, 385, 590),
+    ("ដំបងរបស់", 420, 140, 478, 545),
+    ("ព្យាការីមូសា", 430, 140, 478, 720),
 ]
 GOLD = (200, 172, 108)
 SHADE = (60, 8, 8)
