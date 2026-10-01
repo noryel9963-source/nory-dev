@@ -28,8 +28,12 @@ Interiors are NOT in git (`covers/interior/` is ignored): re-download them from 
 ## Title rules the user confirmed / conventions
 - Use the Khmer title printed in the translation (title page, foreword) when one exists; otherwise build it
   from the translators' own vocabulary and ask the user to confirm.
-- Prizma series: title ព្រិស្មា, font Siemreap. Kırık Testi series: ក្អមបែក, Siemreap, dark red + dark brown lines.
-- Font Suwannaphum (covers/fonts/Suwannaphum-*.ttf) is also available; Kırık Testi 14 is now in Battambang (user tried Suwannaphum Regular first).
+- **All Khmer text on every cover and spine is Battambang** (user's decision; numbers stay Cormorant Garamond).
+  Prizma series title ព្រិស្មា; Kırık Testi series ក្អមបែក, dark red + dark brown lines.
+- After any builder change, `python3 covers/kdp/rebuild_all.py [keys]` rebuilds the finished books' KDP covers
+  (cream + white) and reading PDFs (page counts, themes, spine titles all listed there).
+- Interiors must not contain their own cover: Prizma 6–9 and Kırık Testi 1 had a picture cover + blank page —
+  removed (pages 1–2; originals kept as `*-interior-orig.pdf`).
 
 ## Status
 Done (cover + KDP covers + reading PDF): Asrın Getirdiği Tereddütler 1; Çağ ve Nesil 1; Kalbin Zümrüt Tepeleri 1–3;
@@ -39,5 +43,5 @@ Cover only (waiting for interior PDF): Çağ ve Nesil 2 (Buhranlar) and 3 (Yitir
 ## Open questions for the user
 - Confirm proposed titles: Çağ ve Nesil 1–3, Kendi İklimimiz (Prizma 5), Fasıldan Fasıla, Ölçü, Namaz, Kırık Testi 3, 5, 6, 14.
 - Author name still appears inside interiors (copyright/title pages) — left untouched pending the user's decision.
-- Prizma 6–9 + Kırık Testi 1 interiors start with a full-page picture cover (reaches edge, shows author): remove/replace?
+- Prizma 9 and Kırık Testi 1 interiors: the copyright page names the wrong source book (Prizma 8 / Prizma 2).
 - Asrın Getirdiği Tereddütler 1 interior: text overflows bottom margin on pages 184 and 189.

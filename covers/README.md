@@ -277,3 +277,10 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - KDP: A5, 177 pages → spine 0.4425 in (cream) / 0.3986 in (white), `--theme heykel` (red band, deep blue spine,
   white text): `kdp/heykel-khmer-1-kdp-a5-177p-{cream,white}`. Front = square-corner HD build, back = mirrored
   no-title art. Reading PDF `interior/ruhumuzun-heykeli-1-with-cover.pdf` (179 pages).
+
+## Battambang everywhere (all books)
+
+- Every `make_khmer.py` now uses Battambang for all Khmer text (titles, Kırık Testi side labels, spines);
+  all covers, HD covers, KDP covers and reading PDFs rebuilt (`kdp/rebuild_all.py`).
+- Prizma 6–9 and Kırık Testi 1 interiors: the built-in picture cover and its blank back page removed →
+  188 / 186 / 254 / 234 / 284 pages; KDP covers renamed to the new page counts (spines recalculated).
