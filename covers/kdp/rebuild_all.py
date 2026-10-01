@@ -58,6 +58,8 @@ BOOKS = {
                 "fasil-khmer-1-kdp-a5-234p", "fasil-1", "ពីជំពូកមួយ ទៅជំពូកមួយ ១"),
     "heykel-1": ("heykel", "1", "heykel-notitle-source-4x.png", A5, 177, "heykel", "នៅពេលតាំងរូបសំណាកនៃព្រលឹងរបស់យើង",
                  "heykel-khmer-1-kdp-a5-177p", "ruhumuzun-heykeli-1", "នៅពេលតាំងរូបសំណាកនៃព្រលឹងរបស់យើង ១"),
+    "asa": ("asa", "", "asa-notitle-source-4x.png", A5, 438, "asa", "ដំបងរបស់ព្យាការីមូសា",
+            "asa-khmer-kdp-a5-438p", "asa-musa", "ដំបងរបស់ព្យាការីមូសា"),
 }
 
 
@@ -74,7 +76,7 @@ def art(key):
     folder, volume, back_art = BOOKS[key][:3]
     TMP.mkdir(exist_ok=True)
     mk = load(folder)
-    front = mk.build(True) if folder == "ustadla" else mk.build(volume, hd=True, round_corners=False)
+    front = mk.build(True, round_corners=False) if folder in ("ustadla", "asa") else mk.build(volume, hd=True, round_corners=False)
     k = round(front.width / (mk.COVER[2] - mk.COVER[0]))           # 4x upscale (Üstad'la: 2x)
     box = tuple(v * k for v in mk.COVER)
     back = Image.open(COVERS / folder / back_art).convert("RGB").crop(box).transpose(Image.FLIP_LEFT_RIGHT)
@@ -95,7 +97,7 @@ def rebuild(key):
                         "--paper", paper, *extra, "-o", str(KDP / f"{out}-{paper}")],
                        check=True, cwd=KDP, stdout=subprocess.DEVNULL)
     src = COVERS / "interior" / f"{interior}-interior.pdf"
-    if key == "heykel-1":
+    if key in ("heykel-1", "asa"):
         src = COVERS / "interior" / f"{interior}-interior-kdp.pdf"
     if src.exists():
         subprocess.run([sys.executable, str(KDP / "combine.py"), str(src),

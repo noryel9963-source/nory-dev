@@ -100,6 +100,11 @@ THEMES = {
         "spine": [(0, (10, 45, 80)), (0.5, (16, 75, 112)), (1, (10, 45, 80))],
         "spine_text": (255, 255, 255),
     },
+    "asa": {  # Asâ-yı Mûsâ: red velvet with an ornate border all over, dark red spine, gold text
+        "band_y": None,
+        "spine": [(0, (70, 10, 10)), (0.5, (120, 22, 22)), (1, (70, 10, 10))],
+        "spine_text": (200, 172, 108),
+    },
     "fasil": {  # Fasıldan Fasıla: plain yellow art all over, red-brown spine
         "band_y": None,
         "spine": [(0, (95, 30, 5)), (0.5, (150, 58, 15)), (1, (95, 30, 5))],
