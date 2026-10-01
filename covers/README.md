@@ -289,7 +289,8 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 
 - `erase_title.py`: gold title removed (green-channel letter mask on the red velvet), publisher logo removed from
   the ornate border (box). The "Risale-i Nur Külliyatı'ndan" line and "Bediüzzaman Said Nursî" are kept
-  (user's rule for Risale-i Nur books). Built from `asa-source-hq.webp`, the
+  (user's rule for Risale-i Nur books). `make_back.py <big-lama.pt>` erases them from the 4x art for the KDP back
+  (`asa-back-4x.png`), so the mirrored back shows no backwards text. Built from `asa-source-hq.webp`, the
   user's clearer screenshot of the same series design (the Sözler cover, 962 px wide; its "Sözler" title is erased);
   `asa-source.webp` is the original small Asâ-yı Mûsâ screenshot. The same clean art can serve Sözler later.
 - `make_khmer.py [--hd]`: **ដំបងរបស់ / ព្យាការីមូសា** — the translation's own words (chapter 1
