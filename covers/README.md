@@ -288,8 +288,9 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 ## Asâ-yı Mûsâ (`asa/`)
 
 - `erase_title.py`: gold title, "Risale-i Nur Külliyatı'ndan" line and author removed (green-channel letter masks
-  on the red velvet), publisher logo removed from the ornate border (box). Source is small (770 px wide):
-  the HD border is softer than the other books — a larger cover image would improve it.
+  on the red velvet), publisher logo removed from the ornate border (box). Built from `asa-source-hq.webp`, the
+  user's clearer screenshot of the same series design (the Sözler cover, 962 px wide; its "Sözler" title is erased);
+  `asa-source.webp` is the original small Asâ-yı Mûsâ screenshot. The same clean art can serve Sözler later.
 - `make_khmer.py [--hd]`: **ដំបងរបស់ / ព្យាការីមូសា** — the translation's own words (chapter 1
   "ផ្នែកទីមួយនៃដំបងរបស់ព្យាការីមូសា"); Battambang, gold with a faint dark emboss. No author, no number.
 - Interior from Drive ("Asayi Musa.pdf"): A5, 438 pages, page 2 blank; `fix_gutter.py` shifted 0.088 in
