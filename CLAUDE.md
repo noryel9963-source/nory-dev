@@ -28,6 +28,9 @@ Interiors are NOT in git (`covers/interior/` is ignored): re-download them from 
 ## Title rules the user confirmed / conventions
 - Use the Khmer title printed in the translation (title page, foreword) when one exists; otherwise build it
   from the translators' own vocabulary and ask the user to confirm.
+- Risale-i Nur books (Bediüzzaman Said Nursî, e.g. Asâ-yı Mûsâ, Sözler): KEEP the "Risale-i Nur Külliyatı'ndan"
+  line and the author name as printed (user's rule); only the title (and publisher logo) is replaced.
+  The no-author rule applies to the M. Fethullah Gülen books.
 - **All Khmer text on every cover and spine is Battambang** (user's decision; numbers stay Cormorant Garamond).
   Prizma series title ព្រិស្មា; Kırık Testi series ក្អមបែក, dark red + dark brown lines.
 - After any builder change, `python3 covers/kdp/rebuild_all.py [keys]` rebuilds the finished books' KDP covers

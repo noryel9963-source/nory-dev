@@ -1,5 +1,5 @@
-"""Remove the "Asâ-yı Mûsâ" title, the "Risale-i Nur Külliyatı'ndan" line, the author name and the publisher logo
-(LaMa; gold-letter masks on the red velvet, a box for the logo on the ornate border).
+"""Remove the title and the publisher logo (LaMa; gold-letter mask on the red velvet, a box for the logo on the
+ornate border). The "Risale-i Nur Külliyatı'ndan" line and "Bediüzzaman Said Nursî" stay, as the user asked.
 
     python3 erase_title.py path/to/big-lama.pt
 """
@@ -15,9 +15,8 @@ HERE = Path(__file__).parent
 SRC = HERE / "asa-source-hq.webp"     # clearer screenshot of the same series design (the Sözler cover)
 DST = HERE / "asa-notitle-source.png"
 # gold letters on the red velvet: (box, green-channel lift above the local background, dilation)
-REGIONS = [((230, 316, 726, 374), 28, 7),      # "Risale-i Nur Külliyatı'ndan"
-           ((238, 495, 714, 750), 28, 9),      # title (Sözler on this screenshot)
-           ((318, 1070, 642, 1202), 28, 7)]    # author
+# Risale-i Nur books keep the "Risale-i Nur Külliyatı'ndan" line and the author (user's rule), so only the title goes.
+REGIONS = [((238, 495, 714, 750), 28, 9)]      # title (Sözler on this screenshot)
 BOXES = [(429, 1243, 525, 1358)]               # publisher logo on the ornate border
 CONTEXT = (0, 1472)                            # rows handed to LaMa (multiple of 8)
 COLS = (0, 960)

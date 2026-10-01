@@ -1,6 +1,6 @@
 """Khmer edition of "Asâ-yı Mûsâ": ដំបងរបស់ / ព្យាការីមូសា (the translation's own words, chapter 1
 "ផ្នែកទីមួយនៃដំបងរបស់ព្យាការីមូសា"). Gold letters with a faint dark emboss on the red velvet, like the
-original; no author, no publisher logo, no "Risale-i Nur Külliyatı'ndan" line.
+original; the "Risale-i Nur Külliyatı'ndan" line and the author stay as printed (Risale-i Nur rule), no logo.
 
     python3 make_khmer.py [--hd] [--font Battambang]
 Writes khmer.png (925x1437) or khmer-hd.png (3700x5748).
