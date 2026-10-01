@@ -1,6 +1,6 @@
 """Khmer edition of the "Çizgimizi Hecelerken" (Prizma 8) cover on the original artwork (title removed by erase_title.py).
 
-    python3 make_khmer.py [--hd] [--font Siemreap] 8
+    python3 make_khmer.py [--hd] [--font Battambang] 8
 Uses the no-author artwork (../erase_author.py). Writes khmer-8.png (995x1491) or khmer-8-hd.png (3980x5964).
 """
 import sys
@@ -19,7 +19,7 @@ COVER = (25, 17, 1020, 1508)          # cover inside the app frame (source px)
 CORNER = 14
 
 # ខណៈប្រកប / ផ្លូវរបស់យើង — the Khmer title on the translation's own first page (Çizgimizi Hecelerken).
-# Siemreap like the other Prizma volumes; dark navy with a white glow over the light burst.
+# Battambang like the other Prizma volumes; dark navy with a white glow over the light burst.
 TITLE = [
     # text, max width, ink height, center x, center y, unused
     ("ខណៈប្រកប", 620, 150, 520, 725, 1.0),
@@ -95,7 +95,7 @@ def rounded(im, k):
     return out
 
 
-def build(volume, hd=False, font="Siemreap", round_corners=True):
+def build(volume, hd=False, font="Battambang", round_corners=True):
     k = 4 if hd else 1
     im = Image.open(SOURCE_HD if hd else SOURCE).convert("RGB")
     draw_title(im, k, FONTS / f"{font}.ttf")
@@ -109,7 +109,7 @@ def build(volume, hd=False, font="Siemreap", round_corners=True):
 if __name__ == "__main__":
     args = sys.argv[1:]
     hd = "--hd" in args
-    font = "Siemreap"
+    font = "Battambang"
     if "--font" in args:
         font = args[args.index("--font") + 1]
         args = [a for a in args if a not in ("--font", font)]

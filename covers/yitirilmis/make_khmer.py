@@ -1,6 +1,6 @@
 """Khmer edition of the "Yitirilmiş cennete doğru" (Çağ ve Nesil 3) cover on the original artwork (title removed by erase_title.py).
 
-    python3 make_khmer.py [--hd] [--font Freehand] 3
+    python3 make_khmer.py [--hd] [--font Battambang] 3
 Uses the no-author artwork (../erase_author.py). Writes khmer-N.png (701x1049) or khmer-N-hd.png (2804x4196).
 """
 import sys
@@ -92,7 +92,7 @@ def rounded(im, k):
     return out
 
 
-def build(volume, hd=False, font="Freehand", round_corners=True):
+def build(volume, hd=False, font="Battambang", round_corners=True):
     k = 4 if hd else 1
     im = Image.open(SOURCE_HD if hd else SOURCE).convert("RGB")
     draw_title(im, k, FONTS / f"{font}.ttf")
@@ -106,7 +106,7 @@ def build(volume, hd=False, font="Freehand", round_corners=True):
 if __name__ == "__main__":
     args = sys.argv[1:]
     hd = "--hd" in args
-    font = "Freehand"
+    font = "Battambang"
     if "--font" in args:
         font = args[args.index("--font") + 1]
         args = [a for a in args if a not in ("--font", font)]

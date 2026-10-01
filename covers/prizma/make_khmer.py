@@ -1,6 +1,6 @@
 """Khmer edition of the "Prizma" (1-4) cover on the original artwork (title removed by erase_title.py).
 
-    python3 make_khmer.py [--hd] [--font Siemreap] 1 2 3 4
+    python3 make_khmer.py [--hd] [--font Battambang] 1 2 3 4
 Uses the no-author artwork (../erase_author.py). Writes khmer-N.png (990x1485) or khmer-N-hd.png (3960x5940).
 """
 import sys
@@ -19,7 +19,7 @@ COVER = (19, 9, 1009, 1494)           # cover inside the app frame (source px)
 CORNER = 14
 
 # ព្រិស្មា — "Prism": the spelling the user chose (the translation's title page has ព្រិស្ម),
-# in Siemreap (Khmer OS Siemreap design), light blue-white with the original's soft dark drop shadow.
+# in Battambang (Khmer OS Battambang design), light blue-white with the original's soft dark drop shadow.
 TITLE = [
     # text, max width, ink height, center x, center y, unused
     ("ព្រិស្មា", 640, 235, 508, 622, 1.0),
@@ -89,7 +89,7 @@ def rounded(im, k):
     return out
 
 
-def build(volume, hd=False, font="Siemreap", round_corners=True):
+def build(volume, hd=False, font="Battambang", round_corners=True):
     k = 4 if hd else 1
     im = Image.open(SOURCE_HD if hd else SOURCE).convert("RGB")
     draw_title(im, k, FONTS / f"{font}.ttf")
@@ -103,7 +103,7 @@ def build(volume, hd=False, font="Siemreap", round_corners=True):
 if __name__ == "__main__":
     args = sys.argv[1:]
     hd = "--hd" in args
-    font = "Siemreap"
+    font = "Battambang"
     if "--font" in args:
         font = args[args.index("--font") + 1]
         args = [a for a in args if a not in ("--font", font)]

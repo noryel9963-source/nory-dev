@@ -1,6 +1,6 @@
 """Khmer edition of the "Fasıldan Fasıla" cover (title, number, author and "7. BASKI" ribbon removed).
 
-    python3 make_khmer.py [--hd] [--font Moul] 1 2 ...
+    python3 make_khmer.py [--hd] [--font Battambang] 1 2 ...
 Writes khmer-N.png (759x1099) or khmer-N-hd.png (3036x4396).
 """
 import sys
@@ -18,7 +18,7 @@ COVER = (13, 12, 772, 1111)            # cover inside the app frame (source px)
 CORNER = 12
 
 # ពីជំពូកមួយ ទៅជំពូកមួយ — "From Chapter to Chapter" (Fasıldan Fasıla); proposed translation.
-# Ornate like the original: Moul, red-brown fill with a darker outline, one line across the top.
+# Ornate like the original: Battambang, red-brown fill with a darker outline, one line across the top.
 TITLE = [
     # text, max width, ink height, center x, center y
     ("ពីជំពូកមួយ ទៅជំពូកមួយ", 700, 88, 392, 148),
@@ -72,7 +72,7 @@ def draw_number(im, number, k):
            stroke_width=max(1, round(0.8 * k)), stroke_fill=NUMBER_COLOR)
 
 
-def build(volume, hd=False, font="Moul", round_corners=True):
+def build(volume, hd=False, font="Battambang", round_corners=True):
     k = 4 if hd else 1
     im = Image.open(SOURCE_HD if hd else SOURCE).convert("RGB")
     draw_title(im, k, FONTS / f"{font}.ttf")
@@ -90,7 +90,7 @@ def build(volume, hd=False, font="Moul", round_corners=True):
 if __name__ == "__main__":
     args = sys.argv[1:]
     hd = "--hd" in args
-    font = "Moul"
+    font = "Battambang"
     if "--font" in args:
         font = args[args.index("--font") + 1]
         args = [a for a in args if a not in ("--font", font)]

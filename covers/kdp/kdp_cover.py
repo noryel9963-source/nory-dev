@@ -414,7 +414,7 @@ def main():
     blurb = Path(a.blurb).read_text(encoding="utf-8").strip() if a.blurb else ""
     lang = "km" if khmer else None
     im = build(spec, front, back, title, a.spine_author, a.volume, blurb, lang,
-               a.spine_font or ("Moul.ttf" if khmer else "Cinzel-Medium.ttf"),
+               a.spine_font or ("Battambang.ttf" if khmer else "Cinzel-Medium.ttf"),
                "Battambang.ttf" if khmer else "Cinzel-Medium.ttf",
                barcode_box=not a.no_barcode_box, theme=a.theme)
     im.save(a.out + ".png", dpi=(spec.dpi, spec.dpi))

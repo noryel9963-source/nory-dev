@@ -21,8 +21,8 @@ CX = 421
 
 # text, font, max width, ink height, centre y, colour, shadow colour (None = no shadow)
 LINES = [
-    ("ជីវិតនៃការគោរពប្រណិប័តន៍របស់យើង", "Hanuman.ttf", 330, 24, 135, (150, 138, 18), None),        # İbadet Hayatımız
-    ("ការគោរពប្រណិប័តន៍ដ៏ជ្រាលជ្រៅដូចមៀរ៉ាជ", "Freehand.ttf", 460, 44, 210, (38, 28, 0), None),  # Miraç Enginlikli İbadet
+    ("ជីវិតនៃការគោរពប្រណិប័តន៍របស់យើង", "Battambang.ttf", 330, 24, 135, (150, 138, 18), None),        # İbadet Hayatımız
+    ("ការគោរពប្រណិប័តន៍ដ៏ជ្រាលជ្រៅដូចមៀរ៉ាជ", "Battambang.ttf", 460, 44, 210, (38, 28, 0), None),  # Miraç Enginlikli İbadet
     ("សឡាត", "Battambang.ttf", 520, 120, 305, (255, 255, 255), (40, 50, 20)),                      # NAMAZ
 ]
 

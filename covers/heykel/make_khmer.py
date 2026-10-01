@@ -2,7 +2,7 @@
 (the translation's own heading, confirmed by the user). White title with a soft dark halo on the sky, like the
 original script; no author; the number redrawn in the red box.
 
-    python3 make_khmer.py [--hd] [--font Freehand] 1 2 ...
+    python3 make_khmer.py [--hd] [--font Battambang] 1 2 ...
 Writes khmer-N.png (921x1385) or khmer-N-hd.png (3684x5540). Default volume 1.
 """
 import sys
@@ -41,7 +41,7 @@ def fit(font_path, text, max_w, ink_h, lang="km", features=None):
         size += 1
 
 
-def build(volume="1", hd=False, font="Freehand", round_corners=True):
+def build(volume="1", hd=False, font="Battambang", round_corners=True):
     k = 4 if hd else 1
     im = Image.open(SOURCE_HD if hd else SOURCE).convert("RGB")
     for text, max_w, ink_h, cx, cy in LINES:
@@ -72,7 +72,7 @@ def build(volume="1", hd=False, font="Freehand", round_corners=True):
 if __name__ == "__main__":
     args = sys.argv[1:]
     hd = "--hd" in args
-    font = "Freehand"
+    font = "Battambang"
     if "--font" in args:
         font = args[args.index("--font") + 1]
         args = [a for a in args if a not in ("--font", font)]

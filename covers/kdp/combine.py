@@ -22,7 +22,7 @@ def main():
     ap.add_argument("--back")
     ap.add_argument("--volume", default="1")
     ap.add_argument("--spine-title", default="ការងឿងឆ្ងល់នៃយុគសម័យ")
-    ap.add_argument("--spine-font", default="Moul.ttf")
+    ap.add_argument("--spine-font", default="Battambang.ttf")
     a = ap.parse_args()
 
     doc = pymupdf.open(a.interior)

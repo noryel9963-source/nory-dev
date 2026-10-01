@@ -19,8 +19,8 @@ CX = 443
 
 # text, font, max width, ink height, centre y, colour, shadow colour (None = no shadow)
 LINES = [
-    ("ម្ជុល", "Siemreap.ttf", 280, 130, 262, (158, 24, 14), None),          # kalb (dark red)
-    ("នៃដួងចិត្ត", "Siemreap.ttf", 380, 120, 385, (78, 25, 14), None),     # ibresi (dark brown)
+    ("ម្ជុល", "Battambang.ttf", 280, 130, 262, (158, 24, 14), None),          # kalb (dark red)
+    ("នៃដួងចិត្ត", "Battambang.ttf", 380, 120, 385, (78, 25, 14), None),     # ibresi (dark brown)
 ]
 
 # number box: big orange digit with the series name in small letters on both sides (like "KIRIK 1 TESTİ")
@@ -68,7 +68,7 @@ def build(volume="1", hd=False, round_corners=True):
     l, t, r, b = nf.getbbox(volume, features=["lnum"])
     d.text((NUM_CX * k - (l + r) / 2, NUM_BOTTOM * k - b), volume, font=nf, fill=NUM_COLOR, features=["lnum"])
     for text, sx, sy in SIDE:
-        f = fit(FONTS / "Hanuman.ttf", text, 60 * k, SIDE_H * k)
+        f = fit(FONTS / "Battambang.ttf", text, 60 * k, SIDE_H * k)
         l, t, r, b = f.getbbox(text, language="km")
         d.text((sx * k - (l + r) / 2, sy * k - (t + b) / 2), text, font=f, fill=NUM_COLOR, language="km")
     im = im.crop(tuple(v * k for v in COVER))

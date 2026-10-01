@@ -2,7 +2,7 @@
 
     python3 make_khmer.py                 # volumes 1-4, 815x1221
     python3 make_khmer.py --hd 1 2        # HD 3260x4884 (needs the -notitle-source-4x.png upscale)
-    python3 make_khmer.py --font Koulen 1
+    python3 make_khmer.py --font Battambang 1
 
 Pipeline: erase_title.py (LaMa) -> upscale.py (Real-ESRGAN, for --hd) -> ../erase_author.py -> this script.
 The author name is removed from the band (no-author artwork).
@@ -65,7 +65,7 @@ def draw_title(im, k, font_path):
         im.paste(fill, (x, y), glyphs)
 
 
-def build(volume, hd=False, font="Moul", round_corners=True):
+def build(volume, hd=False, font="Battambang", round_corners=True):
     k = 4 if hd else 1
     im = Image.open(SOURCE_HD if hd else SOURCE).convert("RGB")
     draw_title(im, k, FONTS / f"{font}.ttf")
@@ -79,7 +79,7 @@ def build(volume, hd=False, font="Moul", round_corners=True):
 if __name__ == "__main__":
     args = sys.argv[1:]
     hd = "--hd" in args
-    font = "Moul"
+    font = "Battambang"
     if "--font" in args:
         font = args[args.index("--font") + 1]
         args = [a for a in args if a not in ("--font", font)]

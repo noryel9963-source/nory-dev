@@ -72,7 +72,7 @@ def build(volume="1", hd=False, round_corners=True):
     l, t, r, b = nf.getbbox(volume, features=["lnum"])
     d.text((NUM_CX * k - (l + r) / 2, NUM_BOTTOM * k - b), volume, font=nf, fill=NUM_COLOR, features=["lnum"])
     for text, sx, sy in SIDE:
-        f = fit(FONTS / "Hanuman.ttf", text, 60 * k, SIDE_H * k)
+        f = fit(FONTS / "Battambang.ttf", text, 60 * k, SIDE_H * k)
         l, t, r, b = f.getbbox(text, language="km")
         d.text((sx * k - (l + r) / 2, sy * k - (t + b) / 2), text, font=f, fill=NUM_COLOR, language="km")
     im = im.crop(tuple(v * k for v in COVER))
