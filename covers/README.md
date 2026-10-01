@@ -284,3 +284,15 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   all covers, HD covers, KDP covers and reading PDFs rebuilt (`kdp/rebuild_all.py`).
 - Prizma 6–9 and Kırık Testi 1 interiors: the built-in picture cover and its blank back page removed →
   188 / 186 / 254 / 234 / 284 pages; KDP covers renamed to the new page counts (spines recalculated).
+
+## Asâ-yı Mûsâ (`asa/`)
+
+- `erase_title.py`: gold title, "Risale-i Nur Külliyatı'ndan" line and author removed (green-channel letter masks
+  on the red velvet), publisher logo removed from the ornate border (box). Source is small (770 px wide):
+  the HD border is softer than the other books — a larger cover image would improve it.
+- `make_khmer.py [--hd]`: **ដំបងរបស់ / ព្យាការីមូសា** — the translation's own words (chapter 1
+  "ផ្នែកទីមួយនៃដំបងរបស់ព្យាការីមូសា"); Battambang, gold with a faint dark emboss. No author, no number.
+- Interior from Drive ("Asayi Musa.pdf"): A5, 438 pages, page 2 blank; `fix_gutter.py` shifted 0.088 in
+  (inside 0.645 ≥ 0.625 in) and removed the cream fill → `interior/asa-musa-interior-kdp.pdf`.
+- KDP: A5, 438 pages → spine 1.095 in (cream) / 0.986 in (white), `--theme asa` (no band, dark red spine, gold
+  text): `kdp/asa-khmer-kdp-a5-438p-{cream,white}`; reading PDF `interior/asa-musa-with-cover.pdf`.
