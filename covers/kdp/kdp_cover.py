@@ -401,7 +401,9 @@ def main():
     ap.add_argument("--spine-title")
     ap.add_argument("--spine-author", default="")
     ap.add_argument("--blurb", help="text file with back-cover text")
-    ap.add_argument("--no-barcode-box", action="store_true", help="you print your own barcode")
+    ap.add_argument("--barcode-box", action="store_true",
+                    help="paint the white 2 x 1.2 in barcode area (off by default: the user wants no white box; "
+                         "KDP still prints its own barcode there)")
     ap.add_argument("--theme", choices=list(THEMES), default="asrin", help="band/spine colours")
     ap.add_argument("--spine-font", help="font file in covers/fonts for the spine title")
     a = ap.parse_args()
@@ -425,7 +427,7 @@ def main():
     im = build(spec, front, back, title, a.spine_author, a.volume, blurb, lang,
                a.spine_font or ("Battambang.ttf" if khmer else "Cinzel-Medium.ttf"),
                "Battambang.ttf" if khmer else "Cinzel-Medium.ttf",
-               barcode_box=not a.no_barcode_box, theme=a.theme)
+               barcode_box=a.barcode_box, theme=a.theme)
     im.save(a.out + ".png", dpi=(spec.dpi, spec.dpi))
     save_pdf(a.out + ".png", a.out + ".pdf", spec)
     print("wrote", a.out + ".png", a.out + ".pdf")
