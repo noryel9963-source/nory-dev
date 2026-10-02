@@ -307,3 +307,9 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   `interior/prizma-1-interior-kdp.pdf`.
 - KDP: A5, 255 pages → spine 0.6375 in (cream), `--theme prizma`: `kdp/prizma-khmer-1-kdp-a5-255p-{cream,white}`;
   reading PDF `interior/prizma-1-with-cover.pdf`.
+
+## Kalbin Zümrüt Tepeleri 4 (`kalbin/`, number 4)
+
+- Same cover, number 4 (`make_khmer.py [--hd] 4`). Interior from Drive: A5, 337 pages; `fix_gutter.py` shifted
+  0.07 in (inside 0.645 ≥ 0.625 in) and removed the cream fill → `interior/kalbin-4-interior-kdp.pdf`.
+- KDP: `kdp/kalbin-khmer-4-kdp-a5-337p-{cream,white}`; reading PDF `interior/kalbin-4-with-cover.pdf`.

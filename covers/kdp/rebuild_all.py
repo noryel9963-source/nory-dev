@@ -28,7 +28,7 @@ BOOKS = {
               "cag-khmer-1-kdp-a5-168p", "cag-ve-nesil-1", "សម័យកាល និងជំនាន់ ១"),
     **{f"kalbin-{v}": ("kalbin", str(v), "kalbin-notitle-source-4x-noauthor.png", A5, n, "kalbin", "ភ្នំមរកតនៃដួងចិត្ត",
                        f"kalbin-khmer-{v}-kdp-a5-{n}p", f"kalbin-{v}", f"ភ្នំមរកតនៃដួងចិត្ត {v}")
-       for v, n in [(1, 368), (2, 443), (3, 387)]},
+       for v, n in [(1, 368), (2, 443), (3, 387), (4, 337)]},
     "ustadla": ("ustadla", "", "ustadla-notitle-source-2x.png", A5, 283, "ustadla", "ការសន្ទនាជាមួយឧស្ដាស",
                 "ustadla-khmer-kdp-a5-283p", "ustadla", "ការសន្ទនាជាមួយឧស្ដាស"),
     **{f"prizma-{v}": ("prizma", str(v), "prizma-notitle-source-4x-noauthor.png", B5, n, "prizma", "ព្រិស្មា",
