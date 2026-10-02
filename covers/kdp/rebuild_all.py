@@ -34,6 +34,8 @@ BOOKS = {
     **{f"prizma-{v}": ("prizma", str(v), "prizma-notitle-source-4x-noauthor.png", B5, n, "prizma", "ព្រិស្មា",
                        f"prizma-khmer-{v}-kdp-b5-{n}p", f"prizma-{v}", f"ព្រិស្មា {v}")
        for v, n in [(2, 222), (3, 244), (4, 284)]},
+    "prizma-1": ("prizma", "1", "prizma-notitle-source-4x-noauthor.png", A5, 255, "prizma", "ព្រិស្មា",
+                 "prizma-khmer-1-kdp-a5-255p", "prizma-1", "ព្រិស្មា ១"),
     "prizma-5": ("kendi", "5", "kendi-notitle-source-4x-noauthor.png", B5, 219, "prizma", "បរិយាកាសផ្ទាល់ខ្លួនរបស់យើង",
                  "prizma-khmer-5-kdp-b5-219p", "prizma-5", "បរិយាកាសផ្ទាល់ខ្លួនរបស់យើង (ព្រិស្មា ៥)"),
     "prizma-6": ("yol", "6", "yol-notitle-source-4x-noauthor.png", B5, 188, "prizma6", "ការត្រិះរិះលើផ្លូវ",
@@ -97,7 +99,7 @@ def rebuild(key):
                         "--paper", paper, *extra, "-o", str(KDP / f"{out}-{paper}")],
                        check=True, cwd=KDP, stdout=subprocess.DEVNULL)
     src = COVERS / "interior" / f"{interior}-interior.pdf"
-    if key in ("heykel-1", "asa"):
+    if key in ("heykel-1", "asa", "prizma-1"):
         src = COVERS / "interior" / f"{interior}-interior-kdp.pdf"
     if src.exists():
         subprocess.run([sys.executable, str(KDP / "combine.py"), str(src),

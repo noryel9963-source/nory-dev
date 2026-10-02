@@ -299,3 +299,11 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   (inside 0.645 ≥ 0.625 in) and removed the cream fill → `interior/asa-musa-interior-kdp.pdf`.
 - KDP: A5, 438 pages → spine 1.095 in (cream) / 0.986 in (white), `--theme asa` (no band, dark red spine, gold
   text): `kdp/asa-khmer-kdp-a5-438p-{cream,white}`; reading PDF `interior/asa-musa-with-cover.pdf`.
+
+## Prizma 1 (`prizma/`, interior added)
+
+- Interior from Drive: 3 parts (pp 1–85, 86–170, 171–255) merged → A5 (not B5 like Prizma 2–9), 255 pages, page 2
+  blank, no built-in cover. `fix_gutter.py`: cream fill removed, margins already OK (inside 0.545 in) →
+  `interior/prizma-1-interior-kdp.pdf`.
+- KDP: A5, 255 pages → spine 0.6375 in (cream), `--theme prizma`: `kdp/prizma-khmer-1-kdp-a5-255p-{cream,white}`;
+  reading PDF `interior/prizma-1-with-cover.pdf`.
