@@ -326,14 +326,18 @@ def build(spec, front, back, spine_title, spine_author, volume, blurb, lang, tit
     front = fix_frame_corners(front)
     canvas.paste(cover_fit(front, W - fx0, H, anchor_x=1.0, anchor_y=0.8), (fx0, 0))
 
-    # back: mirrored artwork, darkened for readable text, plus the same orange band as the front
+    # back: plain colour taken from the front (user's choice: no picture, no logo) — the per-row median colour of
+    # the front's outer strip next to the spine (background, not the central art), smoothed into a soft
+    # top-to-bottom gradient — plus the same band as the front
     bw = p(spec.spine_x0)
-    back_img = cover_fit(fix_frame_corners(back), bw, H, anchor_x=0.0, anchor_y=0.8)
-    shade = gradient(bw, H, [(0, (0, 0, 0)), (1, (0, 0, 0))])
-    mask = gradient(bw, H, [(0, (150,) * 3), (0.55, (120,) * 3), (1, (60,) * 3)], horizontal=False).convert("L")
-    back_img.paste(shade, (0, 0), mask)
+    fr = np.asarray(cover_fit(front, W - fx0, H, anchor_x=1.0, anchor_y=0.8)).astype(np.float32)
+    band_y = int(H * th["band_y"]) if th.get("band_y") else H
+    strip = fr[:band_y, p(BLEED + 0.1):p(BLEED + 0.1) + max(1, int(fr.shape[1] * 0.12))]
+    rows = np.median(strip, axis=1)                           # (band_y, 3)
+    rows = cv2.GaussianBlur(rows[:, None, :], (0, 0), sigmaX=1, sigmaY=H * 0.08)[:, 0, :]
+    rows = np.concatenate([rows, np.repeat(rows[-1:], H - band_y, 0)])
+    back_img = Image.fromarray(np.repeat(rows[:, None, :], bw, 1).round().clip(0, 255).astype(np.uint8))
     if th.get("band_y"):                                # same relative height as the front band
-        band_y = int(H * th["band_y"])
         back_img.paste(gradient(bw, H - band_y, th["band"]), (0, band_y))
         ImageDraw.Draw(back_img).rectangle((0, band_y, bw, band_y + p(0.03)), fill=th["band_line"])
     canvas.paste(back_img, (0, 0))

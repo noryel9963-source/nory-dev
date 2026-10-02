@@ -35,6 +35,8 @@ Interiors are NOT in git (`covers/interior/` is ignored): re-download them from 
   Prizma series title ព្រិស្មា; Kırık Testi series ក្អមបែក, dark red + dark brown lines.
 - After any builder change, `python3 covers/kdp/rebuild_all.py [keys]` rebuilds the finished books' KDP covers
   (cream + white) and reading PDFs (page counts, themes, spine titles all listed there).
+- KDP back cover = plain colour taken from the front's outer edge (soft vertical gradient) + the series band;
+  no picture, logo or mirrored art (user's choice). `--back` images are no longer used.
 - Interiors must not contain their own cover: Prizma 6–9 and Kırık Testi 1 had a picture cover + blank page —
   removed (pages 1–2; originals kept as `*-interior-orig.pdf`).
 
