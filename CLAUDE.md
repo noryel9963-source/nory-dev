@@ -44,11 +44,11 @@ Interiors are NOT in git (`covers/interior/` is ignored): re-download them from 
 ## Status
 Done (cover + KDP covers + reading PDF): Asrın Getirdiği Tereddütler 1; Çağ ve Nesil 1; Kalbin Zümrüt Tepeleri 1–4;
 Üstad'la Hasbihal; Prizma 1–9 (1 is A5, 2–9 B5); Kırık Testi 1–5; Fasıldan Fasıla 1; Ruhumuzun Heykelini Dikerken 1 (`heykel/`);
-Asâ-yı Mûsâ (`asa/`, Said Nursî — title ដំបងរបស់ព្យាការីមូសា from the translation).
-Cover only (waiting for interior PDF): Çağ ve Nesil 2 (Buhranlar) and 3 (Yitirilmiş); Ölçü; Namaz; Kırık Testi 6–14.
+Asâ-yı Mûsâ (`asa/`, Said Nursî — title ដំបងរបស់ព្យាការីមូសា from the translation); Namaz (`namaz/`, A5 413p).
+Cover only (waiting for interior PDF): Çağ ve Nesil 2 (Buhranlar) and 3 (Yitirilmiş); Ölçü; Kırık Testi 6–14.
 
 ## Open questions for the user
-- Confirm proposed titles: Çağ ve Nesil 1–3, Kendi İklimimiz (Prizma 5), Fasıldan Fasıla, Ölçü, Namaz, Kırık Testi 3, 5, 6, 14.
+- Confirm proposed titles: Çağ ve Nesil 1–3, Kendi İklimimiz (Prizma 5), Fasıldan Fasıla, Ölçü, Kırık Testi 3, 5, 6, 14.
 - Author name still appears inside interiors (copyright/title pages) — left untouched pending the user's decision.
 - Prizma 9 and Kırık Testi 1 interiors: the copyright page names the wrong source book (Prizma 8 / Prizma 2).
 - Asrın Getirdiği Tereddütler 1 interior: text overflows bottom margin on pages 184 and 189.

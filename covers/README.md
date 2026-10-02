@@ -185,7 +185,12 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   the thin gold lines and the dot separator are kept.
 - `make_khmer.py [--hd]`: series **ជីវិតនៃការគោរពប្រណិប័តន៍របស់យើង** (Hanuman, gold), subtitle
   **ការគោរពប្រណិប័តន៍ដ៏ជ្រាលជ្រៅដូចមៀរ៉ាជ** (Freehand, dark brown), title **សឡាត** (Battambang, white + shadow).
-  Terms as the user's translations write them (សឡាត, មៀរ៉ាជ, ការគោរពប្រណិប័តន៍). No interior yet.
+  Terms as the user's translations write them (សឡាត, មៀរ៉ាជ, ការគោរពប្រណិប័តន៍) — confirmed by the Namaz
+  translation itself. `fix_speck.py` refills a leftover speck where the logo was (normal + 4x art).
+- Interior from Drive: 5 parts merged → A5, 413 pages; `fix_gutter.py` shifted 0.088 in (inside 0.645 ≥ 0.625 in),
+  cream fill removed → `interior/namaz-interior-kdp.pdf`.
+- KDP: `--theme namaz` (no band, deep blue spine, white text): `kdp/namaz-khmer-kdp-a5-413p-{cream,white}`;
+  reading PDF `interior/namaz-with-cover.pdf`.
 
 ## Kırık Testi 1 (`kirik/`)
 
