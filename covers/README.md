@@ -318,3 +318,11 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - Same cover, number 4 (`make_khmer.py [--hd] 4`). Interior from Drive: A5, 337 pages; `fix_gutter.py` shifted
   0.07 in (inside 0.645 ≥ 0.625 in) and removed the cream fill → `interior/kalbin-4-interior-kdp.pdf`.
 - KDP: `kdp/kalbin-khmer-4-kdp-a5-337p-{cream,white}`; reading PDF `interior/kalbin-4-with-cover.pdf`.
+
+## Gönül Nağmeleri – Hutbeler (`gonul/`)
+
+- `erase_title.py`: "GÖNÜL NAĞMELERİ", "HUTBELER" and the author removed (LaMa on everything that differs from the
+  teal sky in each box), then the plain-sky parts refilled with the sky's own smooth colour + grain (no specks).
+- `make_khmer.py [--hd]`: proposed **បទភ្លេង / នៃដួងចិត្ត / ខុតបះ** ("Melodies of the Heart – Sermons"), built
+  from the translators' words (បទភ្លេង, ដួងចិត្ត; ខុតបះ as in Fasıldan Fasıla); Battambang, navy + white like the
+  original. No author. No interior in Drive yet.
