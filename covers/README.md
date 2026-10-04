@@ -330,3 +330,11 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   (inside 0.645 ≥ 0.625 in), cream fill removed → `interior/gonul-interior-kdp.pdf`.
 - KDP: `--theme gonul` (deep teal spine; theme `back` colour = the teal sky, because the front's edges are the
   minbars): `kdp/gonul-khmer-kdp-a5-401p-{cream,white}`; reading PDF `interior/gonul-with-cover.pdf`.
+
+## Asrın Getirdiği Tereddütler 1 — new interior edition
+
+- The user uploaded a new translation PDF: A5, 251 pages (old one: B5, 264 pages, kept as
+  `interior/asrin-getirdigi-tereddutler-1-interior-orig.pdf`). The old bottom-margin overflow (pp 184, 189) is gone;
+  margins already OK (inside 0.563 in) → `interior/asrin-getirdigi-tereddutler-1-interior-kdp.pdf` (cream fill removed).
+- No Khmer title page in this edition; the cover keeps the user's own title ការងឿងឆ្ងល់នៃយុគសម័យ.
+- KDP: `kdp/asrin-khmer-1-kdp-a5-251p-{cream,white}` (replaces `khmer-1-kdp-176x250-264p-*`); reading PDF rebuilt.
