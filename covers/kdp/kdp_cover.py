@@ -110,6 +110,12 @@ THEMES = {
         "spine": [(0, (14, 50, 104)), (0.5, (24, 78, 146)), (1, (14, 50, 104))],
         "spine_text": (255, 255, 255),
     },
+    "gonul": {  # Gönül Nağmeleri: teal sky and minbars all over, deep teal spine, white text
+        "band_y": None,
+        "back": [(0, (56, 162, 168)), (1, (30, 118, 126))],      # the teal sky (the front's edges are minbars)
+        "spine": [(0, (10, 70, 76)), (0.5, (22, 110, 116)), (1, (10, 70, 76))],
+        "spine_text": (255, 255, 255),
+    },
     "fasil": {  # Fasıldan Fasıla: plain yellow art all over, red-brown spine
         "band_y": None,
         "spine": [(0, (95, 30, 5)), (0.5, (150, 58, 15)), (1, (95, 30, 5))],
@@ -342,6 +348,8 @@ def build(spec, front, back, spine_title, spine_author, volume, blurb, lang, tit
     rows = cv2.GaussianBlur(rows[:, None, :], (0, 0), sigmaX=1, sigmaY=H * 0.08)[:, 0, :]
     rows = np.concatenate([rows, np.repeat(rows[-1:], H - band_y, 0)])
     back_img = Image.fromarray(np.repeat(rows[:, None, :], bw, 1).round().clip(0, 255).astype(np.uint8))
+    if th.get("back"):                                  # the front's edge is not its background colour (e.g. a
+        back_img = gradient(bw, H, th["back"], horizontal=False)    # photo running off the edge): theme colour
     if th.get("band_y"):                                # same relative height as the front band
         back_img.paste(gradient(bw, H - band_y, th["band"]), (0, band_y))
         ImageDraw.Draw(back_img).rectangle((0, band_y, bw, band_y + p(0.03)), fill=th["band_line"])

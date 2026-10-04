@@ -37,15 +37,16 @@ Interiors are NOT in git (`covers/interior/` is ignored): re-download them from 
   (cream + white) and reading PDFs (page counts, themes, spine titles all listed there).
 - KDP back cover = plain colour taken from the front's outer edge (soft vertical gradient) + the series band,
   no white barcode box (user: not needed; KDP prints its own barcode; `--barcode-box` re-enables it);
-  no picture, logo or mirrored art (user's choice). `--back` images are no longer used.
+  no picture, logo or mirrored art (user's choice). `--back` images are no longer used. A theme `back`
+  gradient overrides the edge colour when the front's edge is not its background (Gönül Nağmeleri).
 - Interiors must not contain their own cover: Prizma 6–9 and Kırık Testi 1 had a picture cover + blank page —
   removed (pages 1–2; originals kept as `*-interior-orig.pdf`).
 
 ## Status
 Done (cover + KDP covers + reading PDF): Asrın Getirdiği Tereddütler 1; Çağ ve Nesil 1; Kalbin Zümrüt Tepeleri 1–4;
 Üstad'la Hasbihal; Prizma 1–9 (1 is A5, 2–9 B5); Kırık Testi 1–5; Fasıldan Fasıla 1; Ruhumuzun Heykelini Dikerken 1 (`heykel/`);
-Asâ-yı Mûsâ (`asa/`, Said Nursî — title ដំបងរបស់ព្យាការីមូសា from the translation); Namaz (`namaz/`, A5 413p).
-Cover only (waiting for interior PDF): Çağ ve Nesil 2 (Buhranlar) and 3 (Yitirilmiş); Ölçü; Kırık Testi 6–14; Gönül Nağmeleri (`gonul/`).
+Asâ-yı Mûsâ (`asa/`, Said Nursî — title ដំបងរបស់ព្យាការីមូសា from the translation); Namaz (`namaz/`, A5 413p); Gönül Nağmeleri: Hutbeler (`gonul/`, A5 401p).
+Cover only (waiting for interior PDF): Çağ ve Nesil 2 (Buhranlar) and 3 (Yitirilmiş); Ölçü; Kırık Testi 6–14.
 
 ## Open questions for the user
 - Confirm proposed titles: Çağ ve Nesil 1–3, Kendi İklimimiz (Prizma 5), Fasıldan Fasıla, Ölçü, Kırık Testi 3, 5, 6, 14, Gönül Nağmeleri.

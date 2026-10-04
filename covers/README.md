@@ -323,6 +323,10 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 
 - `erase_title.py`: "GÖNÜL NAĞMELERİ", "HUTBELER" and the author removed (LaMa on everything that differs from the
   teal sky in each box), then the plain-sky parts refilled with the sky's own smooth colour + grain (no specks).
-- `make_khmer.py [--hd]`: proposed **បទភ្លេង / នៃដួងចិត្ត / ខុតបះ** ("Melodies of the Heart – Sermons"), built
-  from the translators' words (បទភ្លេង, ដួងចិត្ត; ខុតបះ as in Fasıldan Fasıla); Battambang, navy + white like the
-  original. No author. No interior in Drive yet.
+- `make_khmer.py [--hd]`: proposed **បទភ្លេង / នៃដួងចិត្ត / ខុតហ្ពះ** ("Melodies of the Heart – Sermons"):
+  ខុតហ្ពះ is how this translation writes hutbe (69×, "ខុតហ្ពះ ១"…); បទភ្លេង and ដួងចិត្ត are its words too.
+  Battambang, navy + white like the original. No author.
+- Interior from Drive ("Gönül Nağmeleri- Hutbeler.pdf"): A5, 401 pages; `fix_gutter.py` shifted 0.061 in
+  (inside 0.645 ≥ 0.625 in), cream fill removed → `interior/gonul-interior-kdp.pdf`.
+- KDP: `--theme gonul` (deep teal spine; theme `back` colour = the teal sky, because the front's edges are the
+  minbars): `kdp/gonul-khmer-kdp-a5-401p-{cream,white}`; reading PDF `interior/gonul-with-cover.pdf`.

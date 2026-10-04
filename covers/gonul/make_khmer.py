@@ -1,5 +1,5 @@
-"""Khmer edition of "Gönül Nağmeleri – Hutbeler": បទភ្លេង / នៃដួងចិត្ត / ខុតបះ (proposed, from the translators'
-own words: បទភ្លេង melody, ដួងចិត្ត heart, ខុតបះ hutbe as in Fasıldan Fasıla). Laid out like the original:
+"""Khmer edition of "Gönül Nağmeleri – Hutbeler": បទភ្លេង / នៃដួងចិត្ត / ខុតហ្ពះ (proposed, from the translators'
+own words: បទភ្លេង melody, ដួងចិត្ត heart, ខុតហ្ពះ hutbe as this translation writes it). Laid out like the original:
 two dark navy lines and a white third line on the teal sky. No author.
 
     python3 make_khmer.py [--hd] [--font Battambang]
@@ -23,7 +23,7 @@ NAVY = (16, 38, 70)
 LINES = [
     ("បទភ្លេង", 470, 118, 412, 198, NAVY, None),           # GÖNÜL
     ("នៃដួងចិត្ត", 440, 80, 395, 300, NAVY, None),           # NAĞMELERİ
-    ("ខុតបះ", 250, 92, 322, 408, (255, 255, 255), (10, 60, 70)),   # HUTBELER
+    ("ខុតហ្ពះ", 270, 92, 322, 408, (255, 255, 255), (10, 60, 70)),   # HUTBELER
 ]
 
 
