@@ -362,3 +362,12 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - `make_khmer.py [--hd]`: proposed **ការអានប្រកប / ភាពអច្ឆរិយៈមួយ** ("Spelling Out a Miracle": ភាពអច្ឆរិយៈ is the
   translators' word for the Qur'an's i'câz, អានប្រកប the Khmer for reading syllable by syllable); Battambang, cream
   with a faint dark emboss. No author. No interior yet.
+
+## Enginliğiyle Bizim Dünyamız – İktisadî Mülâhazalar (`dunyamiz/`)
+
+- `erase_title.py`: the three title lines and the author signature removed (LaMa, deviation-from-texture masks;
+  hairline opening for the pen signature), the smooth orange band refilled with its own colour. Oval picture,
+  mosque skyline and the empty right box kept.
+- `make_khmer.py [--hd]`: proposed **ដោយភាពទូលំទូលាយរបស់វា / ពិភពរបស់យើង / -ការត្រិះរិះលើសេដ្ឋកិច្ច-** from the
+  translators' words (ភាពទូលំទូលាយ, ពិភពរបស់យើង, ការត្រិះរិះ as in Prizma 6, សេដ្ឋកិច្ច); Battambang, cream with a
+  soft shadow. No author. No interior yet.
