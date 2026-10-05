@@ -345,3 +345,11 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   reads ការងឿងឆ្ងល់នៃយុគសម័យ ភាគទី ៤ (matches the cover). `fix_gutter.py` shifted 0.07 in (inside 0.645 ≥ 0.625 in),
   cream fill removed → `interior/asrin-getirdigi-tereddutler-4-interior-kdp.pdf`.
 - KDP: `kdp/asrin-khmer-4-kdp-a5-354p-{cream,white}`; reading PDF `interior/asrin-getirdigi-tereddutler-4-with-cover.pdf`.
+
+## Beyan — Yağmur Serisi 1 (`beyan/`)
+
+- `erase_title.py`: "Beyan" script title (+ drop shadow), author signature and "Yağmur Serisi" logo removed
+  (row-median deviation masks, LaMa); the title box is then replaced by a smooth polynomial sky fit + grain
+  (the letters' glow left blotches otherwise), the grey band refilled with its own colour. Green number box kept.
+- `make_khmer.py [--hd]`: proposed **ការពន្យល់** (the translators' usual word for explanation; ការថ្លែង is the
+  alternative), Battambang, pale cream with a dark drop shadow like the original. No author. No interior yet.
