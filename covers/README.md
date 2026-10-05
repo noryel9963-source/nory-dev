@@ -374,3 +374,9 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - `make_khmer.py [--hd]`: proposed **ដោយភាពទូលំទូលាយរបស់វា / ពិភពរបស់យើង / -ការត្រិះរិះលើសេដ្ឋកិច្ច-** from the
   translators' words (ភាពទូលំទូលាយ, ពិភពរបស់យើង, ការត្រិះរិះ as in Prizma 6, សេដ្ឋកិច្ច); Battambang, cream with a
   soft shadow. No author. No interior yet.
+
+## Asrın Getirdiği Tereddütler 3
+
+- Same cover, number 3. Interior from Drive: A5, 307 pages; title page ការងឿងឆ្ងល់នៃយុគសម័យ ភាគទី ៣ (matches).
+  `fix_gutter.py` shifted 0.055 in (inside 0.645 ≥ 0.625 in), cream fill removed.
+- KDP: `kdp/asrin-khmer-3-kdp-a5-307p-{cream,white}`; reading PDF `interior/asrin-getirdigi-tereddutler-3-with-cover.pdf`.
