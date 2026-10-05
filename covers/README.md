@@ -351,8 +351,11 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - `erase_title.py`: "Beyan" script title (+ drop shadow), author signature and "Yağmur Serisi" logo removed
   (row-median deviation masks, LaMa); the title box is then replaced by a smooth polynomial sky fit + grain
   (the letters' glow left blotches otherwise), the grey band refilled with its own colour. Green number box kept.
-- `make_khmer.py [--hd]`: proposed **ការពន្យល់** (the translators' usual word for explanation; ការថ្លែង is the
-  alternative), Battambang, pale cream with a dark drop shadow like the original. No author. No interior yet.
+- `make_khmer.py [--hd]`: **វោហារ** — the translation's own title (its pages 1 and 3: "វោហារ / Beyan"; the cover
+  first proposed ការពន្យល់). Battambang, pale cream with a dark drop shadow like the original. No author.
+- Interior from Drive ("Beyan.pdf"): A5, 263 pages, margins OK (inside 0.59 in), cream fill removed →
+  `interior/beyan-1-interior-kdp.pdf`. KDP: `--theme beyan` (grey band, deep green spine like the number box):
+  `kdp/beyan-khmer-1-kdp-a5-263p-{cream,white}`; reading PDF `interior/beyan-1-with-cover.pdf`.
 
 ## Bir İ'câz Hecelemesi (`icaz/`)
 

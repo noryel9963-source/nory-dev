@@ -1,5 +1,5 @@
-"""Khmer edition of "Beyan" (Yağmur series 1): ការពន្យល់ (proposed: the translators' usual word for explanation /
-exposition; ការថ្លែង is the alternative). Pale cream letters with a dark drop shadow on the orange sky, like the original
+"""Khmer edition of "Beyan" (Yağmur series 1): វោហារ (the translation's own title, its pages 1 and 3;
+the cover first proposed ការពន្យល់). Pale cream letters with a dark drop shadow on the orange sky, like the original
 script title; author and "Yağmur Serisi" logo removed; the green number box is kept.
 
     python3 make_khmer.py [--hd] [--font Battambang]
@@ -20,7 +20,7 @@ CORNER = 14
 
 # text, max width, ink height, centre x, centre y, colour, shadow
 LINES = [
-    ("ការពន្យល់", 720, 250, 452, 345, (246, 238, 172), (95, 35, 5)),       # Beyan
+    ("វោហារ", 560, 230, 452, 345, (246, 238, 172), (95, 35, 5)),       # Beyan
 ]
 
 

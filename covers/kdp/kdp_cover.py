@@ -116,6 +116,13 @@ THEMES = {
         "spine": [(0, (10, 70, 76)), (0.5, (22, 110, 116)), (1, (10, 70, 76))],
         "spine_text": (255, 255, 255),
     },
+    "beyan": {  # Beyan (Yağmur series): grey band under the orange sky, deep green spine (the number box)
+        "band_y": (1102 - 27) / (1280 - 27),
+        "band": [(0, (190, 190, 195)), (0.5, (178, 179, 184)), (1, (165, 167, 172))],
+        "band_line": (5, 4, 6),
+        "spine": [(0, (8, 60, 42)), (0.5, (16, 96, 70)), (1, (8, 60, 42))],
+        "spine_text": (232, 240, 228),
+    },
     "fasil": {  # Fasıldan Fasıla: plain yellow art all over, red-brown spine
         "band_y": None,
         "spine": [(0, (95, 30, 5)), (0.5, (150, 58, 15)), (1, (95, 30, 5))],
