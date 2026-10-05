@@ -353,3 +353,12 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   (the letters' glow left blotches otherwise), the grey band refilled with its own colour. Green number box kept.
 - `make_khmer.py [--hd]`: proposed **ការពន្យល់** (the translators' usual word for explanation; ការថ្លែង is the
   alternative), Battambang, pale cream with a dark drop shadow like the original. No author. No interior yet.
+
+## Bir İ'câz Hecelemesi (`icaz/`)
+
+- `erase_title.py`: title (incl. the İ dots and the circumflex), author and Nil logo removed — masks catch anything
+  lighter or darker than the local leather texture (the cream letters carry a dark emboss); the dark cartouche panel
+  is then refilled with its own smooth colour + its weave tiled from a clean strip. Cartouche ornaments kept.
+- `make_khmer.py [--hd]`: proposed **ការអានប្រកប / ភាពអច្ឆរិយៈមួយ** ("Spelling Out a Miracle": ភាពអច្ឆរិយៈ is the
+  translators' word for the Qur'an's i'câz, អានប្រកប the Khmer for reading syllable by syllable); Battambang, cream
+  with a faint dark emboss. No author. No interior yet.
