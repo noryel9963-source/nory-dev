@@ -43,7 +43,7 @@ Interiors are NOT in git (`covers/interior/` is ignored): re-download them from 
   removed (pages 1–2; originals kept as `*-interior-orig.pdf`).
 
 ## Status
-Done (cover + KDP covers + reading PDF): Asrın Getirdiği Tereddütler 1 (new A5 251p edition); Çağ ve Nesil 1; Kalbin Zümrüt Tepeleri 1–4;
+Done (cover + KDP covers + reading PDF): Asrın Getirdiği Tereddütler 1 (new A5 251p edition) and 4 (A5 354p); Çağ ve Nesil 1; Kalbin Zümrüt Tepeleri 1–4;
 Üstad'la Hasbihal; Prizma 1–9 (1 is A5, 2–9 B5); Kırık Testi 1–5; Fasıldan Fasıla 1; Ruhumuzun Heykelini Dikerken 1 (`heykel/`);
 Asâ-yı Mûsâ (`asa/`, Said Nursî — title ដំបងរបស់ព្យាការីមូសា from the translation); Namaz (`namaz/`, A5 413p); Gönül Nağmeleri: Hutbeler (`gonul/`, A5 401p).
 Cover only (waiting for interior PDF): Çağ ve Nesil 2 (Buhranlar) and 3 (Yitirilmiş); Ölçü; Kırık Testi 6–14.

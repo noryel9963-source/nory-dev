@@ -338,3 +338,10 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   margins already OK (inside 0.563 in) → `interior/asrin-getirdigi-tereddutler-1-interior-kdp.pdf` (cream fill removed).
 - No Khmer title page in this edition; the cover keeps the user's own title ការងឿងឆ្ងល់នៃយុគសម័យ.
 - KDP: `kdp/asrin-khmer-1-kdp-a5-251p-{cream,white}` (replaces `khmer-1-kdp-176x250-264p-*`); reading PDF rebuilt.
+
+## Asrın Getirdiği Tereddütler 4
+
+- Same cover, number 4 (`original/make_khmer.py [--hd] 4`). Interior from Drive: A5, 354 pages; its own title page
+  reads ការងឿងឆ្ងល់នៃយុគសម័យ ភាគទី ៤ (matches the cover). `fix_gutter.py` shifted 0.07 in (inside 0.645 ≥ 0.625 in),
+  cream fill removed → `interior/asrin-getirdigi-tereddutler-4-interior-kdp.pdf`.
+- KDP: `kdp/asrin-khmer-4-kdp-a5-354p-{cream,white}`; reading PDF `interior/asrin-getirdigi-tereddutler-4-with-cover.pdf`.

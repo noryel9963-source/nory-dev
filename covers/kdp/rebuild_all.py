@@ -24,6 +24,8 @@ SPINE_FONT = "Battambang.ttf"
 BOOKS = {
     "asrin-1": (None, "1", None, A5, 251, "asrin", "ការងឿងឆ្ងល់នៃយុគសម័យ", "asrin-khmer-1-kdp-a5-251p",
                 "asrin-getirdigi-tereddutler-1", "ការងឿងឆ្ងល់នៃយុគសម័យ ភាគទី១"),
+    "asrin-4": (None, "4", None, A5, 354, "asrin", "ការងឿងឆ្ងល់នៃយុគសម័យ", "asrin-khmer-4-kdp-a5-354p",
+                "asrin-getirdigi-tereddutler-4", "ការងឿងឆ្ងល់នៃយុគសម័យ ភាគទី៤"),
     "cag-1": ("cag-ve-nesil", "1", "cag-ve-nesil-notitle-source-4x-noauthor.png", A5, 168, "cag", "សម័យកាល និងជំនាន់",
               "cag-khmer-1-kdp-a5-168p", "cag-ve-nesil-1", "សម័យកាល និងជំនាន់ ១"),
     **{f"kalbin-{v}": ("kalbin", str(v), "kalbin-notitle-source-4x-noauthor.png", A5, n, "kalbin", "ភ្នំមរកតនៃដួងចិត្ត",
@@ -103,7 +105,7 @@ def rebuild(key):
                         "--paper", paper, *extra, "-o", str(KDP / f"{out}-{paper}")],
                        check=True, cwd=KDP, stdout=subprocess.DEVNULL)
     src = COVERS / "interior" / f"{interior}-interior.pdf"
-    if key in ("heykel-1", "asa", "prizma-1", "namaz", "gonul", "asrin-1"):
+    if key in ("heykel-1", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-4"):
         src = COVERS / "interior" / f"{interior}-interior-kdp.pdf"
     if src.exists():
         subprocess.run([sys.executable, str(KDP / "combine.py"), str(src),
