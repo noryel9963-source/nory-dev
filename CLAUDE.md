@@ -52,8 +52,8 @@ Lem'alar (`lemalar/`, Risale-i Nur, title ពន្លឺទាំងឡាយ, 
 Fâtiha Üzerine Mülâhazalar (`fatiha/`, title ការពិចារណាលើ / ស៊ូរ៉ោះអាល់ហ្វាទីហះ from the translation, A5 327p);
 Hitap Çiçekleri (`hitap/`, title ផ្កានៃ / ការអំពាវនាវ from the translation, A5 260p);
 Hac (`hac/`, İbadet Hayatımız, title confirmed by the translation, A5 252p); Oruç (`oruc/`, ការតមអាហារ, A5 247p); Zekât (`zekat/`, ហ្សាកាត់, A5 388p);
-İnancın Gölgesinde 1–2 (`inanc/`, title នៅក្រោមម្លប់នៃជំនឿ, A5 384p + 328p; vol 2 = vol 1 art with the number redrawn).
-Cover only: Kalbin Solukları (`soluk/`, ដង្ហើម / នៃដួងចិត្ត, 2 vols, split planned before chapter 42) — PDF (7.5 MB) too big for the Drive connector, needs parts.
+İnancın Gölgesinde 1–2 (`inanc/`, title នៅក្រោមម្លប់នៃជំនឿ, A5 384p + 328p; vol 2 = vol 1 art with the number redrawn);
+Kalbin Solukları (`soluk/`, title ដង្ហើមនៃ / ដួងចិត្ត, 2 vols A5 424p + 418p split before chapter 42; from the user's compressed 5.7 MB re-upload).
 Cover only (waiting for interior PDF): Çağ ve Nesil 2 (Buhranlar) and 3 (Yitirilmiş); Ölçü; Kırık Testi 6–14; Bir İ'câz Hecelemesi (`icaz/`);
 
 

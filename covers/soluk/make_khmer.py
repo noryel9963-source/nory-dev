@@ -1,8 +1,7 @@
-"""Khmer edition of "Kalbin Solukları": ដង្ហើម / នៃដួងចិត្ត (soluk = breath, ដង្ហើម; kalp = heart, ដួងចិត្ត as in
-ភ្នំមរកតនៃដួងចិត្ត) — the title the translation's text layer carries (title page and the chapter of the same name).
-Navy letters with a soft white glow, laid out like the original two lines. No author. The book (~830 pages) is
-too long for one KDP paperback, so it comes in two volumes: ភាគទី ១ / ២ sits under the ornamented rule, where the
-author's name was.
+"""Khmer edition of "Kalbin Solukları": ដង្ហើមនៃ / ដួងចិត្ត (soluk = breath, ដង្ហើម; kalp = heart, ដួងចិត្ត as in
+ភ្នំមរកតនៃដួងចិត្ត) — the translation's title page, with its line break. Navy letters with a soft white glow.
+No author. The book (834 pages) is too long for one KDP paperback, so it comes in two volumes (split before chapter
+42): ភាគទី ១ / ២ sits under the ornamented rule, where the author's name was.
 
     python3 make_khmer.py [--hd] [--font Battambang] [1|2]
 Writes khmer[-N].png or khmer[-N]-hd.png.
@@ -25,8 +24,8 @@ NAVY = (26, 48, 71)
 GLOW = (255, 255, 255)
 # text, max width, ink height, centre x, centre y
 LINES = [
-    ("ដង្ហើម", 500, 104, 384, 548),           # KALBİN
-    ("នៃដួងចិត្ត", 500, 104, 384, 646),       # SOLUKLARI
+    ("ដង្ហើមនៃ", 500, 104, 384, 548),         # KALBİN
+    ("ដួងចិត្ត", 500, 104, 384, 646),         # SOLUKLARI
 ]
 
 

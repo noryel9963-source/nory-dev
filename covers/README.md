@@ -408,16 +408,18 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - KDP: theme `asa`: `kdp/lemalar-khmer-1-kdp-a5-580p-*`, `kdp/lemalar-khmer-2-kdp-a5-592p-*`;
   reading PDFs `interior/lemalar-{1,2}-with-cover.pdf`.
 
-## Kalbin Solukları (`soluk/`)
+## Kalbin Solukları (`soluk/`, 2 volumes)
 
-- `erase_title.py`: "KALBİN SOLUKLARI" (navy with a white glow) and the author lines removed (LaMa, deviation from
-  the soft sky); dove, dotted frame and ornamented rule kept.
-- `make_khmer.py [--hd] 1|2`: **ដង្ហើម / នៃដួងចិត្ត** — the title in the translation's text layer (title page and the
-  chapter of the same name); navy Battambang with a soft white glow. No author. Two volumes (user: "like Lem'alar"):
-  **ភាគទី ១ / ២** under the ornamented rule, where the author was.
-- Interior: 74 chapters, last at printed p. 819 (~830+ pages, over KDP's 828). Planned split before chapter 42
-  (printed p. 417). `Kalbin Solukları.pdf` (7.5 MB) is too big for the Drive connector — waiting for it in parts.
-- KDP theme `soluk` (no band, deep navy spine) is ready.
+- `erase_title.py`: "KALBİN SOLUKLARI" (navy with a white glow) and the author lines removed (LaMa); dove, dotted
+  frame and ornamented rule kept.
+- Interior: the user's re-saved "Kalbin Solukları_compressed (1).pdf" (5.7 MB, still vector text): A5, 834 pages,
+  over KDP's 828 → split before chapter 42 (គោលដៅនៃជីវិត, printed p. 417 = PDF p. 425): vol 1 = PDF pp 1–424 (424p),
+  vol 2 = PDF pp 1–8 (title, copyright, contents) + 425–834 (418p), page parity kept. `fix_gutter.py` (its
+  cream-fill pattern now also matches "0.9686 … rg / gs / cm" from re-saved PDFs) → inside 0.645 ≥ 0.625 in.
+- `make_khmer.py [--hd] 1|2`: **ដង្ហើមនៃ / ដួងចិត្ត** (the title page, same line break) + **ភាគទី ១ / ២** under the
+  rule where the author was; navy Battambang with a soft white glow.
+- KDP theme `soluk` (no band, deep navy spine): `kdp/soluk-khmer-{1,2}-kdp-a5-{424,418}p-*`; reading PDFs
+  `interior/soluk-{1,2}-with-cover.pdf`.
 
 ## Fâtiha Üzerine Mülâhazalar (`fatiha/`)
 
