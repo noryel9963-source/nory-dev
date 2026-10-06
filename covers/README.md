@@ -412,6 +412,9 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 
 - `erase_title.py`: "KALBİN SOLUKLARI" (navy with a white glow) and the author lines removed (LaMa, deviation from
   the soft sky); dove, dotted frame and ornamented rule kept.
-- `make_khmer.py [--hd]`: **ដង្ហើម / នៃដួងចិត្ត** — the title in the translation's text layer (title page and the
-  chapter of the same name); navy Battambang with a soft white glow. No author.
-- Interior: `Kalbin Solukları.pdf` (7.5 MB) is too big for the Drive connector — waiting for it in parts.
+- `make_khmer.py [--hd] 1|2`: **ដង្ហើម / នៃដួងចិត្ត** — the title in the translation's text layer (title page and the
+  chapter of the same name); navy Battambang with a soft white glow. No author. Two volumes (user: "like Lem'alar"):
+  **ភាគទី ១ / ២** under the ornamented rule, where the author was.
+- Interior: 74 chapters, last at printed p. 819 (~830+ pages, over KDP's 828). Planned split before chapter 42
+  (printed p. 417). `Kalbin Solukları.pdf` (7.5 MB) is too big for the Drive connector — waiting for it in parts.
+- KDP theme `soluk` (no band, deep navy spine) is ready.

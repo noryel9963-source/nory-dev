@@ -123,6 +123,11 @@ THEMES = {
         "spine": [(0, (70, 32, 6)), (0.5, (110, 52, 12)), (1, (70, 32, 6))],
         "spine_text": (250, 238, 210),
     },
+    "soluk": {  # Kalbin Solukları: teal cloudy sky with a dove, no band, deep navy spine (the title colour), white text
+        "band_y": None,
+        "spine": [(0, (14, 30, 48)), (0.5, (26, 48, 71)), (1, (14, 30, 48))],
+        "spine_text": (255, 255, 255),
+    },
     "beyan": {  # Beyan (Yağmur series): grey band under the orange sky, deep green spine (the number box)
         "band_y": (1102 - 27) / (1280 - 27),
         "band": [(0, (190, 190, 195)), (0.5, (178, 179, 184)), (1, (165, 167, 172))],
