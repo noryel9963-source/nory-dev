@@ -91,6 +91,10 @@ BOOKS = {
               "hitap-khmer-kdp-a5-260p", "hitap", "ផ្កានៃការអំពាវនាវ"),
     "hac": ("hac", "", "hac-notitle-source-4x.png", A5, 252, "hac", "ហាជ្ជ",
             "hac-khmer-kdp-a5-252p", "hac", "ការឆ្លើយតបនឹងការអំពាវនាវរបស់អល់ឡោះ៖ ហាជ្ជ"),
+    "oruc": ("oruc", "", "oruc-notitle-source-4x.png", A5, 247, "oruc", "ការតមអាហារ",
+             "oruc-khmer-kdp-a5-247p", "oruc", "ការតមអាហារ"),
+    "zekat": ("zekat", "", "zekat-notitle-source-4x.png", A5, 388, "zekat", "ហ្សាកាត់",
+              "zekat-khmer-kdp-a5-388p", "zekat", "ហ្សាកាត់"),
     **{f"inanc-{v}": ("inanc", str(v), "inanc-notitle-source-4x.png", A5, n, "inanc", "នៅក្រោមម្លប់នៃជំនឿ",
                       f"inanc-khmer-{v}-kdp-a5-{n}p", f"inanc-{v}", f"នៅក្រោមម្លប់នៃជំនឿ ភាគទី{d}")
        for v, n, d in [(1, 384, "១"), (2, 328, "២")]},
@@ -110,7 +114,7 @@ def art(key):
     folder, volume, back_art = BOOKS[key][:3]
     TMP.mkdir(exist_ok=True)
     mk = load(folder)
-    front = mk.build(True, round_corners=False) if folder in ("ustadla", "asa", "namaz", "gonul", "beyan", "fasil2", "fasil3", "fasil4", "fasil5", "dunyamiz", "fatiha", "hitap", "hac") else mk.build(volume, hd=True, round_corners=False)
+    front = mk.build(True, round_corners=False) if folder in ("ustadla", "asa", "namaz", "gonul", "beyan", "fasil2", "fasil3", "fasil4", "fasil5", "dunyamiz", "fatiha", "hitap", "hac", "oruc", "zekat") else mk.build(volume, hd=True, round_corners=False)
     k = round(front.width / (mk.COVER[2] - mk.COVER[0]))           # 4x upscale (Üstad'la: 2x)
     box = tuple(v * k for v in mk.COVER)
     back = Image.open(COVERS / folder / back_art).convert("RGB").crop(box).transpose(Image.FLIP_LEFT_RIGHT)
@@ -131,7 +135,7 @@ def rebuild(key):
                         "--paper", paper, *extra, "-o", str(KDP / f"{out}-{paper}")],
                        check=True, cwd=KDP, stdout=subprocess.DEVNULL)
     src = COVERS / "interior" / f"{interior}-interior.pdf"
-    if key in ("heykel-1", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1", "fasil-2", "fasil-3", "fasil-4", "fasil-5", "dunyamiz", "lemalar-1", "lemalar-2", "fatiha", "hitap", "hac", "inanc-1", "inanc-2"):
+    if key in ("heykel-1", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1", "fasil-2", "fasil-3", "fasil-4", "fasil-5", "dunyamiz", "lemalar-1", "lemalar-2", "fatiha", "hitap", "hac", "inanc-1", "inanc-2", "oruc", "zekat"):
         src = COVERS / "interior" / f"{interior}-interior-kdp.pdf"
     if src.exists():
         subprocess.run([sys.executable, str(KDP / "combine.py"), str(src),

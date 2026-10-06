@@ -449,10 +449,11 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - `make_khmer.py [--hd]` — **proposed** titles (no translation in Drive yet), from the translators' words found in
   the other interiors (ការបួស "បួសនៅខែរ៉ម៉ាដន", ហ្សាកាត់ "បរិច្ចាគហ្សាកាត់", ហាជ្ជ "ធ្វើហាជ្ជ", ការអភ័យទោស,
   យុត្តិធម៌សង្គម, ការអំពាវនាវ); series line ជីវិតនៃការគោរពប្រណិប័តន៍របស់យើង as on Namaz:
-  - Oruç: ការគោរពប្រណិប័តន៍ដែលពោរពេញដោយការអភ័យទោស / **ការបួស**
-  - Zekât: ធាតុគ្រឹះនៃយុត្តិធម៌សង្គម / **ហ្សាកាត់**
+  - Oruç: ការគោរពប្រណិប័តន៍ដែលពោរពេញដោយការអភ័យទោស / **ការតមអាហារ** (title from the translation, A5 247p; was ការបួស)
+  - Zekât: ធាតុគ្រឹះនៃយុត្តិធម៌សង្គម / **ហ្សាកាត់** (title confirmed by the translation, A5 388p)
   - Hac: ការឆ្លើយតបនឹងការអំពាវនាវរបស់អល់ឡោះ / **ហាជ្ជ**
-- KDP themes `oruc`, `zekat`, `hac` (no band; `anchor_y` 0.3 so the crop to A5 keeps the series line clear of the top edge).
+- Subtitles are still proposals (the translations' title pages have none). KDP themes `oruc`, `zekat`, `hac`
+  (no band; `anchor_y` 0.1 / 0.1 / 0.3 so the crop to A5 keeps the series line clear of the top edge).
 - Hac interior from Drive: A5, 252 pages; title page ការឆ្លើយតបនឹងការអំពាវនាវរបស់អល់ឡោះ៖ ហាជ្ជ (= the cover). Margins already
   0.59 ≥ 0.5 in. KDP: `kdp/hac-khmer-kdp-a5-252p-{cream,white}`; reading PDF `interior/hac-with-cover.pdf`.
 

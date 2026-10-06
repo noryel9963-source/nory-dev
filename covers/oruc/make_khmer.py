@@ -1,5 +1,6 @@
 """Khmer edition of the "Oruç" cover (İbadet Hayatımız series like namaz/; all text, author and publisher logo
-removed). Proposed title (no translation yet), built from the translators' own words: ការបួស (fasting: "ការដែលអ្នកបួសនៅខែរ៉ម៉ាដន"), ការអភ័យទោស (gufran, forgiveness).
+removed). Title ការតមអាហារ from the translation's title page; the subtitle (not in the translation) is proposed from the
+translators' words: ការអភ័យទោស (gufran, forgiveness).
 Series line as on Namaz: ជីវិតនៃការគោរពប្រណិប័តន៍របស់យើង.
 
     python3 make_khmer.py [--hd]
@@ -23,7 +24,7 @@ CX = 426
 LINES = [
     ("ជីវិតនៃការគោរពប្រណិប័តន៍របស់យើង", "Battambang.ttf", 300, 22, 95, (0, 80, 130), None),  # İbadet Hayatımız
     ("ការគោរពប្រណិប័តន៍ដែលពោរពេញដោយការអភ័យទោស", "Battambang.ttf", 480, 40, 160, (0, 40, 62), None),  # Gufranla Tüllenen İbadet
-    ("ការបួស", "Battambang.ttf", 460, 124, 268, (255, 255, 255), (10, 60, 100)),  # ORUÇ
+    ("ការតមអាហារ", "Battambang.ttf", 520, 124, 268, (255, 255, 255), (10, 60, 100)),  # ORUÇ
 ]
 
 def fit(font_path, text, max_w, ink_h):

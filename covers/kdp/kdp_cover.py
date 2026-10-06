@@ -112,13 +112,13 @@ THEMES = {
     },
     "oruc": {  # Oruç (İbadet Hayatımız): blue to crimson art all over, deep blue spine, white text
         "band_y": None,
-        "anchor_y": 0.3,                                 # series line sits near the top edge
+        "anchor_y": 0.1,                                 # series line sits near the top edge
         "spine": [(0, (8, 52, 92)), (0.5, (16, 88, 140)), (1, (8, 52, 92))],
         "spine_text": (255, 255, 255),
     },
     "zekat": {  # Zekât (İbadet Hayatımız): rose to wine art all over, deep wine spine, white text
         "band_y": None,
-        "anchor_y": 0.3,                                 # series line sits near the top edge
+        "anchor_y": 0.1,                                 # series line sits near the top edge
         "spine": [(0, (84, 22, 46)), (0.5, (128, 40, 70)), (1, (84, 22, 46))],
         "spine_text": (255, 255, 255),
     },
