@@ -472,3 +472,12 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - `make_khmer.py [--hd]`: **ពីវគ្គមួយ** (dark brown regular) / **ទៅវគ្គមួយ** (red-brown Battambang Bold, shifted right
   like "fasıla").
 - KDP theme `fasil4` (leather band, deep brown spine): `kdp/fasil-khmer-4-kdp-a5-257p-{cream,white}`.
+
+## Fasıldan Fasıla 5 — Fikir Atlası (`fasil5/`)
+
+- Interior from Drive: A5, 222 pages; the title page uses the series title ពីវគ្គមួយ / ទៅវគ្គមួយ — ភាគ ៥ (the copyright
+  page adds "Fikir Atlası"), so the cover does too. Inside margin already 0.553 ≥ 0.5 in; cream fill removed.
+- `erase_title.py`: navy "fikir atlası" (masked by colour, wide dilation for the white glow, plus a box for the glow
+  between the lines), small "FASILDAN FASILA" mark and author signature removed (LaMa). Flare, streaks, box "5" kept.
+- `make_khmer.py [--hd]`: **ពីវគ្គមួយ** (regular) / **ទៅវគ្គមួយ** (big Battambang Bold), navy with a white glow.
+- KDP theme `fasil5` (leather band, deep brown spine): `kdp/fasil-khmer-5-kdp-a5-222p-{cream,white}`.

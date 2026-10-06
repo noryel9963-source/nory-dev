@@ -184,6 +184,13 @@ THEMES = {
         "spine": [(0, (78, 32, 16)), (0.5, (120, 52, 24)), (1, (78, 32, 16))],
         "spine_text": (246, 214, 160),
     },
+    "fasil5": {  # Fasıldan Fasıla 5 (Fikir Atlası): leather band under the blue light streaks, deep brown spine, cream text
+        "band_y": 932 / 1093,
+        "band": [(0, (209, 88, 31)), (0.5, (155, 64, 22)), (1, (114, 42, 8))],
+        "band_line": (92, 30, 4),
+        "spine": [(0, (78, 32, 16)), (0.5, (120, 52, 24)), (1, (78, 32, 16))],
+        "spine_text": (246, 214, 160),
+    },
     "fasil": {  # Fasıldan Fasıla: plain yellow art all over, red-brown spine
         "band_y": None,
         "spine": [(0, (95, 30, 5)), (0.5, (150, 58, 15)), (1, (95, 30, 5))],
