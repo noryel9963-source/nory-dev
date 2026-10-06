@@ -380,3 +380,10 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - Same cover, number 3. Interior from Drive: A5, 307 pages; title page ការងឿងឆ្ងល់នៃយុគសម័យ ភាគទី ៣ (matches).
   `fix_gutter.py` shifted 0.055 in (inside 0.645 ≥ 0.625 in), cream fill removed.
 - KDP: `kdp/asrin-khmer-3-kdp-a5-307p-{cream,white}`; reading PDF `interior/asrin-getirdigi-tereddutler-3-with-cover.pdf`.
+
+## Fasıldan Fasıla 2 (`fasil2/`, new design)
+
+- `erase_title.py`: title, small "FASILDAN FASILA" mark and author signature removed (LaMa, row-median deviation
+  masks); the pomegranate's stem tip is protected (`KEEP`). Number box "2" kept.
+- `make_khmer.py [--hd]`: **ពីជំពូកមួយ / ទៅជំពូកមួយ** (same title as volume 1), dark brown, regular + Battambang Bold
+  (`fonts/Battambang-Bold.ttf`, OFL from Google Fonts) like "Fasıldan" / "Fasıla". No interior yet.
