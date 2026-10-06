@@ -371,9 +371,12 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - `erase_title.py`: the three title lines and the author signature removed (LaMa, deviation-from-texture masks;
   hairline opening for the pen signature), the smooth orange band refilled with its own colour. Oval picture,
   mosque skyline and the empty right box kept.
-- `make_khmer.py [--hd]`: proposed **ដោយភាពទូលំទូលាយរបស់វា / ពិភពរបស់យើង / -ការត្រិះរិះលើសេដ្ឋកិច្ច-** from the
-  translators' words (ភាពទូលំទូលាយ, ពិភពរបស់យើង, ការត្រិះរិះ as in Prizma 6, សេដ្ឋកិច្ច); Battambang, cream with a
-  soft shadow. No author. No interior yet.
+- `make_khmer.py [--hd]`: **ពិភពរបស់យើង / ក្នុងភាពធំទូលាយរបស់វា**, the title printed in the translation (interior pp 1, 3;
+  replaces the earlier proposal). No subtitle line (the translation has none). Battambang, cream with a soft shadow. No author.
+- Interior from Drive: A5, 684 pages (no picture cover). `fix_gutter.py` shifted 0.18 in (inside 0.77 ≥ 0.75 in),
+  cream fill removed → `interior/dunyamiz-interior-kdp.pdf`.
+- KDP: theme `dunyamiz` (orange band, deep brown spine): `kdp/dunyamiz-khmer-kdp-a5-684p-{cream,white}`;
+  reading PDF `interior/dunyamiz-with-cover.pdf`.
 
 ## Asrın Getirdiği Tereddütler 3
 

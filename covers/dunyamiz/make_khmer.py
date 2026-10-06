@@ -1,6 +1,6 @@
-"""Khmer edition of "Enginliğiyle Bizim Dünyamız – İktisadî Mülâhazalar": ដោយភាពទូលំទូលាយរបស់វា / ពិភពរបស់យើង /
--ការត្រិះរិះលើសេដ្ឋកិច្ច- (proposed, from the translators' words: ភាពទូលំទូលាយ vastness, ពិភពរបស់យើង our world,
-ការត្រិះរិះ mülâhaza as in Prizma 6, សេដ្ឋកិច្ច economy). Cream letters with a soft shadow, laid out like the original.
+"""Khmer edition of "Enginliğiyle Bizim Dünyamız": ពិភពរបស់យើង / ក្នុងភាពធំទូលាយរបស់វា — the title printed in the
+translation's title page (which has no subtitle, so the "-İktisadî Mülâhazalar-" line is dropped).
+Cream letters with a soft shadow.
 
     python3 make_khmer.py [--hd] [--font Battambang]
 Writes khmer.png or khmer-hd.png.
@@ -22,9 +22,8 @@ CREAM = (250, 238, 210)
 SHADE = (110, 45, 5)
 # text, max width, ink height, centre x, centre y, colour, shadow
 LINES = [
-    ("ដោយភាពទូលំទូលាយរបស់វា", 560, 48, 465, 548, CREAM, SHADE),     # ENGİNLİĞİYLE
-    ("ពិភពរបស់យើង", 700, 150, 465, 668, CREAM, SHADE),              # BİZİM DÜNYAMIZ
-    ("-ការត្រិះរិះលើសេដ្ឋកិច្ច-", 420, 44, 465, 812, CREAM, SHADE),   # -İktisadî Mülâhazalar-
+    ("ពិភពរបស់យើង", 700, 150, 465, 610, CREAM, SHADE),              # BİZİM DÜNYAMIZ
+    ("ក្នុងភាពធំទូលាយរបស់វា", 620, 72, 465, 760, CREAM, SHADE),    # ENGİNLİĞİYLE
 ]
 
 

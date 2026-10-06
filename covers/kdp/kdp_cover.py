@@ -116,6 +116,13 @@ THEMES = {
         "spine": [(0, (10, 70, 76)), (0.5, (22, 110, 116)), (1, (10, 70, 76))],
         "spine_text": (255, 255, 255),
     },
+    "dunyamiz": {  # Enginliğiyle Bizim Dünyamız: orange band under the Istanbul skyline, deep brown spine, cream text
+        "band_y": 1130 / 1320,
+        "band": [(0, (246, 140, 51)), (0.5, (205, 120, 40)), (1, (190, 108, 34))],
+        "band_line": (40, 20, 4),
+        "spine": [(0, (70, 32, 6)), (0.5, (110, 52, 12)), (1, (70, 32, 6))],
+        "spine_text": (250, 238, 210),
+    },
     "beyan": {  # Beyan (Yağmur series): grey band under the orange sky, deep green spine (the number box)
         "band_y": (1102 - 27) / (1280 - 27),
         "band": [(0, (190, 190, 195)), (0.5, (178, 179, 184)), (1, (165, 167, 172))],
