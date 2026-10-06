@@ -429,3 +429,14 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   cream fill removed → `interior/fatiha-interior-kdp.pdf`.
 - KDP: theme `fatiha` (gold band, deep brown spine; `back` = cream sky → gold, since the front's edge is the mosque): `kdp/fatiha-khmer-kdp-a5-327p-{cream,white}`; reading PDF
   `interior/fatiha-with-cover.pdf`.
+
+## Hitap Çiçekleri (`hitap/`)
+
+- `erase_title.py`: red "HİTAP ÇİÇEKLERİ" (masked by redness so the blue water splash beside the H stays), the
+  "M. Fethullah Gülen" signature and the NESİL logo removed (LaMa).
+- `make_khmer.py [--hd]`: **ផ្កានៃ / ការអំពាវនាវ** — the translation's title page; red Battambang (the original's
+  red) with a faint light emboss, kept clear of the splash. No author, no logo.
+- Interior from Drive: A5, 260 pages (no picture cover); inside margin already 0.59 ≥ 0.5 in, so `fix_gutter.py`
+  only removed the cream fill → `interior/hitap-interior-kdp.pdf`.
+- KDP: theme `hitap` (no band, deep blue spine): `kdp/hitap-khmer-kdp-a5-260p-{cream,white}`; reading PDF
+  `interior/hitap-with-cover.pdf`.

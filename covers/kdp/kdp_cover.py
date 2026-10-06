@@ -136,6 +136,11 @@ THEMES = {
         "spine": [(0, (60, 26, 8)), (0.5, (96, 50, 16)), (1, (60, 26, 8))],
         "spine_text": (250, 238, 210),
     },
+    "hitap": {  # Hitap Çiçekleri: sky, clouds and water, no band, deep blue spine (the water), white text
+        "band_y": None,
+        "spine": [(0, (12, 52, 104)), (0.5, (26, 84, 150)), (1, (12, 52, 104))],
+        "spine_text": (255, 255, 255),
+    },
     "beyan": {  # Beyan (Yağmur series): grey band under the orange sky, deep green spine (the number box)
         "band_y": (1102 - 27) / (1280 - 27),
         "band": [(0, (190, 190, 195)), (0.5, (178, 179, 184)), (1, (165, 167, 172))],
