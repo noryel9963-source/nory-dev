@@ -91,6 +91,9 @@ BOOKS = {
               "hitap-khmer-kdp-a5-260p", "hitap", "ផ្កានៃការអំពាវនាវ"),
     "hac": ("hac", "", "hac-notitle-source-4x.png", A5, 252, "hac", "ហាជ្ជ",
             "hac-khmer-kdp-a5-252p", "hac", "ការឆ្លើយតបនឹងការអំពាវនាវរបស់អល់ឡោះ៖ ហាជ្ជ"),
+    **{f"inanc-{v}": ("inanc", str(v), "inanc-notitle-source-4x.png", A5, n, "inanc", "នៅក្រោមម្លប់នៃជំនឿ",
+                      f"inanc-khmer-{v}-kdp-a5-{n}p", f"inanc-{v}", f"នៅក្រោមម្លប់នៃជំនឿ ភាគទី{d}")
+       for v, n, d in [(1, 384, "១"), (2, 328, "២")]},
 }
 
 
@@ -128,7 +131,7 @@ def rebuild(key):
                         "--paper", paper, *extra, "-o", str(KDP / f"{out}-{paper}")],
                        check=True, cwd=KDP, stdout=subprocess.DEVNULL)
     src = COVERS / "interior" / f"{interior}-interior.pdf"
-    if key in ("heykel-1", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1", "fasil-2", "fasil-3", "fasil-4", "fasil-5", "dunyamiz", "lemalar-1", "lemalar-2", "fatiha", "hitap", "hac"):
+    if key in ("heykel-1", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1", "fasil-2", "fasil-3", "fasil-4", "fasil-5", "dunyamiz", "lemalar-1", "lemalar-2", "fatiha", "hitap", "hac", "inanc-1", "inanc-2"):
         src = COVERS / "interior" / f"{interior}-interior-kdp.pdf"
     if src.exists():
         subprocess.run([sys.executable, str(KDP / "combine.py"), str(src),

@@ -483,3 +483,13 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   between the lines), small "FASILDAN FASILA" mark and author signature removed (LaMa). Flare, streaks, box "5" kept.
 - `make_khmer.py [--hd]`: **ពីវគ្គមួយ** (regular) / **ទៅវគ្គមួយ** (big Battambang Bold), navy with a white glow.
 - KDP theme `fasil5` (leather band, deep brown spine): `kdp/fasil-khmer-5-kdp-a5-222p-{cream,white}`.
+
+## İnancın Gölgesinde 1–2 (`inanc/`)
+
+- Interiors from Drive: vol 1 A5 384p, vol 2 A5 328p; title pages នៅក្រោមម្លប់នៃជំនឿ ភាគទី ១ / ២. `fix_gutter.py`
+  shifted 0.055 in (inside 0.645 ≥ 0.625 in), cream fill removed.
+- `erase_title.py`: "İNANCIN GÖLGESİNDE" (white with a red outline, masked by colour) and the author signature on the
+  red band removed (LaMa; band refilled with its own colour). Figure, light rings, number box kept.
+- `make_khmer.py [--hd] 1|2`: **នៅក្រោមម្លប់ / នៃជំនឿ**, white Battambang with a red outline and soft shadow. Vol 2 is the
+  same cover (user: "vol 2 the same"): the flat yellow box's "1" is painted over and "2" drawn in Cormorant Garamond.
+- KDP theme `inanc` (red band, deep red spine): `kdp/inanc-khmer-{1,2}-kdp-a5-{384,328}p-*`.

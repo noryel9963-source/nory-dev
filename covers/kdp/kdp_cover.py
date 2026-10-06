@@ -194,6 +194,13 @@ THEMES = {
         "spine": [(0, (78, 32, 16)), (0.5, (120, 52, 24)), (1, (78, 32, 16))],
         "spine_text": (246, 214, 160),
     },
+    "inanc": {  # İnancın Gölgesinde: red band under the orange light art, deep red spine, white text
+        "band_y": 889 / 1040,
+        "band": [(0, (215, 82, 60)), (0.5, (226, 116, 89)), (1, (226, 124, 97))],
+        "band_line": (155, 42, 37),
+        "spine": [(0, (110, 20, 24)), (0.5, (160, 36, 36)), (1, (110, 20, 24))],
+        "spine_text": (255, 255, 255),
+    },
     "fasil": {  # Fasıldan Fasıla: plain yellow art all over, red-brown spine
         "band_y": None,
         "spine": [(0, (95, 30, 5)), (0.5, (150, 58, 15)), (1, (95, 30, 5))],
