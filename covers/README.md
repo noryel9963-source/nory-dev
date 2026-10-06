@@ -462,3 +462,13 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   removed (LaMa; band refilled with its own colour). Figure, floral art and number box "3" kept.
 - `make_khmer.py [--hd]`: **ពីវគ្គមួយ / ទៅវគ្គមួយ**, red-brown regular + dark-brown Battambang Bold with a soft shadow.
 - KDP theme `fasil3` (gold band, deep brown spine): `kdp/fasil-khmer-3-kdp-a5-306p-{cream,white}`.
+
+## Fasıldan Fasıla 4 (`fasil4/`)
+
+- Interior from Drive: A5, 257 pages; title page ពីវគ្គមួយ / ទៅវគ្គមួយ — ភាគ ៤. Inside margin already 0.553 ≥ 0.5 in;
+  cream fill removed → `interior/fasil-4-interior-kdp.pdf`.
+- `erase_title.py`: "fasıldan fasıla" (masked by low green: the paper scraps are yellow/cream), the small
+  "FASILDAN FASILA" mark and the author signature on the leather band removed (LaMa). Pen, paper art, box "4" kept.
+- `make_khmer.py [--hd]`: **ពីវគ្គមួយ** (dark brown regular) / **ទៅវគ្គមួយ** (red-brown Battambang Bold, shifted right
+  like "fasıla").
+- KDP theme `fasil4` (leather band, deep brown spine): `kdp/fasil-khmer-4-kdp-a5-257p-{cream,white}`.
