@@ -394,3 +394,24 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - Interior from Drive: A5, 250 pages, margins OK (inside 0.59 in), cream fill removed → `interior/fasil-2-interior-kdp.pdf`.
   KDP: `--theme fasil2` (brown leather band, deep brown spine): `kdp/fasil-khmer-2-kdp-a5-250p-{cream,white}`;
   reading PDF `interior/fasil-2-with-cover.pdf`.
+
+## Lem'alar (`lemalar/`, Risale-i Nur — 2 volumes)
+
+- Interior from Drive in 12 parts ("Lemalar - Part 1..12"), merged: A5, 1,166 pages — over KDP's 828, so split in
+  two before the 26th Flash (ពន្លឺទីម្ភៃប្រាំមួយ, printed p. 575): vol 1 = PDF pp 1–580 (580p); vol 2 = the same
+  title/copyright/contents pages (PDF pp 1–6) + pp 581–1166 (592p), page parity kept.
+- `fix_gutter.py` (its cream-fill pattern now also matches pages without a `gs` line before the fill): inside
+  0.77 in ≥ 0.75 in → `interior/lemalar-{1,2}-interior-kdp.pdf`.
+- `make_khmer.py [--hd] 1|2`: **ពន្លឺទាំងឡាយ** (the translation's title page) + **ភាគទី ១ / ២**, gold on the
+  Risale-i Nur red-velvet art already erased for Asâ-yı Mûsâ (`asa/asa-notitle-source*.png`, same series design);
+  "Risale-i Nur Külliyatı'ndan" and the author kept as printed.
+- KDP: theme `asa`: `kdp/lemalar-khmer-1-kdp-a5-580p-*`, `kdp/lemalar-khmer-2-kdp-a5-592p-*`;
+  reading PDFs `interior/lemalar-{1,2}-with-cover.pdf`.
+
+## Kalbin Solukları (`soluk/`)
+
+- `erase_title.py`: "KALBİN SOLUKLARI" (navy with a white glow) and the author lines removed (LaMa, deviation from
+  the soft sky); dove, dotted frame and ornamented rule kept.
+- `make_khmer.py [--hd]`: **ដង្ហើម / នៃដួងចិត្ត** — the title in the translation's text layer (title page and the
+  chapter of the same name); navy Battambang with a soft white glow. No author.
+- Interior: `Kalbin Solukları.pdf` (7.5 MB) is too big for the Drive connector — waiting for it in parts.

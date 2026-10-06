@@ -17,7 +17,7 @@ import re
 import pymupdf
 
 # full-page "paper colour" fill: <r g b> rg / <gs> gs / [marked-content tag] / x y w h re / f
-PAGE_FILL = re.compile(rb"(\.9686 \.9529 \.9216 rg\n/\w+ gs\n(?:/\w+ <<[^>]*>>BDC\n)?[-\d. ]+ re\n)f\n")
+PAGE_FILL = re.compile(rb"(\.9686 \.9529 \.9216 rg\n(?:/\w+ gs\n)?(?:/\w+ <<[^>]*>>BDC\n)?[-\d. ]+ re\n)f\n")
 
 GUTTER = [(150, .375), (300, .5), (500, .625), (700, .75), (828, .875)]
 
