@@ -110,6 +110,21 @@ THEMES = {
         "spine": [(0, (14, 50, 104)), (0.5, (24, 78, 146)), (1, (14, 50, 104))],
         "spine_text": (255, 255, 255),
     },
+    "oruc": {  # Oruç (İbadet Hayatımız): blue to crimson art all over, deep blue spine, white text
+        "band_y": None,
+        "spine": [(0, (8, 52, 92)), (0.5, (16, 88, 140)), (1, (8, 52, 92))],
+        "spine_text": (255, 255, 255),
+    },
+    "zekat": {  # Zekât (İbadet Hayatımız): rose to wine art all over, deep wine spine, white text
+        "band_y": None,
+        "spine": [(0, (84, 22, 46)), (0.5, (128, 40, 70)), (1, (84, 22, 46))],
+        "spine_text": (255, 255, 255),
+    },
+    "hac": {  # Hac (İbadet Hayatımız): mauve to plum art all over, deep plum spine, white text
+        "band_y": None,
+        "spine": [(0, (62, 20, 56)), (0.5, (98, 36, 88)), (1, (62, 20, 56))],
+        "spine_text": (255, 255, 255),
+    },
     "gonul": {  # Gönül Nağmeleri: teal sky and minbars all over, deep teal spine, white text
         "band_y": None,
         "back": [(0, (56, 162, 168)), (1, (30, 118, 126))],      # the teal sky (the front's edges are minbars)

@@ -440,3 +440,16 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   only removed the cream fill → `interior/hitap-interior-kdp.pdf`.
 - KDP: theme `hitap` (no band, deep blue spine): `kdp/hitap-khmer-kdp-a5-260p-{cream,white}`; reading PDF
   `interior/hitap-with-cover.pdf`.
+
+## İbadet Hayatımız: Oruç, Zekât, Hac (`oruc/`, `zekat/`, `hac/`)
+
+- Same series design as Namaz (Süreyya). `erase_title.py`: series label, subtitle, title, author and Süreyya logo
+  removed with solid LaMa boxes between the thin rules; the series-label strip is re-interpolated row by row (LaMa
+  regrew letter bits there).
+- `make_khmer.py [--hd]` — **proposed** titles (no translation in Drive yet), from the translators' words found in
+  the other interiors (ការបួស "បួសនៅខែរ៉ម៉ាដន", ហ្សាកាត់ "បរិច្ចាគហ្សាកាត់", ហាជ្ជ "ធ្វើហាជ្ជ", ការអភ័យទោស,
+  យុត្តិធម៌សង្គម, ការអំពាវនាវ); series line ជីវិតនៃការគោរពប្រណិប័តន៍របស់យើង as on Namaz:
+  - Oruç: ការគោរពប្រណិប័តន៍ដែលពោរពេញដោយការអភ័យទោស / **ការបួស**
+  - Zekât: ធាតុគ្រឹះនៃយុត្តិធម៌សង្គម / **ហ្សាកាត់**
+  - Hac: ការឆ្លើយតបនឹងការអំពាវនាវរបស់អល់ឡោះ / **ហាជ្ជ**
+- KDP themes `oruc`, `zekat`, `hac` (no band) are ready; waiting for the interiors.

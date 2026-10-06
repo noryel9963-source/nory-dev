@@ -52,9 +52,10 @@ Lem'alar (`lemalar/`, Risale-i Nur, title ពន្លឺទាំងឡាយ, 
 Fâtiha Üzerine Mülâhazalar (`fatiha/`, title ការពិចារណាលើ / ស៊ូរ៉ោះអាល់ហ្វាទីហះ from the translation, A5 327p);
 Hitap Çiçekleri (`hitap/`, title ផ្កានៃ / ការអំពាវនាវ from the translation, A5 260p).
 Cover only: Kalbin Solukları (`soluk/`, ដង្ហើម / នៃដួងចិត្ត, 2 vols, split planned before chapter 42) — PDF (7.5 MB) too big for the Drive connector, needs parts.
-Cover only (waiting for interior PDF): Çağ ve Nesil 2 (Buhranlar) and 3 (Yitirilmiş); Ölçü; Kırık Testi 6–14; Bir İ'câz Hecelemesi (`icaz/`).
+Cover only (waiting for interior PDF): Çağ ve Nesil 2 (Buhranlar) and 3 (Yitirilmiş); Ölçü; Kırık Testi 6–14; Bir İ'câz Hecelemesi (`icaz/`);
+Oruç, Zekât, Hac (`oruc/`, `zekat/`, `hac/`, İbadet Hayatımız series like Namaz — proposed titles ការបួស, ហ្សាកាត់, ហាជ្ជ).
 
 ## Open questions for the user
-- Confirm proposed titles: Çağ ve Nesil 1–3, Kendi İklimimiz (Prizma 5), Ölçü, Kırık Testi 3, 5, 6, 14, Gönül Nağmeleri, Bir İ'câz Hecelemesi (ការអានប្រកបភាពអច្ឆរិយៈមួយ).
+- Confirm proposed titles: Çağ ve Nesil 1–3, Kendi İklimimiz (Prizma 5), Ölçü, Kırık Testi 3, 5, 6, 14, Gönül Nağmeleri, Bir İ'câz Hecelemesi (ការអានប្រកបភាពអច្ឆរិយៈមួយ), Oruç / Zekât / Hac (titles + subtitles in README).
 - Author name still appears inside interiors (copyright/title pages) — left untouched pending the user's decision.
 - Prizma 9 and Kırık Testi 1 interiors: the copyright page names the wrong source book (Prizma 8 / Prizma 2).
