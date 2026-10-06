@@ -128,6 +128,13 @@ THEMES = {
         "spine": [(0, (14, 30, 48)), (0.5, (26, 48, 71)), (1, (14, 30, 48))],
         "spine_text": (255, 255, 255),
     },
+    "fatiha": {  # Fâtiha Üzerine Mülâhazalar: gold band under the mosque and fountain, deep brown spine, cream text
+        "band_y": 864 / 1003,
+        "band": [(0, (212, 135, 35)), (0.5, (170, 108, 24)), (1, (156, 101, 23))],
+        "band_line": (44, 1, 2),
+        "spine": [(0, (60, 26, 8)), (0.5, (96, 50, 16)), (1, (60, 26, 8))],
+        "spine_text": (250, 238, 210),
+    },
     "beyan": {  # Beyan (Yağmur series): grey band under the orange sky, deep green spine (the number box)
         "band_y": (1102 - 27) / (1280 - 27),
         "band": [(0, (190, 190, 195)), (0.5, (178, 179, 184)), (1, (165, 167, 172))],

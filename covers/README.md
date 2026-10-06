@@ -418,3 +418,14 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - Interior: 74 chapters, last at printed p. 819 (~830+ pages, over KDP's 828). Planned split before chapter 42
   (printed p. 417). `Kalbin Solukları.pdf` (7.5 MB) is too big for the Drive connector — waiting for it in parts.
 - KDP theme `soluk` (no band, deep navy spine) is ready.
+
+## Fâtiha Üzerine Mülâhazalar (`fatiha/`)
+
+- Same series design as Bizim Dünyamız (gold band + red box). `erase_title.py`: "FATİHA ÜZERİNE / Mülâhazalar" and
+  the author signature on the band removed (LaMa; band refilled with its own colour). Mosque, fountain, red box kept.
+- `make_khmer.py [--hd]`: **ការពិចារណាលើ / ស៊ូរ៉ោះអាល់ហ្វាទីហះ** — the translation's title page; dark brown Battambang
+  with a faint light emboss. No author.
+- Interior from Drive: A5, 327 pages (no picture cover). `fix_gutter.py` shifted 0.088 in (inside 0.645 ≥ 0.625 in),
+  cream fill removed → `interior/fatiha-interior-kdp.pdf`.
+- KDP: theme `fatiha` (gold band, deep brown spine): `kdp/fatiha-khmer-kdp-a5-327p-{cream,white}`; reading PDF
+  `interior/fatiha-with-cover.pdf`.

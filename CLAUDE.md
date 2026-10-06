@@ -48,7 +48,8 @@ Done (cover + KDP covers + reading PDF): Asrın Getirdiği Tereddütler 1 (new A
 Asâ-yı Mûsâ (`asa/`, Said Nursî — title ដំបងរបស់ព្យាការីមូសា from the translation); Namaz (`namaz/`, A5 413p); Gönül Nağmeleri: Hutbeler (`gonul/`, A5 401p);
 Beyan 1 (`beyan/`, title វោហារ from the translation, A5 263p);
 Enginliğiyle Bizim Dünyamız (`dunyamiz/`, title ពិភពរបស់យើង / ក្នុងភាពធំទូលាយរបស់វា from the translation, A5 684p).
-Lem'alar (`lemalar/`, Risale-i Nur, title ពន្លឺទាំងឡាយ, 2 vols A5 580p + 592p, split before the 26th Flash).
+Lem'alar (`lemalar/`, Risale-i Nur, title ពន្លឺទាំងឡាយ, 2 vols A5 580p + 592p, split before the 26th Flash);
+Fâtiha Üzerine Mülâhazalar (`fatiha/`, title ការពិចារណាលើ / ស៊ូរ៉ោះអាល់ហ្វាទីហះ from the translation, A5 327p).
 Cover only: Kalbin Solukları (`soluk/`, ដង្ហើម / នៃដួងចិត្ត, 2 vols, split planned before chapter 42) — PDF (7.5 MB) too big for the Drive connector, needs parts.
 Cover only (waiting for interior PDF): Çağ ve Nesil 2 (Buhranlar) and 3 (Yitirilmiş); Ölçü; Kırık Testi 6–14; Bir İ'câz Hecelemesi (`icaz/`).
 

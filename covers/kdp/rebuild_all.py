@@ -79,6 +79,8 @@ BOOKS = {
     **{f"lemalar-{v}": ("lemalar", str(v), "../asa/asa-back-4x.png", A5, n, "asa", "ពន្លឺទាំងឡាយ",
                         f"lemalar-khmer-{v}-kdp-a5-{n}p", f"lemalar-{v}", f"ពន្លឺទាំងឡាយ ភាគទី{d}")
        for v, n, d in [(1, 580, "១"), (2, 592, "២")]},
+    "fatiha": ("fatiha", "", "fatiha-notitle-source-4x.png", A5, 327, "fatiha", "ការពិចារណាលើស៊ូរ៉ោះអាល់ហ្វាទីហះ",
+               "fatiha-khmer-kdp-a5-327p", "fatiha", "ការពិចារណាលើស៊ូរ៉ោះអាល់ហ្វាទីហះ"),
 }
 
 
@@ -95,7 +97,7 @@ def art(key):
     folder, volume, back_art = BOOKS[key][:3]
     TMP.mkdir(exist_ok=True)
     mk = load(folder)
-    front = mk.build(True, round_corners=False) if folder in ("ustadla", "asa", "namaz", "gonul", "beyan", "fasil2", "dunyamiz") else mk.build(volume, hd=True, round_corners=False)
+    front = mk.build(True, round_corners=False) if folder in ("ustadla", "asa", "namaz", "gonul", "beyan", "fasil2", "dunyamiz", "fatiha") else mk.build(volume, hd=True, round_corners=False)
     k = round(front.width / (mk.COVER[2] - mk.COVER[0]))           # 4x upscale (Üstad'la: 2x)
     box = tuple(v * k for v in mk.COVER)
     back = Image.open(COVERS / folder / back_art).convert("RGB").crop(box).transpose(Image.FLIP_LEFT_RIGHT)
@@ -116,7 +118,7 @@ def rebuild(key):
                         "--paper", paper, *extra, "-o", str(KDP / f"{out}-{paper}")],
                        check=True, cwd=KDP, stdout=subprocess.DEVNULL)
     src = COVERS / "interior" / f"{interior}-interior.pdf"
-    if key in ("heykel-1", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1", "fasil-2", "dunyamiz", "lemalar-1", "lemalar-2"):
+    if key in ("heykel-1", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1", "fasil-2", "dunyamiz", "lemalar-1", "lemalar-2", "fatiha"):
         src = COVERS / "interior" / f"{interior}-interior-kdp.pdf"
     if src.exists():
         subprocess.run([sys.executable, str(KDP / "combine.py"), str(src),
