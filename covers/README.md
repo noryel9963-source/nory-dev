@@ -453,3 +453,12 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   - Zekât: ធាតុគ្រឹះនៃយុត្តិធម៌សង្គម / **ហ្សាកាត់**
   - Hac: ការឆ្លើយតបនឹងការអំពាវនាវរបស់អល់ឡោះ / **ហាជ្ជ**
 - KDP themes `oruc`, `zekat`, `hac` (no band) are ready; waiting for the interiors.
+
+## Fasıldan Fasıla 3 (`fasil3/`)
+
+- Interior from Drive: A5, 306 pages; title page ពីវគ្គមួយ / ទៅវគ្គមួយ — ភាគ ៣. `fix_gutter.py` shifted 0.057 in
+  (inside 0.645 ≥ 0.625 in), cream fill removed → `interior/fasil-3-interior-kdp.pdf`.
+- `erase_title.py`: "FASILDAN FASILA" + soft shadows (wide deviation masks) and the author signature on the gold band
+  removed (LaMa; band refilled with its own colour). Figure, floral art and number box "3" kept.
+- `make_khmer.py [--hd]`: **ពីវគ្គមួយ / ទៅវគ្គមួយ**, red-brown regular + dark-brown Battambang Bold with a soft shadow.
+- KDP theme `fasil3` (gold band, deep brown spine): `kdp/fasil-khmer-3-kdp-a5-306p-{cream,white}`.

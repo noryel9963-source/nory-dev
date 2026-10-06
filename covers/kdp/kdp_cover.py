@@ -170,6 +170,13 @@ THEMES = {
         "spine": [(0, (78, 32, 16)), (0.5, (120, 52, 24)), (1, (78, 32, 16))],
         "spine_text": (246, 214, 160),
     },
+    "fasil3": {  # Fasıldan Fasıla 3: gold band under the orange floral art, deep brown spine, cream text
+        "band_y": 974 / 1139,
+        "band": [(0, (212, 124, 36)), (0.5, (176, 102, 25)), (1, (158, 92, 20))],
+        "band_line": (78, 33, 4),
+        "spine": [(0, (78, 32, 16)), (0.5, (120, 52, 24)), (1, (78, 32, 16))],
+        "spine_text": (246, 214, 160),
+    },
     "fasil": {  # Fasıldan Fasıla: plain yellow art all over, red-brown spine
         "band_y": None,
         "spine": [(0, (95, 30, 5)), (0.5, (150, 58, 15)), (1, (95, 30, 5))],
