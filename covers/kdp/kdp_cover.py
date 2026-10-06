@@ -130,6 +130,7 @@ THEMES = {
     },
     "fatiha": {  # Fâtiha Üzerine Mülâhazalar: gold band under the mosque and fountain, deep brown spine, cream text
         "band_y": 864 / 1003,
+        "back": [(0, (250, 240, 222)), (0.45, (253, 249, 236)), (0.8, (238, 200, 110)), (1, (205, 140, 40))],  # sky → gold
         "band": [(0, (212, 135, 35)), (0.5, (170, 108, 24)), (1, (156, 101, 23))],
         "band_line": (44, 1, 2),
         "spine": [(0, (60, 26, 8)), (0.5, (96, 50, 16)), (1, (60, 26, 8))],

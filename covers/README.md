@@ -427,5 +427,5 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   with a faint light emboss. No author.
 - Interior from Drive: A5, 327 pages (no picture cover). `fix_gutter.py` shifted 0.088 in (inside 0.645 ≥ 0.625 in),
   cream fill removed → `interior/fatiha-interior-kdp.pdf`.
-- KDP: theme `fatiha` (gold band, deep brown spine): `kdp/fatiha-khmer-kdp-a5-327p-{cream,white}`; reading PDF
+- KDP: theme `fatiha` (gold band, deep brown spine; `back` = cream sky → gold, since the front's edge is the mosque): `kdp/fatiha-khmer-kdp-a5-327p-{cream,white}`; reading PDF
   `interior/fatiha-with-cover.pdf`.
