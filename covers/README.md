@@ -385,5 +385,9 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 
 - `erase_title.py`: title, small "FASILDAN FASILA" mark and author signature removed (LaMa, row-median deviation
   masks); the pomegranate's stem tip is protected (`KEEP`). Number box "2" kept.
-- `make_khmer.py [--hd]`: **ពីជំពូកមួយ / ទៅជំពូកមួយ** (same title as volume 1), dark brown, regular + Battambang Bold
-  (`fonts/Battambang-Bold.ttf`, OFL from Google Fonts) like "Fasıldan" / "Fasıla". No interior yet.
+- `make_khmer.py [--hd]`: **ពីវគ្គមួយ / ទៅវគ្គមួយ** — the title the translators printed (interior pp 1 and 3,
+  "ពីវគ្គមួយទៅវគ្គមួយ ភាគ ២"); volume 1's cover/spine switched from the proposed ពីជំពូកមួយ ទៅជំពូកមួយ to match.
+  Dark brown, regular + Battambang Bold (`fonts/Battambang-Bold.ttf`, OFL) like "Fasıldan" / "Fasıla".
+- Interior from Drive: A5, 250 pages, margins OK (inside 0.59 in), cream fill removed → `interior/fasil-2-interior-kdp.pdf`.
+  KDP: `--theme fasil2` (brown leather band, deep brown spine): `kdp/fasil-khmer-2-kdp-a5-250p-{cream,white}`;
+  reading PDF `interior/fasil-2-with-cover.pdf`.

@@ -44,12 +44,12 @@ Interiors are NOT in git (`covers/interior/` is ignored): re-download them from 
 
 ## Status
 Done (cover + KDP covers + reading PDF): Asrın Getirdiği Tereddütler 1 (new A5 251p edition), 3 (A5 307p) and 4 (A5 354p); Çağ ve Nesil 1; Kalbin Zümrüt Tepeleri 1–4;
-Üstad'la Hasbihal; Prizma 1–9 (1 is A5, 2–9 B5); Kırık Testi 1–5; Fasıldan Fasıla 1; Ruhumuzun Heykelini Dikerken 1 (`heykel/`);
+Üstad'la Hasbihal; Prizma 1–9 (1 is A5, 2–9 B5); Kırık Testi 1–5; Fasıldan Fasıla 1–2 (title ពីវគ្គមួយ ទៅវគ្គមួយ from the translation; `fasil2/`); Ruhumuzun Heykelini Dikerken 1 (`heykel/`);
 Asâ-yı Mûsâ (`asa/`, Said Nursî — title ដំបងរបស់ព្យាការីមូសា from the translation); Namaz (`namaz/`, A5 413p); Gönül Nağmeleri: Hutbeler (`gonul/`, A5 401p);
 Beyan 1 (`beyan/`, title វោហារ from the translation, A5 263p).
-Cover only (waiting for interior PDF): Çağ ve Nesil 2 (Buhranlar) and 3 (Yitirilmiş); Ölçü; Kırık Testi 6–14; Fasıldan Fasıla 2 (`fasil2/`); Bir İ'câz Hecelemesi (`icaz/`); Enginliğiyle Bizim Dünyamız (`dunyamiz/`).
+Cover only (waiting for interior PDF): Çağ ve Nesil 2 (Buhranlar) and 3 (Yitirilmiş); Ölçü; Kırık Testi 6–14; Bir İ'câz Hecelemesi (`icaz/`); Enginliğiyle Bizim Dünyamız (`dunyamiz/`).
 
 ## Open questions for the user
-- Confirm proposed titles: Çağ ve Nesil 1–3, Kendi İklimimiz (Prizma 5), Fasıldan Fasıla, Ölçü, Kırık Testi 3, 5, 6, 14, Gönül Nağmeleri, Bir İ'câz Hecelemesi (ការអានប្រកបភាពអច្ឆរិយៈមួយ), Bizim Dünyamız (ពិភពរបស់យើង).
+- Confirm proposed titles: Çağ ve Nesil 1–3, Kendi İklimimiz (Prizma 5), Ölçü, Kırık Testi 3, 5, 6, 14, Gönül Nağmeleri, Bir İ'câz Hecelemesi (ការអានប្រកបភាពអច្ឆរិយៈមួយ), Bizim Dünyamız (ពិភពរបស់យើង).
 - Author name still appears inside interiors (copyright/title pages) — left untouched pending the user's decision.
 - Prizma 9 and Kırık Testi 1 interiors: the copyright page names the wrong source book (Prizma 8 / Prizma 2).

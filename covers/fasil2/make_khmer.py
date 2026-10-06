@@ -1,4 +1,4 @@
-"""Khmer edition of "Fasıldan Fasıla 2": ពីជំពូកមួយ / ទៅជំពូកមួយ (same title as volume 1), dark brown like the original
+"""Khmer edition of "Fasıldan Fasıla 2": ពីវគ្គមួយ / ទៅវគ្គមួយ (the translation's own title, its pages 1 and 3), dark brown like the original
 "Fasıldan" (regular) / "Fasıla" (bold, Battambang Bold); author and small mark removed, the number box kept.
 
     python3 make_khmer.py [--hd]
@@ -20,8 +20,8 @@ CORNER = 0
 BROWN = (88, 41, 31)
 # text, max width, ink height, centre x, centre y, colour, shadow, font
 LINES = [
-    ("ពីជំពូកមួយ", 440, 112, 340, 478, BROWN, None, "Battambang.ttf"),         # Fasıldan
-    ("ទៅជំពូកមួយ", 380, 118, 340, 622, BROWN, None, "Battambang-Bold.ttf"),    # Fasıla
+    ("ពីវគ្គមួយ", 440, 112, 340, 478, BROWN, None, "Battambang.ttf"),         # Fasıldan
+    ("ទៅវគ្គមួយ", 380, 118, 340, 622, BROWN, None, "Battambang-Bold.ttf"),    # Fasıla
 ]
 
 

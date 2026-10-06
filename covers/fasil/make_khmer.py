@@ -17,11 +17,11 @@ SOURCE_HD = HERE / "fasil-notitle-source-4x.png"
 COVER = (13, 12, 772, 1111)            # cover inside the app frame (source px)
 CORNER = 12
 
-# ពីជំពូកមួយ ទៅជំពូកមួយ — "From Chapter to Chapter" (Fasıldan Fasıla); proposed translation.
+# ពីវគ្គមួយ ទៅវគ្គមួយ — "From Section to Section": the title the translators printed in Fasıldan Fasıla 2.
 # Ornate like the original: Battambang, red-brown fill with a darker outline, one line across the top.
 TITLE = [
     # text, max width, ink height, center x, center y
-    ("ពីជំពូកមួយ ទៅជំពូកមួយ", 700, 88, 392, 148),
+    ("ពីវគ្គមួយ ទៅវគ្គមួយ", 640, 88, 392, 148),
 ]
 FILL_TOP, FILL_BOTTOM = (170, 60, 15), (95, 30, 5)
 OUTLINE = (55, 18, 0)

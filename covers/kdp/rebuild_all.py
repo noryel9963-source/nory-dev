@@ -60,8 +60,8 @@ BOOKS = {
                 "kirik-khmer-4-kdp-a5-560p", "kirik-4", "ប៉មនៃក្ដីសង្ឃឹម (ក្អមបែក ៤)"),
     "kirik-5": ("kirik5", "5", "kirik-notitle-source-4x.png", A5, 682, "kirik", "ភ្លៀងពេលអាសើរ",
                 "kirik-khmer-5-kdp-a5-682p", "kirik-5", "ភ្លៀងពេលអាសើរ (ក្អមបែក ៥)"),
-    "fasil-1": ("fasil", "1", "fasil-notitle-source-4x.png", A5, 234, "fasil", "ពីជំពូកមួយ ទៅជំពូកមួយ",
-                "fasil-khmer-1-kdp-a5-234p", "fasil-1", "ពីជំពូកមួយ ទៅជំពូកមួយ ១"),
+    "fasil-1": ("fasil", "1", "fasil-notitle-source-4x.png", A5, 234, "fasil", "ពីវគ្គមួយ ទៅវគ្គមួយ",
+                "fasil-khmer-1-kdp-a5-234p", "fasil-1", "ពីវគ្គមួយ ទៅវគ្គមួយ ១"),
     "heykel-1": ("heykel", "1", "heykel-notitle-source-4x.png", A5, 177, "heykel", "នៅពេលតាំងរូបសំណាកនៃព្រលឹងរបស់យើង",
                  "heykel-khmer-1-kdp-a5-177p", "ruhumuzun-heykeli-1", "នៅពេលតាំងរូបសំណាកនៃព្រលឹងរបស់យើង ១"),
     "asa": ("asa", "", "asa-back-4x.png", A5, 438, "asa", "ដំបងរបស់ព្យាការីមូសា",
@@ -72,6 +72,8 @@ BOOKS = {
               "gonul-khmer-kdp-a5-401p", "gonul", "បទភ្លេងនៃដួងចិត្ត — ខុតហ្ពះ"),
     "beyan-1": ("beyan", "1", "beyan-notitle-source-4x.png", A5, 263, "beyan", "វោហារ",
                 "beyan-khmer-1-kdp-a5-263p", "beyan-1", "វោហារ ១"),
+    "fasil-2": ("fasil2", "2", "fasil2-notitle-source-4x.png", A5, 250, "fasil2", "ពីវគ្គមួយ ទៅវគ្គមួយ",
+                "fasil-khmer-2-kdp-a5-250p", "fasil-2", "ពីវគ្គមួយ ទៅវគ្គមួយ ២"),
 }
 
 
@@ -88,7 +90,7 @@ def art(key):
     folder, volume, back_art = BOOKS[key][:3]
     TMP.mkdir(exist_ok=True)
     mk = load(folder)
-    front = mk.build(True, round_corners=False) if folder in ("ustadla", "asa", "namaz", "gonul", "beyan") else mk.build(volume, hd=True, round_corners=False)
+    front = mk.build(True, round_corners=False) if folder in ("ustadla", "asa", "namaz", "gonul", "beyan", "fasil2") else mk.build(volume, hd=True, round_corners=False)
     k = round(front.width / (mk.COVER[2] - mk.COVER[0]))           # 4x upscale (Üstad'la: 2x)
     box = tuple(v * k for v in mk.COVER)
     back = Image.open(COVERS / folder / back_art).convert("RGB").crop(box).transpose(Image.FLIP_LEFT_RIGHT)
@@ -109,7 +111,7 @@ def rebuild(key):
                         "--paper", paper, *extra, "-o", str(KDP / f"{out}-{paper}")],
                        check=True, cwd=KDP, stdout=subprocess.DEVNULL)
     src = COVERS / "interior" / f"{interior}-interior.pdf"
-    if key in ("heykel-1", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1"):
+    if key in ("heykel-1", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1", "fasil-2"):
         src = COVERS / "interior" / f"{interior}-interior-kdp.pdf"
     if src.exists():
         subprocess.run([sys.executable, str(KDP / "combine.py"), str(src),
