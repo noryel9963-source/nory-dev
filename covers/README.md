@@ -452,7 +452,9 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   - Oruç: ការគោរពប្រណិប័តន៍ដែលពោរពេញដោយការអភ័យទោស / **ការបួស**
   - Zekât: ធាតុគ្រឹះនៃយុត្តិធម៌សង្គម / **ហ្សាកាត់**
   - Hac: ការឆ្លើយតបនឹងការអំពាវនាវរបស់អល់ឡោះ / **ហាជ្ជ**
-- KDP themes `oruc`, `zekat`, `hac` (no band) are ready; waiting for the interiors.
+- KDP themes `oruc`, `zekat`, `hac` (no band; `anchor_y` 0.3 so the crop to A5 keeps the series line clear of the top edge).
+- Hac interior from Drive: A5, 252 pages; title page ការឆ្លើយតបនឹងការអំពាវនាវរបស់អល់ឡោះ៖ ហាជ្ជ (= the cover). Margins already
+  0.59 ≥ 0.5 in. KDP: `kdp/hac-khmer-kdp-a5-252p-{cream,white}`; reading PDF `interior/hac-with-cover.pdf`.
 
 ## Fasıldan Fasıla 3 (`fasil3/`)
 

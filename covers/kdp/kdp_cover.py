@@ -112,16 +112,19 @@ THEMES = {
     },
     "oruc": {  # Oruç (İbadet Hayatımız): blue to crimson art all over, deep blue spine, white text
         "band_y": None,
+        "anchor_y": 0.3,                                 # series line sits near the top edge
         "spine": [(0, (8, 52, 92)), (0.5, (16, 88, 140)), (1, (8, 52, 92))],
         "spine_text": (255, 255, 255),
     },
     "zekat": {  # Zekât (İbadet Hayatımız): rose to wine art all over, deep wine spine, white text
         "band_y": None,
+        "anchor_y": 0.3,                                 # series line sits near the top edge
         "spine": [(0, (84, 22, 46)), (0.5, (128, 40, 70)), (1, (84, 22, 46))],
         "spine_text": (255, 255, 255),
     },
     "hac": {  # Hac (İbadet Hayatımız): mauve to plum art all over, deep plum spine, white text
         "band_y": None,
+        "anchor_y": 0.3,                                 # series line sits near the top edge
         "spine": [(0, (62, 20, 56)), (0.5, (98, 36, 88)), (1, (62, 20, 56))],
         "spine_text": (255, 255, 255),
     },
@@ -410,13 +413,14 @@ def build(spec, front, back, spine_title, spine_author, volume, blurb, lang, tit
     # front: trim + right bleed, full height incl. top/bottom bleed
     fx0 = p(spec.spine_x1)
     front = fix_frame_corners(front)
-    canvas.paste(cover_fit(front, W - fx0, H, anchor_x=1.0, anchor_y=0.8), (fx0, 0))
+    ay = th.get("anchor_y", 0.8)   # where the extra height is cut: 0.8 = mostly the top; lower for text near the top
+    canvas.paste(cover_fit(front, W - fx0, H, anchor_x=1.0, anchor_y=ay), (fx0, 0))
 
     # back: plain colour taken from the front (user's choice: no picture, no logo) — the per-row median colour of
     # the front's outer strip next to the spine (background, not the central art), smoothed into a soft
     # top-to-bottom gradient — plus the same band as the front
     bw = p(spec.spine_x0)
-    fr = np.asarray(cover_fit(front, W - fx0, H, anchor_x=1.0, anchor_y=0.8)).astype(np.float32)
+    fr = np.asarray(cover_fit(front, W - fx0, H, anchor_x=1.0, anchor_y=ay)).astype(np.float32)
     band_y = int(H * th["band_y"]) if th.get("band_y") else H
     strip = fr[:band_y, p(BLEED + 0.1):p(BLEED + 0.1) + max(1, int(fr.shape[1] * 0.12))]
     rows = np.median(strip, axis=1)                           # (band_y, 3)

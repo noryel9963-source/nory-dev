@@ -89,6 +89,8 @@ BOOKS = {
                "fatiha-khmer-kdp-a5-327p", "fatiha", "ការពិចារណាលើស៊ូរ៉ោះអាល់ហ្វាទីហះ"),
     "hitap": ("hitap", "", "hitap-notitle-source-4x.png", A5, 260, "hitap", "ផ្កានៃការអំពាវនាវ",
               "hitap-khmer-kdp-a5-260p", "hitap", "ផ្កានៃការអំពាវនាវ"),
+    "hac": ("hac", "", "hac-notitle-source-4x.png", A5, 252, "hac", "ហាជ្ជ",
+            "hac-khmer-kdp-a5-252p", "hac", "ការឆ្លើយតបនឹងការអំពាវនាវរបស់អល់ឡោះ៖ ហាជ្ជ"),
 }
 
 
@@ -105,7 +107,7 @@ def art(key):
     folder, volume, back_art = BOOKS[key][:3]
     TMP.mkdir(exist_ok=True)
     mk = load(folder)
-    front = mk.build(True, round_corners=False) if folder in ("ustadla", "asa", "namaz", "gonul", "beyan", "fasil2", "fasil3", "fasil4", "fasil5", "dunyamiz", "fatiha", "hitap") else mk.build(volume, hd=True, round_corners=False)
+    front = mk.build(True, round_corners=False) if folder in ("ustadla", "asa", "namaz", "gonul", "beyan", "fasil2", "fasil3", "fasil4", "fasil5", "dunyamiz", "fatiha", "hitap", "hac") else mk.build(volume, hd=True, round_corners=False)
     k = round(front.width / (mk.COVER[2] - mk.COVER[0]))           # 4x upscale (Üstad'la: 2x)
     box = tuple(v * k for v in mk.COVER)
     back = Image.open(COVERS / folder / back_art).convert("RGB").crop(box).transpose(Image.FLIP_LEFT_RIGHT)
@@ -126,7 +128,7 @@ def rebuild(key):
                         "--paper", paper, *extra, "-o", str(KDP / f"{out}-{paper}")],
                        check=True, cwd=KDP, stdout=subprocess.DEVNULL)
     src = COVERS / "interior" / f"{interior}-interior.pdf"
-    if key in ("heykel-1", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1", "fasil-2", "fasil-3", "fasil-4", "fasil-5", "dunyamiz", "lemalar-1", "lemalar-2", "fatiha", "hitap"):
+    if key in ("heykel-1", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1", "fasil-2", "fasil-3", "fasil-4", "fasil-5", "dunyamiz", "lemalar-1", "lemalar-2", "fatiha", "hitap", "hac"):
         src = COVERS / "interior" / f"{interior}-interior-kdp.pdf"
     if src.exists():
         subprocess.run([sys.executable, str(KDP / "combine.py"), str(src),
