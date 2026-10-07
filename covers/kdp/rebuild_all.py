@@ -103,6 +103,9 @@ BOOKS = {
        for v, n, d in [(1, 384, "១"), (2, 328, "២")]},
 }
 
+# books whose interior went through fix_gutter.py (…-interior-kdp.pdf); the others use …-interior.pdf
+KDP_INTERIOR = ("heykel-1", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1", "fasil-2", "fasil-3", "fasil-4", "fasil-5", "dunyamiz", "lemalar-1", "lemalar-2", "fatiha", "hitap", "hac", "inanc-1", "inanc-2", "oruc", "zekat", "soluk-1", "soluk-2")
+
 
 def load(folder):
     sys.path.insert(0, str(COVERS / folder))
@@ -138,7 +141,7 @@ def rebuild(key):
                         "--paper", paper, *extra, "-o", str(KDP / f"{out}-{paper}")],
                        check=True, cwd=KDP, stdout=subprocess.DEVNULL)
     src = COVERS / "interior" / f"{interior}-interior.pdf"
-    if key in ("heykel-1", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1", "fasil-2", "fasil-3", "fasil-4", "fasil-5", "dunyamiz", "lemalar-1", "lemalar-2", "fatiha", "hitap", "hac", "inanc-1", "inanc-2", "oruc", "zekat", "soluk-1", "soluk-2"):
+    if key in KDP_INTERIOR:
         src = COVERS / "interior" / f"{interior}-interior-kdp.pdf"
     if src.exists():
         subprocess.run([sys.executable, str(KDP / "combine.py"), str(src),

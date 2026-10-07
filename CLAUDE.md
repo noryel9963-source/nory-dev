@@ -24,6 +24,8 @@ Interiors are NOT in git (`covers/interior/` is ignored): re-download them from 
 7. KDP cover: `covers/kdp/kdp_cover.py build --trim WxH --pages P --paper cream|white --theme T ...` (both papers).
 8. Reading PDF: `covers/kdp/combine.py INTERIOR OUT --title ...`.
 9. Commit + push; send files to the user.
+10. Printer package on request: `python3 covers/kdp/print_package.py KEY ...` → `covers/print/KEY-print.zip`
+    (interior + cream/white covers + bilingual PRINT-INFO.txt; `covers/print/` is git-ignored).
 
 ## Title rules the user confirmed / conventions
 - Use the Khmer title printed in the translation (title page, foreword) when one exists; otherwise build it
