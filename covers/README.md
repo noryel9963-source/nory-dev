@@ -496,3 +496,11 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - `make_khmer.py [--hd] 1|2`: **នៅក្រោមម្លប់ / នៃជំនឿ**, white Battambang with a red outline and soft shadow. Vol 2 is the
   same cover (user: "vol 2 the same"): the flat yellow box's "1" is painted over and "2" drawn in Cormorant Garamond.
 - KDP theme `inanc` (red band, deep red spine): `kdp/inanc-khmer-{1,2}-kdp-a5-{384,328}p-*`.
+
+## Mektubat (`mektubat/`, Risale-i Nur — 2 volumes)
+
+- `make_khmer.py [--hd] 1|2`: **លិខិតទាំងឡាយ** (the translation's title; its chapters are លិខិតទីមួយ …) + **ភាគទី ១ / ២**,
+  gold on the Risale-i Nur red-velvet art (`asa/`), like Lem'alar; "Risale-i Nur Külliyatı'ndan" and the author kept.
+- Interior: "Mektubat .pdf" in Drive is 12 MB (too big for the Drive connector) — waiting for a compressed copy or
+  parts. Contents end at printed p. 1139 (+ index) ≈ 1,150 pages → 2 volumes; planned split before the 20th Letter
+  (លិខិតទីម្ភៃ, printed p. 545; the 19th Letter runs 191–544): ~552 + ~614 pages.
