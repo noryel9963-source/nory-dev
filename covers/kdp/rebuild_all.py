@@ -24,6 +24,8 @@ SPINE_FONT = "Battambang.ttf"
 BOOKS = {
     "asrin-1": (None, "1", None, A5, 251, "asrin", "ការងឿងឆ្ងល់នៃយុគសម័យ", "asrin-khmer-1-kdp-a5-251p",
                 "asrin-getirdigi-tereddutler-1", "ការងឿងឆ្ងល់នៃយុគសម័យ ភាគទី១"),
+    "asrin-2": (None, "2", None, B5, 292, "asrin", "ការងឿងឆ្ងល់នៃយុគសម័យ", "asrin-khmer-2-kdp-b5-292p",
+                "asrin-getirdigi-tereddutler-2", "ការងឿងឆ្ងល់នៃយុគសម័យ ភាគទី២"),
     "asrin-3": (None, "3", None, A5, 307, "asrin", "ការងឿងឆ្ងល់នៃយុគសម័យ", "asrin-khmer-3-kdp-a5-307p",
                 "asrin-getirdigi-tereddutler-3", "ការងឿងឆ្ងល់នៃយុគសម័យ ភាគទី៣"),
     "asrin-4": (None, "4", None, A5, 354, "asrin", "ការងឿងឆ្ងល់នៃយុគសម័យ", "asrin-khmer-4-kdp-a5-354p",

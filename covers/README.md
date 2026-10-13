@@ -504,3 +504,13 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - Interior: "Mektubat .pdf" in Drive is 12 MB (too big for the Drive connector) — waiting for a compressed copy or
   parts. Contents end at printed p. 1139 (+ index) ≈ 1,150 pages → 2 volumes; planned split before the 20th Letter
   (លិខិតទីម្ភៃ, printed p. 545; the 19th Letter runs 191–544): ~552 + ~614 pages.
+
+## Asrın Getirdiği Tereddütler 2
+
+- Interior: "Asrin_Getirdigi_2_FINAL.pdf" (shared in Drive by the translator) — an older layout: **B5**, 292 pages
+  (vols 1, 3, 4 are the new A5 edition); title page ការងឿងឆ្ងល់នៃយុគសម័យ ភាគទី ២; inside margin 1.18 in, no cream fill,
+  used as is (`interior/asrin-getirdigi-tereddutler-2-interior.pdf`).
+- **30 missing glyphs (print as □) on pages 4, 5, 21, 29, 59, 63, 64, 114** — mostly a mark after closing quotes
+  (likely Arabic/verse signs the embedded Noto Serif Khmer subset lacks) and a few words (e.g. "■■■■ (អាខេរ៉ាត់)").
+  Not guessable → the translator must fix; proof sheet `print/asrin-2-missing-letters.png` (git-ignored).
+- KDP: standard series cover, volume 2: `kdp/asrin-khmer-2-kdp-b5-292p-{cream,white}`.
