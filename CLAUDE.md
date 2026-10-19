@@ -26,6 +26,8 @@ Interiors are NOT in git (`covers/interior/` is ignored): re-download them from 
 9. Commit + push; send files to the user.
 10. Printer package on request: `python3 covers/kdp/print_package.py KEY ...` → `covers/print/KEY-print.zip`
     (interior + cream/white covers + bilingual PRINT-INFO.txt; `covers/print/` is git-ignored).
+    `print_list.py` → `covers/print/PRINT-LIST.txt` (all books; HOLD list = interiors with missing glyphs:
+    Asrın 2 and Prizma 5–9 — Arabic set in a Khmer font prints as □; the translator must re-export).
 
 ## Title rules the user confirmed / conventions
 - Use the Khmer title printed in the translation (title page, foreword) when one exists; otherwise build it

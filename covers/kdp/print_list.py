@@ -27,11 +27,11 @@ def main():
     ready = [r for r in rows if not r[6]]
     held = [r for r in rows if r[6]]
     out = [f"BOOKS READY TO PRINT / សៀវភៅរួចរាល់សម្រាប់បោះពុម្ព — {len(ready)} of {len(rows)}", "=" * 100,
-           f"{'package':12} {'size':4} {'pages':>5}  {'spine cream':>11} {'spine white':>11}  title", "-" * 100]
-    out += [f"{k + '-print.zip':12} {s:4} {p:5}  {c:9.1f}mm {w:9.1f}mm  {t}" for k, t, s, p, c, w, _ in ready]
+           f"{'package':20} {'size':4} {'pages':>5}  {'spine cream':>11} {'spine white':>11}  title", "-" * 100]
+    out += [f"{k + '-print.zip':20} {s:4} {p:5}  {c:9.1f}mm {w:9.1f}mm  {t}" for k, t, s, p, c, w, _ in ready]
     out += ["", f"ON HOLD — waiting for a corrected PDF from the translator / រង់ចាំឯកសារកែតម្រូវ — {len(held)}",
             "-" * 100]
-    out += [f"{k:12} {s:4} {p:5}  {t}\n{'':14}-> {why}" for k, t, s, p, c, w, why in held]
+    out += [f"{k:20} {s:4} {p:5}  {t}\n{'':22}-> {why}" for k, t, s, p, c, w, why in held]
     out += ["", "Spine widths are for Amazon KDP paper; ask a local printer for theirs. / ទំហំខ្នងគិតតាមក្រដាស Amazon KDP។"]
     (COVERS / "print" / "PRINT-LIST.txt").write_text("\n".join(out) + "\n", encoding="utf-8")
     print("\n".join(out))
