@@ -1,5 +1,5 @@
-"""Khmer edition of "Ölüm Ötesi Hayat": ជីវិតក្រោយ / ការស្លាប់ (proposed — "life after death", from the translators'
-own ជីវិតក្រោយ and ការស្លាប់; to be checked against the translation's title page). Navy like the original
+"""Khmer edition of "Ölüm Ötesi Hayat": សេចក្ដីស្លាប់ / និងជីវិតបរលោក — the title printed on the translation's title
+page ("Ölüm ve Ötesi Hayat"). Navy like the original
 "ÖLÜM ÖTESİ / HAYAT", with a soft light glow. No author (the blue band stays empty).
 
     python3 make_khmer.py [--hd]
@@ -24,8 +24,8 @@ NAVY_TOP, NAVY_BOTTOM = (26, 40, 96), (40, 72, 150)
 GLOW = (255, 250, 232)
 # text, max width, ink height, centre y
 LINES = [
-    ("ជីវិតក្រោយ", 540, 86, 346),     # ÖLÜM ÖTESİ
-    ("ការស្លាប់", 600, 150, 466),      # HAYAT
+    ("សេចក្ដីស្លាប់", 520, 84, 346),    # ÖLÜM ÖTESİ
+    ("និងជីវិតបរលោក", 600, 130, 466),   # HAYAT
 ]
 
 

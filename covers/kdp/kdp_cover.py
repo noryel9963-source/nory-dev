@@ -166,6 +166,14 @@ THEMES = {
         "spine": [(0, (60, 26, 8)), (0.5, (96, 50, 16)), (1, (60, 26, 8))],
         "spine_text": (250, 238, 210),
     },
+    "olum": {  # Ölüm Ötesi Hayat: blue band under the golden sky and stairs, orange spine (like the box), navy text
+        "band_y": (1015 - 27) / (1170 - 27),
+        "back": [(0, (252, 246, 222)), (0.5, (244, 226, 168)), (1, (226, 192, 118))],  # the clouds (edge is grass)
+        "band": [(0, (56, 95, 178)), (0.5, (45, 80, 145)), (1, (40, 70, 140))],
+        "band_line": (21, 30, 80),
+        "spine": [(0, (214, 128, 4)), (0.5, (242, 156, 10)), (1, (214, 128, 4))],
+        "spine_text": (26, 40, 96),
+    },
     "yusuf": {  # Kur'ân'ın Sihirli Ufku: Yusuf Sûresi: dark maroon sky, glowing door and stairs, no band; deep maroon
         "band_y": None,  # spine, gold text; crop mostly from the stairs so the title keeps its top margin
         "anchor_y": 0.3,
