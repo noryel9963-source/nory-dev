@@ -57,7 +57,7 @@ Fâtiha Üzerine Mülâhazalar (`fatiha/`, title ការពិចារណា�
 Hitap Çiçekleri (`hitap/`, title ផ្កានៃ / ការអំពាវនាវ from the translation, A5 260p);
 Hac (`hac/`, İbadet Hayatımız, title confirmed by the translation, A5 252p); Oruç (`oruc/`, ការតមអាហារ, A5 247p); Zekât (`zekat/`, ហ្សាកាត់, A5 388p);
 İnancın Gölgesinde 1–2 (`inanc/`, title នៅក្រោមម្លប់នៃជំនឿ, A5 384p + 328p; vol 2 = vol 1 art with the number redrawn);
-Cevşen-i Kebîr (`cevsen/`, title ចាវ់ស្ហាន់អាល់ខាប៊ៀរ + Arabic in Amiri, red-velvet Risale art, A5 237p);
+Cevşen-i Kebîr (`cevsen/`, title ចាវ់ស្ហាន់អាល់ខាប៊ៀរ + Arabic in Amiri, on the real navy/gold cover, A5 237p);
 Kur'ân'dan İdrake Yansıyanlar (`kuran/`, title ការឆ្លុះបញ្ចាំងពីគម្ពីរគួរអាន / ទៅកាន់ការយល់ដឹង, A5 519p);
 Kalbin Solukları (`soluk/`, title ដង្ហើមនៃ / ដួងចិត្ត, 2 vols A5 424p + 418p split before chapter 42; from the user's compressed 5.7 MB re-upload).
 Cover only: Mektubat (`mektubat/`, Risale-i Nur, លិខិតទាំងឡាយ, 2 vols, split planned before the 20th Letter) — PDF is 12 MB, needs a compressed copy or parts.

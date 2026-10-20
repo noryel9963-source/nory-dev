@@ -529,8 +529,11 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 
 - Interior from Drive ("Cevşen-i Kebîr .pdf"; the earlier "Cevsen.pdf" was a copy of Kur'ân'dan İdrake): A5, 237
   pages, Arabic in Amiri + Khmer, no missing glyphs; margins 0.59 ≥ 0.5 in, cream fill removed.
-- `make_khmer.py [--hd]`: the title page exactly — **الجوشن الكبير** (Amiri, `fonts/Amiri-Regular.ttf`, OFL, from Google
-  Fonts via jsDelivr) / **ចាវ់ស្ហាន់អាល់ខាប៊ៀរ** / ការបួងសួងមួយរយវគ្គ ដោយព្រះនាមដ៏ល្អប្រសើររបស់អល់ឡោះ — gold on the
-  Risale-i Nur red-velvet art (`asa/`; no screenshot of the Turkish cover). Author line kept per the Risale rule
-  (note to user: Cevşen is a prayer Said Nursî included, not wrote — offered to remove it).
-- KDP theme `asa`: `kdp/cevsen-khmer-kdp-a5-237p-{cream,white}`.
+- Cover: the real one the user sent (phone screenshot `cevsen-source.png`, navy leather + gold corner ornaments, no
+  author/series line). The cover is only 182×263 px there → `cevsen-crop.png` upscaled 4× (`cevsen-crop-4x.png`);
+  `erase_title.py` replaces the "CEVŞEN" box with a quadratic fit of the surrounding leather + grain (LaMa ghosted);
+  the result (`cevsen-notitle-source.png`, 728×1052) is upscaled 4× again for the HD art.
+- `make_khmer.py [--hd]`: the title page exactly — **الجوشن الكبير** (Amiri, `fonts/Amiri-Regular.ttf`, OFL, via jsDelivr)
+  / **ចាវ់ស្ហាន់អាល់ខាប៊ៀរ** / ការបួងសួងមួយរយវគ្គ ដោយព្រះនាមដ៏ល្អប្រសើររបស់អល់ឡោះ, in the cover's gold.
+- KDP theme `cevsen` (no band; navy `back` gradient — the front's edge is the gold border; navy spine, gold text):
+  `kdp/cevsen-khmer-kdp-a5-237p-{cream,white}`.

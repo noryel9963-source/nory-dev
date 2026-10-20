@@ -166,6 +166,12 @@ THEMES = {
         "spine": [(0, (60, 26, 8)), (0.5, (96, 50, 16)), (1, (60, 26, 8))],
         "spine_text": (250, 238, 210),
     },
+    "cevsen": {  # Cevşen-i Kebîr: navy leather with gold corner ornaments, no band; navy back (the front's edge is
+        "band_y": None,  # the gold ornament border), deep navy spine, gold text
+        "back": [(0, (34, 38, 64)), (1, (26, 29, 50))],
+        "spine": [(0, (18, 20, 38)), (0.5, (32, 36, 62)), (1, (18, 20, 38))],
+        "spine_text": (232, 168, 76),
+    },
     "beyan": {  # Beyan (Yağmur series): grey band under the orange sky, deep green spine (the number box)
         "band_y": (1102 - 27) / (1280 - 27),
         "band": [(0, (190, 190, 195)), (0.5, (178, 179, 184)), (1, (165, 167, 172))],

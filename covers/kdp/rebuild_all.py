@@ -97,7 +97,7 @@ BOOKS = {
              "oruc-khmer-kdp-a5-247p", "oruc", "ការតមអាហារ"),
     "zekat": ("zekat", "", "zekat-notitle-source-4x.png", A5, 388, "zekat", "ហ្សាកាត់",
               "zekat-khmer-kdp-a5-388p", "zekat", "ហ្សាកាត់"),
-    "cevsen": ("cevsen", "", "../asa/asa-back-4x.png", A5, 237, "asa", "ចាវ់ស្ហាន់អាល់ខាប៊ៀរ",
+    "cevsen": ("cevsen", "", "cevsen-notitle-source-4x.png", A5, 237, "cevsen", "ចាវ់ស្ហាន់អាល់ខាប៊ៀរ",
                "cevsen-khmer-kdp-a5-237p", "cevsen", "ចាវ់ស្ហាន់អាល់ខាប៊ៀរ — ការបួងសួងមួយរយវគ្គ"),
     "kuran": ("kuran", "", "kuran-notitle-source-4x.png", A5, 519, "kuran", "ការឆ្លុះបញ្ចាំងពីគម្ពីរគួរអាន",
               "kuran-khmer-kdp-a5-519p", "kuran", "ការឆ្លុះបញ្ចាំងពីគម្ពីរគួរអាន ទៅកាន់ការយល់ដឹង"),
