@@ -550,3 +550,11 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   original's "KUR'ÂN'IN SİHİRLİ UFKU") / ស៊ូរ៉ោះ / **យូសុហ្វ** (large, "YUSUF sûresi"). No author.
 - KDP theme `yusuf` (no band, maroon spine, gold text, `anchor_y` 0.3 keeps the title's top margin):
   `kdp/yusuf-khmer-kdp-a5-371p-{cream,white}`; reading PDF `interior/yusuf-with-cover.pdf`.
+
+## Ölüm Ötesi Hayat (`olum/`) — cover only, waiting for the interior PDF
+
+- Cover: `olum-source.webp` (the user's screenshot; cover = (47,27,810,1170)). `erase_title.py <big-lama.pt>`: the navy
+  "ÖLÜM ÖTESİ / HAYAT" (bluer than the golden clouds) goes to LaMa; the white author signature on the blue band is
+  refilled with the band's gradient. Stairs, birds and the orange box stay.
+- `make_khmer.py [--hd]`: **proposed** title ជីវិតក្រោយ / ការស្លាប់ ("life after death", from the translators' own
+  ជីវិតក្រោយ and ការស្លាប់), navy with a soft light glow. Check against the translation's title page when the PDF arrives.
