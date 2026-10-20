@@ -514,3 +514,13 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   (likely Arabic/verse signs the embedded Noto Serif Khmer subset lacks) and a few words (e.g. "■■■■ (អាខេរ៉ាត់)").
   Not guessable → the translator must fix; proof sheet `print/asrin-2-missing-letters.png` (git-ignored).
 - KDP: standard series cover, volume 2: `kdp/asrin-khmer-2-kdp-b5-292p-{cream,white}`.
+
+## Kur'ân'dan İdrake Yansıyanlar (`kuran/`)
+
+- Same series design as Fâtiha / Bizim Dünyamız (orange band + red box). `erase_title.py`: "KUR'ÂN'DAN / İDRAKE
+  YANSIYANLAR" and the author signature on the band removed (LaMa; band refilled). Calligraphy, sun and sea kept.
+- `make_khmer.py [--hd]`: **ការឆ្លុះបញ្ចាំង / ពីគម្ពីរគួរអាន** (dark brown) / **ទៅកាន់ការយល់ដឹង** (red) — the translation's
+  title page, the long first part on two lines. No author.
+- Interior from Drive: A5, 519 pages, no missing glyphs; `fix_gutter.py` shifted 0.215 in (inside 0.77 ≥ 0.75 in),
+  cream fill removed → `interior/kuran-interior-kdp.pdf`.
+- KDP theme `kuran` (orange band, deep brown spine): `kdp/kuran-khmer-kdp-a5-519p-{cream,white}`.

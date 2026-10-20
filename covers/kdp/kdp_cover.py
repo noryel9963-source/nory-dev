@@ -159,6 +159,13 @@ THEMES = {
         "spine": [(0, (12, 52, 104)), (0.5, (26, 84, 150)), (1, (12, 52, 104))],
         "spine_text": (255, 255, 255),
     },
+    "kuran": {  # Kur'ân'dan İdrake Yansıyanlar: orange band under the golden sky and sea, deep brown spine, cream text
+        "band_y": 930 / 1091,
+        "band": [(0, (225, 123, 32)), (0.5, (186, 102, 23)), (1, (171, 94, 20))],
+        "band_line": (82, 22, 3),
+        "spine": [(0, (60, 26, 8)), (0.5, (96, 50, 16)), (1, (60, 26, 8))],
+        "spine_text": (250, 238, 210),
+    },
     "beyan": {  # Beyan (Yağmur series): grey band under the orange sky, deep green spine (the number box)
         "band_y": (1102 - 27) / (1280 - 27),
         "band": [(0, (190, 190, 195)), (0.5, (178, 179, 184)), (1, (165, 167, 172))],

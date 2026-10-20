@@ -97,6 +97,8 @@ BOOKS = {
              "oruc-khmer-kdp-a5-247p", "oruc", "ការតមអាហារ"),
     "zekat": ("zekat", "", "zekat-notitle-source-4x.png", A5, 388, "zekat", "ហ្សាកាត់",
               "zekat-khmer-kdp-a5-388p", "zekat", "ហ្សាកាត់"),
+    "kuran": ("kuran", "", "kuran-notitle-source-4x.png", A5, 519, "kuran", "ការឆ្លុះបញ្ចាំងពីគម្ពីរគួរអាន",
+              "kuran-khmer-kdp-a5-519p", "kuran", "ការឆ្លុះបញ្ចាំងពីគម្ពីរគួរអាន ទៅកាន់ការយល់ដឹង"),
     **{f"soluk-{v}": ("soluk", str(v), "soluk-notitle-source-4x.png", A5, n, "soluk", "ដង្ហើមនៃដួងចិត្ត",
                       f"soluk-khmer-{v}-kdp-a5-{n}p", f"soluk-{v}", f"ដង្ហើមនៃដួងចិត្ត ភាគទី{d}")
        for v, n, d in [(1, 424, "១"), (2, 418, "២")]},
@@ -107,7 +109,7 @@ BOOKS = {
 
 # books whose interior went through fix_gutter.py (…-interior-kdp.pdf); the others use …-interior.pdf
 KDP_INTERIOR = ("cag-1", "kalbin-1", "kalbin-2", "kalbin-3", "kalbin-4", "ustadla", "kirik-2", "kirik-3", "kirik-4",
-                "kirik-5", "fasil-1", "heykel-1", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1", "fasil-2", "fasil-3", "fasil-4", "fasil-5", "dunyamiz", "lemalar-1", "lemalar-2", "fatiha", "hitap", "hac", "inanc-1", "inanc-2", "oruc", "zekat", "soluk-1", "soluk-2")
+                "kirik-5", "fasil-1", "heykel-1", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1", "fasil-2", "fasil-3", "fasil-4", "fasil-5", "dunyamiz", "lemalar-1", "lemalar-2", "fatiha", "hitap", "hac", "inanc-1", "inanc-2", "oruc", "zekat", "soluk-1", "soluk-2", "kuran")
 
 
 def load(folder):
@@ -123,7 +125,7 @@ def art(key):
     folder, volume, back_art = BOOKS[key][:3]
     TMP.mkdir(exist_ok=True)
     mk = load(folder)
-    front = mk.build(True, round_corners=False) if folder in ("ustadla", "asa", "namaz", "gonul", "beyan", "fasil2", "fasil3", "fasil4", "fasil5", "dunyamiz", "fatiha", "hitap", "hac", "oruc", "zekat") else mk.build(volume, hd=True, round_corners=False)
+    front = mk.build(True, round_corners=False) if folder in ("ustadla", "asa", "namaz", "gonul", "beyan", "fasil2", "fasil3", "fasil4", "fasil5", "dunyamiz", "fatiha", "hitap", "hac", "oruc", "zekat", "kuran") else mk.build(volume, hd=True, round_corners=False)
     k = round(front.width / (mk.COVER[2] - mk.COVER[0]))           # 4x upscale (Üstad'la: 2x)
     box = tuple(v * k for v in mk.COVER)
     back = Image.open(COVERS / folder / back_art).convert("RGB").crop(box).transpose(Image.FLIP_LEFT_RIGHT)
