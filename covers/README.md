@@ -538,3 +538,15 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - KDP theme `cevsen` (no band; navy `back` gradient — the front's edge is the gold border; navy spine, gold text):
   `kdp/cevsen-khmer-kdp-a5-237p-{cream,white}`. For print the art gets a 5 % navy margin (`round_corners=False`)
   so the gold frame stays clear of the 0.125 in trim.
+
+## Kur'ân'ın Sihirli Ufku: Yusuf Sûresi (`yusuf/`)
+
+- Interior from Drive ("Kur'ân'ın Sihirli Ufku- Yusuf Sûresi.pdf"): A5, 371 pages, no missing glyphs;
+  `fix_gutter.py --shift 0.066` → inside margin 0.645 in, cream fill removed.
+- Cover: `yusuf-source.webp` (the user's screenshot; cover = (16,16,686,1026) inside the navy frame). `erase_title.py
+  <big-lama.pt>`: the gold title is refilled with the dark sky's own colour + grain; the author signature crosses the
+  door's red glow and stone arch, so it goes to LaMa.
+- `make_khmer.py [--hd]`: the title page's title in gold (Battambang) — ជើងមេឃដ៏មន្តស្នេហ៍នៃគម្ពីរគួរអាន (small, the
+  original's "KUR'ÂN'IN SİHİRLİ UFKU") / ស៊ូរ៉ោះ / **យូសុហ្វ** (large, "YUSUF sûresi"). No author.
+- KDP theme `yusuf` (no band, maroon spine, gold text, `anchor_y` 0.3 keeps the title's top margin):
+  `kdp/yusuf-khmer-kdp-a5-371p-{cream,white}`; reading PDF `interior/yusuf-with-cover.pdf`.

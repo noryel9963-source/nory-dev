@@ -166,6 +166,12 @@ THEMES = {
         "spine": [(0, (60, 26, 8)), (0.5, (96, 50, 16)), (1, (60, 26, 8))],
         "spine_text": (250, 238, 210),
     },
+    "yusuf": {  # Kur'ân'ın Sihirli Ufku: Yusuf Sûresi: dark maroon sky, glowing door and stairs, no band; deep maroon
+        "band_y": None,  # spine, gold text; crop mostly from the stairs so the title keeps its top margin
+        "anchor_y": 0.3,
+        "spine": [(0, (24, 10, 9)), (0.5, (52, 20, 18)), (1, (24, 10, 9))],
+        "spine_text": (236, 196, 100),
+    },
     "cevsen": {  # Cevşen-i Kebîr: navy leather with gold corner ornaments, no band; navy back (the front's edge is
         "band_y": None,  # the gold ornament border), deep navy spine, gold text
         "back": [(0, (34, 38, 64)), (1, (26, 29, 50))],
