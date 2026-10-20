@@ -536,4 +536,5 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - `make_khmer.py [--hd]`: the title page exactly — **الجوشن الكبير** (Amiri, `fonts/Amiri-Regular.ttf`, OFL, via jsDelivr)
   / **ចាវ់ស្ហាន់អាល់ខាប៊ៀរ** / ការបួងសួងមួយរយវគ្គ ដោយព្រះនាមដ៏ល្អប្រសើររបស់អល់ឡោះ, in the cover's gold.
 - KDP theme `cevsen` (no band; navy `back` gradient — the front's edge is the gold border; navy spine, gold text):
-  `kdp/cevsen-khmer-kdp-a5-237p-{cream,white}`.
+  `kdp/cevsen-khmer-kdp-a5-237p-{cream,white}`. For print the art gets a 5 % navy margin (`round_corners=False`)
+  so the gold frame stays clear of the 0.125 in trim.

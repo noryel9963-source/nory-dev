@@ -7,6 +7,8 @@ faint dark emboss; Khmer in Battambang, the Arabic in Amiri (OFL, fonts/Amiri-Re
 Writes khmer.png or khmer-hd.png.
 """
 import sys
+
+import numpy as np
 from pathlib import Path
 
 from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont
@@ -63,8 +65,16 @@ def build(hd=False, round_corners=True):
         im.paste(SHADE, (x, y), shade.point(lambda v: int(v * 0.55)))
         im.paste(GOLD, (x, y), glyphs)
     im = im.crop(tuple(v * k for v in COVER))
-    if not round_corners:
-        return im
+    if not round_corners:   # print (KDP): the gold frame runs ~2 % from the edge, inside the 0.125 in bleed/trim zone —
+        # extend the navy leather by 5 % on every side so the frame sits safely inside the trimmed page
+        a = np.asarray(im)
+        edge = np.concatenate([a[:6].reshape(-1, 3), a[-6:].reshape(-1, 3), a[:, :6].reshape(-1, 3),
+                               a[:, -6:].reshape(-1, 3)])
+        navy = tuple(int(v) for v in np.median(edge, 0))
+        px, py = round(im.width * 0.05), round(im.height * 0.05)
+        out = Image.new("RGB", (im.width + 2 * px, im.height + 2 * py), navy)
+        out.paste(im, (px, py))
+        return out
     mask = Image.new("L", im.size, 0)
     ImageDraw.Draw(mask).rounded_rectangle((0, 0, im.width - 1, im.height - 1), CORNER * k, fill=255)
     out = im.convert("RGBA")
