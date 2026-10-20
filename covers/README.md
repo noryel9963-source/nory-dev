@@ -524,3 +524,13 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - Interior from Drive: A5, 519 pages, no missing glyphs; `fix_gutter.py` shifted 0.215 in (inside 0.77 ≥ 0.75 in),
   cream fill removed → `interior/kuran-interior-kdp.pdf`.
 - KDP theme `kuran` (orange band, deep brown spine): `kdp/kuran-khmer-kdp-a5-519p-{cream,white}`.
+
+## Cevşen-i Kebîr (`cevsen/`)
+
+- Interior from Drive ("Cevşen-i Kebîr .pdf"; the earlier "Cevsen.pdf" was a copy of Kur'ân'dan İdrake): A5, 237
+  pages, Arabic in Amiri + Khmer, no missing glyphs; margins 0.59 ≥ 0.5 in, cream fill removed.
+- `make_khmer.py [--hd]`: the title page exactly — **الجوشن الكبير** (Amiri, `fonts/Amiri-Regular.ttf`, OFL, from Google
+  Fonts via jsDelivr) / **ចាវ់ស្ហាន់អាល់ខាប៊ៀរ** / ការបួងសួងមួយរយវគ្គ ដោយព្រះនាមដ៏ល្អប្រសើររបស់អល់ឡោះ — gold on the
+  Risale-i Nur red-velvet art (`asa/`; no screenshot of the Turkish cover). Author line kept per the Risale rule
+  (note to user: Cevşen is a prayer Said Nursî included, not wrote — offered to remove it).
+- KDP theme `asa`: `kdp/cevsen-khmer-kdp-a5-237p-{cream,white}`.
