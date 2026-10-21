@@ -284,6 +284,19 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - KDP: A5, 208 pages, `--theme heykel` (red band, deep blue spine, white text):
   `kdp/heykel-khmer-1-kdp-a5-208p-{cream,white}`; reading PDF `interior/ruhumuzun-heykeli-1-with-cover.pdf`.
 
+
+## Ruhumuzun Heykelini Dikerken 2 — Kendi Dünyamıza Doğru (`heykel2/`)
+
+- Interior from Drive ("Ruhumuzun Heykelini Dikerken 2 - Kendi Dünyamıza Doğru.pdf"): A5, 377 pages, no missing
+  glyphs; `fix_gutter.py` shift 0.068 in → inside 0.645 in, cream fill removed → `interior/ruhumuzun-heykeli-2-*`.
+- Cover: `heykel2-source.webp` (the user's screenshot; cover = (24,28,784,1165)). `erase_title.py <big-lama.pt>`: the
+  cream script "Kendi dünyamıza doğru", the small series title, the author signature and the "2" (LaMa, light-letter
+  masks + two boxes for the letter shadows). Dove and arch stay.
+- `make_khmer.py [--hd] 2`: **ឆ្ពោះទៅកាន់ / ពិភពផ្ទាល់ខ្លួន / របស់យើង** — the subtitle on the translation's title page
+  (ពេលកសាងរូបសំណាក នៃព្រលឹងយើង ២ / ឆ្ពោះទៅកាន់ពិភពផ្ទាល់ខ្លួនរបស់យើង), the cover's main title. Battambang, cream with a
+  dark-brown halo, one size, stepped right like the original; "2" in Cormorant Garamond, orange. No author.
+- KDP theme `heykel2` (red band like vol 1, deep brown spine, cream text): `kdp/heykel-khmer-2-kdp-a5-377p-{cream,white}`;
+  reading PDF `interior/ruhumuzun-heykeli-2-with-cover.pdf`.
 ## Battambang everywhere (all books)
 
 - Every `make_khmer.py` now uses Battambang for all Khmer text (titles, Kırık Testi side labels, spines);

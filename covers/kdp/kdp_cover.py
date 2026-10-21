@@ -100,6 +100,13 @@ THEMES = {
         "spine": [(0, (10, 45, 80)), (0.5, (16, 75, 112)), (1, (10, 45, 80))],
         "spine_text": (255, 255, 255),
     },
+    "heykel2": {  # Ruhumuzun Heykelini Dikerken 2: red band under the orange-brown wall, dove and arch; deep brown
+        "band_y": (1001 - 28) / (1165 - 28),  # spine (the wall), cream text
+        "band": [(0, (160, 14, 19)), (0.55, (150, 22, 18)), (1, (191, 58, 37))],
+        "band_line": (123, 21, 8),
+        "spine": [(0, (70, 26, 8)), (0.5, (112, 46, 16)), (1, (70, 26, 8))],
+        "spine_text": (252, 234, 200),
+    },
     "asa": {  # Asâ-yı Mûsâ: red velvet with an ornate border all over, dark red spine, gold text
         "band_y": None,
         "spine": [(0, (70, 10, 10)), (0.5, (120, 22, 22)), (1, (70, 10, 10))],

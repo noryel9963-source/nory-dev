@@ -66,6 +66,9 @@ BOOKS = {
                 "fasil-khmer-1-kdp-a5-234p", "fasil-1", "ពីវគ្គមួយ ទៅវគ្គមួយ ១"),
     "heykel-1": ("heykel", "1", "heykel-notitle-source-4x.png", A5, 208, "heykel", "ពេលកសាងរូបសំណាកនៃព្រលឹងយើង",
                  "heykel-khmer-1-kdp-a5-208p", "ruhumuzun-heykeli-1", "ពេលកសាងរូបសំណាកនៃព្រលឹងយើង ១"),
+    "heykel-2": ("heykel2", "2", "heykel2-notitle-source-4x.png", A5, 377, "heykel2", "ឆ្ពោះទៅកាន់ពិភពផ្ទាល់ខ្លួនរបស់យើង",
+                 "heykel-khmer-2-kdp-a5-377p", "ruhumuzun-heykeli-2",
+                 "ពេលកសាងរូបសំណាកនៃព្រលឹងយើង ២ — ឆ្ពោះទៅកាន់ពិភពផ្ទាល់ខ្លួនរបស់យើង"),
     "asa": ("asa", "", "asa-back-4x.png", A5, 438, "asa", "ដំបងរបស់ព្យាការីមូសា",
             "asa-khmer-kdp-a5-438p", "asa-musa", "ដំបងរបស់ព្យាការីមូសា"),
     "namaz": ("namaz", "", "namaz-notitle-source-4x.png", A5, 413, "namaz", "សឡាត",
@@ -115,7 +118,7 @@ BOOKS = {
 
 # books whose interior went through fix_gutter.py (…-interior-kdp.pdf); the others use …-interior.pdf
 KDP_INTERIOR = ("cag-1", "kalbin-1", "kalbin-2", "kalbin-3", "kalbin-4", "ustadla", "kirik-2", "kirik-3", "kirik-4",
-                "kirik-5", "fasil-1", "heykel-1", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1", "fasil-2", "fasil-3", "fasil-4", "fasil-5", "dunyamiz", "lemalar-1", "lemalar-2", "fatiha", "hitap", "hac", "inanc-1", "inanc-2", "oruc", "zekat", "soluk-1", "soluk-2", "kuran", "cevsen", "yusuf", "olum")
+                "kirik-5", "fasil-1", "heykel-1", "heykel-2", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1", "fasil-2", "fasil-3", "fasil-4", "fasil-5", "dunyamiz", "lemalar-1", "lemalar-2", "fatiha", "hitap", "hac", "inanc-1", "inanc-2", "oruc", "zekat", "soluk-1", "soluk-2", "kuran", "cevsen", "yusuf", "olum")
 
 
 def load(folder):
