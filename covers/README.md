@@ -611,3 +611,15 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   (pink-cream), Battambang, one size per colour pair, soft dark shadow. No author.
 - KDP theme `yaratilis` (brown band with an orange line, blue `back` gradient, deep blue spine, white text):
   `kdp/yaratilis-khmer-kdp-a5-155p-{cream,white}`; reading PDF `interior/yaratilis-with-cover.pdf`.
+
+## Yâr-ı Vefâdâr — Münacat ve Naatlar (`vefadar/`)
+
+- Interior from Drive ("Yarı Vefadar.pdf"): A5, 120 pages, no missing glyphs; margins already 0.59 in, cream fill removed.
+- Cover: `vefadar-source.webp` (the user's screenshot; cover = (31,31,872,1334), 3 px inside the frame because its
+  edge has dark tick marks). `erase_title.py <big-lama.pt>`: the black script title and green subtitle = dark pixels
+  inside the closed cream area of the medallion (the ornament's dark-green panels are never masked), plus the cream
+  author signature on the felt; all LaMa.
+- `make_khmer.py [--hd]`: the translation's title page — **សម្លាញ់ដ៏ / ស្មោះស្ម័គ្រ** (near-black) and **កំណាព្យ** (the
+  cover's dark green) on the medallion; Battambang. No author.
+- KDP theme `vefadar` (no band, felt-green `back`, deep green spine, gold text): `kdp/vefadar-khmer-kdp-a5-120p-*`;
+  reading PDF `interior/vefadar-with-cover.pdf`.

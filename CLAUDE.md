@@ -59,6 +59,7 @@ Hac (`hac/`, İbadet Hayatımız, title confirmed by the translation, A5 252p); 
 İnancın Gölgesinde 1–2 (`inanc/`, title នៅក្រោមម្លប់នៃជំនឿ, A5 384p + 328p; vol 2 = vol 1 art with the number redrawn);
 Cevşen-i Kebîr (`cevsen/`, title ចាវ់ស្ហាន់អាល់ខាប៊ៀរ + Arabic in Amiri, on the real navy/gold cover, A5 237p);
 Kur'ân'dan İdrake Yansıyanlar (`kuran/`, title ការឆ្លុះបញ្ចាំងពីគម្ពីរគួរអាន / ទៅកាន់ការយល់ដឹង, A5 519p);
+Yâr-ı Vefâdâr (`vefadar/`, title សម្លាញ់ដ៏ស្មោះស្ម័គ្រ + កំណាព្យ from the translation, A5 120p);
 Yaratılış Gerçeği ve Evrim (`yaratilis/`, title ការពិតនៃការបង្កើត / និងទ្រឹស្ដីវិវត្តន៍ from the translation, A5 155p);
 Varlığın Metafizik Boyutu (`varlik/`, title វិមាត្រអរូបី / នៃអត្ថិភាព from the translation, A5 474p);
 Sohbet Atmosferi (`sohbet/`, title បរិយាកាស / នៃការសន្ទនា from the translation, A5 319p);
