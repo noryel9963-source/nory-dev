@@ -173,6 +173,13 @@ THEMES = {
         "spine": [(0, (60, 26, 8)), (0.5, (96, 50, 16)), (1, (60, 26, 8))],
         "spine_text": (250, 238, 210),
     },
+    "sohbet": {  # Sohbet Atmosferi: green band under the teal starry sky and the gold finial, deep teal spine, white text
+        "band_y": (1213 - 6) / (1401 - 6),
+        "band": [(0, (200, 220, 62)), (0.5, (160, 190, 58)), (1, (128, 158, 54))],
+        "band_line": (48, 121, 121),
+        "spine": [(0, (8, 52, 66)), (0.5, (18, 92, 104)), (1, (8, 52, 66))],
+        "spine_text": (255, 255, 255),
+    },
     "olum": {  # Ölüm Ötesi Hayat: blue band under the golden sky and stairs, orange spine (like the box), navy text
         "band_y": (1015 - 27) / (1170 - 27),
         "back": [(0, (252, 246, 222)), (0.5, (244, 226, 168)), (1, (226, 192, 118))],  # the clouds (edge is grass)

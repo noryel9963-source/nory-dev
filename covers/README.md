@@ -575,3 +575,15 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - `make_khmer.py [--hd]`: the translation's title page — សេចក្ដីស្លាប់ / **និងជីវិតបរលោក**, navy with a soft light glow.
 - KDP theme `olum` (blue band, orange spine like the box, navy text; `back` = the clouds' cream-gold, since the
   front's edge is grass): `kdp/olum-khmer-kdp-a5-123p-{cream,white}`; reading PDF `interior/olum-with-cover.pdf`.
+
+## Sohbet Atmosferi (`sohbet/`)
+
+- Interior from Drive ("Sohbet Atmosferi.pdf"): A5, 319 pages, no missing glyphs; `fix_gutter.py` shift 0.057 in →
+  inside 0.645 in, cream fill removed.
+- Cover: `sohbet-source.webp` (the user's screenshot; cover = (24,6,954,1401)). `erase_title.py <big-lama.pt>`: white
+  "SOHBET / ATMOSFERİ" → LaMa (stars regrow); the author signature on the green band is replaced by a cubic surface
+  fit of the band + its grain (a plain normalised-convolution refill left a light ghost). Gold finial and box stay.
+- `make_khmer.py [--hd]`: the translation's title page — **បរិយាកាស / នៃការសន្ទនា**, white Battambang Bold with a
+  soft dark-teal shadow. No author.
+- KDP theme `sohbet` (green band, deep teal spine, white text): `kdp/sohbet-khmer-kdp-a5-319p-{cream,white}`;
+  reading PDF `interior/sohbet-with-cover.pdf`.
