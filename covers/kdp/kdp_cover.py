@@ -173,6 +173,14 @@ THEMES = {
         "spine": [(0, (60, 26, 8)), (0.5, (96, 50, 16)), (1, (60, 26, 8))],
         "spine_text": (250, 238, 210),
     },
+    "yaratilis": {  # Yaratılış Gerçeği ve Evrim: brown photo band under the blue/red DNA art, deep blue spine, white text
+        "band_y": (1109 - 20) / (1295 - 20),
+        "back": [(0, (14, 96, 132)), (0.5, (40, 128, 164)), (1, (30, 100, 136))],  # the blue (the right edge turns red)
+        "band": [(0, (118, 66, 36)), (0.5, (128, 72, 37)), (1, (150, 80, 40))],
+        "band_line": (236, 103, 36),
+        "spine": [(0, (6, 44, 70)), (0.5, (14, 82, 120)), (1, (6, 44, 70))],
+        "spine_text": (255, 255, 255),
+    },
     "varlik": {  # Varlığın Metafizik Boyutu: orange band under the blue starry sky and globe, deep navy spine, white text
         "band_y": (1127 - 35) / (1310 - 35),
         "back": [(0, (36, 84, 150)), (0.5, (44, 96, 162)), (1, (32, 62, 108))],  # the sky (the edge has bright stars)

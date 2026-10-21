@@ -599,3 +599,15 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   dark-navy shadow. The translation has no Khmer subtitle, so the "Ruh, melek, cin ve şeytanların…" line is dropped.
 - KDP theme `varlik` (orange band, sky-blue `back` gradient, deep navy spine, white text):
   `kdp/varlik-khmer-kdp-a5-474p-{cream,white}`; reading PDF `interior/varlik-with-cover.pdf`.
+
+## Yaratılış Gerçeği ve Evrim (`yaratilis/`)
+
+- Interior from Drive ("Yaratılış Gerçeği ve Evrim.pdf"): A5, 155 pages, no missing glyphs; margins already 0.577 in
+  (KDP needs 0.5), cream fill removed.
+- Cover: `yaratilis-source.webp` (the user's screenshot; cover = (30,20,880,1295)). `erase_title.py <big-lama.pt>`:
+  white "YARATILIŞ GERÇEĞİ" (light-letter mask), pink "VE EVRİM" (boxes — their dark shadows ghosted with a mask) and
+  the author signature on the photo band, all LaMa. DNA art and box stay.
+- `make_khmer.py [--hd]`: the translation's title page — **ការពិតនៃ / ការបង្កើត** (white) / **និងទ្រឹស្ដី / វិវត្តន៍**
+  (pink-cream), Battambang, one size per colour pair, soft dark shadow. No author.
+- KDP theme `yaratilis` (brown band with an orange line, blue `back` gradient, deep blue spine, white text):
+  `kdp/yaratilis-khmer-kdp-a5-155p-{cream,white}`; reading PDF `interior/yaratilis-with-cover.pdf`.
