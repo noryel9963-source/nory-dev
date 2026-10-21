@@ -1,5 +1,5 @@
-"""Khmer edition of "Ruhumuzun Heykelini Dikerken": នៅពេលតាំង / រូបសំណាកនៃ / ព្រលឹងរបស់យើង
-(the translation's own heading, confirmed by the user). White title with a soft dark halo on the sky, like the
+"""Khmer edition of "Ruhumuzun Heykelini Dikerken": ពេលកសាង / រូបសំណាក / នៃព្រលឹងយើង — the title page of the new
+208-page edition (ពេលកសាងរូបសំណាក / នៃព្រលឹងយើង; it replaced the earlier heading នៅពេលតាំងរូបសំណាកនៃព្រលឹងរបស់យើង). White title with a soft dark halo on the sky, like the
 original script; no author; the number redrawn in the red box.
 
     python3 make_khmer.py [--hd] [--font Battambang] 1 2 ...
@@ -20,9 +20,9 @@ CORNER = 14
 
 # text, max width, ink height, centre x, centre y — stepped to the right like the original three lines
 LINES = [
-    ("នៅពេលតាំង", 560, 125, 450, 235),
-    ("រូបសំណាកនៃ", 560, 125, 500, 375),
-    ("ព្រលឹងរបស់យើង", 620, 125, 520, 510),
+    ("ពេលកសាង", 560, 125, 450, 235),
+    ("រូបសំណាក", 560, 125, 500, 375),
+    ("នៃព្រលឹងយើង", 620, 125, 520, 510),
 ]
 INK = (255, 255, 255)
 HALO = (6, 30, 70)
@@ -44,8 +44,10 @@ def fit(font_path, text, max_w, ink_h, lang="km", features=None):
 def build(volume="1", hd=False, font="Battambang", round_corners=True):
     k = 4 if hd else 1
     im = Image.open(SOURCE_HD if hd else SOURCE).convert("RGB")
+    # one size for all lines (the smallest fit), so the short first line is not larger than the others
+    size = min(fit(FONTS / f"{font}.ttf", t, w * k, h * k).size for t, w, h, _, _ in LINES)
+    f = ImageFont.truetype(str(FONTS / f"{font}.ttf"), size, layout_engine=ImageFont.Layout.RAQM)
     for text, max_w, ink_h, cx, cy in LINES:
-        f = fit(FONTS / f"{font}.ttf", text, max_w * k, ink_h * k)
         l, t, r, b = f.getbbox(text, language="km")
         pad = int(30 * k)
         w, h = r - l + 2 * pad, b - t + 2 * pad

@@ -274,14 +274,15 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 
 - `erase_title.py`: white script title, small corner title, author signature and number removed with LaMa
   (light-letter masks, no boxes).
-- `make_khmer.py [--hd] [--font Freehand] 1`: **នៅពេលតាំង / រូបសំណាកនៃ / ព្រលឹងរបស់យើង** — the translation's own
-  heading, confirmed by the user; Freehand (closest to the original script), white with a soft dark-blue halo,
-  stepped right like the original. Number in Cormorant Garamond, orange like the original. No author.
-- Interior from Drive: A5, 177 pages, page 2 blank; `fix_gutter.py` removed the cream fill, margins already OK
-  (inside 0.576 in) → `interior/ruhumuzun-heykeli-1-interior-kdp.pdf`.
-- KDP: A5, 177 pages → spine 0.4425 in (cream) / 0.3986 in (white), `--theme heykel` (red band, deep blue spine,
-  white text): `kdp/heykel-khmer-1-kdp-a5-177p-{cream,white}`. Front = square-corner HD build, back = mirrored
-  no-title art. Reading PDF `interior/ruhumuzun-heykeli-1-with-cover.pdf` (179 pages).
+- `make_khmer.py [--hd] [--font F] 1`: **ពេលកសាង / រូបសំណាក / នៃព្រលឹងយើង** — the title page of the new edition
+  (ពេលកសាងរូបសំណាក / នៃព្រលឹងយើង; the first edition's heading was នៅពេលតាំងរូបសំណាកនៃព្រលឹងរបស់យើង). Battambang, white
+  with a soft dark-blue halo, one size for all three lines, stepped right like the original. Number in Cormorant
+  Garamond, orange like the original. No author.
+- Interior: the new edition from Drive ("Ruhumuzun Heykelini Dikerken.pdf", uploaded 2026-10-21): A5, 208 pages,
+  19 chapters, no missing glyphs; margins already 0.59 in, cream fill removed →
+  `interior/ruhumuzun-heykeli-1-interior-kdp.pdf`. The old 177-page edition is kept as `*-old177p.pdf`.
+- KDP: A5, 208 pages, `--theme heykel` (red band, deep blue spine, white text):
+  `kdp/heykel-khmer-1-kdp-a5-208p-{cream,white}`; reading PDF `interior/ruhumuzun-heykeli-1-with-cover.pdf`.
 
 ## Battambang everywhere (all books)
 
