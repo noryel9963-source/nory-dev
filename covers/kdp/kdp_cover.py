@@ -173,6 +173,14 @@ THEMES = {
         "spine": [(0, (60, 26, 8)), (0.5, (96, 50, 16)), (1, (60, 26, 8))],
         "spine_text": (250, 238, 210),
     },
+    "varlik": {  # Varlığın Metafizik Boyutu: orange band under the blue starry sky and globe, deep navy spine, white text
+        "band_y": (1127 - 35) / (1310 - 35),
+        "back": [(0, (36, 84, 150)), (0.5, (44, 96, 162)), (1, (32, 62, 108))],  # the sky (the edge has bright stars)
+        "band": [(0, (207, 107, 36)), (0.5, (170, 84, 22)), (1, (150, 72, 16))],
+        "band_line": (130, 61, 11),
+        "spine": [(0, (8, 24, 60)), (0.5, (20, 50, 104)), (1, (8, 24, 60))],
+        "spine_text": (255, 255, 255),
+    },
     "sohbet": {  # Sohbet Atmosferi: green band under the teal starry sky and the gold finial, deep teal spine, white text
         "band_y": (1213 - 6) / (1401 - 6),
         "band": [(0, (200, 220, 62)), (0.5, (160, 190, 58)), (1, (128, 158, 54))],

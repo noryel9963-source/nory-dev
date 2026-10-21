@@ -587,3 +587,15 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   soft dark-teal shadow. No author.
 - KDP theme `sohbet` (green band, deep teal spine, white text): `kdp/sohbet-khmer-kdp-a5-319p-{cream,white}`;
   reading PDF `interior/sohbet-with-cover.pdf`.
+
+## Varlığın Metafizik Boyutu (`varlik/`)
+
+- Interior from Drive ("Varlığın Metafizik Boyutu.pdf"): A5, 474 pages, no missing glyphs; `fix_gutter.py` shift
+  0.055 in → inside 0.645 in, cream fill removed.
+- Cover: `varlik-source.webp` (the user's screenshot; cover = (46,35,896,1310)). `erase_title.py <big-lama.pt>`: the
+  white "VARLIĞIN / METAFİZİK BOYUTU" (soft dark shadow) and the gold subtitle line go to LaMa as boxes; the author
+  signature on the orange band → cubic surface fit + grain (same as `sohbet/`). Globe, stars and box stay.
+- `make_khmer.py [--hd]`: the translation's title page — **វិមាត្រអរូបី / នៃអត្ថិភាព**, white Battambang Bold with a
+  dark-navy shadow. The translation has no Khmer subtitle, so the "Ruh, melek, cin ve şeytanların…" line is dropped.
+- KDP theme `varlik` (orange band, sky-blue `back` gradient, deep navy spine, white text):
+  `kdp/varlik-khmer-kdp-a5-474p-{cream,white}`; reading PDF `interior/varlik-with-cover.pdf`.
