@@ -115,6 +115,8 @@ BOOKS = {
                 "vefadar-khmer-kdp-a5-120p", "vefadar", "សម្លាញ់ដ៏ស្មោះស្ម័គ្រ — កំណាព្យ"),
     "omur": ("omur", "", "omur-notitle-source-4x.png", A5, 608, "omur", "ជីវប្រវត្តិ",
              "omur-khmer-kdp-a5-608p", "omur", "ជីវប្រវត្តិ Fethullah Gülen"),
+    "kisa": ("kisa", "", "kisa-front-600dpi.png", B5, 331, "kisa", "តាហ្វសៀរស៊ូរ៉ោះខ្លីៗ",
+             "kisa-khmer-kdp-b5-331p", "kisa", "តាហ្វសៀរស៊ូរ៉ោះខ្លីៗ"),
     "olum": ("olum", "", "olum-notitle-source-4x.png", A5, 123, "olum", "សេចក្ដីស្លាប់ និងជីវិតបរលោក",
              "olum-khmer-kdp-a5-123p", "olum", "សេចក្ដីស្លាប់ និងជីវិតបរលោក"),
     "yusuf": ("yusuf", "", "yusuf-notitle-source-4x.png", A5, 371, "yusuf", "ស៊ូរ៉ោះយូសុហ្វ",
@@ -129,7 +131,7 @@ BOOKS = {
 
 # books whose interior went through fix_gutter.py (…-interior-kdp.pdf); the others use …-interior.pdf
 KDP_INTERIOR = ("cag-1", "kalbin-1", "kalbin-2", "kalbin-3", "kalbin-4", "ustadla", "kirik-2", "kirik-3", "kirik-4",
-                "kirik-5", "fasil-1", "heykel-1", "heykel-2", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1", "fasil-2", "fasil-3", "fasil-4", "fasil-5", "dunyamiz", "lemalar-1", "lemalar-2", "fatiha", "hitap", "hac", "inanc-1", "inanc-2", "oruc", "zekat", "soluk-1", "soluk-2", "kuran", "cevsen", "yusuf", "olum", "sohbet", "varlik", "yaratilis", "vefadar", "omur")
+                "kirik-5", "fasil-1", "heykel-1", "heykel-2", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1", "fasil-2", "fasil-3", "fasil-4", "fasil-5", "dunyamiz", "lemalar-1", "lemalar-2", "fatiha", "hitap", "hac", "inanc-1", "inanc-2", "oruc", "zekat", "soluk-1", "soluk-2", "kuran", "cevsen", "yusuf", "olum", "sohbet", "varlik", "yaratilis", "vefadar", "omur", "kisa")
 
 
 def load(folder):
@@ -145,7 +147,7 @@ def art(key):
     folder, volume, back_art = BOOKS[key][:3]
     TMP.mkdir(exist_ok=True)
     mk = load(folder)
-    front = mk.build(True, round_corners=False) if folder in ("ustadla", "asa", "namaz", "gonul", "beyan", "fasil2", "fasil3", "fasil4", "fasil5", "dunyamiz", "fatiha", "hitap", "hac", "oruc", "zekat", "kuran", "cevsen", "yusuf", "olum", "sohbet", "varlik", "yaratilis", "vefadar", "omur") else mk.build(volume, hd=True, round_corners=False)
+    front = mk.build(True, round_corners=False) if folder in ("ustadla", "asa", "namaz", "gonul", "beyan", "fasil2", "fasil3", "fasil4", "fasil5", "dunyamiz", "fatiha", "hitap", "hac", "oruc", "zekat", "kuran", "cevsen", "yusuf", "olum", "sohbet", "varlik", "yaratilis", "vefadar", "omur", "kisa") else mk.build(volume, hd=True, round_corners=False)
     k = round(front.width / (mk.COVER[2] - mk.COVER[0]))           # 4x upscale (Üstad'la: 2x)
     box = tuple(v * k for v in mk.COVER)
     back = Image.open(COVERS / folder / back_art).convert("RGB").crop(box).transpose(Image.FLIP_LEFT_RIGHT)

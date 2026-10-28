@@ -637,3 +637,17 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   The long subtitle (ជីវិតដ៏ពិសេសរបស់ Gülen …) is not on the cover: Battambang has no Latin letters for "Gülen".
 - KDP theme `omur` (no band, `anchor_y` 0.1, pink→olive→dark `back`, charcoal spine, white text):
   `kdp/omur-khmer-kdp-a5-608p-{cream,white}`; reading PDF `interior/omur-with-cover.pdf`.
+
+## Kısa Sûrelerin Tefsiri — Prof. Dr. Davut Aydüz (`kisa/`)
+
+- The user sent the translator's LaTeX source as a zip (`Kisa_Surelerin_Tefsiri_FINAL.zip`: main.tex, cover.tex,
+  25 chapters, Noto Serif Khmer / Noto Serif / Amiri). Built with XeLaTeX from TeX Live (`apt-get install
+  texlive-xetex texlive-latex-extra texlive-lang-other texlive-pictures texlive-fonts-recommended`), 3 passes:
+  B5, 331 pages, no missing glyphs. `\include{cover}` is swapped for `kisa/titlepage.tex` (same words, black on
+  white): the interior must not carry its own cover, and dropping the page would flip recto/verso. Margins from the
+  source (inside 1.18 in); cream check only → `interior/kisa-interior-kdp.pdf`.
+- Front: the source's own drawn cover (teal gradient, open Mushaf on a rahle, 23 stars, gold frame) as `front.tex`
+  minus the author line and the Turkish title, set in Battambang by `front-doc.tex` (run xelatex twice — tikz
+  overlay), rendered at 600 dpi by `make_khmer.py` (no upscale needed): **តាហ្វសៀរស៊ូរ៉ោះខ្លីៗ**.
+- KDP theme `kisa` (no band, teal back, deep teal spine, pale gold text): `kdp/kisa-khmer-kdp-b5-331p-{cream,white}`;
+  reading PDF `interior/kisa-with-cover.pdf`.

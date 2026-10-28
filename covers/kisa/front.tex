@@ -1,0 +1,43 @@
+% front.tex (from cover.tex: author and Turkish title removed, Khmer in Battambang) — Kısa Sûrelerin (Fâtiha, Duhâ – Nâs) Tefsiri (Prof. Dr. Davut Aydüz). An open
+% Mushaf on a rahle (the X-shaped reading stand), under a crescent of 23 small stars -- one for
+% each sura the book comments -- on a deep teal field with a pale gold accent.
+\definecolor{ksD}{RGB}{10,40,44}
+\definecolor{ksM}{RGB}{22,74,78}
+\definecolor{ksA}{RGB}{232,206,140}
+\definecolor{ksCream}{RGB}{240,236,226}
+
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture, overlay]
+  \shade[top color=ksD, bottom color=ksM]
+    (current page.south west) rectangle (current page.north east);
+
+  \begin{scope}[shift={([yshift=34mm]current page.center)}, x=1mm, y=1mm]
+    % 23 stars in an arc
+    \foreach \k in {0,...,22} {\pgfmathsetmacro{\a}{20+\k*140/22}
+      \fill[ksA] ({40*cos(\a)},{12+26*sin(\a)}) circle (0.75);}
+    % the open book: two pages curving from the spine
+    \fill[ksCream, opacity=0.92] (0,0) .. controls (-8,4) and (-20,4) .. (-28,1) -- (-28,-17) .. controls (-20,-14) and (-8,-14) .. (0,-18) -- cycle;
+    \fill[ksCream, opacity=0.92] (0,0) .. controls (8,4) and (20,4) .. (28,1) -- (28,-17) .. controls (20,-14) and (8,-14) .. (0,-18) -- cycle;
+    \foreach \y in {-3,-6,...,-14} {
+      \draw[ksM, line width=0.4pt] (-24,\y+1.5) .. controls (-16,\y+3) and (-8,\y+3) .. (-3,\y+0.5);
+      \draw[ksM, line width=0.4pt] (3,\y+0.5) .. controls (8,\y+3) and (16,\y+3) .. (24,\y+1.5);}
+    \draw[ksA, line width=0.8pt] (0,0) -- (0,-18);
+    % the rahle: two crossed boards under the book
+    \draw[ksA, line width=1.6pt] (-24,-19) -- (18,-40) (24,-19) -- (-18,-40);
+    \draw[ksA, line width=0.8pt] (-24,-19) -- (24,-19);
+  \end{scope}
+
+  \draw[ksA, line width=1.0pt]
+    ([xshift=8mm,yshift=8mm]current page.south west) rectangle
+    ([xshift=-8mm,yshift=-8mm]current page.north east);
+
+
+  \node[ksCream, anchor=north, align=center, font=\fontsize{26}{36}\selectfont\bfseries] at ([yshift=-140mm]current page.north)
+    {តាហ្វសៀរស៊ូរ៉ោះខ្លីៗ};
+
+  \node[ksCream, anchor=south] at ([yshift=13mm]current page.south)
+    {\small បកប្រែជាខ្មែរសម្រាប់សហគមន៍ចាមកម្ពុជា};
+\end{tikzpicture}
+\end{titlepage}
+\nopagecolor

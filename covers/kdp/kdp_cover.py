@@ -173,6 +173,12 @@ THEMES = {
         "spine": [(0, (60, 26, 8)), (0.5, (96, 50, 16)), (1, (60, 26, 8))],
         "spine_text": (250, 238, 210),
     },
+    "kisa": {  # Kısa Sûrelerin Tefsiri: the book's own drawn cover, deep teal gradient + gold frame, no band;
+        "band_y": None,  # deep teal spine, pale gold text, teal back (the front's edge is the gold frame)
+        "back": [(0, (10, 40, 44)), (1, (22, 74, 78))],
+        "spine": [(0, (8, 32, 36)), (0.5, (18, 62, 66)), (1, (8, 32, 36))],
+        "spine_text": (232, 206, 140),
+    },
     "omur": {  # Faruk Mercan, "M. Fethullah Gülen" (biography): painted portrait, no band; charcoal spine, white text;
         "band_y": None,  # crop almost only from the bottom (the black name sits near the top edge)
         "anchor_y": 0.1,
