@@ -115,7 +115,7 @@ BOOKS = {
                 "vefadar-khmer-kdp-a5-120p", "vefadar", "សម្លាញ់ដ៏ស្មោះស្ម័គ្រ — កំណាព្យ"),
     "omur": ("omur", "", "omur-notitle-source-4x.png", A5, 608, "omur", "ជីវប្រវត្តិ",
              "omur-khmer-kdp-a5-608p", "omur", "ជីវប្រវត្តិ Fethullah Gülen"),
-    "kisa": ("kisa", "", "kisa-front-600dpi.png", B5, 331, "kisa", "តាហ្វសៀរស៊ូរ៉ោះខ្លីៗ",
+    "kisa": ("kisa", "", "kisa-notitle-source-4x.png", B5, 331, "kisa", "តាហ្វសៀរស៊ូរ៉ោះខ្លីៗ",
              "kisa-khmer-kdp-b5-331p", "kisa", "តាហ្វសៀរស៊ូរ៉ោះខ្លីៗ"),
     "olum": ("olum", "", "olum-notitle-source-4x.png", A5, 123, "olum", "សេចក្ដីស្លាប់ និងជីវិតបរលោក",
              "olum-khmer-kdp-a5-123p", "olum", "សេចក្ដីស្លាប់ និងជីវិតបរលោក"),

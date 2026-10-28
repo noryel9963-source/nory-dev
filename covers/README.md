@@ -646,8 +646,10 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   B5, 331 pages, no missing glyphs. `\include{cover}` is swapped for `kisa/titlepage.tex` (same words, black on
   white): the interior must not carry its own cover, and dropping the page would flip recto/verso. Margins from the
   source (inside 1.18 in); cream check only → `interior/kisa-interior-kdp.pdf`.
-- Front: the source's own drawn cover (teal gradient, open Mushaf on a rahle, 23 stars, gold frame) as `front.tex`
-  minus the author line and the Turkish title, set in Battambang by `front-doc.tex` (run xelatex twice — tikz
-  overlay), rendered at 600 dpi by `make_khmer.py` (no upscale needed): **តាហ្វសៀរស៊ូរ៉ោះខ្លីៗ**.
-- KDP theme `kisa` (no band, teal back, deep teal spine, pale gold text): `kdp/kisa-khmer-kdp-b5-331p-{cream,white}`;
+- Front: the real cover — the user's photo of the printed book (`kisa-source.webp`; cover = (47,9,925,1450), right of
+  the photo's spine crease). `erase_title.py <big-lama.pt>`: the dark Turkish title on the beige panel and the author
+  on the mint band (dark-letter masks), the publisher logo and "9. BASKI" (boxes), LaMa; leftover specks on the
+  mint band are median-filtered. `make_khmer.py [--hd]`: **តាហ្វសៀរ / ស៊ូរ៉ោះខ្លីៗ** (the translation's
+  តាហ្វសៀរស៊ូរ៉ោះខ្លីៗ) near-black Battambang on the panel. The source's drawn tikz cover is no longer used.
+- KDP theme `kisa` (no band, slate back from the photo's ground, deep slate spine, mint text): `kdp/kisa-khmer-kdp-b5-331p-{cream,white}`;
   reading PDF `interior/kisa-with-cover.pdf`.

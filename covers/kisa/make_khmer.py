@@ -1,42 +1,61 @@
-"""Kısa Sûrelerin Tefsiri (Prof. Dr. Davut Aydüz): the front is the book's own drawn cover (cover.tex from the
-translator's LaTeX source), rendered by front-doc.tex in Battambang without the author line and the Turkish title:
-តាហ្វសៀរស៊ូរ៉ោះខ្លីៗ. Vector art, so it is rendered at 600 dpi instead of upscaled.
+"""Kısa Sûrelerin Tefsiri (Prof. Dr. Davut Aydüz), on the real cover (the user's photo of the printed book):
+តាហ្វសៀរ / ស៊ូរ៉ោះខ្លីៗ — the title in the translation (its title page reads តាហ្វសៀរស៊ូរ៉ោះខ្លីៗ) — in the place of
+"Kısa Sûrelerin / Tefsîri" on the beige panel, near-black like the original. No author, no publisher logo.
 
-    xelatex front-doc.tex && xelatex front-doc.tex   # twice: the tikz overlay needs the page position
     python3 make_khmer.py [--hd]
-Writes khmer.png (1/4 size) or khmer-hd.png.
+Writes khmer.png or khmer-hd.png.
 """
 import sys
 from pathlib import Path
 
-import pymupdf
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 HERE = Path(__file__).parent
-PDF = HERE / "front-doc.pdf"
-HD = HERE / "kisa-front-600dpi.png"
-CORNER = 14
+FONTS = HERE.parent / "fonts"
+SOURCE = HERE / "kisa-notitle-source.png"
+SOURCE_HD = HERE / "kisa-notitle-source-4x.png"
+
+COVER = (47, 9, 925, 1450)           # the book inside the photo, right of the spine crease at x 40 (source px)
+CORNER = 0
+CX = 479
+
+INK = (40, 32, 26)
+SHADOW = (255, 236, 196)
+# text, max width, ink height, centre y
+LINES = [
+    ("តាហ្វសៀរ", 440, 128, 872),        # Tefsîri (Khmer word order: tafsir first)
+    ("ស៊ូរ៉ោះខ្លីៗ", 420, 96, 1000),      # Kısa Sûrelerin
+]
 
 
-def render():
-    pix = pymupdf.open(PDF)[0].get_pixmap(dpi=600)
-    im = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
-    return im.crop((0, 0, im.width // 4 * 4, im.height // 4 * 4))   # whole multiple of the 1x size
+def fit(font_path, text, max_w, ink_h):
+    size = 8
+    while True:
+        f = ImageFont.truetype(str(font_path), size + 1, layout_engine=ImageFont.Layout.RAQM)
+        l, t, r, b = f.getbbox(text, language="km")
+        if r - l > max_w or b - t > ink_h:
+            return ImageFont.truetype(str(font_path), size, layout_engine=ImageFont.Layout.RAQM)
+        size += 1
 
 
-if not HD.exists():
-    render().save(HD)
-_W, _H = Image.open(HD).size
-COVER = (0, 0, _W // 4, _H // 4)
-
-
-def build(hd=False, round_corners=True):
-    im = Image.open(HD).convert("RGB")
-    if not hd:
-        im = im.resize((COVER[2], COVER[3]), Image.LANCZOS)
+def build(hd=False, font="Battambang", round_corners=True):
+    k = 4 if hd else 1
+    im = Image.open(SOURCE_HD if hd else SOURCE).convert("RGB")
+    for text, max_w, ink_h, cy in LINES:
+        f = fit(FONTS / f"{font}.ttf", text, max_w * k, ink_h * k)
+        l, t, r, b = f.getbbox(text, language="km")
+        pad = int(20 * k)
+        w, h = r - l + 2 * pad, b - t + 2 * pad
+        glyphs = Image.new("L", (w, h), 0)
+        ImageDraw.Draw(glyphs).text((-l + pad, -t + pad), text, font=f, fill=255, language="km")
+        x, y = int(CX * k - w / 2), int(cy * k - h / 2)
+        sh = glyphs.filter(ImageFilter.GaussianBlur(4 * k)).transform(glyphs.size, Image.AFFINE,
+                                                                      (1, 0, -2 * k, 0, 1, -3 * k))
+        im.paste(SHADOW, (x, y), sh.point(lambda v: int(v * 0.35)))
+        im.paste(INK, (x, y), glyphs)
+    im = im.crop(tuple(v * k for v in COVER))
     if not round_corners:
         return im
-    k = 4 if hd else 1
     mask = Image.new("L", im.size, 0)
     ImageDraw.Draw(mask).rounded_rectangle((0, 0, im.width - 1, im.height - 1), CORNER * k, fill=255)
     out = im.convert("RGBA")
@@ -45,9 +64,9 @@ def build(hd=False, round_corners=True):
 
 
 if __name__ == "__main__":
-    if PDF.stat().st_mtime > HD.stat().st_mtime:
-        render().save(HD)
-    hd = "--hd" in sys.argv[1:]
+    args = sys.argv[1:]
+    hd = "--hd" in args
+    font = args[args.index("--font") + 1] if "--font" in args else "Battambang"
     out = HERE / f"khmer{'-hd' if hd else ''}.png"
-    build(hd).save(out)
+    build(hd, font).save(out)
     print("wrote", out.name)
