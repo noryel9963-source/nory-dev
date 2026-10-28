@@ -173,6 +173,13 @@ THEMES = {
         "spine": [(0, (60, 26, 8)), (0.5, (96, 50, 16)), (1, (60, 26, 8))],
         "spine_text": (250, 238, 210),
     },
+    "omur": {  # Faruk Mercan, "M. Fethullah Gülen" (biography): painted portrait, no band; charcoal spine, white text;
+        "band_y": None,  # crop almost only from the bottom (the black name sits near the top edge)
+        "anchor_y": 0.1,
+        "back": [(0, (226, 214, 222)), (0.45, (168, 158, 112)), (1, (44, 44, 50))],  # the portrait's pink → olive → dark
+        "spine": [(0, (20, 20, 26)), (0.5, (48, 48, 56)), (1, (20, 20, 26))],
+        "spine_text": (255, 255, 255),
+    },
     "vefadar": {  # Yâr-ı Vefâdâr: green felt with a gold-framed cream medallion, no band; deep green spine, gold text
         "band_y": None,  # felt-green back (the medallion's tip reaches the front's outer edge)
         "back": [(0, (40, 86, 76)), (0.5, (38, 92, 80)), (1, (34, 80, 70))],

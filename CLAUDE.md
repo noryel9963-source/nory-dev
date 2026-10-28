@@ -5,7 +5,7 @@ Work lives in `covers/` (see `covers/README.md` for every book) and the KDP rule
 
 ## Setup for a new session
 ```bash
-pip install torch torchvision spandrel pymupdf pillow opencv-python-headless img2pdf fonttools
+python3 -m pip install torch torchvision spandrel pymupdf pillow opencv-python-headless img2pdf fonttools   # python3 -m pip: plain pip may target another Python
 S=/tmp/models && mkdir -p $S
 curl -L -o $S/RealESRGAN_x4plus.pth https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth
 curl -L -o $S/RealESRGAN_x2plus.pth https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.1/RealESRGAN_x2plus.pth
@@ -59,6 +59,7 @@ Hac (`hac/`, İbadet Hayatımız, title confirmed by the translation, A5 252p); 
 İnancın Gölgesinde 1–2 (`inanc/`, title នៅក្រោមម្លប់នៃជំនឿ, A5 384p + 328p; vol 2 = vol 1 art with the number redrawn);
 Cevşen-i Kebîr (`cevsen/`, title ចាវ់ស្ហាន់អាល់ខាប៊ៀរ + Arabic in Amiri, on the real navy/gold cover, A5 237p);
 Kur'ân'dan İdrake Yansıyanlar (`kuran/`, title ការឆ្លុះបញ្ចាំងពីគម្ពីរគួរអាន / ទៅកាន់ការយល់ដឹង, A5 519p);
+M. Fethullah Gülen by Faruk Mercan (`omur/`, ជីវប្រវត្តិ + the Latin name kept, author name removed, A5 608p);
 Yâr-ı Vefâdâr (`vefadar/`, title សម្លាញ់ដ៏ស្មោះស្ម័គ្រ + កំណាព្យ from the translation, A5 120p);
 Yaratılış Gerçeği ve Evrim (`yaratilis/`, title ការពិតនៃការបង្កើត / និងទ្រឹស្ដីវិវត្តន៍ from the translation, A5 155p);
 Varlığın Metafizik Boyutu (`varlik/`, title វិមាត្រអរូបី / នៃអត្ថិភាព from the translation, A5 474p);

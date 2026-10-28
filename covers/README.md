@@ -623,3 +623,17 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   cover's dark green) on the medallion; Battambang. No author.
 - KDP theme `vefadar` (no band, felt-green `back`, deep green spine, gold text): `kdp/vefadar-khmer-kdp-a5-120p-*`;
   reading PDF `interior/vefadar-with-cover.pdf`.
+
+## M. Fethullah Gülen — biography by Faruk Mercan (`omur/`)
+
+- Interior from Drive ("Fethullah Gülen-compressed.pdf"; the 7.7 MB original was too large to download; "Faruk Mercan -
+  M. Fethullah Gülen.pdf" is the Turkish original): A5, 608 pages, no missing glyphs; `fix_gutter.py` shift 0.18 in →
+  inside 0.77 in (KDP needs 0.75 for 601–700 pages), outside 0.41 in, cream fill removed.
+- Cover: `omur-source.webp` (the "Allah yolunda bir ömür" edition; cover = (27,21,981,1482)). `erase_title.py
+  <big-lama.pt>`: white script (near-white OR brighter-than-local, unsaturated; plus a box over the strokes on the
+  light-blue shirt) and "FARUK MERCAN" (box), LaMa. The black "M. FETHULLAH GÜLEN" stays — the translation's title
+  page keeps the name in Latin.
+- `make_khmer.py [--hd]`: **ជីវប្រវត្តិ** (the title page's word, "biography"), white Battambang Bold with a dark shadow.
+  The long subtitle (ជីវិតដ៏ពិសេសរបស់ Gülen …) is not on the cover: Battambang has no Latin letters for "Gülen".
+- KDP theme `omur` (no band, `anchor_y` 0.1, pink→olive→dark `back`, charcoal spine, white text):
+  `kdp/omur-khmer-kdp-a5-608p-{cream,white}`; reading PDF `interior/omur-with-cover.pdf`.
