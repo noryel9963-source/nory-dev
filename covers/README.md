@@ -666,3 +666,11 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   "Gülen" in Cormorant Garamond — Battambang has no Latin). No author. `make_khmer.py` renders it at 600 dpi.
 - KDP theme `baris` (no band, blue back, deep blue spine, gold text): `kdp/baris-khmer-kdp-a5-245p-{cream,white}`;
   reading PDF `interior/baris-with-cover.pdf`.
+
+## Tarihçe-i Hayat (`tarihce/`, Risale-i Nur) — cover only, waiting for the interior in parts
+
+- Drive has "Tarihçe-i Hayat_compressed.pdf" (9.5 MB — above the ~6 MB download limit; parts needed). Its text view
+  shows the title page ប្រវត្តិជីវិត, Bediüzzaman Said Nursî, Risale-i Nur Külliyatı; the contents run to p. 1,087+
+  (Isparta), so two volumes (KDP max 828), split at a part boundary near the middle.
+- `make_khmer.py [--hd] 1|2`: ប្រវត្តិជីវិត + ភាគទី ១/២ in gold on the Risale-i Nur red-velvet art (asa/), same design
+  as Lem'alar and Mektubat (user: "cover same as other risale"); "Risale-i Nur Külliyatı'ndan" and the author stay.

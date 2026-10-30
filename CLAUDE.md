@@ -69,7 +69,7 @@ Sohbet Atmosferi (`sohbet/`, title បរិយាកាស / នៃការស
 Ölüm Ötesi Hayat (`olum/`, title សេចក្ដីស្លាប់ / និងជីវិតបរលោក from the translation, A5 123p);
 Kur'ân'ın Sihirli Ufku: Yusuf Sûresi (`yusuf/`, title ជើងមេឃដ៏មន្តស្នេហ៍នៃគម្ពីរគួរអាន / ស៊ូរ៉ោះយូសុហ្វ from the translation, A5 371p);
 Kalbin Solukları (`soluk/`, title ដង្ហើមនៃ / ដួងចិត្ត, 2 vols A5 424p + 418p split before chapter 42; from the user's compressed 5.7 MB re-upload).
-Cover only: Mektubat (`mektubat/`, Risale-i Nur, លិខិតទាំងឡាយ, 2 vols, split planned before the 20th Letter) — PDF is 12 MB, needs a compressed copy or parts.
+Cover only: Tarihçe-i Hayat (`tarihce/`, Risale-i Nur, ប្រវត្តិជីវិត, 2 vols — the 9.5 MB PDF needs parts); Mektubat (`mektubat/`, Risale-i Nur, លិខិតទាំងឡាយ, 2 vols, split planned before the 20th Letter) — PDF is 12 MB, needs a compressed copy or parts.
 Cover only (waiting for interior PDF): Çağ ve Nesil 2 (Buhranlar) and 3 (Yitirilmiş); Ölçü; Kırık Testi 6–14; Bir İ'câz Hecelemesi (`icaz/`);
 
 
