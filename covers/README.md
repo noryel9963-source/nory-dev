@@ -667,10 +667,15 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - KDP theme `baris` (no band, blue back, deep blue spine, gold text): `kdp/baris-khmer-kdp-a5-245p-{cream,white}`;
   reading PDF `interior/baris-with-cover.pdf`.
 
-## Tarihçe-i Hayat (`tarihce/`, Risale-i Nur) — cover only, waiting for the interior in parts
+## Tarihçe-i Hayat (`tarihce/`, Risale-i Nur — 2 volumes)
 
-- Drive has "Tarihçe-i Hayat_compressed.pdf" (9.5 MB — above the ~6 MB download limit; parts needed). Its text view
-  shows the title page ប្រវត្តិជីវិត, Bediüzzaman Said Nursî, Risale-i Nur Külliyatı; the contents run to p. 1,087+
-  (Isparta), so two volumes (KDP max 828), split at a part boundary near the middle.
-- `make_khmer.py [--hd] 1|2`: ប្រវត្តិជីវិត + ភាគទី ១/២ in gold on the Risale-i Nur red-velvet art (asa/), same design
-  as Lem'alar and Mektubat (user: "cover same as other risale"); "Risale-i Nur Külliyatı'ndan" and the author stay.
+- Interior from Drive folder "TarihceHayat_3parts" (Part1 Başlangıç–Eskişehir 492p, Part2 Kastamonu–Emirdağ 476p,
+  Part3 Afyon–Isparta 340p; the single 9.5 MB file was too large), merged: A5, 1,308 pages, no missing glyphs —
+  over KDP's 828, so split before Part 5 (ផ្នែកទីប្រាំ៖ ជីវិតនៅ Denizli, merged p. 707, a recto):
+  vol 1 = pp 1–706 (706p); vol 2 = the title/copyright/contents pages (pp 1–6) + pp 707–1308 (608p), parity kept.
+- `fix_gutter.py`: vol 1 shift 0.317 in → inside 0.895 in (KDP 701–828 pages needs 0.875), outside 0.258 in;
+  vol 2 shift 0.213 in → inside 0.77 in, outside 0.373 in → `interior/tarihce-{1,2}-interior-kdp.pdf`.
+- `make_khmer.py [--hd] 1|2`: **ប្រវត្តិជីវិត** (confirmed by the title page) + ភាគទី ១/២ in gold on the Risale-i Nur
+  red-velvet art (asa/), same design as Lem'alar and Mektubat; "Risale-i Nur Külliyatı'ndan" and the author stay.
+- KDP theme `asa`: `kdp/tarihce-khmer-1-kdp-a5-706p-*`, `kdp/tarihce-khmer-2-kdp-a5-608p-*`; reading PDFs
+  `interior/tarihce-{1,2}-with-cover.pdf`.
