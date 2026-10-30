@@ -173,6 +173,12 @@ THEMES = {
         "spine": [(0, (60, 26, 8)), (0.5, (96, 50, 16)), (1, (60, 26, 8))],
         "spine_text": (250, 238, 210),
     },
+    "baris": {  # Barış İçinde Birlikte Yaşama ve İnsanî Diyalog: designed cover, deep blue night + gold rings, no band;
+        "band_y": None,  # blue back (the front's edge is the gold frame), deep blue spine, gold text
+        "back": [(0, (8, 26, 58)), (1, (22, 64, 112))],
+        "spine": [(0, (6, 20, 46)), (0.5, (16, 48, 90)), (1, (6, 20, 46))],
+        "spine_text": (232, 196, 120),
+    },
     "kisa": {  # Kısa Sûrelerin Tefsiri, the real cover (photo): slate-teal ground, beige panel, mint bands; no band;
         "band_y": None,  # slate back (the photo's ground), deep slate spine, mint text
         "back": [(0, (78, 95, 108)), (0.5, (56, 74, 86)), (1, (36, 51, 60))],

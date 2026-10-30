@@ -654,3 +654,15 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   តាហ្វសៀរស៊ូរ៉ោះខ្លីៗ) near-black Battambang on the panel. The source's drawn tikz cover is no longer used.
 - KDP theme `kisa` (no band, slate back from the photo's ground, deep slate spine, mint text): `kdp/kisa-khmer-kdp-a5-370p-{cream,white}`;
   reading PDF `interior/kisa-a5-with-cover.pdf`.
+
+## Gülen Felsefesinde Barış İçinde Birlikte Yaşama ve İnsanî Diyalog — Abdullah Yüca (`baris/`)
+
+- Interior from Drive ("Gülen Felsefesinde Barış İçinde Birlikte Yaşama ve İnsanî Diyalog.pdf"): A5, 245 pages, no
+  missing glyphs; margins already 0.59 in, cream fill removed. ("__Fethullah Gülen Felsefesinde Barış ve Uzlaşı
+  Kültürü_2024-12-04.pdf" is the Turkish original; its page 1 is a white text title page, not a cover.)
+- No original cover was available; the user said to finish it, so the front is designed (`front.tex` via
+  `front-doc.tex`, xelatex twice): deep blue night, two overlapping gold rings with a lit shared lens, soft glow, gold
+  frame; **ការរួមរស់ដោយសន្តិភាព / និងការសន្ទនារវាងមនុស្សជាតិ** (Battambang Bold) and ក្នុងទស្សនវិជ្ជារបស់ Gülen (gold;
+  "Gülen" in Cormorant Garamond — Battambang has no Latin). No author. `make_khmer.py` renders it at 600 dpi.
+- KDP theme `baris` (no band, blue back, deep blue spine, gold text): `kdp/baris-khmer-kdp-a5-245p-{cream,white}`;
+  reading PDF `interior/baris-with-cover.pdf`.

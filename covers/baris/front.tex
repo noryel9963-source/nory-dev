@@ -1,0 +1,29 @@
+% front.tex — designed cover for Abdullah Yüca's "Gülen Felsefesinde Barış İçinde Birlikte Yaşama ve İnsanî Diyalog"
+% (no original cover was available). Two overlapping rings of light — two people, one shared space — on a deep
+% blue night with a soft dawn glow; gold frame. Title and subtitle from the translation's title page. No author.
+\definecolor{bD}{RGB}{8,26,58}
+\definecolor{bM}{RGB}{22,64,112}
+\definecolor{bG}{RGB}{232,196,120}
+\definecolor{bL}{RGB}{250,244,228}
+\begin{tikzpicture}[remember picture, overlay]
+  \shade[top color=bD, bottom color=bM] (current page.south west) rectangle (current page.north east);
+  % dawn glow behind the rings
+  \foreach \r in {64,62,...,16} {
+    \fill[bL, opacity=0.012] ([yshift=22mm]current page.center) circle (\r mm);}
+  \begin{scope}[shift={([yshift=22mm]current page.center)}, x=1mm, y=1mm]
+    \draw[bG, line width=1.6pt] (-11,0) circle (20);
+    \draw[bG, line width=1.6pt] (11,0) circle (20);
+    % the shared lens, filled with light
+    \begin{scope}\clip (-11,0) circle (20); \fill[bL, opacity=0.85] (11,0) circle (20); \end{scope}
+    % a few small stars around the rings
+    \foreach \a/\d in {20/36,55/38,95/37,135/38,170/36,205/37,245/38,290/36,335/37} {
+      \fill[bG] ({\d*cos(\a)},{\d*0.82*sin(\a)}) circle (0.55);}
+  \end{scope}
+  \draw[bG, line width=0.9pt]
+    ([xshift=9mm,yshift=9mm]current page.south west) rectangle ([xshift=-9mm,yshift=-9mm]current page.north east);
+  \node[bL, anchor=north, align=center, font=\fontsize{25}{40}\selectfont\bfseries] at ([yshift=-128mm]current page.north)
+    {ការរួមរស់ដោយសន្តិភាព\\និងការសន្ទនារវាងមនុស្សជាតិ};
+  \draw[bG, line width=0.7pt] ([xshift=-22mm,yshift=-160mm]current page.north) -- ([xshift=22mm,yshift=-160mm]current page.north);
+  \node[bG, anchor=north, font=\fontsize{15}{20}\selectfont] at ([yshift=-165mm]current page.north)
+    {ក្នុងទស្សនវិជ្ជារបស់ {\latin Gülen}};
+\end{tikzpicture}

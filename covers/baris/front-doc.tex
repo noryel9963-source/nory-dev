@@ -1,0 +1,14 @@
+% front-doc.tex — renders front.tex at A5 (xelatex twice: the tikz overlay needs the page position).
+% Khmer in Battambang (the user's cover font); the one Latin word in Cormorant Garamond.
+\documentclass{article}
+\usepackage[a5paper,margin=0pt]{geometry}
+\usepackage{fontspec}
+\usepackage{tikz}
+\usepackage{xcolor}
+\setmainfont[Path=../fonts/, Script=Khmer, BoldFont=Battambang-Bold.ttf]{Battambang.ttf}
+\newfontfamily\latin[Path=../fonts/]{CormorantGaramond-Medium.ttf}
+\pagestyle{empty}
+\begin{document}
+\null
+\input{front}
+\end{document}
