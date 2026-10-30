@@ -640,16 +640,17 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 
 ## Kısa Sûrelerin Tefsiri — Prof. Dr. Davut Aydüz (`kisa/`)
 
-- The user sent the translator's LaTeX source as a zip (`Kisa_Surelerin_Tefsiri_FINAL.zip`: main.tex, cover.tex,
-  25 chapters, Noto Serif Khmer / Noto Serif / Amiri). Built with XeLaTeX from TeX Live (`apt-get install
-  texlive-xetex texlive-latex-extra texlive-lang-other texlive-pictures texlive-fonts-recommended`), 3 passes:
-  B5, 331 pages, no missing glyphs. `\include{cover}` is swapped for `kisa/titlepage.tex` (same words, black on
-  white): the interior must not carry its own cover, and dropping the page would flip recto/verso. Margins from the
-  source (inside 1.18 in); cream check only → `interior/kisa-interior-kdp.pdf`.
+- Interior now = the user's own A5 export from Drive ("Kısa Sûrelerin Tefsiri.pdf", uploaded 2026-10-29): A5, 370
+  pages, the series layout (title p1, blank, full title p3), no missing glyphs; `fix_gutter.py` shift 0.08 in →
+  inside 0.645 in, outside 0.497 in → `interior/kisa-a5-interior-kdp.pdf`.
+- Earlier build (superseded, kept in `interior/kisa-interior*.pdf`, not in git): the translator's LaTeX zip
+  (`Kisa_Surelerin_Tefsiri_FINAL.zip`) compiled with XeLaTeX (TeX Live: texlive-xetex texlive-latex-extra
+  texlive-lang-other texlive-pictures texlive-fonts-recommended), B5 331 pages, with `kisa/titlepage.tex` in place
+  of its drawn cover page.
 - Front: the real cover — the user's photo of the printed book (`kisa-source.webp`; cover = (47,9,925,1450), right of
   the photo's spine crease). `erase_title.py <big-lama.pt>`: the dark Turkish title on the beige panel and the author
   on the mint band (dark-letter masks), the publisher logo and "9. BASKI" (boxes), LaMa; leftover specks on the
   mint band are median-filtered. `make_khmer.py [--hd]`: **តាហ្វសៀរ / ស៊ូរ៉ោះខ្លីៗ** (the translation's
   តាហ្វសៀរស៊ូរ៉ោះខ្លីៗ) near-black Battambang on the panel. The source's drawn tikz cover is no longer used.
-- KDP theme `kisa` (no band, slate back from the photo's ground, deep slate spine, mint text): `kdp/kisa-khmer-kdp-b5-331p-{cream,white}`;
-  reading PDF `interior/kisa-with-cover.pdf`.
+- KDP theme `kisa` (no band, slate back from the photo's ground, deep slate spine, mint text): `kdp/kisa-khmer-kdp-a5-370p-{cream,white}`;
+  reading PDF `interior/kisa-a5-with-cover.pdf`.
