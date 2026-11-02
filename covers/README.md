@@ -695,3 +695,19 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   `kdp/kirik-khmer-17-kdp-a5-305p-{cream,white}`; reading PDF `interior/kirik-17-with-cover.pdf`.
 - herkul.app covers for Kırık Testi 15, 16, 18–21 saved as `kirik15/ … kirik21/kirik-N-source.jpg` for later
   (no interiors yet). herkul.app's `/eserler` page lists every book with its cover path (`__NEXT_DATA__` JSON).
+
+## Çağ ve Nesil 4–9 (`cagnesil/`) and the Çağ ve Nesil interiors
+
+- Covers from herkul.app (`/books/cag-ve-nesil-N-…/cover.jpg`, 400×600; the user had no screenshots) →
+  `cag-N-source.jpg`. `erase_title.py <big-lama.pt> 4 … 9`: script title (box masks; vol 6 letter mask over the
+  leaves; vol 7 sky = cubic surface fit + grain, LaMa ghosted), "Çağ ve Nesil" logo and the band signature (row
+  interpolation between the box edges); original number box kept. Upscaled 4×.
+- `make_khmer.py [--hd] N`: Battambang, white with a soft shadow (vol 4 dark red). Titles from the translations:
+  6 **គំនិតដែលដុះបៃតង** (foreword), 7 **ជើងមេឃដែលពន្លឺលេចមក** (foreword), 8 **ចលនាមួយ / ដែលគំរូមកពីខ្លួនឯង** (title
+  page), 9 **សំឡេងស្រែក / នៃភាពស្ងៀម** (title page). 4 ចំណែកមាសនៃពេលវេលា and 5 ពេលដែលថ្ងៃទាំងឡាយដកដង្ហើមរដូវផ្ការីក are
+  proposals (no interiors yet). Vol 10 (new Süreyya design, herkul cover) not started.
+- Interiors (from the user's Book Plan sheet links / Drive): vol 2 = "Cag ve Nesil 2 - Part 1–3" merged, A5 155p
+  (cover `buhranlar/`, proposed title មនុស្សក្នុងទឹកគួចនៃវិបត្តិ — the PDF has no Khmer title); vol 6 B5 260p; vol 7 B5
+  368p; vol 8 "Cag_ve_Nesil_8_FINAL" B5 232p (title page; an A5 391p version without title page also exists); vol 9
+  "Cag_ve_Nesil_9_FINAL" B5 234p (an A5 247p "cag 9" also exists). No missing glyphs; margins already OK.
+- KDP theme `cag`: `kdp/cag-khmer-{2-kdp-a5-155p,6-kdp-b5-260p,7-kdp-b5-368p,8-kdp-b5-232p,9-kdp-b5-234p}-*`.

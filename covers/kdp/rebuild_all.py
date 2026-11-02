@@ -30,6 +30,12 @@ BOOKS = {
                 "asrin-getirdigi-tereddutler-3", "ការងឿងឆ្ងល់នៃយុគសម័យ ភាគទី៣"),
     "asrin-4": (None, "4", None, A5, 354, "asrin", "ការងឿងឆ្ងល់នៃយុគសម័យ", "asrin-khmer-4-kdp-a5-354p",
                 "asrin-getirdigi-tereddutler-4", "ការងឿងឆ្ងល់នៃយុគសម័យ ភាគទី៤"),
+    "cag-2": ("buhranlar", "2", "buhranlar-notitle-source-4x-noauthor.png", A5, 155, "cag", "មនុស្សក្នុងទឹកគួចនៃវិបត្តិ",
+              "cag-khmer-2-kdp-a5-155p", "cag-2", "មនុស្សក្នុងទឹកគួចនៃវិបត្តិ (សម័យកាល និងជំនាន់ ២)"),
+    **{f"cag-{v}": ("cagnesil", str(v), f"cag-{v}-notitle-source-4x.png", B5, n, "cag", t,
+                    f"cag-khmer-{v}-kdp-b5-{n}p", f"cag-{v}", f"{t} (សម័យកាល និងជំនាន់ {d})")
+       for v, n, t, d in [(6, 260, "គំនិតដែលដុះបៃតង", "៦"), (7, 368, "ជើងមេឃដែលពន្លឺលេចមក", "៧"),
+                          (8, 232, "ចលនាមួយដែលគំរូមកពីខ្លួនឯង", "៨"), (9, 234, "សំឡេងស្រែកនៃភាពស្ងៀម", "៩")]},
     "cag-1": ("cag-ve-nesil", "1", "cag-ve-nesil-notitle-source-4x-noauthor.png", A5, 168, "cag", "សម័យកាល និងជំនាន់",
               "cag-khmer-1-kdp-a5-168p", "cag-ve-nesil-1", "សម័យកាល និងជំនាន់ ១"),
     **{f"kalbin-{v}": ("kalbin", str(v), "kalbin-notitle-source-4x-noauthor.png", A5, n, "kalbin", "ភ្នំមរកតនៃដួងចិត្ត",
@@ -140,7 +146,7 @@ BOOKS = {
 
 # books whose interior went through fix_gutter.py (…-interior-kdp.pdf); the others use …-interior.pdf
 KDP_INTERIOR = ("cag-1", "kalbin-1", "kalbin-2", "kalbin-3", "kalbin-4", "ustadla", "kirik-2", "kirik-3", "kirik-4",
-                "kirik-5", "fasil-1", "heykel-1", "heykel-2", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1", "fasil-2", "fasil-3", "fasil-4", "fasil-5", "dunyamiz", "lemalar-1", "lemalar-2", "fatiha", "hitap", "hac", "inanc-1", "inanc-2", "oruc", "zekat", "soluk-1", "soluk-2", "kuran", "cevsen", "yusuf", "olum", "sohbet", "varlik", "yaratilis", "vefadar", "omur", "kisa", "baris", "tarihce-1", "tarihce-2", "kirik-9", "kirik-17")
+                "kirik-5", "fasil-1", "heykel-1", "heykel-2", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1", "fasil-2", "fasil-3", "fasil-4", "fasil-5", "dunyamiz", "lemalar-1", "lemalar-2", "fatiha", "hitap", "hac", "inanc-1", "inanc-2", "oruc", "zekat", "soluk-1", "soluk-2", "kuran", "cevsen", "yusuf", "olum", "sohbet", "varlik", "yaratilis", "vefadar", "omur", "kisa", "baris", "tarihce-1", "tarihce-2", "kirik-9", "kirik-17", "cag-2", "cag-6", "cag-7", "cag-8", "cag-9")
 
 
 def load(folder):

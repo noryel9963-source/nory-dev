@@ -51,7 +51,7 @@ Interiors are NOT in git (`covers/interior/` is ignored): re-download them from 
   removed (pages 1–2; originals kept as `*-interior-orig.pdf`).
 
 ## Status
-Done (cover + KDP covers + reading PDF): Asrın Getirdiği Tereddütler 1 (new A5 251p edition), 2 (old B5 292p layout — 30 missing glyphs on 8 pages, translator to fix; README), 3 (A5 307p) and 4 (A5 354p); Çağ ve Nesil 1; Kalbin Zümrüt Tepeleri 1–4;
+Done (cover + KDP covers + reading PDF): Asrın Getirdiği Tereddütler 1 (new A5 251p edition), 2 (old B5 292p layout — 30 missing glyphs on 8 pages, translator to fix; README), 3 (A5 307p) and 4 (A5 354p); Çağ ve Nesil 1, 2 (A5 155p), 6–9 (`cagnesil/`, herkul covers, B5 260/368/232/234p; 4–5 cover only, 10 not started); Kalbin Zümrüt Tepeleri 1–4;
 Üstad'la Hasbihal; Prizma 1–9 (1 is A5, 2–9 B5); Kırık Testi 1–5, 9 and 17 (`kirik17/`, បន្ទាត់នៃភាពត្រឹមត្រូវ, cover from herkul.app, A5 305p; `kirik9/`, ទ្រនិចនៃបេះដូង, A5 419p; print packages for 1–5 now come from the user's newer Drive sets — KT1 B5 230p, KT2 234p, KT3 326p, KT4 552p, KT5 674p); Fasıldan Fasıla 1–5 (title ពីវគ្គមួយ ទៅវគ្គមួយ from the translation; `fasil2/`, `fasil3/` A5 306p, `fasil4/` A5 257p, `fasil5/` Fikir Atlası A5 222p); Ruhumuzun Heykelini Dikerken 1 (`heykel/`, new edition A5 208p, title ពេលកសាងរូបសំណាក / នៃព្រលឹងយើង from its title page) and 2 (`heykel2/`, Kendi Dünyamıza Doğru, title ឆ្ពោះទៅកាន់ពិភពផ្ទាល់ខ្លួនរបស់យើង from the translation, A5 377p);
 Asâ-yı Mûsâ (`asa/`, Said Nursî — title ដំបងរបស់ព្យាការីមូសា from the translation); Namaz (`namaz/`, A5 413p); Gönül Nağmeleri: Hutbeler (`gonul/`, A5 401p);
 Beyan 1 (`beyan/`, title វោហារ from the translation, A5 263p);
@@ -75,7 +75,7 @@ Sohbet Atmosferi (`sohbet/`, title បរិយាកាស / នៃការស
 Kur'ân'ın Sihirli Ufku: Yusuf Sûresi (`yusuf/`, title ជើងមេឃដ៏មន្តស្នេហ៍នៃគម្ពីរគួរអាន / ស៊ូរ៉ោះយូសុហ្វ from the translation, A5 371p);
 Kalbin Solukları (`soluk/`, title ដង្ហើមនៃ / ដួងចិត្ត, 2 vols A5 424p + 418p split before chapter 42; from the user's compressed 5.7 MB re-upload).
 Cover only: Mektubat (`mektubat/`, Risale-i Nur, លិខិតទាំងឡាយ, 2 vols, split planned before the 20th Letter) — PDF is 12 MB, needs a compressed copy or parts.
-Cover only (waiting for interior PDF): Çağ ve Nesil 2 (Buhranlar) and 3 (Yitirilmiş); Ölçü; Kırık Testi 6–8, 10–14 (15, 16, 18–21: herkul.app cover images saved, no interiors); Bir İ'câz Hecelemesi (`icaz/`);
+Cover only (waiting for interior PDF): Çağ ve Nesil 3 (Yitirilmiş), 4, 5; Ölçü; Kırık Testi 6–8, 10–14 (15, 16, 18–21: herkul.app cover images saved, no interiors); Bir İ'câz Hecelemesi (`icaz/`);
 
 
 ## Open questions for the user
