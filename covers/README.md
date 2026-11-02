@@ -240,9 +240,11 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 
 ## Kalb İbresi — Kırık Testi 9 (`kirik9/`)
 
-- Same pipeline as `kirik/`, but the title sits in the sky at the top. Proposed title **ម្ជុល / នៃដួងចិត្ត**
-  ("The Heart's Needle"; ម្ជុល and ដួងចិត្ត are the translators' words). No interior in Drive yet.
-
+- Same pipeline as `kirik/`, but the title sits in the sky at the top: **ទ្រនិច / នៃបេះដូង** — the translation's own
+  words (its first chapter "Kalp İbresi" is ទ្រនិចនៃបេះដូង; replaces the earlier proposal ម្ជុល / នៃដួងចិត្ត).
+- Interior: "Kirik testi 9 .pdf" linked from the user's "Book Plan" sheet: A5, 419 pages, no missing glyphs, no title
+  page (starts with the contents); margins already 0.663 in, cream fill removed.
+- KDP theme `kirik`: `kdp/kirik-khmer-9-kdp-a5-419p-{cream,white}`; reading PDF `interior/kirik-9-with-cover.pdf`.
 ## Cemre Beklentisi — Kırık Testi 10 (`kirik10/`)
 
 - Same pipeline as `kirik/`. Proposed title **ការរង់ចាំ / កម្ដៅនិទាឃរដូវ** ("Waiting for the Warmth of Spring"; cemre is

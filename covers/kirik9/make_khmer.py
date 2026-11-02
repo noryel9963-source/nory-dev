@@ -1,4 +1,5 @@
-"""Khmer edition of "Kalb İbresi" (Kırık Testi 9): ម្ជុល នៃដួងចិត្ត (proposed; the translators' words). Title sits in the sky.
+"""Khmer edition of "Kalb İbresi" (Kırık Testi 9): ទ្រនិច / នៃបេះដូង — the translation's own words (its first chapter,
+"Kalp İbresi", is ទ្រនិចនៃបេះដូង). Title sits in the sky.
 
     python3 make_khmer.py [--hd] 1 2 ...
 Writes khmer-N.png (799x1196) or khmer-N-hd.png (3196x4784). Default volume 9.
@@ -19,8 +20,8 @@ CX = 443
 
 # text, font, max width, ink height, centre y, colour, shadow colour (None = no shadow)
 LINES = [
-    ("ម្ជុល", "Battambang.ttf", 280, 130, 262, (158, 24, 14), None),          # kalb (dark red)
-    ("នៃដួងចិត្ត", "Battambang.ttf", 380, 120, 385, (78, 25, 14), None),     # ibresi (dark brown)
+    ("ទ្រនិច", "Battambang.ttf", 300, 130, 262, (158, 24, 14), None),         # ibresi (dark red)
+    ("នៃបេះដូង", "Battambang.ttf", 380, 120, 385, (78, 25, 14), None),       # kalp (dark brown)
 ]
 
 # number box: big orange digit with the series name in small letters on both sides (like "KIRIK 1 TESTİ")
