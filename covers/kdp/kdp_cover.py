@@ -173,6 +173,11 @@ THEMES = {
         "spine": [(0, (60, 26, 8)), (0.5, (96, 50, 16)), (1, (60, 26, 8))],
         "spine_text": (250, 238, 210),
     },
+    "kirik17": {  # Kırık Testi 17 (new Süreyya design): linen beige, gold ribbon, no band; deep brown spine, gold text
+        "band_y": None,
+        "spine": [(0, (60, 28, 14)), (0.5, (96, 48, 26)), (1, (60, 28, 14))],
+        "spine_text": (236, 186, 84),
+    },
     "baris": {  # Barış İçinde Birlikte Yaşama ve İnsanî Diyalog: designed cover, deep blue night + gold rings, no band;
         "band_y": None,  # blue back (the front's edge is the gold frame), deep blue spine, gold text
         "back": [(0, (8, 26, 58)), (1, (22, 64, 112))],

@@ -681,3 +681,17 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   red-velvet art (asa/), same design as Lem'alar and Mektubat; "Risale-i Nur Külliyatı'ndan" and the author stay.
 - KDP theme `asa`: `kdp/tarihce-khmer-1-kdp-a5-706p-*`, `kdp/tarihce-khmer-2-kdp-a5-608p-*`; reading PDFs
   `interior/tarihce-{1,2}-with-cover.pdf`.
+
+## İstikamet Çizgisi — Kırık Testi 17 (`kirik17/`)
+
+- Cover: the new Süreyya design, taken from herkul.app (`/books/kirik-testi-17/cover.jpg` → `kirik-17-source.jpg`;
+  the user had no screenshot). `erase_title.py <big-lama.pt>`: dark-brown title, "KIRIK TESTİ" on the gold ribbon,
+  author and Süreyya logo (dark-letter masks + a box), LaMa. Ribbon, red 17, torn-paper window and linen stay.
+- `make_khmer.py [--hd]`: **បន្ទាត់នៃ / ភាពត្រឹមត្រូវ** — the translation's own rendering (foreword: "İstikamet Çizgisi
+  (បន្ទាត់នៃភាពត្រឹមត្រូវ)"), dark brown; **ក្អមបែក** on the ribbon (the series name in the translation).
+- Interior: "Istikamet cizgisi .pdf" linked from the user's Book Plan sheet: A5, 305 pages, no missing glyphs, no
+  title page; `fix_gutter.py` shift 0.1 in → inside 0.645 in.
+- KDP theme `kirik17` (no band, linen back from the edge, deep brown spine, gold text):
+  `kdp/kirik-khmer-17-kdp-a5-305p-{cream,white}`; reading PDF `interior/kirik-17-with-cover.pdf`.
+- herkul.app covers for Kırık Testi 15, 16, 18–21 saved as `kirik15/ … kirik21/kirik-N-source.jpg` for later
+  (no interiors yet). herkul.app's `/eserler` page lists every book with its cover path (`__NEXT_DATA__` JSON).
