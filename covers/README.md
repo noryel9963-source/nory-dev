@@ -711,3 +711,20 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   368p; vol 8 "Cag_ve_Nesil_8_FINAL" B5 232p (title page; an A5 391p version without title page also exists); vol 9
   "Cag_ve_Nesil_9_FINAL" B5 234p (an A5 247p "cag 9" also exists). No missing glyphs; margins already OK.
 - KDP theme `cag`: `kdp/cag-khmer-{2-kdp-a5-155p,6-kdp-b5-260p,7-kdp-b5-368p,8-kdp-b5-232p,9-kdp-b5-234p}-*`.
+
+## Single books from herkul.app covers (`singles/common.py` + `bahar/ sonsuz1/ sonsuz2/ derin/ cekirdek/`)
+
+One shared builder: `python3 singles/common.py <big-lama.pt> <RealESRGAN_x4plus.pth> KEY …` erases (LaMa boxes, band
+signatures refilled row by row) and upscales 4×; each folder's 3-line `make_khmer.py [--hd]` sets the Khmer lines
+(Battambang) from `BOOKS[KEY]`. No author anywhere. Titles all from the translations:
+- **Bahar Neşîdesi** — ចម្រៀងនៃ / និទាឃរដូវ (red, like the original). Interior = the user's Drive set "Bahar Neşîdesi -
+  Interior A5 320 pages" (its own Drive cover is a plain text design with the author — not used). KDP theme `bahar`.
+- **Sonsuz Nur 1–2** — ការវិភាគអំពីជីវិតរបស់ព្យាការីមូហាំម៉ាត់ / ពន្លឺនិរន្ត (the Khmer edition, "Infinite Light", spells
+  និរន្ត); original number box kept. Interiors = Drive parts merged (270p / 240p); the edition's own Khmer front cover
+  (p1) and back cover (last page) removed, a blank page added after the title page (parity kept) → 269p / 239p A5.
+  Edge-to-edge footer rules fool `fix_gutter.py`'s margin check; real ink margins ≈ 0.79 in, used as is.
+- **Derin Müslümanlık** — សីលធម៌ជ្រៅជ្រះ / នៃឥស្លាម + សីលធម៌ក្រោមពន្លឺ / គម្ពីរគួរអាន និងស៊ុណ្ណះ. Interior = Book Plan
+  sheet "Derin_Muslumanlik(Khmer)" B5 523p: its picture cover (p1) replaced by a plain Battambang title page; the one
+  missing glyph (p475, in "តាសា?វុហ្វ (tasavvuf)") whited out.
+- **Çekirdekten Çınara** — ពីគ្រាប់ធញ្ញជាតិ / ទៅដើមឈើ / (ការបណ្ដុះស្មារតីផ្លូវចិត្តចំពោះកូនៗ), navy. Interior = Book Plan
+  sheet "Cinar … A5" 238p (legacy-encoded text, renders fine, no missing glyphs).

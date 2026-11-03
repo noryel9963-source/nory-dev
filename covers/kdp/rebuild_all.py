@@ -132,6 +132,15 @@ BOOKS = {
              "kisa-khmer-kdp-a5-370p", "kisa-a5", "តាហ្វសៀរស៊ូរ៉ោះខ្លីៗ"),
     "baris": ("baris", "", "baris-front-600dpi.png", A5, 245, "baris", "ការរួមរស់ដោយសន្តិភាព និងការសន្ទនារវាងមនុស្សជាតិ",
               "baris-khmer-kdp-a5-245p", "baris", "ការរួមរស់ដោយសន្តិភាព និងការសន្ទនារវាងមនុស្សជាតិ"),
+    "bahar": ("bahar", "", "bahar-notitle-source-4x.png", A5, 320, "bahar", "ចម្រៀងនៃនិទាឃរដូវ",
+              "bahar-khmer-kdp-a5-320p", "bahar", "ចម្រៀងនៃនិទាឃរដូវ"),
+    **{f"sonsuz-{v}": (f"sonsuz{v}", str(v), f"sonsuz{v}-notitle-source-4x.png", A5, n, "sonsuz", "ពន្លឺនិរន្ត",
+                       f"sonsuz-khmer-{v}-kdp-a5-{n}p", f"sonsuz-{v}", f"ពន្លឺនិរន្ត ភាគ {d}")
+       for v, n, d in [(1, 269, "១"), (2, 239, "២")]},
+    "derin": ("derin", "", "derin-notitle-source-4x.png", B5, 523, "derin", "សីលធម៌ជ្រៅជ្រះនៃឥស្លាម",
+              "derin-khmer-kdp-b5-523p", "derin", "សីលធម៌ជ្រៅជ្រះនៃឥស្លាម"),
+    "cekirdek": ("cekirdek", "", "cekirdek-notitle-source-4x.png", A5, 238, "cekirdek", "ពីគ្រាប់ធញ្ញជាតិទៅដើមឈើ",
+                 "cekirdek-khmer-kdp-a5-238p", "cekirdek", "ពីគ្រាប់ធញ្ញជាតិទៅដើមឈើ"),
     "olum": ("olum", "", "olum-notitle-source-4x.png", A5, 123, "olum", "សេចក្ដីស្លាប់ និងជីវិតបរលោក",
              "olum-khmer-kdp-a5-123p", "olum", "សេចក្ដីស្លាប់ និងជីវិតបរលោក"),
     "yusuf": ("yusuf", "", "yusuf-notitle-source-4x.png", A5, 371, "yusuf", "ស៊ូរ៉ោះយូសុហ្វ",
@@ -146,7 +155,7 @@ BOOKS = {
 
 # books whose interior went through fix_gutter.py (…-interior-kdp.pdf); the others use …-interior.pdf
 KDP_INTERIOR = ("cag-1", "kalbin-1", "kalbin-2", "kalbin-3", "kalbin-4", "ustadla", "kirik-2", "kirik-3", "kirik-4",
-                "kirik-5", "fasil-1", "heykel-1", "heykel-2", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1", "fasil-2", "fasil-3", "fasil-4", "fasil-5", "dunyamiz", "lemalar-1", "lemalar-2", "fatiha", "hitap", "hac", "inanc-1", "inanc-2", "oruc", "zekat", "soluk-1", "soluk-2", "kuran", "cevsen", "yusuf", "olum", "sohbet", "varlik", "yaratilis", "vefadar", "omur", "kisa", "baris", "tarihce-1", "tarihce-2", "kirik-9", "kirik-17", "cag-2", "cag-6", "cag-7", "cag-8", "cag-9")
+                "kirik-5", "fasil-1", "heykel-1", "heykel-2", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1", "fasil-2", "fasil-3", "fasil-4", "fasil-5", "dunyamiz", "lemalar-1", "lemalar-2", "fatiha", "hitap", "hac", "inanc-1", "inanc-2", "oruc", "zekat", "soluk-1", "soluk-2", "kuran", "cevsen", "yusuf", "olum", "sohbet", "varlik", "yaratilis", "vefadar", "omur", "kisa", "baris", "tarihce-1", "tarihce-2", "kirik-9", "kirik-17", "cag-2", "cag-6", "cag-7", "cag-8", "cag-9", "bahar", "sonsuz-1", "sonsuz-2", "derin", "cekirdek")
 
 
 def load(folder):

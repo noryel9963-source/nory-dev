@@ -178,6 +178,32 @@ THEMES = {
         "spine": [(0, (60, 28, 14)), (0.5, (96, 48, 26)), (1, (60, 28, 14))],
         "spine_text": (236, 186, 84),
     },
+    "bahar": {  # Bahar Neşîdesi (herkul photo): pale patterned paper, no band; deep red spine, white text
+        "band_y": None,
+        "back": [(0, (226, 230, 230)), (1, (206, 218, 222))],
+        "spine": [(0, (120, 14, 30)), (0.5, (176, 30, 52)), (1, (120, 14, 30))],
+        "spine_text": (255, 255, 255),
+    },
+    "sonsuz": {  # Sonsuz Nur: night sky over a mountain, blue band, red number box; deep navy spine, gold text
+        "band_y": 518 / 600,
+        "band": [(0, (0, 90, 152)), (0.5, (16, 70, 140)), (1, (10, 44, 100))],
+        "band_line": (8, 30, 80),
+        "spine": [(0, (4, 14, 50)), (0.5, (14, 34, 90)), (1, (4, 14, 50))],
+        "spine_text": (238, 222, 170),
+    },
+    "derin": {  # Derin Müslümanlık: deep teal with a gold crescent, no band; deep teal spine, white text
+        "band_y": None,
+        "back": [(0, (44, 63, 67)), (1, (36, 52, 56))],
+        "spine": [(0, (16, 34, 38)), (0.5, (30, 60, 66)), (1, (16, 34, 38))],
+        "spine_text": (240, 240, 236),
+    },
+    "cekirdek": {  # Çekirdekten Çınara: blue water with a plane leaf, red band; navy spine, white text
+        "band_y": 514 / 600,
+        "band": [(0, (164, 18, 22)), (0.5, (190, 30, 30)), (1, (150, 14, 18))],
+        "band_line": (110, 10, 10),
+        "spine": [(0, (14, 36, 80)), (0.5, (24, 52, 110)), (1, (14, 36, 80))],
+        "spine_text": (255, 255, 255),
+    },
     "baris": {  # Barış İçinde Birlikte Yaşama ve İnsanî Diyalog: designed cover, deep blue night + gold rings, no band;
         "band_y": None,  # blue back (the front's edge is the gold frame), deep blue spine, gold text
         "back": [(0, (8, 26, 58)), (1, (22, 64, 112))],

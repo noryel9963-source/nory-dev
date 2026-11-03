@@ -74,6 +74,7 @@ Varlığın Metafizik Boyutu (`varlik/`, title វិមាត្រអរូប
 Sohbet Atmosferi (`sohbet/`, title បរិយាកាស / នៃការសន្ទនា from the translation, A5 319p);
 Ölüm Ötesi Hayat (`olum/`, title សេចក្ដីស្លាប់ / និងជីវិតបរលោក from the translation, A5 123p);
 Kur'ân'ın Sihirli Ufku: Yusuf Sûresi (`yusuf/`, title ជើងមេឃដ៏មន្តស្នេហ៍នៃគម្ពីរគួរអាន / ស៊ូរ៉ោះយូសុហ្វ from the translation, A5 371p);
+Bahar Neşîdesi (`bahar/`, ចម្រៀងនៃនិទាឃរដូវ, A5 320p), Sonsuz Nur 1–2 (`sonsuz1/ sonsuz2/`, ពន្លឺនិរន្ត, A5 269p + 239p), Derin Müslümanlık (`derin/`, សីលធម៌ជ្រៅជ្រះនៃឥស្លាម, B5 523p), Çekirdekten Çınara (`cekirdek/`, ពីគ្រាប់ធញ្ញជាតិទៅដើមឈើ, A5 238p) — herkul covers via `singles/common.py`;
 Kalbin Solukları (`soluk/`, title ដង្ហើមនៃ / ដួងចិត្ត, 2 vols A5 424p + 418p split before chapter 42; from the user's compressed 5.7 MB re-upload).
 Cover only: Mektubat (`mektubat/`, Risale-i Nur, លិខិតទាំងឡាយ, 2 vols, split planned before the 20th Letter) — PDF is 12 MB, needs a compressed copy or parts.
 Cover only (waiting for interior PDF): Çağ ve Nesil 3 (Yitirilmiş), 4, 5; Ölçü; Kırık Testi 6–8, 10–14 (15, 16, 18–21: herkul.app cover images saved, no interiors); Bir İ'câz Hecelemesi (`icaz/`);
