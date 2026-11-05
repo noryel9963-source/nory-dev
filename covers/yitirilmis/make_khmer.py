@@ -18,14 +18,14 @@ SOURCE_HD = HERE / "yitirilmis-notitle-source-4x-noauthor.png"
 COVER = (14, 13, 715, 1062)           # cover inside the app frame (source px)
 CORNER = 12
 
-# ឆ្ពោះទៅកាន់ឋានសួគ៌ដែលបាត់បង់ — "Toward the Lost Paradise" (Yitirilmiş cennete doğru);
-# ឋានសួគ៌ (paradise) and បាត់បង់ (lost) as used in the series' Khmer translation.
+# «ឆ្ពោះទៅរកឋានសួគ៌ ដ៏បាត់បង់» — "Toward the Lost Paradise" (Yitirilmiş Cennete Doğru), quoted in the
+# translation itself (Çağ ve Nesil 3 interior).
 # Dark teal script with a soft shadow like the original, "paradise" emphasised.
 TITLE = [
     # text, max width, ink height, center x, center y, unused
-    ("ឆ្ពោះទៅកាន់", 300, 72, 330, 565, 1.0),
+    ("ឆ្ពោះទៅរក", 300, 72, 330, 565, 1.0),
     ("ឋានសួគ៌", 420, 135, 370, 665, 1.0),
-    ("ដែលបាត់បង់", 400, 95, 420, 770, 1.0),
+    ("ដ៏បាត់បង់", 360, 95, 420, 770, 1.0),
 ]
 INK = (8, 82, 64)
 SHADOW = (120, 60, 20)

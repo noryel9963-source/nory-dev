@@ -1,6 +1,6 @@
 """Çağ ve Nesil 4–10 on the herkul.app covers (erase_title.py): Khmer title in the place of the script title, white
 with a soft dark shadow like the original (vol 4: dark red, like its title); no author, no logo; the original number
-box stays. Titles from the translations where they exist (6, 7, 8, 9); 4, 5 and 10 are proposals (no interior yet).
+box stays. Titles from the translations (chapter titles / title pages / forewords).
 
     python3 make_khmer.py [--hd] 4 5 6 7 8 9 10
 Writes khmer-N.png (400x600) or khmer-N-hd.png (1600x2400).
@@ -18,15 +18,15 @@ WHITE, RED = (255, 250, 236), (128, 22, 16)
 
 # text, max width, ink height, centre x, centre y — per volume (400x600 source px)
 TITLES = {
-    4: [("ចំណែកមាស", 290, 66, 200, 92), ("នៃពេលវេលា", 290, 60, 205, 165)],                 # proposed
-    5: [("ពេលដែលថ្ងៃទាំងឡាយ", 300, 52, 205, 115), ("ដកដង្ហើម", 250, 52, 215, 178),
-        ("រដូវផ្ការីក", 280, 56, 220, 240)],                                                  # proposed
+    4: [("ចំណែកមាស", 290, 66, 200, 92), ("នៃពេលវេលា", 290, 60, 205, 165)],                 # chapter 1
+    5: [("ពេលដែលថ្ងៃទាំងឡាយ", 300, 52, 205, 115), ("រសាត់ទៅរក", 300, 38, 215, 172),
+        ("រដូវផ្ការីក", 280, 50, 215, 240)],                                                  # chapter 2
     6: [("គំនិត", 220, 74, 190, 128), ("ដែលដុះបៃតង", 300, 66, 205, 200)],                    # «គំនិតដែលដុះបៃតង»
     7: [("ជើងមេឃ", 220, 82, 200, 150), ("ដែលពន្លឺលេចមក", 240, 46, 200, 222)],                # «ជើងមេឃដែលពន្លឺលេចមក»
     8: [("ចលនាមួយ", 270, 60, 185, 90), ("ដែលគំរូ", 250, 60, 200, 158), ("មកពីខ្លួនឯង", 280, 60, 200, 226)],
     9: [("សំឡេងស្រែក", 280, 66, 200, 178), ("នៃភាពស្ងៀម", 280, 66, 205, 252)],
     # new Süreyya design (erase_title_10.py): gold title on the purple gradient where the Turkish title was
-    10: [("ផ្លូវនៃអ្នកឧទ្ទិសខ្លួន", 320, 56, 200, 392), ("ដើម្បីអល់ឡោះ", 280, 56, 200, 456)],   # proposed
+    10: [("ផ្លូវនៃអ្នកដែលបាន", 300, 56, 200, 392), ("ឧទ្ទិសខ្លួនចំពោះអល់ឡោះ", 340, 56, 200, 456)],   # chapter
 }
 GOLD = (242, 218, 84)
 

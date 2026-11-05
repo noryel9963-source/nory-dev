@@ -36,6 +36,13 @@ BOOKS = {
                     f"cag-khmer-{v}-kdp-b5-{n}p", f"cag-{v}", f"{t} (សម័យកាល និងជំនាន់ {d})")
        for v, n, t, d in [(6, 260, "គំនិតដែលដុះបៃតង", "៦"), (7, 368, "ជើងមេឃដែលពន្លឺលេចមក", "៧"),
                           (8, 232, "ចលនាមួយដែលគំរូមកពីខ្លួនឯង", "៨"), (9, 234, "សំឡេងស្រែកនៃភាពស្ងៀម", "៩")]},
+    "cag-3": ("yitirilmis", "3", "yitirilmis-notitle-source-4x-noauthor.png", A5, 168, "cag", "ឆ្ពោះទៅរកឋានសួគ៌ដ៏បាត់បង់",
+              "cag-khmer-3-kdp-a5-168p", "cag-3", "ឆ្ពោះទៅរកឋានសួគ៌ដ៏បាត់បង់ (សម័យកាល និងជំនាន់ ៣)"),
+    **{f"cag-{v}": ("cagnesil", str(v), f"cag-{v}-notitle-source-4x.png", A5, n, th, t,
+                    f"cag-khmer-{v}-kdp-a5-{n}p", f"cag-{v}", f"{t} (សម័យកាល និងជំនាន់ {d})")
+       for v, n, th, t, d in [(4, 272, "cag", "ចំណែកមាសនៃពេលវេលា", "៤"),
+                              (5, 174, "cag", "ពេលដែលថ្ងៃទាំងឡាយរសាត់ទៅរករដូវផ្ការីក", "៥"),
+                              (10, 194, "cag10", "ផ្លូវនៃអ្នកដែលបានឧទ្ទិសខ្លួនចំពោះអល់ឡោះ", "១០")]},
     "cag-1": ("cag-ve-nesil", "1", "cag-ve-nesil-notitle-source-4x-noauthor.png", A5, 168, "cag", "សម័យកាល និងជំនាន់",
               "cag-khmer-1-kdp-a5-168p", "cag-ve-nesil-1", "សម័យកាល និងជំនាន់ ១"),
     **{f"kalbin-{v}": ("kalbin", str(v), "kalbin-notitle-source-4x-noauthor.png", A5, n, "kalbin", "ភ្នំមរកតនៃដួងចិត្ត",

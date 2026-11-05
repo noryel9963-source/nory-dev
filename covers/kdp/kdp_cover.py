@@ -65,6 +65,11 @@ THEMES = {
         "spine": [(0, (14, 40, 66)), (0.5, (30, 68, 105)), (1, (14, 40, 66))],
         "spine_text": (233, 245, 250),
     },
+    "cag10": {  # Çağ ve Nesil 10 (new Süreyya design): flower art all over, deep purple spine, gold text
+        "band_y": None,
+        "spine": [(0, (58, 26, 60)), (0.5, (92, 46, 94)), (1, (58, 26, 60))],
+        "spine_text": (242, 218, 84),
+    },
     "kalbin": {  # Kalbin Zümrüt Tepeleri: green band, deep green spine, cream text
         "band_y": (829 - 22) / (954 - 22),
         "band": [(0, (86, 140, 86)), (0.5, (99, 152, 93)), (1, (80, 132, 84))],

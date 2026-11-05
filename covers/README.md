@@ -702,22 +702,24 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   `cag-N-source.jpg`. `erase_title.py <big-lama.pt> 4 … 9`: script title (box masks; vol 6 letter mask over the
   leaves; vol 7 sky = cubic surface fit + grain, LaMa ghosted), "Çağ ve Nesil" logo and the band signature (row
   interpolation between the box edges); original number box kept. Upscaled 4×.
-- `make_khmer.py [--hd] N`: Battambang, white with a soft shadow (vol 4 dark red). Titles from the translations:
+- `make_khmer.py [--hd] N`: Battambang, white with a soft shadow (vol 4 dark red, vol 10 gold). Titles from the
+  translations: 4 **ចំណែកមាស / នៃពេលវេលា** (chapter 1), 5 **ពេលដែលថ្ងៃទាំងឡាយ / រសាត់ទៅរក / រដូវផ្ការីក** (chapter 2),
   6 **គំនិតដែលដុះបៃតង** (foreword), 7 **ជើងមេឃដែលពន្លឺលេចមក** (foreword), 8 **ចលនាមួយ / ដែលគំរូមកពីខ្លួនឯង** (title
-  page), 9 **សំឡេងស្រែក / នៃភាពស្ងៀម** (title page). 4 ចំណែកមាសនៃពេលវេលា and 5 ពេលដែលថ្ងៃទាំងឡាយដកដង្ហើមរដូវផ្ការីក are
-  proposals (no interiors yet).
+  page), 9 **សំឡេងស្រែក / នៃភាពស្ងៀម** (title page), 10 **ផ្លូវនៃអ្នកដែលបាន / ឧទ្ទិសខ្លួនចំពោះអល់ឡោះ** (chapter).
 - Vol 10 **Hakk'a Adanmışlar Yolu** (new Süreyya design, herkul `/books/cag-ve-nesil-10/cover.jpg`, 826×1230):
   `erase_title_10.py <big-lama.pt>` removes the yellow title, signature and Süreyya logo from the purple gradient
   (letter mask, LaMa, then a heavy blur + grain inside the mask); gold "Çağ ve Nesil 10" badge kept. HD = Real-ESRGAN
-  ×4 of the full-size erase, resized to 1600×2400. Proposed title **ផ្លូវនៃអ្នកឧទ្ទិសខ្លួន / ដើម្បីអល់ឡោះ** in the
-  original's gold (no interior yet).
-- Vol 3 (Yitirilmiş Cennete Doğru) is in `yitirilmis/`. Vols 3, 4, 5 and 10: no Khmer PDF in Drive or the Book Plan
-  sheet yet (checked Nov 5) — KDP covers / reading PDFs / print packages wait for the interiors.
+  ×4 of the full-size erase, resized to 1600×2400. KDP theme `cag10` (no band, purple spine, gold text).
+- Vol 3 (`yitirilmis/`): title changed to the translation's own «ឆ្ពោះទៅរកឋានសួគ៌ ដ៏បាត់បង់» → ឆ្ពោះទៅរក / ឋានសួគ៌ /
+  ដ៏បាត់បង់.
+- Vols 3, 4, 5, 10 interiors: the user's "Cag_ve_Nesil_N - for Drive" zips (Nov 5) — "Interior A5 168 / 272 / 174 /
+  194 pages" (EDITED; page 1 = title page, no picture cover; 0 missing glyphs; ink margins inside ≥ 0.58 in, used as
+  is). Their own cover PDFs are plain text placeholders with the author name — not used.
 - Interiors (from the user's Book Plan sheet links / Drive): vol 2 = "Cag ve Nesil 2 - Part 1–3" merged, A5 155p
   (cover `buhranlar/`, proposed title មនុស្សក្នុងទឹកគួចនៃវិបត្តិ — the PDF has no Khmer title); vol 6 B5 260p; vol 7 B5
   368p; vol 8 "Cag_ve_Nesil_8_FINAL" B5 232p (title page; an A5 391p version without title page also exists); vol 9
   "Cag_ve_Nesil_9_FINAL" B5 234p (an A5 247p "cag 9" also exists). No missing glyphs; margins already OK.
-- KDP theme `cag`: `kdp/cag-khmer-{2-kdp-a5-155p,6-kdp-b5-260p,7-kdp-b5-368p,8-kdp-b5-232p,9-kdp-b5-234p}-*`.
+- KDP theme `cag`: `kdp/cag-khmer-{3-kdp-a5-168p,4-kdp-a5-272p,5-kdp-a5-174p,10-kdp-a5-194p (cag10),2-kdp-a5-155p,6-kdp-b5-260p,7-kdp-b5-368p,8-kdp-b5-232p,9-kdp-b5-234p}-*`.
 
 ## Single books from herkul.app covers (`singles/common.py` + `bahar/ sonsuz1/ sonsuz2/ derin/ cekirdek/`)
 
