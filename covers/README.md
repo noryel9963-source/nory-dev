@@ -696,7 +696,7 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - herkul.app covers for Kırık Testi 15, 16, 18–21 saved as `kirik15/ … kirik21/kirik-N-source.jpg` for later
   (no interiors yet). herkul.app's `/eserler` page lists every book with its cover path (`__NEXT_DATA__` JSON).
 
-## Çağ ve Nesil 4–9 (`cagnesil/`) and the Çağ ve Nesil interiors
+## Çağ ve Nesil 4–10 (`cagnesil/`) and the Çağ ve Nesil interiors
 
 - Covers from herkul.app (`/books/cag-ve-nesil-N-…/cover.jpg`, 400×600; the user had no screenshots) →
   `cag-N-source.jpg`. `erase_title.py <big-lama.pt> 4 … 9`: script title (box masks; vol 6 letter mask over the
@@ -705,7 +705,14 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - `make_khmer.py [--hd] N`: Battambang, white with a soft shadow (vol 4 dark red). Titles from the translations:
   6 **គំនិតដែលដុះបៃតង** (foreword), 7 **ជើងមេឃដែលពន្លឺលេចមក** (foreword), 8 **ចលនាមួយ / ដែលគំរូមកពីខ្លួនឯង** (title
   page), 9 **សំឡេងស្រែក / នៃភាពស្ងៀម** (title page). 4 ចំណែកមាសនៃពេលវេលា and 5 ពេលដែលថ្ងៃទាំងឡាយដកដង្ហើមរដូវផ្ការីក are
-  proposals (no interiors yet). Vol 10 (new Süreyya design, herkul cover) not started.
+  proposals (no interiors yet).
+- Vol 10 **Hakk'a Adanmışlar Yolu** (new Süreyya design, herkul `/books/cag-ve-nesil-10/cover.jpg`, 826×1230):
+  `erase_title_10.py <big-lama.pt>` removes the yellow title, signature and Süreyya logo from the purple gradient
+  (letter mask, LaMa, then a heavy blur + grain inside the mask); gold "Çağ ve Nesil 10" badge kept. HD = Real-ESRGAN
+  ×4 of the full-size erase, resized to 1600×2400. Proposed title **ផ្លូវនៃអ្នកឧទ្ទិសខ្លួន / ដើម្បីអល់ឡោះ** in the
+  original's gold (no interior yet).
+- Vol 3 (Yitirilmiş Cennete Doğru) is in `yitirilmis/`. Vols 3, 4, 5 and 10: no Khmer PDF in Drive or the Book Plan
+  sheet yet (checked Nov 5) — KDP covers / reading PDFs / print packages wait for the interiors.
 - Interiors (from the user's Book Plan sheet links / Drive): vol 2 = "Cag ve Nesil 2 - Part 1–3" merged, A5 155p
   (cover `buhranlar/`, proposed title មនុស្សក្នុងទឹកគួចនៃវិបត្តិ — the PDF has no Khmer title); vol 6 B5 260p; vol 7 B5
   368p; vol 8 "Cag_ve_Nesil_8_FINAL" B5 232p (title page; an A5 391p version without title page also exists); vol 9
