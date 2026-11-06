@@ -424,6 +424,21 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
 - KDP: theme `asa`: `kdp/lemalar-khmer-1-kdp-a5-580p-*`, `kdp/lemalar-khmer-2-kdp-a5-592p-*`;
   reading PDFs `interior/lemalar-{1,2}-with-cover.pdf`.
 
+## Sözler (`sozler/`, Risale-i Nur — 2 volumes)
+
+- Interiors = the Book Plan sheet's "Sozler vol 1" (A5 647p, Words 1–24) and "Sozler 2" (A5 744p, Words 25–33,
+  Lemeât, appendices) — the translator's own two volumes, 0 missing glyphs. (The older "Sozler 1/2 Khmer" B5 files,
+  454/520p, have ~300–400 broken glyphs each — not used.) Neither had a title page (p1 = contents), so
+  `sozler/titlepage.tex` (XeLaTeX, Battambang: Risale-i Nur Külliyatı'ndan / ពាក្យទាំងឡាយ / Sözler / ភាគទី N / the
+  author) + a blank page are prepended → 649p / 746p.
+- Margins were ≈0.55 in: vol 1 `fix_gutter.py --shift 0.23` (inside 0.78 ≥ 0.75); vol 2 needs 0.875 in (701–828p) and a
+  shift would break the outside margin, so the new `fix_gutter.py --scale 0.94` (content at 94 %, vector, inside
+  0.905 / outside 0.47) → `interior/sozler-{1,2}-interior-kdp.pdf` (cream page fill removed).
+- Title **ពាក្យទាំងឡាយ** — the translation's own name for the book («ពាក្យទាំងឡាយ (Sözler)», vol 2; chapters
+  ពាក្យទីមួយ …) + ភាគទី ១ / ២, gold on the red-velvet art in `asa/` (which is the Sözler cover with its title
+  erased); "Risale-i Nur Külliyatı'ndan" and the author kept. KDP theme `asa`:
+  `kdp/sozler-khmer-1-kdp-a5-649p-*`, `kdp/sozler-khmer-2-kdp-a5-746p-*`.
+
 ## Kalbin Solukları (`soluk/`, 2 volumes)
 
 - `erase_title.py`: "KALBİN SOLUKLARI" (navy with a white glow) and the author lines removed (LaMa); dove, dotted

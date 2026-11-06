@@ -59,6 +59,7 @@ Beyan 1 (`beyan/`, title វោហារ from the translation, A5 263p);
 Enginliğiyle Bizim Dünyamız (`dunyamiz/`, title ពិភពរបស់យើង / ក្នុងភាពធំទូលាយរបស់វា from the translation, A5 684p).
 Tarihçe-i Hayat (`tarihce/`, Risale-i Nur, ប្រវត្តិជីវិត, 2 vols A5 706p + 608p from 3 Drive parts, split before Part 5 Denizli);
 Lem'alar (`lemalar/`, Risale-i Nur, title ពន្លឺទាំងឡាយ, 2 vols A5 580p + 592p, split before the 26th Flash);
+Sözler (`sozler/`, Risale-i Nur, title ពាក្យទាំងឡាយ from the translation, translator's 2 vols A5 649p + 746p incl. an added title page; vol 2 content scaled 94 % for the 0.875 in gutter — `fix_gutter.py --scale`);
 Fâtiha Üzerine Mülâhazalar (`fatiha/`, title ការពិចារណាលើ / ស៊ូរ៉ោះអាល់ហ្វាទីហះ from the translation, A5 327p);
 Hitap Çiçekleri (`hitap/`, title ផ្កានៃ / ការអំពាវនាវ from the translation, A5 260p);
 Hac (`hac/`, İbadet Hayatımız, title confirmed by the translation, A5 252p); Oruç (`oruc/`, ការតមអាហារ, A5 247p); Zekât (`zekat/`, ហ្សាកាត់, A5 388p);

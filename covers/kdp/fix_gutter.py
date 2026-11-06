@@ -6,6 +6,10 @@ Odd pages (right-hand) move right, even pages move left; page size and page coun
 text stays vector.
 
     python3 fix_gutter.py IN.pdf OUT.pdf [--shift 0.1] [--keep-page-fill]
+    python3 fix_gutter.py IN.pdf OUT.pdf --scale 0.94      # when a plain shift would break the outside margin
+
+--scale S shrinks every page's content to S (vector, centred vertically) and places it so the inside margin
+just clears KDP's minimum — for long books (701–828 pages need 0.875 in) typeset with ~0.55 in margins.
 
 Some interiors (exported from a browser) paint a full-page cream rectangle to imitate cream paper.
 In print that becomes a grey tint on every page and colour running to the trim edge (bleed), so by
@@ -59,6 +63,7 @@ def main():
     ap.add_argument("src")
     ap.add_argument("dst")
     ap.add_argument("--shift", type=float)
+    ap.add_argument("--scale", type=float)
     ap.add_argument("--keep-page-fill", action="store_true")
     a = ap.parse_args()
 
@@ -67,6 +72,21 @@ def main():
         print(f"removed full-page cream fill on {remove_page_fill(src)} of {src.page_count} pages")
     need = required(src.page_count)
     ins, outs = margins(src)
+    if a.scale:
+        out, s, target = pymupdf.open(), a.scale, (need + 0.03) * 72
+        print(f"{src.page_count} pages: inside {ins:.3f} in (KDP needs {need}) -> content scaled to {s:.0%}")
+        for i, p in enumerate(src):
+            r = p.rect
+            w, h = r.width * s, r.height * s
+            x0 = target - ins * 72 * s if i % 2 == 0 else r.width - target + ins * 72 * s - w
+            y0 = (r.height - h) / 2
+            page = out.new_page(width=r.width, height=r.height)
+            page.show_pdf_page(pymupdf.Rect(x0, y0, x0 + w, y0 + h), src, i, clip=r)
+        out.set_metadata(src.metadata)
+        out.save(a.dst, garbage=3, deflate=True)
+        ins2, outs2 = margins(pymupdf.open(a.dst))
+        print(f"after: inside {ins2:.3f} in, outside {outs2:.3f} in ->", "OK" if ins2 >= need and outs2 >= 0.25 else "CHECK")
+        return
     shift = a.shift if a.shift is not None else max(0.0, round(need - ins + 0.02, 3))
     print(f"{src.page_count} pages: inside {ins:.3f} in (KDP needs {need}), outside {outs:.3f} in -> shift {shift} in")
     if outs - shift < 0.25:
