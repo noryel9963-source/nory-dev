@@ -164,6 +164,13 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   under the number (`WATERMARK` strip). Cover crop sits inside the screenshot's thin light border.
 - KDP: B5, 236 pages, `--theme prizma`. `kdp_cover.fix_frame_corners` now also repairs a thin light rim.
 
+- **Arabic honorifics restored (Nov 9)**: the export set part of each honorific in the Khmer font → .notdef boxes
+  (1,349 glyphs in Prizma 8, 937 in Prizma 9). Every gap is «عليه **السلام**» (6 glyphs) or «رضي **الله عنه**» (7);
+  `prizma/restore_honorifics.py IN OUT` removes the boxes (text-only redaction) and sets the words in Amiri 14.9 pt
+  (the surviving half's font/size) on the baseline next to the surviving half; fonts subset afterwards. 212 / 146
+  honorifics, 0 boxes left → `interior/prizma-{8,9}-interior.pdf` (box version kept as `*-interior-boxes.pdf`).
+  Both books are off the print HOLD list.
+
 ## Fasıldan Fasıla 1 (`fasil/`)
 
 - `erase_title.py`: ornate title, volume number, author signature and the "7. BASKI" corner ribbon removed

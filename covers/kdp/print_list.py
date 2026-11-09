@@ -11,8 +11,6 @@ from print_package import SIZE_NAME, SPINE_IN, mm
 HOLD = {
     "asrin-2": "30 missing letters (print as □) on pp 4, 5, 21, 29, 59, 63, 64, 114",
     "prizma-5": "9 missing letters = 3 Khmer words on pp 17, 39, 44 (user to supply the words)",
-    "prizma-8": "1,349 missing letters (Arabic words set in a Khmer font print as □)",
-    "prizma-9": "937 missing letters (Arabic words set in a Khmer font print as □)",
 }
 
 

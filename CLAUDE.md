@@ -27,8 +27,8 @@ Interiors are NOT in git (`covers/interior/` is ignored): re-download them from 
 10. Printer package on request: `python3 covers/kdp/print_package.py KEY ...` → `covers/print/KEY-print.zip`
     (interior + cream/white covers + bilingual PRINT-INFO.txt; `covers/print/` is git-ignored).
     `print_list.py` → `covers/print/PRINT-LIST.txt` (all books; HOLD list = interiors with missing glyphs:
-    Asrın 2, Prizma 8–9 (Arabic set in a Khmer font prints as □; translator must re-export) and Prizma 5 (3 lost Khmer
-    words on pp 17, 39, 44). Prizma 6–7: fixed B5 196p re-exports + covers in the user's Drive "Prizma" folder (Nov 2) → print packages).
+    Asrın 2 and Prizma 5 (3 lost Khmer words on pp 17, 39, 44). Prizma 8–9: the □ boxes were Arabic honorifics
+    (عليه السلام / رضي الله عنه) — restored by `covers/prizma/restore_honorifics.py`, now printable. Prizma 6–7: fixed B5 196p re-exports + covers in the user's Drive "Prizma" folder (Nov 2) → print packages).
 
 ## Sources
 - Missing cover screenshots: herkul.app/eserler lists every book with a cover image (`/books/<slug>/cover.jpg`).
