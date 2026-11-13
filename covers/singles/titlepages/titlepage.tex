@@ -1,0 +1,21 @@
+% One plain title page (Battambang Khmer title + the Turkish title in Cormorant, no author) that replaces a
+% designed picture/colour cover found on an interior's page 1 (interiors must not contain their own cover).
+%   xelatex -jobname=KEY "\def\pw{176mm}\def\ph{250mm}\def\ta{LINE1}\def\tb{LINE2}\def\tc{small line}\def\tr{Turkish}\input{titlepage}"
+\documentclass{article}
+\usepackage[paperwidth=\pw,paperheight=\ph,margin=20mm]{geometry}
+\usepackage{fontspec}
+\newfontfamily\kh[Path=../../fonts/,Script=Khmer]{Battambang.ttf}
+\newfontfamily\khb[Path=../../fonts/,Script=Khmer]{Battambang-Bold.ttf}
+\newfontfamily\lat[Path=../../fonts/]{CormorantGaramond-Medium.ttf}
+\pagestyle{empty}
+\begin{document}
+\begin{center}
+\vspace*{0.28\textheight}
+{\khb\fontsize{34}{50}\selectfont \ta\par}
+\ifx\tb\empty\else{\khb\fontsize{34}{50}\selectfont \tb\par}\fi
+\vspace{6mm}
+\ifx\tc\empty\else{\kh\fontsize{17}{26}\selectfont \tc\par}\fi
+\vspace{10mm}
+{\lat\LARGE \tr\par}
+\end{center}
+\end{document}

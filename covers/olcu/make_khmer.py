@@ -21,10 +21,10 @@ CORNER = 12
 # proposed translation. Same layout as the original: big first word, small "or", two lines below.
 TITLE = [
     # text, max width, ink height, center x, center y
-    ("រង្វាស់", 540, 200, 430, 505),
-    ("ឬ", 120, 70, 395, 685),
-    ("ពន្លឺ", 460, 165, 405, 800),
-    ("លើផ្លូវ", 480, 165, 405, 950),
+    ("រង្វាស់ជីវិត", 600, 170, 430, 505),        # title as printed in the translation:
+    ("ឬ", 120, 70, 405, 670),                     # រង្វាស់ជីវិត ឬ ពន្លឺនៅលើដងផ្លូវ
+    ("ពន្លឺនៅលើ", 560, 150, 405, 800),
+    ("ដងផ្លូវ", 480, 150, 405, 950),
 ]
 FILL_TOP, FILL_BOTTOM = (240, 105, 50), (215, 75, 35)
 OUTLINE = (190, 60, 25)

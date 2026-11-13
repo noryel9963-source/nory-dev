@@ -202,6 +202,18 @@ THEMES = {
         "spine": [(0, (16, 34, 38)), (0.5, (30, 60, 66)), (1, (16, 34, 38))],
         "spine_text": (240, 240, 236),
     },
+    "olcu": {  # Ölçü veya Yoldaki Işıklar: sunset sky, orange band with a dark red top line; deep red spine, white text
+        "band_y": 0.856,
+        "band": [(0, (250, 150, 40)), (0.5, (255, 163, 45)), (1, (245, 145, 38))],
+        "band_line": (179, 53, 39),
+        "spine": [(0, (110, 30, 18)), (0.5, (160, 52, 30)), (1, (110, 30, 18))],
+        "spine_text": (255, 255, 255),
+    },
+    "icaz": {  # Bir İ'câz Hecelemesi: brown leather with an ornate cartouche all over; dark brown spine, cream text
+        "band_y": None,
+        "spine": [(0, (80, 26, 10)), (0.5, (128, 46, 20)), (1, (80, 26, 10))],
+        "spine_text": (240, 222, 180),
+    },
     "cekirdek": {  # Çekirdekten Çınara: blue water with a plane leaf, red band; navy spine, white text
         "band_y": 514 / 600,
         "band": [(0, (164, 18, 22)), (0.5, (190, 30, 30)), (1, (150, 14, 18))],

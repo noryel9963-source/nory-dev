@@ -1,4 +1,5 @@
-"""Khmer edition of "Bir İ'câz Hecelemesi": ការអានប្រកប / ភាពអច្ឆរិយៈមួយ ("Spelling Out a Miracle", proposed:
+"""Khmer edition of "Bir İ'câz Hecelemesi": ការសូត្រអាននូវ / អច្ឆរិយភាពមួយ — the translation's own title (its title page;
+earlier proposal ការអានប្រកប / ភាពអច្ឆរិយៈមួយ, kept here for the record:
 ភាពអច្ឆរិយៈ is the translators' word for the Qur'an's i'câz, អានប្រកប the Khmer for reading syllable by syllable).
 Cream letters with a faint dark emboss on the dark cartouche, like the original; author and Nil logo removed.
 
@@ -22,8 +23,8 @@ CREAM = (246, 226, 168)
 SHADE = (40, 10, 2)
 # text, max width, ink height, centre x, centre y, colour, shadow
 LINES = [
-    ("ការអានប្រកប", 400, 92, 407, 490, CREAM, SHADE),            # BİR İ'CÂZ
-    ("ភាពអច្ឆរិយៈមួយ", 410, 92, 407, 590, CREAM, SHADE),         # HECELEMESİ
+    ("ការសូត្រអាននូវ", 420, 92, 407, 490, CREAM, SHADE),            # BİR İ'CÂZ
+    ("អច្ឆរិយភាពមួយ", 410, 92, 407, 590, CREAM, SHADE),         # HECELEMESİ
 ]
 
 

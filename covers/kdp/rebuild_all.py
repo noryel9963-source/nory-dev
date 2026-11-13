@@ -113,6 +113,16 @@ BOOKS = {
     **{f"sozler-{v}": ("sozler", str(v), "../asa/asa-back-4x.png", A5, n, "asa", "ពាក្យទាំងឡាយ",
                        f"sozler-khmer-{v}-kdp-a5-{n}p", f"sozler-{v}", f"ពាក្យទាំងឡាយ ភាគទី{d}")
        for v, n, d in [(1, 649, "១"), (2, 746, "២")]},
+    "olcu": ("olcu", "", "olcu-notitle-source-4x.png", B5, 176, "olcu", "រង្វាស់ជីវិត ឬ ពន្លឺនៅលើដងផ្លូវ",
+             "olcu-khmer-kdp-b5-176p", "olcu", "រង្វាស់ជីវិត ឬ ពន្លឺនៅលើដងផ្លូវ ភាគ១"),
+    "icaz": ("icaz", "", "icaz-notitle-source-4x.png", B5, 571, "icaz", "ការសូត្រអាននូវអច្ឆរិយភាពមួយ",
+             "icaz-khmer-kdp-b5-571p", "icaz", "ការសូត្រអាននូវអច្ឆរិយភាពមួយ"),
+    "irsad": ("irsad", "", "irsad-notitle-source-4x.png", A5, 327, "irsad", "មាគ៌ានៃការផ្ដល់មគ្គុទេសក៍",
+              "irsad-khmer-kdp-a5-327p", "irsad", "មាគ៌ានៃការផ្ដល់មគ្គុទេសក៍ (ការទាក់វះ)"),
+    "mizrap": ("mizrap", "", "mizrap-notitle-source-4x.png", B5, 332, "mizrap", "ក្រចកដេញដែលបាក់",
+               "mizrap-khmer-kdp-b5-332p", "mizrap", "ក្រចកដេញដែលបាក់ (កំណាព្យ)"),
+    "kader": ("kader", "", "kader-notitle-source-4x.png", B5, 203, "kader", "កទ្រ៍ តាមទស្សនៈនៃគម្ពីរ និងស៊ុនណះ",
+              "kader-khmer-kdp-b5-203p", "kader", "កទ្រ៍ តាមទស្សនៈនៃគម្ពីរ និងស៊ុនណះ"),
     "fatiha": ("fatiha", "", "fatiha-notitle-source-4x.png", A5, 327, "fatiha", "ការពិចារណាលើស៊ូរ៉ោះអាល់ហ្វាទីហះ",
                "fatiha-khmer-kdp-a5-327p", "fatiha", "ការពិចារណាលើស៊ូរ៉ោះអាល់ហ្វាទីហះ"),
     "hitap": ("hitap", "", "hitap-notitle-source-4x.png", A5, 260, "hitap", "ផ្កានៃការអំពាវនាវ",
@@ -165,7 +175,7 @@ BOOKS = {
 
 # books whose interior went through fix_gutter.py (…-interior-kdp.pdf); the others use …-interior.pdf
 KDP_INTERIOR = ("cag-1", "kalbin-1", "kalbin-2", "kalbin-3", "kalbin-4", "ustadla", "kirik-2", "kirik-3", "kirik-4",
-                "kirik-5", "fasil-1", "heykel-1", "heykel-2", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1", "fasil-2", "fasil-3", "fasil-4", "fasil-5", "dunyamiz", "lemalar-1", "lemalar-2", "fatiha", "hitap", "hac", "inanc-1", "inanc-2", "oruc", "zekat", "soluk-1", "soluk-2", "kuran", "cevsen", "yusuf", "olum", "sohbet", "varlik", "yaratilis", "vefadar", "omur", "kisa", "baris", "tarihce-1", "tarihce-2", "kirik-9", "kirik-17", "cag-2", "cag-6", "cag-7", "cag-8", "cag-9", "sozler-1", "sozler-2", "bahar", "sonsuz-1", "sonsuz-2", "derin", "cekirdek")
+                "kirik-5", "fasil-1", "heykel-1", "heykel-2", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1", "fasil-2", "fasil-3", "fasil-4", "fasil-5", "dunyamiz", "lemalar-1", "lemalar-2", "fatiha", "hitap", "hac", "inanc-1", "inanc-2", "oruc", "zekat", "soluk-1", "soluk-2", "kuran", "cevsen", "yusuf", "olum", "sohbet", "varlik", "yaratilis", "vefadar", "omur", "kisa", "baris", "tarihce-1", "tarihce-2", "kirik-9", "kirik-17", "cag-2", "cag-6", "cag-7", "cag-8", "cag-9", "sozler-1", "sozler-2", "olcu", "icaz", "irsad", "mizrap", "kader", "bahar", "sonsuz-1", "sonsuz-2", "derin", "cekirdek")
 
 
 def load(folder):
@@ -181,7 +191,7 @@ def art(key):
     folder, volume, back_art = BOOKS[key][:3]
     TMP.mkdir(exist_ok=True)
     mk = load(folder)
-    front = mk.build(True, round_corners=False) if folder in ("ustadla", "asa", "namaz", "gonul", "beyan", "fasil2", "fasil3", "fasil4", "fasil5", "dunyamiz", "fatiha", "hitap", "hac", "oruc", "zekat", "kuran", "cevsen", "yusuf", "olum", "sohbet", "varlik", "yaratilis", "vefadar", "omur", "kisa", "baris", "kirik17") else mk.build(volume, hd=True, round_corners=False)
+    front = mk.build(True, round_corners=False) if folder in ("ustadla", "asa", "namaz", "gonul", "beyan", "fasil2", "fasil3", "fasil4", "fasil5", "dunyamiz", "fatiha", "hitap", "hac", "oruc", "zekat", "kuran", "cevsen", "yusuf", "olum", "sohbet", "varlik", "yaratilis", "vefadar", "omur", "kisa", "baris", "kirik17", "olcu", "icaz") else mk.build(volume, hd=True, round_corners=False)
     k = round(front.width / (mk.COVER[2] - mk.COVER[0]))           # 4x upscale (Üstad'la: 2x)
     box = tuple(v * k for v in mk.COVER)
     back = Image.open(COVERS / folder / back_art).convert("RGB").crop(box).transpose(Image.FLIP_LEFT_RIGHT)
