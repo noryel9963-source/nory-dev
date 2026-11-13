@@ -78,7 +78,7 @@ Kur'ân'ın Sihirli Ufku: Yusuf Sûresi (`yusuf/`, title ជើងមេឃដ�
 Bahar Neşîdesi (`bahar/`, ចម្រៀងនៃនិទាឃរដូវ, A5 320p), Sonsuz Nur 1–2 (`sonsuz1/ sonsuz2/`, ពន្លឺនិរន្ត, A5 269p + 239p), Derin Müslümanlık (`derin/`, សីលធម៌ជ្រៅជ្រះនៃឥស្លាម, B5 523p), Çekirdekten Çınara (`cekirdek/`, ពីគ្រាប់ធញ្ញជាតិទៅដើមឈើ, A5 238p) — herkul covers via `singles/common.py`;
 Kalbin Solukları (`soluk/`, title ដង្ហើមនៃ / ដួងចិត្ត, 2 vols A5 424p + 418p split before chapter 42; from the user's compressed 5.7 MB re-upload).
 Ölçü (`olcu/`, B5 176p), Bir İ'câz Hecelemesi (`icaz/`, ការសូត្រអាននូវអច្ឆរិយភាពមួយ, B5 571p), İrşad Ekseni (`irsad/`, A5 327p), Kırık Mızrap (`mizrap/`, ក្រចកដេញដែលបាក់, B5 332p), Kader (`kader/`, កទ្រ៍, B5 203p), Kur'ân'ın Altın İkliminde (`altin/`, B5 745p from the Drive LaTeX source) — Nov 13, Drive "Kitaplar" folder (11JGQy_viDhClsKmCg4S3idgl3rEYXOVF), herkul covers via `singles/common.py`.
-Cover only: Mektubat (`mektubat/`, Risale-i Nur, លិខិតទាំងឡាយ, 2 vols, split planned before the 20th Letter) — PDF is 12 MB, needs a compressed copy or parts.
+Mektubat (`mektubat/`, Risale-i Nur, លិខិតទាំងឡាយ, 2 vols B5 418p + 574p from the Drive LaTeX source, split before the 20th Letter).
 
 
 

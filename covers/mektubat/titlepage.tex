@@ -1,0 +1,24 @@
+% Mektubat (Risale-i Nur) Khmer edition: title page + blank verso, prepended to each volume's interior.
+%   xelatex "\def\vol{១}\input{titlepage}"  → titlepage.pdf (A5, 2 pages)
+\documentclass{article}
+\usepackage[paperwidth=176mm,paperheight=250mm,margin=20mm]{geometry}
+\usepackage{fontspec}
+\newfontfamily\kh[Path=../fonts/,Script=Khmer]{Battambang.ttf}
+\newfontfamily\lat[Path=../fonts/]{CormorantGaramond-Medium.ttf}
+\pagestyle{empty}
+\begin{document}
+\begin{center}
+\vspace*{18mm}
+{\lat\large Risale-i Nur Külliyatı'ndan\par}
+\vspace{22mm}
+{\kh\fontsize{40}{52}\selectfont លិខិតទាំងឡាយ\par}
+\vspace{6mm}
+{\lat\LARGE Mektubat\par}
+\vspace{10mm}
+{\kh\fontsize{20}{28}\selectfont ភាគទី \vol\par}
+\vfill
+{\lat\Large Bediüzzaman Said Nursî\par}
+\vspace{8mm}
+\end{center}
+\newpage\null
+\end{document}

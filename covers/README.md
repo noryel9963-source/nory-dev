@@ -574,6 +574,11 @@ helper) or the earlier screenshots. Titles all as printed in the translations. N
   parts. Contents end at printed p. 1139 (+ index) ≈ 1,150 pages → 2 volumes; planned split before the 20th Letter
   (លិខិតទីម្ភៃ, printed p. 545; the 19th Letter runs 191–544): ~552 + ~614 pages.
 
+- **Built Nov 13** from the Drive "Mektubat - សំបុត្រទាំងឡាយ" folder's LaTeX source (XeLaTeX, B5, 982p, 0 missing
+  glyphs; the translation's own cover title is លិខិតទាំងឡាយ). Split before the 20th Letter (p418): vol 1 = new
+  title page (`mektubat/titlepage.tex`, Risale-i Nur line + author kept) + pp 2–417 → 418p; vol 2 = title page +
+  front pp 2–8 + pp 418–982 + blank → 574p. Margins OK (inside 1.18 / 0.79 in). Theme `asa`.
+
 ## Asrın Getirdiği Tereddütler 2
 
 - Interior: "Asrin_Getirdigi_2_FINAL.pdf" (shared in Drive by the translator) — an older layout: **B5**, 292 pages
