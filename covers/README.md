@@ -462,6 +462,21 @@ helper) or the earlier screenshots. Titles all as printed in the translations. N
 - Mızrap, Kader, İ'câz, Altın interiors opened with a designed colour cover (with the author) → replaced by a plain
   Battambang title page (`singles/titlepages/titlepage.tex`), page parity kept.
 
+## Kırık Testi 6–8, 10–16, 18–21 (Nov 13, from the Drive "Kırık Testi" folder)
+
+- Interiors: the user's "ក្អមបែក ភាគទីN.pdf" (B5, 333–486p, 0 missing glyphs; LaTeX sources also in Drive).
+  Page 1 was a designed colour cover with the author → replaced by a plain Battambang title page
+  (`singles/titlepages/kirik-N.pdf`); margins already KDP-safe (inside 1.18 in).
+- Titles as printed in the translations (checked against the LaTeX cover.tex for 10, 12, 14):
+  6 ការអំពាវនាវ / ឱ្យរស់ឡើងវិញ · 7 ឱសថទិព្វ / នៃអមតភាព · 8 ដំណឹងល្អ / នៃការជួបជុំ · 10 ការរង់ចាំ /
+  ភាពកក់ក្ដៅនៃនិទាឃរដូវ · 11 ឧត្តមគតិនៃ / ការធ្វើឱ្យអ្នកដទៃរស់ · 12 ការខិតខំប្រឹងប្រែង / ធ្វើឱ្យខ្លួនថ្មីឡើងវិញ ·
+  13 ដំណើរនៃ / ឧត្តមគតិ · 14 ថ្ងៃនៃវិបត្តិ / និងផែនទីសង្ឃឹមរបស់យើង · 15 ជោគវាសនា / នៃផ្លូវ · 16 តន្ត្រី /
+  នៃទុក្ខព្រួយ · 18 ជំនាន់ / នៃការសាកល្បង · 19 ពេលពន្លឺ / លុបភាពងងឹត · 20 វដ្តវិលជុំ / នៃពន្លឺនិងងងឹត ·
+  21 មាគ៌ាដ៏ភ្លឺស្វាង / នៃភាពជាវីរបុរស.
+- Covers: 6–14 existing (titles updated); 15, 16, 18–21 new from herkul.app (kirik17 pattern, built by a Sonnet
+  helper; 19 and 20 erased at 2×; 19's source is only 396×600 → soft). KDP themes: `kirik` (6–8, 10, 12–14),
+  `kirik17` (11, 16, 18–21), `kirik15` (15: orange wood, no band).
+
 ## Kalbin Solukları (`soluk/`, 2 volumes)
 
 - `erase_title.py`: "KALBİN SOLUKLARI" (navy with a white glow) and the author lines removed (LaMa); dove, dotted
