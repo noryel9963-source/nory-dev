@@ -22,8 +22,8 @@ SHADOW = (255, 244, 228)
 # text, max width, ink height, centre y
 # text, max width, ink height, centre y, colour
 LINES = [
-    ('វដ្តវិលជុំ', 380, 75, 120, BROWN),
-    ('នៃពន្លឺនិងងងឹត', 440, 75, 200, BROWN),
+    ('វដ្តវិលជុំ', 380, 75, 112, BROWN),
+    ('នៃពន្លឺនិងងងឹត', 440, 75, 190, BROWN),
     ('ក្អមបែក', 110, 28, 265, RIBBON),
 ]
 

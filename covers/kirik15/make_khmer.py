@@ -22,8 +22,8 @@ SHADOW = (255, 244, 228)
 # text, max width, ink height, centre y
 # text, max width, ink height, centre y, colour
 LINES = [
-    ('ជោគវាសនា', 330, 60, 185, BROWN),
-    ('នៃផ្លូវ', 330, 60, 305, BROWN),
+    ('ជោគវាសនា', 330, 100, 205, BROWN),
+    ('នៃផ្លូវ', 330, 100, 325, BROWN),
 ]
 
 
@@ -57,6 +57,16 @@ def build(hd=False, font="Battambang", round_corners=True):
                                                                       (1, 0, -2 * k, 0, 1, -3 * k))
         im.paste(SHADOW, (x, y), sh.point(lambda v: int(v * (0.3 if colour == BROWN else 0))))
         im.paste(colour, (x, y), glyphs)
+    # top line: the series name + the volume number, redrawn (the original "Kırık Testi - 15" was erased)
+    fk = ImageFont.truetype(str(FONTS / f"{font}.ttf"), 40 * k, layout_engine=ImageFont.Layout.RAQM)
+    fn = ImageFont.truetype(str(FONTS / "CormorantGaramond-Medium.ttf"), 44 * k, layout_engine=ImageFont.Layout.RAQM)
+    parts = [("ក្អមបែក", fk, "km"), ("  -  ", fn, "en"), ("15", fn, "en")]
+    wid = [f.getlength(t, language=lang) for t, f, lang in parts]
+    x = CX * k - sum(wid) / 2
+    d = ImageDraw.Draw(im)
+    for (t, f, lang), w in zip(parts, wid):
+        d.text((x, 80 * k), t, font=f, fill=BROWN, anchor="ls", language=lang)
+        x += w
     im = im.crop(tuple(v * k for v in COVER))
     if not round_corners:
         return im

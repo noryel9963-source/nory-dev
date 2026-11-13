@@ -16,7 +16,7 @@ HERE = Path(__file__).parent
 SRC = HERE / "kirik-19-source.jpg"
 DST = HERE / "kirik-notitle-source.png"
 # (box, threshold below the local background, dilation)
-REGIONS = [((55, 45, 345, 185), 22, 11), ((148, 176, 250, 200), 14, 5), ((55, 502, 345, 550), 22, 9)]
+REGIONS = [((8, 45, 388, 168), 22, 9), ((150, 178, 250, 200), 12, 7), ((55, 502, 345, 550), 22, 9)]
 BOXES = []                # Süreyya logo
 CONTEXT = (0, 600)
 COLS = (0, 396)
@@ -56,7 +56,10 @@ if __name__ == "__main__":
     x0, x1 = COLS
     sub = np.ascontiguousarray(im[c0:c1, x0:x1])
     msub = np.ascontiguousarray(mask[c0:c1, x0:x1])
-    filled = lama(model, sub, msub)
+    S = 2
+    big = cv2.resize(sub, None, fx=S, fy=S, interpolation=cv2.INTER_CUBIC)
+    mbig = cv2.resize(msub, None, fx=S, fy=S, interpolation=cv2.INTER_NEAREST)
+    filled = cv2.resize(lama(model, big, mbig), (sub.shape[1], sub.shape[0]), interpolation=cv2.INTER_AREA)
     sel = msub > 127
     sub[sel] = filled[sel]
     im[c0:c1, x0:x1] = sub

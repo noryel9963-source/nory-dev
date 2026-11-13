@@ -17,7 +17,7 @@ SRC = HERE / "kirik-16-source.jpg"
 DST = HERE / "kirik-notitle-source.png"
 # (box, threshold below the local background, dilation)
 REGIONS = [((150, 90, 720, 345), 25, 17), ((300, 365, 575, 430), 14, 9), ((140, 1125, 720, 1200), 25, 15)]
-BOXES = []                # Süreyya logo
+BOXES = [(182, 228, 208, 252)]                # Süreyya logo
 CONTEXT = (0, 1298)
 COLS = (0, 864)
 
@@ -60,6 +60,7 @@ if __name__ == "__main__":
     sel = msub > 127
     sub[sel] = filled[sel]
     im[c0:c1, x0:x1] = sub
+    im[222:258, 172:218] = im[222:258, 262:308]   # leftover speck of the erased signature area
     Image.fromarray(im).save(DST)
     Image.fromarray(mask).save(HERE / "_mask.png")
     print("wrote", DST.name)
