@@ -183,6 +183,11 @@ THEMES = {
         "spine": [(0, (60, 28, 14)), (0.5, (96, 48, 26)), (1, (60, 28, 14))],
         "spine_text": (236, 186, 84),
     },
+    "kirik15": {  # Kırık Testi 15 (Süreyya design): orange wood grain + tree stump, no band; dark brown spine, cream text
+        "band_y": None,
+        "spine": [(0, (70, 30, 10)), (0.5, (120, 56, 20)), (1, (70, 30, 10))],
+        "spine_text": (255, 236, 200),
+    },
     "bahar": {  # Bahar Neşîdesi (herkul photo): pale patterned paper, no band; deep red spine, white text
         "band_y": None,
         "back": [(0, (226, 230, 230)), (1, (206, 218, 222))],

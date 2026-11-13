@@ -93,6 +93,18 @@ BOOKS = {
                  "kirik-khmer-13-kdp-b5-389p", "kirik-13", "ដំណើរនៃឧត្តមគតិ (ក្អមបែក ១៣)"),
     "kirik-14": ("kirik14", "14", "kirik-notitle-source-4x.png", B5, 390, "kirik", "ថ្ងៃនៃវិបត្តិ និងផែនទីសង្ឃឹមរបស់យើង",
                  "kirik-khmer-14-kdp-b5-390p", "kirik-14", "ថ្ងៃនៃវិបត្តិ និងផែនទីសង្ឃឹមរបស់យើង (ក្អមបែក ១៤)"),
+    "kirik-15": ("kirik15", "15", "kirik-notitle-source-4x.png", B5, 365, "kirik15", "ជោគវាសនានៃផ្លូវ",
+                 "kirik-khmer-15-kdp-b5-365p", "kirik-15", "ជោគវាសនានៃផ្លូវ (ក្អមបែក ១៥)"),
+    "kirik-16": ("kirik16", "16", "kirik-notitle-source-4x.png", B5, 357, "kirik17", "តន្ត្រីនៃទុក្ខព្រួយ",
+                 "kirik-khmer-16-kdp-b5-357p", "kirik-16", "តន្ត្រីនៃទុក្ខព្រួយ (ក្អមបែក ១៦)"),
+    "kirik-18": ("kirik18", "18", "kirik-notitle-source-4x.png", B5, 374, "kirik17", "ជំនាន់នៃការសាកល្បង",
+                 "kirik-khmer-18-kdp-b5-374p", "kirik-18", "ជំនាន់នៃការសាកល្បង (ក្អមបែក ១៨)"),
+    "kirik-19": ("kirik19", "19", "kirik-notitle-source-4x.png", B5, 342, "kirik17", "ពេលពន្លឺលុបភាពងងឹត",
+                 "kirik-khmer-19-kdp-b5-342p", "kirik-19", "ពេលពន្លឺលុបភាពងងឹត (ក្អមបែក ១៩)"),
+    "kirik-20": ("kirik20", "20", "kirik-notitle-source-4x.png", B5, 336, "kirik17", "វដ្តវិលជុំនៃពន្លឺនិងងងឹត",
+                 "kirik-khmer-20-kdp-b5-336p", "kirik-20", "វដ្តវិលជុំនៃពន្លឺនិងងងឹត (ក្អមបែក ២០)"),
+    "kirik-21": ("kirik21", "21", "kirik-notitle-source-4x.png", B5, 333, "kirik17", "មាគ៌ាដ៏ភ្លឺស្វាងនៃភាពជាវីរបុរស",
+                 "kirik-khmer-21-kdp-b5-333p", "kirik-21", "មាគ៌ាដ៏ភ្លឺស្វាងនៃភាពជាវីរបុរស (ក្អមបែក ២១)"),
     "kirik-9": ("kirik9", "9", "kirik-notitle-source-4x.png", A5, 419, "kirik", "ទ្រនិចនៃបេះដូង",
                 "kirik-khmer-9-kdp-a5-419p", "kirik-9", "ទ្រនិចនៃបេះដូង (ក្អមបែក ៩)"),
     "fasil-1": ("fasil", "1", "fasil-notitle-source-4x.png", A5, 234, "fasil", "ពីវគ្គមួយ ទៅវគ្គមួយ",
@@ -193,7 +205,7 @@ BOOKS = {
 
 # books whose interior went through fix_gutter.py (…-interior-kdp.pdf); the others use …-interior.pdf
 KDP_INTERIOR = ("cag-1", "kalbin-1", "kalbin-2", "kalbin-3", "kalbin-4", "ustadla", "kirik-2", "kirik-3", "kirik-4",
-                "kirik-5", "fasil-1", "heykel-1", "heykel-2", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1", "fasil-2", "fasil-3", "fasil-4", "fasil-5", "dunyamiz", "lemalar-1", "lemalar-2", "fatiha", "hitap", "hac", "inanc-1", "inanc-2", "oruc", "zekat", "soluk-1", "soluk-2", "kuran", "cevsen", "yusuf", "olum", "sohbet", "varlik", "yaratilis", "vefadar", "omur", "kisa", "baris", "tarihce-1", "tarihce-2", "kirik-9", "kirik-17", "kirik-6", "kirik-7", "kirik-8", "kirik-10", "kirik-11", "kirik-12", "kirik-13", "kirik-14", "cag-2", "cag-6", "cag-7", "cag-8", "cag-9", "sozler-1", "sozler-2", "olcu", "icaz", "irsad", "mizrap", "kader", "altin", "bahar", "sonsuz-1", "sonsuz-2", "derin", "cekirdek")
+                "kirik-5", "fasil-1", "heykel-1", "heykel-2", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1", "fasil-2", "fasil-3", "fasil-4", "fasil-5", "dunyamiz", "lemalar-1", "lemalar-2", "fatiha", "hitap", "hac", "inanc-1", "inanc-2", "oruc", "zekat", "soluk-1", "soluk-2", "kuran", "cevsen", "yusuf", "olum", "sohbet", "varlik", "yaratilis", "vefadar", "omur", "kisa", "baris", "tarihce-1", "tarihce-2", "kirik-9", "kirik-17", "kirik-15", "kirik-16", "kirik-18", "kirik-19", "kirik-20", "kirik-21", "kirik-6", "kirik-7", "kirik-8", "kirik-10", "kirik-11", "kirik-12", "kirik-13", "kirik-14", "cag-2", "cag-6", "cag-7", "cag-8", "cag-9", "sozler-1", "sozler-2", "olcu", "icaz", "irsad", "mizrap", "kader", "altin", "bahar", "sonsuz-1", "sonsuz-2", "derin", "cekirdek")
 
 
 def load(folder):
@@ -209,7 +221,7 @@ def art(key):
     folder, volume, back_art = BOOKS[key][:3]
     TMP.mkdir(exist_ok=True)
     mk = load(folder)
-    front = mk.build(True, round_corners=False) if folder in ("ustadla", "asa", "namaz", "gonul", "beyan", "fasil2", "fasil3", "fasil4", "fasil5", "dunyamiz", "fatiha", "hitap", "hac", "oruc", "zekat", "kuran", "cevsen", "yusuf", "olum", "sohbet", "varlik", "yaratilis", "vefadar", "omur", "kisa", "baris", "kirik17", "olcu", "icaz") else mk.build(volume, hd=True, round_corners=False)
+    front = mk.build(True, round_corners=False) if folder in ("ustadla", "asa", "namaz", "gonul", "beyan", "fasil2", "fasil3", "fasil4", "fasil5", "dunyamiz", "fatiha", "hitap", "hac", "oruc", "zekat", "kuran", "cevsen", "yusuf", "olum", "sohbet", "varlik", "yaratilis", "vefadar", "omur", "kisa", "baris", "kirik17", "kirik15", "kirik16", "kirik18", "kirik19", "kirik20", "kirik21", "olcu", "icaz") else mk.build(volume, hd=True, round_corners=False)
     k = round(front.width / (mk.COVER[2] - mk.COVER[0]))           # 4x upscale (Üstad'la: 2x)
     box = tuple(v * k for v in mk.COVER)
     back = Image.open(COVERS / folder / back_art).convert("RGB").crop(box).transpose(Image.FLIP_LEFT_RIGHT)
