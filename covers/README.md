@@ -446,6 +446,22 @@ series' Khmer translation uses), dark teal Freehand script with a soft shadow li
   erased); "Risale-i Nur Külliyatı'ndan" and the author kept. KDP theme `asa`:
   `kdp/sozler-khmer-1-kdp-a5-649p-*`, `kdp/sozler-khmer-2-kdp-a5-746p-*`.
 
+## Six books from the user's Drive "Kitaplar" folder (Nov 13)
+
+Interiors from the folder's new book subfolders; covers from herkul.app (`singles/common.py`, built by a Sonnet
+helper) or the earlier screenshots. Titles all as printed in the translations. No author on any cover.
+- **Ölçü veya Yoldaki Işıklar** (`olcu/`): **រង្វាស់ជីវិត / ឬ / ពន្លឺនៅលើ / ដងផ្លូវ**; interior "…ភាគ១" B5 176p as is. Theme `olcu`.
+- **Bir İ'câz Hecelemesi** (`icaz/`): **ការសូត្រអាននូវ / អច្ឆរិយភាពមួយ** (replaces the proposal); B5 571p. Theme `icaz`.
+- **İrşad Ekseni** (`irsad/`): **មាគ៌ានៃការផ្ដល់ / មគ្គុទេសក៍ / (ការទាក់វះ)**; A5 327p, the last 3 recto pages
+  (323/325/327) shifted 0.1 in outward for the 0.625 in gutter. Theme `irsad`.
+- **Kırık Mızrap** (`mizrap/`): **ក្រចកដេញ / ដែលបាក់** + កំណាព្យ (the Drive folder says ប្រដាប់ដេញតន្ត្រីបាក់; the
+  translation's title page says ក្រចកដេញដែលបាក់); B5 332p. Theme `mizrap`.
+- **Kitap ve Sünnet Perspektifinde Kader** (`kader/`): **កទ្រ៍** + តាមទស្សនៈនៃគម្ពីរ និងស៊ុនណះ; B5 203p. Theme `kader`.
+- **Kur'ân'ın Altın İkliminde** (`altin/`): **ក្នុងបរិយាកាសមាស / នៃគម្ពីរគួរអាន**; compiled from the Drive LaTeX
+  source (XeLaTeX, B5 745p, 0 missing glyphs). Theme `altin`.
+- Mızrap, Kader, İ'câz, Altın interiors opened with a designed colour cover (with the author) → replaced by a plain
+  Battambang title page (`singles/titlepages/titlepage.tex`), page parity kept.
+
 ## Kalbin Solukları (`soluk/`, 2 volumes)
 
 - `erase_title.py`: "KALBİN SOLUKLARI" (navy with a white glow) and the author lines removed (LaMa); dove, dotted

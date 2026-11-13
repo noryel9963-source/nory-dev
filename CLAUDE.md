@@ -77,11 +77,12 @@ Sohbet Atmosferi (`sohbet/`, title បរិយាកាស / នៃការស
 Kur'ân'ın Sihirli Ufku: Yusuf Sûresi (`yusuf/`, title ជើងមេឃដ៏មន្តស្នេហ៍នៃគម្ពីរគួរអាន / ស៊ូរ៉ោះយូសុហ្វ from the translation, A5 371p);
 Bahar Neşîdesi (`bahar/`, ចម្រៀងនៃនិទាឃរដូវ, A5 320p), Sonsuz Nur 1–2 (`sonsuz1/ sonsuz2/`, ពន្លឺនិរន្ត, A5 269p + 239p), Derin Müslümanlık (`derin/`, សីលធម៌ជ្រៅជ្រះនៃឥស្លាម, B5 523p), Çekirdekten Çınara (`cekirdek/`, ពីគ្រាប់ធញ្ញជាតិទៅដើមឈើ, A5 238p) — herkul covers via `singles/common.py`;
 Kalbin Solukları (`soluk/`, title ដង្ហើមនៃ / ដួងចិត្ត, 2 vols A5 424p + 418p split before chapter 42; from the user's compressed 5.7 MB re-upload).
+Ölçü (`olcu/`, B5 176p), Bir İ'câz Hecelemesi (`icaz/`, ការសូត្រអាននូវអច្ឆរិយភាពមួយ, B5 571p), İrşad Ekseni (`irsad/`, A5 327p), Kırık Mızrap (`mizrap/`, ក្រចកដេញដែលបាក់, B5 332p), Kader (`kader/`, កទ្រ៍, B5 203p), Kur'ân'ın Altın İkliminde (`altin/`, B5 745p from the Drive LaTeX source) — Nov 13, Drive "Kitaplar" folder (11JGQy_viDhClsKmCg4S3idgl3rEYXOVF), herkul covers via `singles/common.py`.
 Cover only: Mektubat (`mektubat/`, Risale-i Nur, លិខិតទាំងឡាយ, 2 vols, split planned before the 20th Letter) — PDF is 12 MB, needs a compressed copy or parts.
-Cover only (waiting for interior PDF): Ölçü; Kırık Testi 6–8, 10–14 (15, 16, 18–21: herkul.app cover images saved, no interiors); Bir İ'câz Hecelemesi (`icaz/`);
+Cover only (waiting for interior PDF): Kırık Testi 6–8, 10–14 (15, 16, 18–21: herkul.app cover images saved, no interiors); Bir İ'câz Hecelemesi (`icaz/`);
 
 
 ## Open questions for the user
-- Confirm proposed titles: Çağ ve Nesil 1–2, Kendi İklimimiz (Prizma 5), Ölçü, Kırık Testi 3, 5, 6, 14, Gönül Nağmeleri, Bir İ'câz Hecelemesi (ការអានប្រកបភាពអច្ឆរិយៈមួយ), Oruç / Zekât subtitles (proposed; README).
+- Confirm proposed titles: Çağ ve Nesil 1–2, Kendi İklimimiz (Prizma 5), Kırık Testi 3, 5, 6, 14, Gönül Nağmeleri, Oruç / Zekât subtitles (proposed; README).
 - Author name still appears inside interiors (copyright/title pages) — left untouched pending the user's decision.
 - Prizma 9 and Kırık Testi 1 interiors: the copyright page names the wrong source book (Prizma 8 / Prizma 2).

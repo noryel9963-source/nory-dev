@@ -214,6 +214,32 @@ THEMES = {
         "spine": [(0, (80, 26, 10)), (0.5, (128, 46, 20)), (1, (80, 26, 10))],
         "spine_text": (240, 222, 180),
     },
+    "irsad": {  # İrşad Ekseni: blue sky + globe in water, purple band; deep navy-purple spine, white text
+        "band_y": 0.862,
+        "band": [(0, (84, 50, 146)), (0.5, (100, 55, 148)), (1, (75, 50, 146))],
+        "band_line": (9, 4, 20),
+        "spine": [(0, (30, 36, 90)), (0.5, (52, 62, 140)), (1, (30, 36, 90))],
+        "spine_text": (255, 255, 255),
+    },
+    "kader": {  # Kitap ve Sünnet Perspektifinde Kader: sunset jetty, orange band; deep red-brown spine, cream text
+        "band_y": 0.862,
+        "band": [(0, (204, 99, 33)), (0.5, (178, 86, 27)), (1, (156, 73, 16))],
+        "band_line": (23, 2, 0),
+        "spine": [(0, (90, 24, 12)), (0.5, (140, 40, 22)), (1, (90, 24, 12))],
+        "spine_text": (255, 240, 210),
+    },
+    "altin": {  # Kur'ân'ın Altın İkliminde: golden glow + open Qur'an, orange band; dark brown spine, gold text
+        "band_y": 0.879,
+        "band": [(0, (216, 121, 47)), (0.5, (190, 106, 46)), (1, (160, 92, 42))],
+        "band_line": (96, 61, 43),
+        "spine": [(0, (60, 34, 18)), (0.5, (96, 58, 30)), (1, (60, 34, 18))],
+        "spine_text": (238, 206, 130),
+    },
+    "mizrap": {  # Kırık Mızrap: brown leather all over (plectrum oval); dark brown spine, gold text
+        "band_y": None,
+        "spine": [(0, (60, 30, 18)), (0.5, (100, 50, 26)), (1, (60, 30, 18))],
+        "spine_text": (222, 178, 92),
+    },
     "cekirdek": {  # Çekirdekten Çınara: blue water with a plane leaf, red band; navy spine, white text
         "band_y": 514 / 600,
         "band": [(0, (164, 18, 22)), (0.5, (190, 30, 30)), (1, (150, 14, 18))],
