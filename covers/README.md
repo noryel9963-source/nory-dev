@@ -477,6 +477,12 @@ helper) or the earlier screenshots. Titles all as printed in the translations. N
   helper; 19 and 20 erased at 2×; 19's source is only 396×600 → soft). KDP themes: `kirik` (6–8, 10, 12–14),
   `kirik17` (11, 16, 18–21), `kirik15` (15: orange wood, no band).
 
+## Kastamonu Lâhikası (`kastamonu/`, Risale-i Nur)
+
+- From the user's LaTeX zip (Nov 13): XeLaTeX, B5, 407p, 0 missing glyphs. Title **ឧបសម្ព័ន្ធ / កាស្តាម៉ូនូ** from the
+  translation's own cover.tex. Page 1 (designed cover with the author) → `kastamonu/titlepage.tex` (Risale-i Nur line
+  + author kept) + blank at the end → 408p; margins OK. Cover = asa red-velvet art, theme `asa`.
+
 ## Kalbin Solukları (`soluk/`, 2 volumes)
 
 - `erase_title.py`: "KALBİN SOLUKLARI" (navy with a white glow) and the author lines removed (LaMa); dove, dotted
