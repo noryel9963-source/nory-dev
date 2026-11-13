@@ -77,6 +77,22 @@ BOOKS = {
                 "kirik-khmer-5-kdp-a5-682p", "kirik-5", "ភ្លៀងពេលអាសើរ (ក្អមបែក ៥)"),
     "kirik-17": ("kirik17", "17", "kirik-notitle-source-4x.png", A5, 305, "kirik17", "បន្ទាត់នៃភាពត្រឹមត្រូវ",
                  "kirik-khmer-17-kdp-a5-305p", "kirik-17", "បន្ទាត់នៃភាពត្រឹមត្រូវ (ក្អមបែក ១៧)"),
+    "kirik-6": ("kirik6", "6", "kirik-notitle-source-4x.png", B5, 486, "kirik", "ការអំពាវនាវឱ្យរស់ឡើងវិញ",
+                 "kirik-khmer-6-kdp-b5-486p", "kirik-6", "ការអំពាវនាវឱ្យរស់ឡើងវិញ (ក្អមបែក ៦)"),
+    "kirik-7": ("kirik7", "7", "kirik-notitle-source-4x.png", B5, 437, "kirik", "ឱសថទិព្វនៃអមតភាព",
+                 "kirik-khmer-7-kdp-b5-437p", "kirik-7", "ឱសថទិព្វនៃអមតភាព (ក្អមបែក ៧)"),
+    "kirik-8": ("kirik8", "8", "kirik-notitle-source-4x.png", B5, 456, "kirik", "ដំណឹងល្អនៃការជួបជុំ",
+                 "kirik-khmer-8-kdp-b5-456p", "kirik-8", "ដំណឹងល្អនៃការជួបជុំ (ក្អមបែក ៨)"),
+    "kirik-10": ("kirik10", "10", "kirik-notitle-source-4x.png", B5, 415, "kirik", "ការរង់ចាំភាពកក់ក្ដៅនៃនិទាឃរដូវ",
+                 "kirik-khmer-10-kdp-b5-415p", "kirik-10", "ការរង់ចាំភាពកក់ក្ដៅនៃនិទាឃរដូវ (ក្អមបែក ១០)"),
+    "kirik-11": ("kirik11", "11", "kirik-notitle-source-4x.png", B5, 389, "kirik17", "ឧត្តមគតិនៃការធ្វើឱ្យអ្នកដទៃរស់",
+                 "kirik-khmer-11-kdp-b5-389p", "kirik-11", "ឧត្តមគតិនៃការធ្វើឱ្យអ្នកដទៃរស់ (ក្អមបែក ១១)"),
+    "kirik-12": ("kirik12", "12", "kirik-notitle-source-4x.png", B5, 423, "kirik", "ការខិតខំប្រឹងប្រែងធ្វើឱ្យខ្លួនថ្មីឡើងវិញ",
+                 "kirik-khmer-12-kdp-b5-423p", "kirik-12", "ការខិតខំប្រឹងប្រែងធ្វើឱ្យខ្លួនថ្មីឡើងវិញ (ក្អមបែក ១២)"),
+    "kirik-13": ("kirik13", "13", "kirik-notitle-source-4x.png", B5, 389, "kirik", "ដំណើរនៃឧត្តមគតិ",
+                 "kirik-khmer-13-kdp-b5-389p", "kirik-13", "ដំណើរនៃឧត្តមគតិ (ក្អមបែក ១៣)"),
+    "kirik-14": ("kirik14", "14", "kirik-notitle-source-4x.png", B5, 390, "kirik", "ថ្ងៃនៃវិបត្តិ និងផែនទីសង្ឃឹមរបស់យើង",
+                 "kirik-khmer-14-kdp-b5-390p", "kirik-14", "ថ្ងៃនៃវិបត្តិ និងផែនទីសង្ឃឹមរបស់យើង (ក្អមបែក ១៤)"),
     "kirik-9": ("kirik9", "9", "kirik-notitle-source-4x.png", A5, 419, "kirik", "ទ្រនិចនៃបេះដូង",
                 "kirik-khmer-9-kdp-a5-419p", "kirik-9", "ទ្រនិចនៃបេះដូង (ក្អមបែក ៩)"),
     "fasil-1": ("fasil", "1", "fasil-notitle-source-4x.png", A5, 234, "fasil", "ពីវគ្គមួយ ទៅវគ្គមួយ",
@@ -177,7 +193,7 @@ BOOKS = {
 
 # books whose interior went through fix_gutter.py (…-interior-kdp.pdf); the others use …-interior.pdf
 KDP_INTERIOR = ("cag-1", "kalbin-1", "kalbin-2", "kalbin-3", "kalbin-4", "ustadla", "kirik-2", "kirik-3", "kirik-4",
-                "kirik-5", "fasil-1", "heykel-1", "heykel-2", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1", "fasil-2", "fasil-3", "fasil-4", "fasil-5", "dunyamiz", "lemalar-1", "lemalar-2", "fatiha", "hitap", "hac", "inanc-1", "inanc-2", "oruc", "zekat", "soluk-1", "soluk-2", "kuran", "cevsen", "yusuf", "olum", "sohbet", "varlik", "yaratilis", "vefadar", "omur", "kisa", "baris", "tarihce-1", "tarihce-2", "kirik-9", "kirik-17", "cag-2", "cag-6", "cag-7", "cag-8", "cag-9", "sozler-1", "sozler-2", "olcu", "icaz", "irsad", "mizrap", "kader", "altin", "bahar", "sonsuz-1", "sonsuz-2", "derin", "cekirdek")
+                "kirik-5", "fasil-1", "heykel-1", "heykel-2", "asa", "prizma-1", "namaz", "gonul", "asrin-1", "asrin-3", "asrin-4", "beyan-1", "fasil-2", "fasil-3", "fasil-4", "fasil-5", "dunyamiz", "lemalar-1", "lemalar-2", "fatiha", "hitap", "hac", "inanc-1", "inanc-2", "oruc", "zekat", "soluk-1", "soluk-2", "kuran", "cevsen", "yusuf", "olum", "sohbet", "varlik", "yaratilis", "vefadar", "omur", "kisa", "baris", "tarihce-1", "tarihce-2", "kirik-9", "kirik-17", "kirik-6", "kirik-7", "kirik-8", "kirik-10", "kirik-11", "kirik-12", "kirik-13", "kirik-14", "cag-2", "cag-6", "cag-7", "cag-8", "cag-9", "sozler-1", "sozler-2", "olcu", "icaz", "irsad", "mizrap", "kader", "altin", "bahar", "sonsuz-1", "sonsuz-2", "derin", "cekirdek")
 
 
 def load(folder):

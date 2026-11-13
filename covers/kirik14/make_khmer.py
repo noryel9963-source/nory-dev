@@ -23,7 +23,7 @@ LINES = [
     ("ថ្ងៃនៃ", "Battambang.ttf", 240, 80, 300, (238, 133, 54), None),           # buhranlı
     ("វិបត្តិ", "Battambang.ttf", 260, 100, 395, (238, 133, 54), None),         # günler
     ("និង", "Battambang.ttf", 110, 45, 478, (238, 133, 54), None),             # ve
-    ("ផែនទីក្ដីសង្ឃឹម", "Battambang.ttf", 330, 110, 570, (244, 204, 109), None),  # ümit
+    ("ផែនទីសង្ឃឹម", "Battambang.ttf", 330, 110, 570, (244, 204, 109), None),  # ümit
     ("របស់យើង", "Battambang.ttf", 300, 95, 685, (244, 204, 109), None),        # atlasımız
 ]
 

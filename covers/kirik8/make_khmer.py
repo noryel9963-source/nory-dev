@@ -19,7 +19,7 @@ CX = 400
 
 # text, font, max width, ink height, centre y, colour, shadow colour (None = no shadow)
 LINES = [
-    ("ដំណឹងរីករាយ", "Battambang.ttf", 440, 115, 770, (158, 24, 14), None),      # vuslat (dark red)
+    ("ដំណឹងល្អ", "Battambang.ttf", 440, 115, 770, (158, 24, 14), None),      # vuslat (dark red)
     ("នៃការជួបជុំ", "Battambang.ttf", 400, 105, 890, (78, 25, 14), None),       # muştusu (dark brown)
 ]
 

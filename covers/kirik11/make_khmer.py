@@ -20,8 +20,8 @@ CX = 413
 
 # text, font, max width, ink height, centre y, colour, shadow colour (None = no shadow)
 LINES = [
-    ("ឧត្តមគតិ", "Battambang.ttf", 480, 95, 187, (101, 66, 32), None),           # YAŞATMA
-    ("នៃការធ្វើឱ្យរស់", "Battambang.ttf", 480, 95, 285, (101, 66, 32), None),   # İDEALİ
+    ("ឧត្តមគតិនៃ", "Battambang.ttf", 480, 95, 187, (101, 66, 32), None),           # YAŞATMA
+    ("ការធ្វើឱ្យអ្នកដទៃរស់", "Battambang.ttf", 500, 95, 285, (101, 66, 32), None),   # İDEALİ
     ("ក្អមបែក", "Battambang.ttf", 200, 40, 380, (101, 66, 32), None),           # ribbon: KIRIK TESTİ
 ]
 

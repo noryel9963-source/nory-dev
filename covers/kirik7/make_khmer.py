@@ -19,8 +19,8 @@ CX = 400
 
 # text, font, max width, ink height, centre y, colour, shadow colour (None = no shadow)
 LINES = [
-    ("ទឹកអម្រឹត", "Battambang.ttf", 440, 125, 765, (158, 24, 14), None),       # ölümsüzlük (dark red)
-    ("នៃភាពអមតៈ", "Battambang.ttf", 400, 105, 885, (78, 25, 14), None),      # iksiri (dark brown)
+    ("ឱសថទិព្វ", "Battambang.ttf", 440, 125, 765, (158, 24, 14), None),       # ölümsüzlük (dark red)
+    ("នៃអមតភាព", "Battambang.ttf", 400, 105, 885, (78, 25, 14), None),      # iksiri (dark brown)
 ]
 
 # number box: big orange digit with the series name in small letters on both sides (like "KIRIK 1 TESTİ")

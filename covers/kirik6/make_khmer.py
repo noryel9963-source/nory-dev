@@ -20,7 +20,7 @@ CX = 407
 # text, font, max width, ink height, centre y, colour, shadow colour (None = no shadow)
 LINES = [
     ("ការអំពាវនាវ", "Battambang.ttf", 400, 115, 775, (158, 24, 14), None),       # diriliş (dark red)
-    ("នៃការរស់ឡើងវិញ", "Battambang.ttf", 440, 110, 895, (78, 25, 14), None),   # çağrısı (dark brown)
+    ("ឱ្យរស់ឡើងវិញ", "Battambang.ttf", 440, 110, 895, (78, 25, 14), None),   # çağrısı (dark brown)
 ]
 
 # number box: big orange digit with the series name in small letters on both sides (like "KIRIK 1 TESTİ")
